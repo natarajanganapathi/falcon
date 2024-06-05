@@ -1,0 +1,6 @@
+@LightingApi_HostAddress = http://localhost:5193
+
+GET {{LightingApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0-preview.4.24267.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Shared\LightningArc.Contracts\LightningArc.Contracts.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\LightningArc.Persistence.Abstractions\LightningArc.Persistence.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\LightningArc.Persistence.EntityFramework\LightningArc.Persistence.EntityFramework.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\LightningArc.Persistence.EntityFramework.QueryBuilder\LightningArc.Persistence.EntityFramework.QueryBuilder.csproj" />
+  </ItemGroup>
+
+</Project>

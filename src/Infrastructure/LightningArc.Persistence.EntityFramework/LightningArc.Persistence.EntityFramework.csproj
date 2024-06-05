@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>true</IsPackable>
+    <AssemblyVersion>0.0.0.1</AssemblyVersion>
+    <FileVersion>0.0.0.1</FileVersion>
+    <Version>0.0.1-alpha.1</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+  </PropertyGroup>
+  <ItemGroup>
+      <None Include="README.md" Pack="true" PackagePath="README.md" />
+      <None Include="LICENSE.txt" Pack="true" PackagePath="LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-preview.4.24267.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0-preview.4.24267.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0-preview.4.24267.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.0-preview.4.24267.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\LightningArc.Contracts\LightningArc.Contracts.csproj" />
+    <ProjectReference Include="..\..\Shared\LightningArc.Module.Abstractions\LightningArc.Module.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Domain\LightningArc.Domain.Abstractions\LightningArc.Domain.Abstractions.csproj" />
+    <ProjectReference Include="..\LightningArc.Persistence.Abstractions\LightningArc.Persistence.Abstractions.csproj" />
+    <ProjectReference Include="..\LightningArc.Persistence.EntityFramework.QueryBuilder\LightningArc.Persistence.EntityFramework.QueryBuilder.csproj" />
+  </ItemGroup>
+</Project>
