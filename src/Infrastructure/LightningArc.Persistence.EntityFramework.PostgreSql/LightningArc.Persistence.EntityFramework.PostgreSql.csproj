@@ -15,8 +15,6 @@
       <None Include="LICENSE.txt" Pack="true" PackagePath="LICENSE.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Shared\LightningArc.Contracts\LightningArc.Contracts.csproj" />
-    <ProjectReference Include="..\..\Shared\LightningArc.Module.Abstractions\LightningArc.Module.Abstractions.csproj" />
     <ProjectReference Include="..\LightningArc.Persistence.Abstractions\LightningArc.Persistence.Abstractions.csproj" />
   </ItemGroup>
   <ItemGroup>

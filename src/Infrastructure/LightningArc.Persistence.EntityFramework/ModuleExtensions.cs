@@ -43,13 +43,13 @@ public static class ModuleExtensions
         return services;
     }
 
-    public static void UsePersistenceEntityFrameworkMiddelwares(this IApplicationBuilder app)
+    public static IApplicationBuilder UsePersistenceEntityFrameworkMiddelwares(this IApplicationBuilder app)
     {
-        // Method intentionally left empty. 
+        return app;
     }
 
-    public static void UsePersistenceEntityFrameworkModule(this IApplicationBuilder app)
+    public static IApplicationBuilder UsePersistenceEntityFrameworkModule(this IApplicationBuilder app)
     {
-        // Method intentionally left empty.
+        return app;
     }
 }

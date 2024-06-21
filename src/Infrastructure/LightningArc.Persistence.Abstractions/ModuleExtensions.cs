@@ -4,20 +4,18 @@ public static class ModuleExtensions
 {
     public static IServiceCollection AddPersistenceAbstractionsModule(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddScoped(typeof(IRequestContext<>), typeof(RequestContext<>));
-        services.AddScoped(typeof(BaseService<,>));
-        services.AddScoped(typeof(ITenantOptions<>), typeof(TenantOptions<>));
-        
-        return services;
+        return services.AddScoped(typeof(IRequestContext<>), typeof(RequestContext<>))
+                        .AddScoped(typeof(BaseService<,>))
+                        .AddScoped(typeof(ITenantOptions<>), typeof(TenantOptions<>));
     }
 
-    public static void UsePersistenceAbstractionsMiddelwares(this IApplicationBuilder app)
+    public static IApplicationBuilder UsePersistenceAbstractionsMiddelwares(this IApplicationBuilder app)
     {
-        // Method intentionally left empty. 
+        return app;
     }
 
-    public static void UsePersistenceAbstractionsModule(this IApplicationBuilder app)
+    public static IApplicationBuilder UsePersistenceAbstractionsModule(this IApplicationBuilder app)
     {
-        // Method intentionally left empty.
+        return app;
     }
 }
