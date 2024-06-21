@@ -23,27 +23,27 @@ public static class PersistanceEntityFrameworkExtensions
         dbContext.Database.Migrate();
     }
 
-    public static IServiceCollection AddPersistanceEntityFramework(this IServiceCollection services, IConfiguration configuration)
-    {
-        services.Configure<SqlDbOptions>(configuration.GetSection(SqlDbOptions.ConfigPath));
-        services.AddOptions<SqlDbOptions>();
-        services.AddScoped(typeof(ITenant), typeof(SingleTenant));
+    // public static IServiceCollection AddPersistanceEntityFramework(this IServiceCollection services, IConfiguration configuration)
+    // {
+    //     services.Configure<SqlDbOptions>(configuration.GetSection(SqlDbOptions.ConfigPath));
+    //     services.AddOptions<SqlDbOptions>();
+    //     services.AddScoped(typeof(ITenant), typeof(SingleTenant));
 
-        services.AddDbContext<HomeDbContext>(ServiceLifetime.Scoped);
-        services.AddScoped<HomeDbContextOptions>();
-        services.AddScoped(typeof(HomeRepository<,>));
-        services.AddScoped(typeof(IOptions<DbConfig>), typeof(HomeOptions<DbConfig>));
+    //     services.AddDbContext<HomeDbContext>(ServiceLifetime.Scoped);
+    //     services.AddScoped<HomeDbContextOptions>();
+    //     services.AddScoped(typeof(HomeRepository<,>));
+    //     services.AddScoped(typeof(IOptions<DbConfig>), typeof(HomeOptions<DbConfig>));
 
-        services.AddDbContext<TenantDbContext>(ServiceLifetime.Scoped);
-        services.AddScoped<TenantDbContextOptions>();
-        services.AddScoped<TenantDbMigrationContext>();
-        services.AddScoped(typeof(TenantRepository<,>));
+    //     services.AddDbContext<TenantDbContext>(ServiceLifetime.Scoped);
+    //     services.AddScoped<TenantDbContextOptions>();
+    //     services.AddScoped<TenantDbMigrationContext>();
+    //     services.AddScoped(typeof(TenantRepository<,>));
 
-        services.AddScoped<IRepositoryProvider, SqlRepositoryProvider>();
-        services.AddSingleton<ITenantDbModelConfiguration, TenantModelConfigurations>();
-        services.AddSingleton<IHomeDbModelConfiguration, HomeModelConfigurations>();
+    //     services.AddScoped<IRepositoryProvider, SqlRepositoryProvider>();
+    //     services.AddSingleton<ITenantDbModelConfiguration, TenantModelConfigurations>();
+    //     services.AddSingleton<IHomeDbModelConfiguration, HomeModelConfigurations>();
 
-        services.AddHealthChecks().AddCheck<SqlDbHealthCheck>("SqlDb", tags: ["sqldb", "all"]);
-        return services;
-    }
+    //     services.AddHealthChecks().AddCheck<SqlDbHealthCheck>("SqlDb", tags: ["sqldb", "all"]);
+    //     return services;
+    // }
 }

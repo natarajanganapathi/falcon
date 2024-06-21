@@ -13,6 +13,6 @@ public class SqlDbHealthCheck : IHealthCheck
     {
         return await _context.Database.CanConnectAsync(cancellationToken)
         ? HealthCheckResult.Healthy()
-        : HealthCheckResult.Unhealthy("Not able to connect database.");
+        : HealthCheckResult.Unhealthy("Not able to connect database");
     }
 }

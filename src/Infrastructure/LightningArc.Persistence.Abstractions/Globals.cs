@@ -8,6 +8,5 @@ global using Microsoft.AspNetCore.Builder;
 global using Microsoft.EntityFrameworkCore;
 global using Newtonsoft.Json.Linq;
 
-global using LightningArc.Module.Abstractions;
 global using LightningArc.Contracts;
 global using LightningArc.Domain.Abstractions;

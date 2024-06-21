@@ -1,5 +1,3 @@
 namespace LightningArc.Contracts;
 
-public interface IApiRequest
-{
-}
+public interface IApiRequest { }

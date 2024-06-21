@@ -14,7 +14,8 @@ public static partial class Extensions
     #region CompositeRequest
     public static ICompositeRequest Add(this ICompositeRequest source, string key, IApiRequest value)
     {
-        (source.Requests ??= []).Add(key, value);
+        var dictionary = source.Requests ??= [];
+        dictionary.Add(key, value);
         return source;
     }
     #endregion

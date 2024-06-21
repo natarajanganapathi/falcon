@@ -36,10 +36,25 @@ versionize                             1.21.0          versionize
 ## DDD
 
 ### Application
-
+#### Application Events Raised from Application layer
+    1. UserLoggedIn
+    2. UserLoggedOut
+    3. SessionExpired
+    4. PasswordChanged
+#### Raised from Infrastructure Components
+    5. UserRegistered
+    6. CacheRefreshed
+    7. ApplicationStarted
+    8. ApplicationShutdown
 ### Domain
+    Domain Events
+    1. OrderPlaced
+    2. PaymentProcessed
+    3. ItemShipped
 
 ### Infrastructure
+    Integration Events: (communication between different bounded contexts)
+
 
 ### Background Tasks
 
@@ -47,4 +62,4 @@ versionize                             1.21.0          versionize
 
 1. [DDD Reference](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/ddd-oriented-microservice)
 2. [Sample Source Reference](https://github.com/dotnet-architecture/eShopOnContainers/tree/main/src/Services/Ordering/Ordering.API)
-3. 
+3. [Builder Pattern](https://www.youtube.com/watch?v=qCIr30WxJQw&t=8s)

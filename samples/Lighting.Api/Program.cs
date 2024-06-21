@@ -20,4 +20,4 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.MapGet("/", () => "Running...!");
 app.MapHealthChecks("/health");
-app.Run();
+await app.RunAsync();
