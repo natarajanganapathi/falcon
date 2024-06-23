@@ -20,8 +20,9 @@ public static class ModuleExtensions
         return services.AddPersistenceEntityFrameworksModule();
     }
 
-    public static IServiceCollection AddPersistenceEntityFrameworksModule(this IServiceCollection services)
+    private static IServiceCollection AddPersistenceEntityFrameworksModule(this IServiceCollection services)
     {
+        services.AddPersistenceAbstractionsModule();
         services.AddScoped(typeof(ITenant), typeof(SingleTenant));
 
         services.AddDbContext<HomeDbContext>(ServiceLifetime.Scoped);
@@ -45,11 +46,11 @@ public static class ModuleExtensions
 
     public static IApplicationBuilder UsePersistenceEntityFrameworkMiddelwares(this IApplicationBuilder app)
     {
-        return app;
+        return app.UsePersistenceAbstractionsMiddelwares();
     }
 
     public static IApplicationBuilder UsePersistenceEntityFrameworkModule(this IApplicationBuilder app)
     {
-        return app;
+        return app.UsePersistenceAbstractionsModule();
     }
 }

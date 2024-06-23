@@ -22,5 +22,5 @@ global using LightningArc.Persistence.EntityFramework.Configuration;
 global using LightningArc.Persistence.EntityFramework.Context;
 global using LightningArc.Persistence.EntityFramework.HealthCheck;
 
-global using LightningArc.QueryBuilder;
+global using LightningArc.Persistence.EntityFramework.QueryBuilder;
 global using LightningArc.Domain.Abstractions;

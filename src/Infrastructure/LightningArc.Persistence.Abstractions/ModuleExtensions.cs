@@ -2,7 +2,7 @@ namespace LightningArc.Persistence.Abstractions;
 
 public static class ModuleExtensions
 {
-    public static IServiceCollection AddPersistenceAbstractionsModule(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddPersistenceAbstractionsModule(this IServiceCollection services)
     {
         return services.AddScoped(typeof(IRequestContext<>), typeof(RequestContext<>))
                         .AddScoped(typeof(BaseService<,>))

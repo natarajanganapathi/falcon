@@ -1,6 +1,6 @@
-namespace LightningArc.QueryBuilder;
+namespace LightningArc.Persistence.EntityFramework.QueryBuilder;
 
-public static class QueryableExtentions
+public static partial class QueryableExtentions
 {
     // TODO: Optimization required
     private static readonly MethodInfo? _selectMethodInfo = Array.Find(typeof(Enumerable)
@@ -37,7 +37,7 @@ public static class QueryableExtentions
     // TODO: Optimization required
     public static IQueryable<TEntity> ApplySort<TEntity>(this IQueryable<TEntity> query, Sort[]? sort)
     {
-        if (sort == null || sort.Length == 0) return query;
+        if (sort is null or { Length: 0 }) return query;
 
         var parameterExp = Expression.Parameter(typeof(TEntity), "sort");
         IOrderedQueryable<TEntity>? orderedQuery = null;
@@ -49,14 +49,14 @@ public static class QueryableExtentions
                     ? order.Direction == Direction.Ascending ? query.OrderBy(lambdaExp) : query.OrderByDescending(lambdaExp)
                     : order.Direction == Direction.Ascending ? orderedQuery.ThenBy(lambdaExp) : orderedQuery.ThenByDescending(lambdaExp);
         }
-        return orderedQuery ?? query;
+        return orderedQuery!;
     }
     #endregion
 
     #region Page Context
     public static IQueryable<TEntity> ApplyPageContext<TEntity>(this IQueryable<TEntity> query, PageContext? pageContext)
     {
-        if (pageContext == null) return query;
+        if (pageContext is null) return query;
         return query.Skip(pageContext.Skip).Take(pageContext.PageSize);
     }
     #endregion
@@ -92,7 +92,7 @@ public static class QueryableExtentions
 
     public static Expression GetJObjectValueExpression(Type elementType, Expression sourceParameter, string[]? select, Include[]? includes)
     {
-        select = select == null || select.Length == 0 ? GetProperties(elementType).ToArray() : select;
+        select = select is null or { Length: 0 } ? GetProperties(elementType).ToArray() : select;
         var jObjectExpression = Expression.New(typeof(JObject));
         var addMethodInfo = typeof(JObject).GetMethod(nameof(JObject.Add), [typeof(string), typeof(JToken)]);
         var jPropertiesExpressions = select.Select(property =>
