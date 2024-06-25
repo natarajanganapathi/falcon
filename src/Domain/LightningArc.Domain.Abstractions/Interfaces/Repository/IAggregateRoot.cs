@@ -1,5 +1,3 @@
 namespace LightningArc.Domain.Abstractions;
 
-public interface ICompositeEntity
-{
-}
+public interface IAggregateRoot { }

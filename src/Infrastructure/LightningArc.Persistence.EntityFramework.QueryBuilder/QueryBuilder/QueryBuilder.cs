@@ -8,7 +8,7 @@ public class QueryBuilder<TEntity> where TEntity : class
     private Include[]? _includes;
     private PageContext? _pageContext;
 
-    public static QueryBuilder<TEntity> Empty()
+    public static QueryBuilder<TEntity> New()
     {
         return new();
     }
@@ -58,8 +58,8 @@ public class QueryBuilder<TEntity> where TEntity : class
     public async Task<long> BuildCountAsync(DbSet<TEntity> dbSet, CancellationToken cancellationToken = default)
     {
         return await dbSet.AsQueryable()
-             .AsNoTracking()
-             .ApplyWhere(_filter)
-             .LongCountAsync(cancellationToken);
+                            .AsNoTracking()
+                            .ApplyWhere(_filter)
+                            .LongCountAsync(cancellationToken);
     }
 }

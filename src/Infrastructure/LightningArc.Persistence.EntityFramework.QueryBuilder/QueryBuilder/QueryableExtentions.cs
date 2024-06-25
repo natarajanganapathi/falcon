@@ -65,7 +65,7 @@ public static partial class QueryableExtentions
     public static IQueryable<JObject> ApplyProjection<TEntity>(this IQueryable<TEntity> query, string[]? select, Include[]? includes)
     {
         var elementType = typeof(TEntity);
-        select = select == null || select.Length == 0 ? GetProperties(elementType).ToArray() : select;
+        select = select is null or { Length: 0 } ? GetProperties(elementType).ToArray() : select;
         var sourceParameter = Expression.Parameter(elementType, elementType.Name);
         var jObjectInitExpression = GetJObjectValueExpression(elementType, sourceParameter, select, includes);
         var lambda = Expression.Lambda<Func<TEntity, JObject>>(jObjectInitExpression, sourceParameter);

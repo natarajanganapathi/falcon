@@ -1,6 +1,6 @@
 namespace LightningArc.Persistence.Abstractions;
 
-public class BaseService<TId, TEntity> where TEntity : class, IBaseEntity<TId>, new()
+public class BaseService<TId, TEntity> where TEntity : class, IEntity<TId>, new()
 {
     private readonly IRepository<TId, TEntity> _repository;
     private readonly IServiceProvider _serviceProvider;
@@ -20,11 +20,6 @@ public class BaseService<TId, TEntity> where TEntity : class, IBaseEntity<TId>, 
         return _repository.CreateAsync(request, cancellationToken);
     }
 
-    public Task<IEnumerable<TEntity>> CreateManyAsync(ICommandRequest<TEntity[]> request, CancellationToken cancellationToken)
-    {
-        return _repository.CreateManyAsync(request, cancellationToken);
-    }
-
     public Task<TEntity> DeleteAsync(TId id, CancellationToken cancellationToken)
     {
         return _repository.DeleteAsync(id, cancellationToken);
@@ -40,11 +35,6 @@ public class BaseService<TId, TEntity> where TEntity : class, IBaseEntity<TId>, 
         return _repository.CountAsync(request, cancellationToken);
     }
 
-    public Task<IEnumerable<TEntity>> GetManyAsync(TId[] ids, CancellationToken cancellationToken)
-    {
-        return _repository.GetManyAsync(ids, cancellationToken);
-    }
-
     public async Task<IList<TEntity>> FindAsync(IQueryRequest request, CancellationToken cancellationToken)
     {
         return await _repository.FindAsync(request, cancellationToken);
@@ -57,11 +47,6 @@ public class BaseService<TId, TEntity> where TEntity : class, IBaseEntity<TId>, 
     public Task<TEntity> PatchAsync(TId id, ICommandRequest<JsonPatchDocument<TEntity>> request, CancellationToken cancellationToken)
     {
         return _repository.PatchAsync(id, request, cancellationToken);
-    }
-
-    public Task<TEntity> ReplaceAsync(TId id, ICommandRequest<TEntity> request, CancellationToken cancellationToken)
-    {
-        return _repository.ReplaceAsync(id, request, cancellationToken);
     }
 
     public Task<TEntity> UpdateAsync(TId id, ICommandRequest<TEntity> request, CancellationToken cancellationToken)
