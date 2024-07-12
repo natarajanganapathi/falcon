@@ -1,4 +1,4 @@
-namespace LightningArc.Persistence.EntityFramework.QueryBuilder.Exceptions;
+namespace LightningArc.Infrastructure.EntityFramework.QueryBuilder.Exceptions;
 
 [Serializable]
 public class QueryBuilderException : Exception

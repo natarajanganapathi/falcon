@@ -1,4 +1,4 @@
-namespace LightningArc.Persistence.EntityFramework.Contexts;
+namespace LightningArc.Infrastructure.EntityFramework.Contexts;
 
 public abstract class SqlDbContextOptions
 {

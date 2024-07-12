@@ -1,4 +1,4 @@
-namespace LightningArc.Persistence.EntityFramework.HealthCheck;
+namespace LightningArc.Infrastructure.EntityFramework.HealthCheck;
 
 public class SqlDbHealthCheck : IHealthCheck
 {

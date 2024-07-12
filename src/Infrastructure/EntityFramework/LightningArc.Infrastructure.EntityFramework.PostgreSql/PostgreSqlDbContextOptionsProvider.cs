@@ -1,6 +1,6 @@
-namespace LightningArc.Persistence.EntityFramework.PostgreSql;
+namespace LightningArc.Infrastructure.EntityFramework.PostgreSql;
 
-public class DbContextOptionsProvider : IDbContextOptionsProvider
+public class PostgreSqlDbContextOptionsProvider : IDbContextOptionsProvider
 {
     public DbContextOptions GetDbContextOption(string connectionString)
     {

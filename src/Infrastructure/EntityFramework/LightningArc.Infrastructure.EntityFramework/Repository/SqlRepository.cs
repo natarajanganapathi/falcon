@@ -1,4 +1,4 @@
-namespace LightningArc.Persistence.EntityFramework;
+namespace LightningArc.Infrastructure.EntityFramework;
 
 public abstract class SqlRepository<TId, TEntity> : IRepository<TId, TEntity> where TEntity : class, IEntity<TId>, new()
 {

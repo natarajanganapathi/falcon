@@ -1,3 +1,3 @@
-namespace LightningArc.Persistence.EntityFramework.Contexts.TenantDb;
+namespace LightningArc.Infrastructure.EntityFramework.Contexts.TenantDb;
 
 public interface ITenantDbModelConfiguration : ISqlDbModelConfiguration { }

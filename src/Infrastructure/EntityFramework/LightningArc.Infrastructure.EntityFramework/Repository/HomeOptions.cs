@@ -1,4 +1,4 @@
-namespace LightningArc.Persistence.EntityFramework;
+namespace LightningArc.Infrastructure.EntityFramework;
 
 /// <summary>
 /// Represents options for the home-database functionality.

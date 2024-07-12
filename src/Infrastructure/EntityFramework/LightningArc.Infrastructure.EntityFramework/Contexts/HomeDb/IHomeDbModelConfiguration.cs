@@ -1,3 +1,3 @@
-namespace LightningArc.Persistence.EntityFramework.Contexts.HomeDb;
+namespace LightningArc.Infrastructure.EntityFramework.Contexts.HomeDb;
 
 public interface IHomeDbModelConfiguration : ISqlDbModelConfiguration { }

@@ -1,4 +1,4 @@
-namespace LightningArc.Persistence.EntityFramework;
+namespace LightningArc.Infrastructure.EntityFramework;
 
 public class HomeRepository<TId, TEntity> : SqlRepository<TId, TEntity> where TEntity : class, IEntity<TId>, new()
 {

@@ -7,4 +7,4 @@ global using Newtonsoft.Json;
 global using Newtonsoft.Json.Linq;
 
 global using LightningArc.Contracts;
-global using LightningArc.Persistence.EntityFramework.QueryBuilder.Exceptions;
+global using LightningArc.Infrastructure.EntityFramework.QueryBuilder.Exceptions;

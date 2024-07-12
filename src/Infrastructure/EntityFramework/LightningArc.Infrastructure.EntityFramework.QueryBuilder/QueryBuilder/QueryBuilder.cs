@@ -1,4 +1,4 @@
-namespace LightningArc.Persistence.EntityFramework.QueryBuilder;
+namespace LightningArc.Infrastructure.EntityFramework.QueryBuilder;
 
 public class QueryBuilder<TEntity> where TEntity : class
 {

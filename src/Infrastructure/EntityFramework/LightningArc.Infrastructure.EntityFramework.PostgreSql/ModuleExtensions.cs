@@ -1,10 +1,10 @@
-namespace LightningArc.Persistence.EntityFramework.PostgreSql;
+namespace LightningArc.Infrastructure.EntityFramework.PostgreSql;
 
 public static class ModuleExtensions
 {
     public static IServiceCollection AddEntityFrameworkPostgreSql(IServiceCollection services)
     {
-        return services.AddScoped<IDbContextOptionsProvider, DbContextOptionsProvider>();
+        return services.AddScoped<IDbContextOptionsProvider, PostgreSqlDbContextOptionsProvider>();
     }
 
     public static IApplicationBuilder UseEntityFrameworkPostgreSqlMiddelwares(IApplicationBuilder app)

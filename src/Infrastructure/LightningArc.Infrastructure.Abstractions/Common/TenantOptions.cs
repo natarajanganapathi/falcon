@@ -1,4 +1,4 @@
-namespace LightningArc.Persistence.Abstractions;
+namespace LightningArc.Infrastructure.Abstractions;
 
 public class TenantOptions<TOptions> : ITenantOptions<TOptions> where TOptions : new()
 {

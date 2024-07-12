@@ -1,4 +1,4 @@
-namespace LightningArc.Persistence.EntityFramework;
+namespace LightningArc.Infrastructure.EntityFramework;
 
 public class SqlRepositoryProvider : IRepositoryProvider
 {

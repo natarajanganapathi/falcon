@@ -19,13 +19,14 @@ global using Microsoft.Extensions.Options;
 global using Newtonsoft.Json.Linq;
 
 global using LightningArc.Contracts;
-global using LightningArc.Persistence.Abstractions;
-global using LightningArc.Persistence.EntityFramework.Configurations;
-global using LightningArc.Persistence.EntityFramework.Contexts;
-global using LightningArc.Persistence.EntityFramework.Contexts.HomeDb;
-global using LightningArc.Persistence.EntityFramework.Contexts.TenantDb;
-global using LightningArc.Persistence.EntityFramework.HealthCheck;
+global using LightningArc.Infrastructure.Abstractions;
+global using LightningArc.Infrastructure.EntityFramework.Configurations;
+global using LightningArc.Infrastructure.EntityFramework.Contexts;
+global using LightningArc.Infrastructure.EntityFramework.Contexts.HomeDb;
+global using LightningArc.Infrastructure.EntityFramework.Contexts.TenantDb;
+global using LightningArc.Infrastructure.EntityFramework.HealthCheck;
 
-global using LightningArc.Persistence.EntityFramework.QueryBuilder;
+global using LightningArc.Infrastructure.Abstractions.Attributes;
+global using LightningArc.Infrastructure.EntityFramework.QueryBuilder;
 global using LightningArc.Domain.Abstractions.Interfaces.Repositories;
 global using LightningArc.Domain.Abstractions.Interfaces.Entities;
