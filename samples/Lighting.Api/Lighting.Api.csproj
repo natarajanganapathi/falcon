@@ -13,9 +13,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Shared\LightningArc.Contracts\LightningArc.Contracts.csproj" />
-    <ProjectReference Include="..\..\src\Infrastructure\LightningArc.Persistence.Abstractions\LightningArc.Persistence.Abstractions.csproj" />
-    <ProjectReference Include="..\..\src\Infrastructure\LightningArc.Persistence.EntityFramework\LightningArc.Persistence.EntityFramework.csproj" />
-    <ProjectReference Include="..\..\src\Infrastructure\LightningArc.Persistence.EntityFramework.QueryBuilder\LightningArc.Persistence.EntityFramework.QueryBuilder.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\LightningArc.Infrastructure.Abstractions\LightningArc.Infrastructure.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\EntityFramework\LightningArc.Infrastructure.EntityFramework\LightningArc.Infrastructure.EntityFramework.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\EntityFramework\LightningArc.Infrastructure.EntityFramework.QueryBuilder\LightningArc.Infrastructure.EntityFramework.QueryBuilder.csproj" />
   </ItemGroup>
 
 </Project>

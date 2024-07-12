@@ -3,4 +3,4 @@ global using Microsoft.AspNetCore.JsonPatch;
 global using Newtonsoft.Json.Linq;
 
 global using LightningArc.Contracts;
-global using LightningArc.Domain.Abstractions;
+global using LightningArc.Domain.Abstractions.Interfaces.Entities;

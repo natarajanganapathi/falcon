@@ -11,13 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightningArc.Contracts", "s
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{9F20357E-35B5-4C3A-A7C5-DEECD5B84B0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightningArc.Persistence.Abstractions", "src\Infrastructure\LightningArc.Persistence.Abstractions\LightningArc.Persistence.Abstractions.csproj", "{CB87A2D2-3E12-4B48-A268-D99628AD2D91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightningArc.Infrastructure.Abstractions", "src\Infrastructure\LightningArc.Infrastructure.Abstractions\LightningArc.Infrastructure.Abstractions.csproj", "{CB87A2D2-3E12-4B48-A268-D99628AD2D91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightningArc.Persistence.EntityFramework", "src\Infrastructure\LightningArc.Persistence.EntityFramework\LightningArc.Persistence.EntityFramework.csproj", "{D9F9B30E-DC23-473E-9959-B3587E37C1F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightningArc.Infrastructure.EntityFramework", "src\Infrastructure\EntityFramework\LightningArc.Infrastructure.EntityFramework\LightningArc.Infrastructure.EntityFramework.csproj", "{D9F9B30E-DC23-473E-9959-B3587E37C1F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightningArc.Persistence.EntityFramework.PostgreSql", "src\Infrastructure\LightningArc.Persistence.EntityFramework.PostgreSql\LightningArc.Persistence.EntityFramework.PostgreSql.csproj", "{2C1332D9-1257-45DC-A9E3-A816DA594E20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightningArc.Infrastructure.EntityFramework.PostgreSql", "src\Infrastructure\EntityFramework\LightningArc.Infrastructure.EntityFramework.PostgreSql\LightningArc.Infrastructure.EntityFramework.PostgreSql.csproj", "{2C1332D9-1257-45DC-A9E3-A816DA594E20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightningArc.Persistence.EntityFramework.QueryBuilder", "src\Infrastructure\LightningArc.Persistence.EntityFramework.QueryBuilder\LightningArc.Persistence.EntityFramework.QueryBuilder.csproj", "{F085D4BA-FF13-4B46-A929-16BB3491199E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightningArc.Infrastructure.EntityFramework.QueryBuilder", "src\Infrastructure\EntityFramework\LightningArc.Infrastructure.EntityFramework.QueryBuilder\LightningArc.Infrastructure.EntityFramework.QueryBuilder.csproj", "{F085D4BA-FF13-4B46-A929-16BB3491199E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{85485416-BC21-443B-9DAE-2C6CCFFCD8E8}"
 EndProject
