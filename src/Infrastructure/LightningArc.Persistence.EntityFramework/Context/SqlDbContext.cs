@@ -1,20 +1,19 @@
 namespace LightningArc.Persistence.EntityFramework.Context;
 
-public abstract class SqlDbContext : DbContext
+public abstract class SqlDbContext(DbContextOptions sqlOptions) : DbContext(sqlOptions)
 {
     private IDbContextTransaction? _currentTransaction;
 
     protected abstract ISqlDbModelConfiguration ModelConfigProvider { get; }
-    protected SqlDbContext(DbContextOptions sqlOptions) : base(sqlOptions) { }
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         ModelConfigProvider.Configure(modelBuilder);
     }
+
     public async Task<int> SaveChangesAsync<TId>(TId userId, CancellationToken cancellationToken)
     {
-        var entries = ChangeTracker.Entries()
-                  .Where(x => (x.State == EntityState.Added || x.State == EntityState.Modified) && x.Entity is IAuditableEntity<TId>);
+        var entries = ChangeTracker.Entries<IAuditableEntity<TId>>()
+                  .Where(x => x.State == EntityState.Added || x.State == EntityState.Modified);
         var dateTime = DateTime.UtcNow;
         foreach (var entry in entries)
         {
@@ -33,14 +32,14 @@ public abstract class SqlDbContext : DbContext
 
     public async Task<IDbContextTransaction?> BeginTransactionAsync()
     {
-        if (_currentTransaction is null) return null;
+        if (_currentTransaction is not null) return null;
         _currentTransaction = await Database.BeginTransactionAsync(IsolationLevel.ReadCommitted);
         return _currentTransaction;
     }
 
     public async Task CommitTransactionAsync(IDbContextTransaction transaction)
     {
-        if (transaction is null) throw new ArgumentNullException(nameof(transaction));
+        ArgumentNullException.ThrowIfNull(transaction);
         if (transaction != _currentTransaction) throw new InvalidOperationException($"Transaction {transaction.TransactionId} is not current");
         try
         {
@@ -54,11 +53,8 @@ public abstract class SqlDbContext : DbContext
         }
         finally
         {
-            if (_currentTransaction != null)
-            {
-                _currentTransaction.Dispose();
-                _currentTransaction = null;
-            }
+            _currentTransaction?.Dispose();
+            _currentTransaction = null;
         }
     }
 
@@ -70,11 +66,8 @@ public abstract class SqlDbContext : DbContext
         }
         finally
         {
-            if (_currentTransaction != null)
-            {
-                _currentTransaction.Dispose();
-                _currentTransaction = null;
-            }
+            _currentTransaction?.Dispose();
+            _currentTransaction = null;
         }
     }
 }

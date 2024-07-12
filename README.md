@@ -31,6 +31,7 @@ versionize                             1.21.0          versionize
 ## References
 
 1. [Endpoint Groupgings](https://www.linkedin.com/feed/update/urn:li:activity:7071491219628912640/)
+2. [Implement Keycloak Authentication](https://medium.com/@ahmed.gaduo_93938/how-to-implement-keycloak-authentication-in-a-net-core-application-ce8603698f24#:~:text=How%20to%20Implement%20Keycloak%20Authentication%20in%20a%20.NET,Endpoints%20...%206%20Step%206%3A%20Handle%20Authentication%20Callbacks)
 
 
 ## DDD
