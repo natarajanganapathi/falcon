@@ -8,13 +8,18 @@ public abstract class ModelConfigurations
            .Where(t => !string.IsNullOrEmpty(t.Namespace) && t.GetCustomAttributes<T>().Any());
         foreach (var hmType in modelsType)
         {
-            Type? configType = Array.Find(AssemblyCache.EntityTypeConfiguration, type =>
-            {
-                var etype = Array.Find(type.GetInterfaces(),
-                        x => x.IsGenericType && x.GetGenericTypeDefinition() == typeof(IEntityTypeConfiguration<>)
-                    )?.GetGenericArguments().FirstOrDefault();
-                return etype == hmType;
-            });
+            var configType = AssemblyCache.EntityTypeConfiguration
+                .FirstOrDefault(type =>
+                {
+                    var interfaces = type.GetInterfaces();
+                    var genericArguments = interfaces
+                        .Where(x => x.IsGenericType && x.GetGenericTypeDefinition() == typeof(IEntityTypeConfiguration<>))
+                        .Select(x => x.GetGenericArguments().FirstOrDefault())
+                        .ToList();
+
+                    return genericArguments.Contains(hmType);
+                });
+
             if (configType != null)
             {
                 modelBuilder.ApplyConfiguration(Activator.CreateInstance(configType) as dynamic);

@@ -4,3 +4,7 @@
     1. Entity class need to add DomainEvents collection
     2. ValueObject, Enumurator need to complete
 3. Infrastructure
+    1. DispatchDomainEventsAsync need to do
+    2. IRequestManager need to check
+    
+    

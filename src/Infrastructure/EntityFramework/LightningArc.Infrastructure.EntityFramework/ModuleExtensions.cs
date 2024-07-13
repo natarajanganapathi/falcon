@@ -2,27 +2,26 @@ namespace LightningArc.Infrastructure.EntityFramework;
 
 public static class ModuleExtensions
 {
-    public static IServiceCollection AddPersistenceEntityFrameworksModule(this IServiceCollection services, IConfiguration configuration, string configPath)
+    public static IServiceCollection AddInfrastructureEntityFrameworksModule(this IServiceCollection services, IConfiguration configuration, string configPath)
     {
         services.Configure<SqlDbOptions>(configuration.GetSection(configPath));
-        return services.AddPersistenceEntityFrameworksModule();
+        return services.AddInfrastructureEntityFrameworksModule();
     }
 
-    public static IServiceCollection AddPersistenceEntityFrameworksModule(this IServiceCollection services, IConfigurationSection section)
+    public static IServiceCollection AddInfrastructureEntityFrameworksModule(this IServiceCollection services, IConfigurationSection section)
     {
         services.Configure<SqlDbOptions>(section);
-        return services.AddPersistenceEntityFrameworksModule();
+        return services.AddInfrastructureEntityFrameworksModule();
     }
 
-    public static IServiceCollection AddPersistenceEntityFrameworksModule(this IServiceCollection services, Action<SqlDbOptions> configure)
+    public static IServiceCollection AddInfrastructureEntityFrameworksModule(this IServiceCollection services, Action<SqlDbOptions> configure)
     {
         services.Configure(configure);
-        return services.AddPersistenceEntityFrameworksModule();
+        return services.AddInfrastructureEntityFrameworksModule();
     }
 
-    private static IServiceCollection AddPersistenceEntityFrameworksModule(this IServiceCollection services)
+    private static IServiceCollection AddInfrastructureEntityFrameworksModule(this IServiceCollection services)
     {
-        services.AddPersistenceAbstractionsModule();
         services.AddScoped(typeof(ITenant), typeof(SingleTenant));
 
         services.AddDbContext<HomeDbContext>(ServiceLifetime.Singleton);
@@ -46,11 +45,11 @@ public static class ModuleExtensions
 
     public static IApplicationBuilder UsePersistenceEntityFrameworkMiddelwares(this IApplicationBuilder app)
     {
-        return app.UsePersistenceAbstractionsMiddelwares();
+        return app;
     }
 
     public static IApplicationBuilder UsePersistenceEntityFrameworkModule(this IApplicationBuilder app)
     {
-        return app.UsePersistenceAbstractionsModule();
+        return app;
     }
 }

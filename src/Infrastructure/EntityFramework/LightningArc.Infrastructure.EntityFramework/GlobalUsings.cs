@@ -26,7 +26,7 @@ global using LightningArc.Infrastructure.EntityFramework.Contexts.HomeDb;
 global using LightningArc.Infrastructure.EntityFramework.Contexts.TenantDb;
 global using LightningArc.Infrastructure.EntityFramework.HealthCheck;
 
-global using LightningArc.Infrastructure.Abstractions.Attributes;
-global using LightningArc.Infrastructure.EntityFramework.QueryBuilder;
 global using LightningArc.Domain.Abstractions.Interfaces.Repositories;
 global using LightningArc.Domain.Abstractions.Interfaces.Entities;
+global using LightningArc.Infrastructure.Abstractions.Attributes;
+global using LightningArc.Infrastructure.EntityFramework.QueryBuilder;
