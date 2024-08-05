@@ -13,9 +13,16 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
     app.UseSwaggerUI(options =>
-   {
-       options.SwaggerEndpoint("/openapi/v1.json", "v1");
-   });
+    {
+        options.SwaggerEndpoint("/openapi/v1.json", "v1");
+    });
+    app.UseDeveloperExceptionPage();
+}
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Error", createScopeForErrors: true);
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
 }
 app.UseHttpsRedirection();
 app.MapGet("/", () => "Running...!");

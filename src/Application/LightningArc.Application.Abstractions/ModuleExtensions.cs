@@ -4,7 +4,7 @@ public static class ModuleExtensions
 {
     public static IServiceCollection AddApplicationModule(this IServiceCollection services, IConfiguration configuration, string configPath)
     {
-        return services;
+        return services.AddTransient<IIdentityService, IdentityService>();
     }
 
     public static IApplicationBuilder UseInfrastructureMiddelwares(this IApplicationBuilder app)

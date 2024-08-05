@@ -27,6 +27,7 @@ public abstract class SqlRepository<TId, TEntity> : IRepository<TId, TEntity> wh
         logger = serviceProvider.GetRequiredService<ILogger<SqlRepository<TId, TEntity>>>();
         requestContext = serviceProvider.GetRequiredService<IRequestContext<TId>>();
     }
+
     public async Task<IList<JObject>> QueryAsync(IQueryRequest request, CancellationToken cancellationToken = default)
     {
         var query = GetQueryBuilder(request).BuildProjection(DbSet);
@@ -35,11 +36,13 @@ public abstract class SqlRepository<TId, TEntity> : IRepository<TId, TEntity> wh
 #endif
         return await query.ToListAsync(cancellationToken);
     }
+
     public async Task<IList<TEntity>> FindAsync(IQueryRequest request, CancellationToken cancellationToken = default)
     {
         var query = GetQueryBuilder(request).BuildSelection(DbSet);
         return await query.ToListAsync(cancellationToken);
     }
+
     public async Task<long> CountAsync(IQueryRequest request, CancellationToken cancellationToken = default)
     {
         return await QueryBuilder<TEntity>.New().Where(request.Where).BuildCountAsync(DbSet);
@@ -47,13 +50,14 @@ public abstract class SqlRepository<TId, TEntity> : IRepository<TId, TEntity> wh
 
     public async Task<TEntity> GetAsync(TId id, CancellationToken cancellationToken = default)
     {
+        // Need to add the default filter condition to filter deleted items.
         var tid = id ?? throw new QueryEntityException("Id is null");
         var result = await DbSet.FindAsync([tid], cancellationToken);
         if (result is IDeletableEntity obj)
         {
             result = obj.Status == DeletableEntityStatus.Active ? result : null;
         }
-        return result ?? throw new QueryEntityException($"Id '{id}' is not found");
+        return result ?? throw new QueryEntityException($"Invalid Id {id}");
     }
     public async Task<IEnumerable<TEntity>> GetManyAsync(TId[] ids, CancellationToken cancellationToken = default)
     {
@@ -67,7 +71,7 @@ public abstract class SqlRepository<TId, TEntity> : IRepository<TId, TEntity> wh
     }
     private async Task<DeletableEntityStatus> GetStats(TId id, CancellationToken cancellationToken = default)
     {
-        if (id != null)
+        if (id is not null)
         {
             var request = new QueryRequest(["id", "status"])
                           .Where("Id", FieldOperator.Equal, id);

@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Shared\LightningArc.Contracts\LightningArc.Contracts.csproj" />
     <ProjectReference Include="..\..\Domain\LightningArc.Domain.Abstractions\LightningArc.Domain.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\LightningArc.Infrastructure.Abstractions\LightningArc.Infrastructure.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>
