@@ -16,7 +16,7 @@ clean:
 build: build-library build-src build-modules build-samples
 
 build-src:
-	-dotnet build ./src/LightningArc.Source.sln
+	-dotnet build ./Falcon.sln
 
 build-modules:
 	-dotnet build ./samples/samples.sln
@@ -24,14 +24,11 @@ build-modules:
 build-samples:
 	-dotnet build ./samples/samples.sln
 
-build-library:
-	-dotnet build ./library/library.sln
-
 tests:
-	-dotnet test ./tests/LightningArc.Test.sln
+	-dotnet test ./tests/Falcon.Test.sln
 
 test-result-1:
-	-dotnet test ./tests/LightningArc.Test.sln --collect:"XPlat Code Coverage" --results-directory "TestResults"
+	-dotnet test ./tests/Falcon.Test.sln --collect:"XPlat Code Coverage" --results-directory "TestResults"
 	-reportgenerator -reports:"TestResults\{guid}\coverage.cobertura.xml" -targetdir:"TestResults" -reporttypes:Html
 
 test-result-2:
@@ -70,14 +67,14 @@ run-sample:
 
 run:
 	-setx ASPNETCORE_ENVIRONMENT "Development"
-	-dotnet run --project ./src/LightningArc.Hosts/LightningArc.Hosts.csproj
+	-dotnet run --project ./src/Falcon.Hosts/Falcon.Hosts.csproj
 
 sdk:
 	setx ASPNETCORE_ENVIRONMENT "Development"
 	dotnet run --project ./sdk/ClientSdkGenerator/ClientSdkGenerator.csproj	
 
 migration:
-	dotnet ef migrations add InitialCreate --startup-project ./sdk/ClientSdkGenerator --project ./src/LightningArc.DesignTimeMigration --context HomeDbMigrationContext
+	dotnet ef migrations add InitialCreate --startup-project ./sdk/ClientSdkGenerator --project ./src/Falcon.DesignTimeMigration --context HomeDbMigrationContext
 
 update:
 	dotnet tool list -g
@@ -121,8 +118,8 @@ setup: install
 	-npm install -g rimraf
 
 host:
-	dotnet build ./src/LightningArc.Hosts/LightningArc.Hosts.csproj
+	dotnet build ./src/Falcon.Hosts/Falcon.Hosts.csproj
 
 coverage:
-	-dotnet test .\library\LightningArc.QueryBuilder.Test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=lcov.info
-	-reportgenerator -reports:".\library\LightningArc.QueryBuilder.Test\lcov.info" -targetdir:"TestResults" -reporttypes:Html
+	-dotnet test .\library\Falcon.QueryBuilder.Test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=lcov.info
+	-reportgenerator -reports:".\library\Falcon.QueryBuilder.Test\lcov.info" -targetdir:"TestResults" -reporttypes:Html

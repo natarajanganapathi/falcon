@@ -3,7 +3,7 @@
 The following global tools are required
 
 ```sh
-LightningArc> dotnet tool list -g
+Falcon> dotnet tool list -g
 
 Package Id                      Version         Commands
 -------------------------------------------------------------------
