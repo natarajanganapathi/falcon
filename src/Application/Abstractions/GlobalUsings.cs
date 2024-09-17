@@ -15,4 +15,4 @@ global using Falcon.Domain.Abstractions.Interfaces.Repositories;
 global using Falcon.Infrastructure.Abstractions;
 global using Falcon.Infrastructure.Abstractions.Attributes;
 global using Falcon.Application.Abstractions.Infrastructure.Services;
- global using Falcon.Application.Abstractions.Services;
+global using Falcon.Application.Abstractions.Services;

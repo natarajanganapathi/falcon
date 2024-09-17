@@ -6,8 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <PropertyGroup>
-    <RootNamespace>Samples.Api</RootNamespace>
-    <AssemblyName>Samples.Api</AssemblyName>
+    <RootNamespace>Samples.Application</RootNamespace>
+    <AssemblyName>Samples.Application</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

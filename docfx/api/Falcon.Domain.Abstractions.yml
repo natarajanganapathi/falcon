@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Domain.Abstractions
+  commentId: N:Falcon.Domain.Abstractions
+  id: Falcon.Domain.Abstractions
+  children:
+  - Falcon.Domain.Abstractions.Entity`1
+  langs:
+  - csharp
+  - vb
+  name: Falcon.Domain.Abstractions
+  nameWithType: Falcon.Domain.Abstractions
+  fullName: Falcon.Domain.Abstractions
+  type: Namespace
+  assemblies:
+  - Falcon.Domain.Abstractions
+references:
+- uid: Falcon.Domain.Abstractions.Entity`1
+  commentId: T:Falcon.Domain.Abstractions.Entity`1
+  href: Falcon.Domain.Abstractions.Entity-1.html
+  name: Entity<TId>
+  nameWithType: Entity<TId>
+  fullName: Falcon.Domain.Abstractions.Entity<TId>
+  nameWithType.vb: Entity(Of TId)
+  fullName.vb: Falcon.Domain.Abstractions.Entity(Of TId)
+  name.vb: Entity(Of TId)
+  spec.csharp:
+  - uid: Falcon.Domain.Abstractions.Entity`1
+    name: Entity
+    href: Falcon.Domain.Abstractions.Entity-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Domain.Abstractions.Entity`1
+    name: Entity
+    href: Falcon.Domain.Abstractions.Entity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )

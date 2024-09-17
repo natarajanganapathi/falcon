@@ -23,7 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{8548
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "samples\Api\Api.csproj", "{A578DE32-0541-4CBD-8091-4F9DA6C13259}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "samples\Domain\Domain.csproj", "{56244C95-F58A-4325-BD96-D5B7279399A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "samples\DevOps\Domain\Domain.csproj", "{56244C95-F58A-4325-BD96-D5B7279399A1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{EE660B4E-D344-4ED7-B7EA-19E53DF05EC7}"
 EndProject

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Infrastructure.Abstractions.Middlewares
+  commentId: N:Falcon.Infrastructure.Abstractions.Middlewares
+  id: Falcon.Infrastructure.Abstractions.Middlewares
+  children:
+  - Falcon.Infrastructure.Abstractions.Middlewares.ExceptionHandlingMiddleware
+  langs:
+  - csharp
+  - vb
+  name: Falcon.Infrastructure.Abstractions.Middlewares
+  nameWithType: Falcon.Infrastructure.Abstractions.Middlewares
+  fullName: Falcon.Infrastructure.Abstractions.Middlewares
+  type: Namespace
+  assemblies:
+  - Falcon.Infrastructure.Abstractions
+references:
+- uid: Falcon.Infrastructure.Abstractions.Middlewares.ExceptionHandlingMiddleware
+  commentId: T:Falcon.Infrastructure.Abstractions.Middlewares.ExceptionHandlingMiddleware
+  href: Falcon.Infrastructure.Abstractions.Middlewares.ExceptionHandlingMiddleware.html
+  name: ExceptionHandlingMiddleware
+  nameWithType: ExceptionHandlingMiddleware
+  fullName: Falcon.Infrastructure.Abstractions.Middlewares.ExceptionHandlingMiddleware

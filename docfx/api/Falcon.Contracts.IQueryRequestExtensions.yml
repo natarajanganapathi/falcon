@@ -1,0 +1,1088 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Contracts.IQueryRequestExtensions
+  commentId: T:Falcon.Contracts.IQueryRequestExtensions
+  id: IQueryRequestExtensions
+  parent: Falcon.Contracts
+  children:
+  - Falcon.Contracts.IQueryRequestExtensions.AndWhere(Falcon.Contracts.IQueryRequest,System.Func{Falcon.Contracts.CompositeFilter,Falcon.Contracts.CompositeFilter})
+  - Falcon.Contracts.IQueryRequestExtensions.Include(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Include)
+  - Falcon.Contracts.IQueryRequestExtensions.Include(Falcon.Contracts.IQueryRequest,System.String)
+  - Falcon.Contracts.IQueryRequestExtensions.Includes(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Include[])
+  - Falcon.Contracts.IQueryRequestExtensions.NextPage(Falcon.Contracts.IQueryRequest)
+  - Falcon.Contracts.IQueryRequestExtensions.OrWhere(Falcon.Contracts.IQueryRequest,System.Func{Falcon.Contracts.CompositeFilter,Falcon.Contracts.CompositeFilter})
+  - Falcon.Contracts.IQueryRequestExtensions.Page(Falcon.Contracts.IQueryRequest,Falcon.Contracts.PageContext)
+  - Falcon.Contracts.IQueryRequestExtensions.Page(Falcon.Contracts.IQueryRequest,System.Int32,System.Int32)
+  - Falcon.Contracts.IQueryRequestExtensions.Select(Falcon.Contracts.IQueryRequest,System.String[])
+  - Falcon.Contracts.IQueryRequestExtensions.Sort(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Sort)
+  - Falcon.Contracts.IQueryRequestExtensions.Sort(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Sort[])
+  - Falcon.Contracts.IQueryRequestExtensions.Sort(Falcon.Contracts.IQueryRequest,System.String,Falcon.Contracts.Direction)
+  - Falcon.Contracts.IQueryRequestExtensions.Where(Falcon.Contracts.IQueryRequest,Falcon.Contracts.IFilter)
+  - Falcon.Contracts.IQueryRequestExtensions.Where(Falcon.Contracts.IQueryRequest,System.String,Falcon.Contracts.FieldOperator,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IQueryRequestExtensions
+  nameWithType: IQueryRequestExtensions
+  fullName: Falcon.Contracts.IQueryRequestExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/QueryRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: IQueryRequestExtensions
+    path: ../src/Shared/Contracts/Request/QueryRequest.cs
+    startLine: 21
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public static class IQueryRequestExtensions
+    content.vb: Public Module IQueryRequestExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Falcon.Contracts.IQueryRequestExtensions.Select(Falcon.Contracts.IQueryRequest,System.String[])
+  commentId: M:Falcon.Contracts.IQueryRequestExtensions.Select(Falcon.Contracts.IQueryRequest,System.String[])
+  id: Select(Falcon.Contracts.IQueryRequest,System.String[])
+  isExtensionMethod: true
+  parent: Falcon.Contracts.IQueryRequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: Select(IQueryRequest, params string[])
+  nameWithType: IQueryRequestExtensions.Select(IQueryRequest, params string[])
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Select(Falcon.Contracts.IQueryRequest, params string[])
+  type: Method
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/QueryRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Select
+    path: ../src/Shared/Contracts/Request/QueryRequest.cs
+    startLine: 24
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public static IQueryRequest Select(this IQueryRequest request, params string[] fields)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: fields
+      type: System.String[]
+    return:
+      type: Falcon.Contracts.IQueryRequest
+    content.vb: Public Shared Function [Select](request As IQueryRequest, ParamArray fields As String()) As IQueryRequest
+  overload: Falcon.Contracts.IQueryRequestExtensions.Select*
+  nameWithType.vb: IQueryRequestExtensions.Select(IQueryRequest, ParamArray String())
+  fullName.vb: Falcon.Contracts.IQueryRequestExtensions.Select(Falcon.Contracts.IQueryRequest, ParamArray String())
+  name.vb: Select(IQueryRequest, ParamArray String())
+- uid: Falcon.Contracts.IQueryRequestExtensions.AndWhere(Falcon.Contracts.IQueryRequest,System.Func{Falcon.Contracts.CompositeFilter,Falcon.Contracts.CompositeFilter})
+  commentId: M:Falcon.Contracts.IQueryRequestExtensions.AndWhere(Falcon.Contracts.IQueryRequest,System.Func{Falcon.Contracts.CompositeFilter,Falcon.Contracts.CompositeFilter})
+  id: AndWhere(Falcon.Contracts.IQueryRequest,System.Func{Falcon.Contracts.CompositeFilter,Falcon.Contracts.CompositeFilter})
+  isExtensionMethod: true
+  parent: Falcon.Contracts.IQueryRequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: AndWhere(IQueryRequest, Func<CompositeFilter, CompositeFilter>)
+  nameWithType: IQueryRequestExtensions.AndWhere(IQueryRequest, Func<CompositeFilter, CompositeFilter>)
+  fullName: Falcon.Contracts.IQueryRequestExtensions.AndWhere(Falcon.Contracts.IQueryRequest, System.Func<Falcon.Contracts.CompositeFilter, Falcon.Contracts.CompositeFilter>)
+  type: Method
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/QueryRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: AndWhere
+    path: ../src/Shared/Contracts/Request/QueryRequest.cs
+    startLine: 32
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public static IQueryRequest AndWhere(this IQueryRequest request, Func<CompositeFilter, CompositeFilter> filterAction)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: filterAction
+      type: System.Func{Falcon.Contracts.CompositeFilter,Falcon.Contracts.CompositeFilter}
+    return:
+      type: Falcon.Contracts.IQueryRequest
+    content.vb: Public Shared Function AndWhere(request As IQueryRequest, filterAction As Func(Of CompositeFilter, CompositeFilter)) As IQueryRequest
+  overload: Falcon.Contracts.IQueryRequestExtensions.AndWhere*
+  nameWithType.vb: IQueryRequestExtensions.AndWhere(IQueryRequest, Func(Of CompositeFilter, CompositeFilter))
+  fullName.vb: Falcon.Contracts.IQueryRequestExtensions.AndWhere(Falcon.Contracts.IQueryRequest, System.Func(Of Falcon.Contracts.CompositeFilter, Falcon.Contracts.CompositeFilter))
+  name.vb: AndWhere(IQueryRequest, Func(Of CompositeFilter, CompositeFilter))
+- uid: Falcon.Contracts.IQueryRequestExtensions.OrWhere(Falcon.Contracts.IQueryRequest,System.Func{Falcon.Contracts.CompositeFilter,Falcon.Contracts.CompositeFilter})
+  commentId: M:Falcon.Contracts.IQueryRequestExtensions.OrWhere(Falcon.Contracts.IQueryRequest,System.Func{Falcon.Contracts.CompositeFilter,Falcon.Contracts.CompositeFilter})
+  id: OrWhere(Falcon.Contracts.IQueryRequest,System.Func{Falcon.Contracts.CompositeFilter,Falcon.Contracts.CompositeFilter})
+  isExtensionMethod: true
+  parent: Falcon.Contracts.IQueryRequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: OrWhere(IQueryRequest, Func<CompositeFilter, CompositeFilter>)
+  nameWithType: IQueryRequestExtensions.OrWhere(IQueryRequest, Func<CompositeFilter, CompositeFilter>)
+  fullName: Falcon.Contracts.IQueryRequestExtensions.OrWhere(Falcon.Contracts.IQueryRequest, System.Func<Falcon.Contracts.CompositeFilter, Falcon.Contracts.CompositeFilter>)
+  type: Method
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/QueryRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: OrWhere
+    path: ../src/Shared/Contracts/Request/QueryRequest.cs
+    startLine: 36
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public static IQueryRequest OrWhere(this IQueryRequest request, Func<CompositeFilter, CompositeFilter> filterAction)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: filterAction
+      type: System.Func{Falcon.Contracts.CompositeFilter,Falcon.Contracts.CompositeFilter}
+    return:
+      type: Falcon.Contracts.IQueryRequest
+    content.vb: Public Shared Function OrWhere(request As IQueryRequest, filterAction As Func(Of CompositeFilter, CompositeFilter)) As IQueryRequest
+  overload: Falcon.Contracts.IQueryRequestExtensions.OrWhere*
+  nameWithType.vb: IQueryRequestExtensions.OrWhere(IQueryRequest, Func(Of CompositeFilter, CompositeFilter))
+  fullName.vb: Falcon.Contracts.IQueryRequestExtensions.OrWhere(Falcon.Contracts.IQueryRequest, System.Func(Of Falcon.Contracts.CompositeFilter, Falcon.Contracts.CompositeFilter))
+  name.vb: OrWhere(IQueryRequest, Func(Of CompositeFilter, CompositeFilter))
+- uid: Falcon.Contracts.IQueryRequestExtensions.Where(Falcon.Contracts.IQueryRequest,System.String,Falcon.Contracts.FieldOperator,System.Object)
+  commentId: M:Falcon.Contracts.IQueryRequestExtensions.Where(Falcon.Contracts.IQueryRequest,System.String,Falcon.Contracts.FieldOperator,System.Object)
+  id: Where(Falcon.Contracts.IQueryRequest,System.String,Falcon.Contracts.FieldOperator,System.Object)
+  isExtensionMethod: true
+  parent: Falcon.Contracts.IQueryRequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: Where(IQueryRequest, string, FieldOperator, object)
+  nameWithType: IQueryRequestExtensions.Where(IQueryRequest, string, FieldOperator, object)
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Where(Falcon.Contracts.IQueryRequest, string, Falcon.Contracts.FieldOperator, object)
+  type: Method
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/QueryRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Where
+    path: ../src/Shared/Contracts/Request/QueryRequest.cs
+    startLine: 40
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public static IQueryRequest Where(this IQueryRequest request, string field, FieldOperator op, object value)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: field
+      type: System.String
+    - id: op
+      type: Falcon.Contracts.FieldOperator
+    - id: value
+      type: System.Object
+    return:
+      type: Falcon.Contracts.IQueryRequest
+    content.vb: Public Shared Function Where(request As IQueryRequest, field As String, op As FieldOperator, value As Object) As IQueryRequest
+  overload: Falcon.Contracts.IQueryRequestExtensions.Where*
+  nameWithType.vb: IQueryRequestExtensions.Where(IQueryRequest, String, FieldOperator, Object)
+  fullName.vb: Falcon.Contracts.IQueryRequestExtensions.Where(Falcon.Contracts.IQueryRequest, String, Falcon.Contracts.FieldOperator, Object)
+  name.vb: Where(IQueryRequest, String, FieldOperator, Object)
+- uid: Falcon.Contracts.IQueryRequestExtensions.Where(Falcon.Contracts.IQueryRequest,Falcon.Contracts.IFilter)
+  commentId: M:Falcon.Contracts.IQueryRequestExtensions.Where(Falcon.Contracts.IQueryRequest,Falcon.Contracts.IFilter)
+  id: Where(Falcon.Contracts.IQueryRequest,Falcon.Contracts.IFilter)
+  isExtensionMethod: true
+  parent: Falcon.Contracts.IQueryRequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: Where(IQueryRequest, IFilter)
+  nameWithType: IQueryRequestExtensions.Where(IQueryRequest, IFilter)
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Where(Falcon.Contracts.IQueryRequest, Falcon.Contracts.IFilter)
+  type: Method
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/QueryRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Where
+    path: ../src/Shared/Contracts/Request/QueryRequest.cs
+    startLine: 44
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public static IQueryRequest Where(this IQueryRequest request, IFilter filter)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: filter
+      type: Falcon.Contracts.IFilter
+    return:
+      type: Falcon.Contracts.IQueryRequest
+    content.vb: Public Shared Function Where(request As IQueryRequest, filter As IFilter) As IQueryRequest
+  overload: Falcon.Contracts.IQueryRequestExtensions.Where*
+- uid: Falcon.Contracts.IQueryRequestExtensions.Include(Falcon.Contracts.IQueryRequest,System.String)
+  commentId: M:Falcon.Contracts.IQueryRequestExtensions.Include(Falcon.Contracts.IQueryRequest,System.String)
+  id: Include(Falcon.Contracts.IQueryRequest,System.String)
+  isExtensionMethod: true
+  parent: Falcon.Contracts.IQueryRequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: Include(IQueryRequest, string)
+  nameWithType: IQueryRequestExtensions.Include(IQueryRequest, string)
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Include(Falcon.Contracts.IQueryRequest, string)
+  type: Method
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/QueryRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Include
+    path: ../src/Shared/Contracts/Request/QueryRequest.cs
+    startLine: 51
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public static IQueryRequest Include(this IQueryRequest request, string name)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: name
+      type: System.String
+    return:
+      type: Falcon.Contracts.IQueryRequest
+    content.vb: Public Shared Function Include(request As IQueryRequest, name As String) As IQueryRequest
+  overload: Falcon.Contracts.IQueryRequestExtensions.Include*
+  nameWithType.vb: IQueryRequestExtensions.Include(IQueryRequest, String)
+  fullName.vb: Falcon.Contracts.IQueryRequestExtensions.Include(Falcon.Contracts.IQueryRequest, String)
+  name.vb: Include(IQueryRequest, String)
+- uid: Falcon.Contracts.IQueryRequestExtensions.Include(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Include)
+  commentId: M:Falcon.Contracts.IQueryRequestExtensions.Include(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Include)
+  id: Include(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Include)
+  isExtensionMethod: true
+  parent: Falcon.Contracts.IQueryRequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: Include(IQueryRequest, Include)
+  nameWithType: IQueryRequestExtensions.Include(IQueryRequest, Include)
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Include(Falcon.Contracts.IQueryRequest, Falcon.Contracts.Include)
+  type: Method
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/QueryRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Include
+    path: ../src/Shared/Contracts/Request/QueryRequest.cs
+    startLine: 55
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public static IQueryRequest Include(this IQueryRequest request, Include include)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: include
+      type: Falcon.Contracts.Include
+    return:
+      type: Falcon.Contracts.IQueryRequest
+    content.vb: Public Shared Function Include(request As IQueryRequest, include As Include) As IQueryRequest
+  overload: Falcon.Contracts.IQueryRequestExtensions.Include*
+- uid: Falcon.Contracts.IQueryRequestExtensions.Includes(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Include[])
+  commentId: M:Falcon.Contracts.IQueryRequestExtensions.Includes(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Include[])
+  id: Includes(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Include[])
+  isExtensionMethod: true
+  parent: Falcon.Contracts.IQueryRequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: Includes(IQueryRequest, params Include[])
+  nameWithType: IQueryRequestExtensions.Includes(IQueryRequest, params Include[])
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Includes(Falcon.Contracts.IQueryRequest, params Falcon.Contracts.Include[])
+  type: Method
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/QueryRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Includes
+    path: ../src/Shared/Contracts/Request/QueryRequest.cs
+    startLine: 60
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public static IQueryRequest Includes(this IQueryRequest request, params Include[] includes)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: includes
+      type: Falcon.Contracts.Include[]
+    return:
+      type: Falcon.Contracts.IQueryRequest
+    content.vb: Public Shared Function Includes(request As IQueryRequest, ParamArray includes As Include()) As IQueryRequest
+  overload: Falcon.Contracts.IQueryRequestExtensions.Includes*
+  nameWithType.vb: IQueryRequestExtensions.Includes(IQueryRequest, ParamArray Include())
+  fullName.vb: Falcon.Contracts.IQueryRequestExtensions.Includes(Falcon.Contracts.IQueryRequest, ParamArray Falcon.Contracts.Include())
+  name.vb: Includes(IQueryRequest, ParamArray Include())
+- uid: Falcon.Contracts.IQueryRequestExtensions.Sort(Falcon.Contracts.IQueryRequest,System.String,Falcon.Contracts.Direction)
+  commentId: M:Falcon.Contracts.IQueryRequestExtensions.Sort(Falcon.Contracts.IQueryRequest,System.String,Falcon.Contracts.Direction)
+  id: Sort(Falcon.Contracts.IQueryRequest,System.String,Falcon.Contracts.Direction)
+  isExtensionMethod: true
+  parent: Falcon.Contracts.IQueryRequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: Sort(IQueryRequest, string, Direction)
+  nameWithType: IQueryRequestExtensions.Sort(IQueryRequest, string, Direction)
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Sort(Falcon.Contracts.IQueryRequest, string, Falcon.Contracts.Direction)
+  type: Method
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/QueryRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Sort
+    path: ../src/Shared/Contracts/Request/QueryRequest.cs
+    startLine: 67
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public static IQueryRequest Sort(this IQueryRequest request, string field, Direction direction)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: field
+      type: System.String
+    - id: direction
+      type: Falcon.Contracts.Direction
+    return:
+      type: Falcon.Contracts.IQueryRequest
+    content.vb: Public Shared Function Sort(request As IQueryRequest, field As String, direction As Direction) As IQueryRequest
+  overload: Falcon.Contracts.IQueryRequestExtensions.Sort*
+  nameWithType.vb: IQueryRequestExtensions.Sort(IQueryRequest, String, Direction)
+  fullName.vb: Falcon.Contracts.IQueryRequestExtensions.Sort(Falcon.Contracts.IQueryRequest, String, Falcon.Contracts.Direction)
+  name.vb: Sort(IQueryRequest, String, Direction)
+- uid: Falcon.Contracts.IQueryRequestExtensions.Sort(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Sort)
+  commentId: M:Falcon.Contracts.IQueryRequestExtensions.Sort(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Sort)
+  id: Sort(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Sort)
+  isExtensionMethod: true
+  parent: Falcon.Contracts.IQueryRequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: Sort(IQueryRequest, Sort)
+  nameWithType: IQueryRequestExtensions.Sort(IQueryRequest, Sort)
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Sort(Falcon.Contracts.IQueryRequest, Falcon.Contracts.Sort)
+  type: Method
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/QueryRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Sort
+    path: ../src/Shared/Contracts/Request/QueryRequest.cs
+    startLine: 71
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public static IQueryRequest Sort(this IQueryRequest request, Sort sort)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: sort
+      type: Falcon.Contracts.Sort
+    return:
+      type: Falcon.Contracts.IQueryRequest
+    content.vb: Public Shared Function Sort(request As IQueryRequest, sort As Sort) As IQueryRequest
+  overload: Falcon.Contracts.IQueryRequestExtensions.Sort*
+- uid: Falcon.Contracts.IQueryRequestExtensions.Sort(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Sort[])
+  commentId: M:Falcon.Contracts.IQueryRequestExtensions.Sort(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Sort[])
+  id: Sort(Falcon.Contracts.IQueryRequest,Falcon.Contracts.Sort[])
+  isExtensionMethod: true
+  parent: Falcon.Contracts.IQueryRequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: Sort(IQueryRequest, Sort[])
+  nameWithType: IQueryRequestExtensions.Sort(IQueryRequest, Sort[])
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Sort(Falcon.Contracts.IQueryRequest, Falcon.Contracts.Sort[])
+  type: Method
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/QueryRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Sort
+    path: ../src/Shared/Contracts/Request/QueryRequest.cs
+    startLine: 75
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public static IQueryRequest Sort(this IQueryRequest request, Sort[] sort)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: sort
+      type: Falcon.Contracts.Sort[]
+    return:
+      type: Falcon.Contracts.IQueryRequest
+    content.vb: Public Shared Function Sort(request As IQueryRequest, sort As Sort()) As IQueryRequest
+  overload: Falcon.Contracts.IQueryRequestExtensions.Sort*
+  nameWithType.vb: IQueryRequestExtensions.Sort(IQueryRequest, Sort())
+  fullName.vb: Falcon.Contracts.IQueryRequestExtensions.Sort(Falcon.Contracts.IQueryRequest, Falcon.Contracts.Sort())
+  name.vb: Sort(IQueryRequest, Sort())
+- uid: Falcon.Contracts.IQueryRequestExtensions.Page(Falcon.Contracts.IQueryRequest,System.Int32,System.Int32)
+  commentId: M:Falcon.Contracts.IQueryRequestExtensions.Page(Falcon.Contracts.IQueryRequest,System.Int32,System.Int32)
+  id: Page(Falcon.Contracts.IQueryRequest,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Falcon.Contracts.IQueryRequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: Page(IQueryRequest, int, int)
+  nameWithType: IQueryRequestExtensions.Page(IQueryRequest, int, int)
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Page(Falcon.Contracts.IQueryRequest, int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/QueryRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Page
+    path: ../src/Shared/Contracts/Request/QueryRequest.cs
+    startLine: 82
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public static IQueryRequest Page(this IQueryRequest request, int pageNo, int pageSize)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: pageNo
+      type: System.Int32
+    - id: pageSize
+      type: System.Int32
+    return:
+      type: Falcon.Contracts.IQueryRequest
+    content.vb: Public Shared Function Page(request As IQueryRequest, pageNo As Integer, pageSize As Integer) As IQueryRequest
+  overload: Falcon.Contracts.IQueryRequestExtensions.Page*
+  nameWithType.vb: IQueryRequestExtensions.Page(IQueryRequest, Integer, Integer)
+  fullName.vb: Falcon.Contracts.IQueryRequestExtensions.Page(Falcon.Contracts.IQueryRequest, Integer, Integer)
+  name.vb: Page(IQueryRequest, Integer, Integer)
+- uid: Falcon.Contracts.IQueryRequestExtensions.Page(Falcon.Contracts.IQueryRequest,Falcon.Contracts.PageContext)
+  commentId: M:Falcon.Contracts.IQueryRequestExtensions.Page(Falcon.Contracts.IQueryRequest,Falcon.Contracts.PageContext)
+  id: Page(Falcon.Contracts.IQueryRequest,Falcon.Contracts.PageContext)
+  isExtensionMethod: true
+  parent: Falcon.Contracts.IQueryRequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: Page(IQueryRequest, PageContext)
+  nameWithType: IQueryRequestExtensions.Page(IQueryRequest, PageContext)
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Page(Falcon.Contracts.IQueryRequest, Falcon.Contracts.PageContext)
+  type: Method
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/QueryRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Page
+    path: ../src/Shared/Contracts/Request/QueryRequest.cs
+    startLine: 86
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public static IQueryRequest Page(this IQueryRequest request, PageContext page)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: page
+      type: Falcon.Contracts.PageContext
+    return:
+      type: Falcon.Contracts.IQueryRequest
+    content.vb: Public Shared Function Page(request As IQueryRequest, page As PageContext) As IQueryRequest
+  overload: Falcon.Contracts.IQueryRequestExtensions.Page*
+- uid: Falcon.Contracts.IQueryRequestExtensions.NextPage(Falcon.Contracts.IQueryRequest)
+  commentId: M:Falcon.Contracts.IQueryRequestExtensions.NextPage(Falcon.Contracts.IQueryRequest)
+  id: NextPage(Falcon.Contracts.IQueryRequest)
+  isExtensionMethod: true
+  parent: Falcon.Contracts.IQueryRequestExtensions
+  langs:
+  - csharp
+  - vb
+  name: NextPage(IQueryRequest)
+  nameWithType: IQueryRequestExtensions.NextPage(IQueryRequest)
+  fullName: Falcon.Contracts.IQueryRequestExtensions.NextPage(Falcon.Contracts.IQueryRequest)
+  type: Method
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/QueryRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: NextPage
+    path: ../src/Shared/Contracts/Request/QueryRequest.cs
+    startLine: 91
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public static IQueryRequest NextPage(this IQueryRequest request)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    return:
+      type: Falcon.Contracts.IQueryRequest
+    content.vb: Public Shared Function NextPage(request As IQueryRequest) As IQueryRequest
+  overload: Falcon.Contracts.IQueryRequestExtensions.NextPage*
+references:
+- uid: Falcon.Contracts
+  commentId: N:Falcon.Contracts
+  href: Falcon.html
+  name: Falcon.Contracts
+  nameWithType: Falcon.Contracts
+  fullName: Falcon.Contracts
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Falcon.Contracts.IQueryRequestExtensions.Select*
+  commentId: Overload:Falcon.Contracts.IQueryRequestExtensions.Select
+  href: Falcon.Contracts.IQueryRequestExtensions.html#Falcon_Contracts_IQueryRequestExtensions_Select_Falcon_Contracts_IQueryRequest_System_String___
+  name: Select
+  nameWithType: IQueryRequestExtensions.Select
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Select
+- uid: Falcon.Contracts.IQueryRequest
+  commentId: T:Falcon.Contracts.IQueryRequest
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IQueryRequest.html
+  name: IQueryRequest
+  nameWithType: IQueryRequest
+  fullName: Falcon.Contracts.IQueryRequest
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Falcon.Contracts.IQueryRequestExtensions.AndWhere*
+  commentId: Overload:Falcon.Contracts.IQueryRequestExtensions.AndWhere
+  href: Falcon.Contracts.IQueryRequestExtensions.html#Falcon_Contracts_IQueryRequestExtensions_AndWhere_Falcon_Contracts_IQueryRequest_System_Func_Falcon_Contracts_CompositeFilter_Falcon_Contracts_CompositeFilter__
+  name: AndWhere
+  nameWithType: IQueryRequestExtensions.AndWhere
+  fullName: Falcon.Contracts.IQueryRequestExtensions.AndWhere
+- uid: System.Func{Falcon.Contracts.CompositeFilter,Falcon.Contracts.CompositeFilter}
+  commentId: T:System.Func{Falcon.Contracts.CompositeFilter,Falcon.Contracts.CompositeFilter}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<CompositeFilter, CompositeFilter>
+  nameWithType: Func<CompositeFilter, CompositeFilter>
+  fullName: System.Func<Falcon.Contracts.CompositeFilter, Falcon.Contracts.CompositeFilter>
+  nameWithType.vb: Func(Of CompositeFilter, CompositeFilter)
+  fullName.vb: System.Func(Of Falcon.Contracts.CompositeFilter, Falcon.Contracts.CompositeFilter)
+  name.vb: Func(Of CompositeFilter, CompositeFilter)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Falcon.Contracts.CompositeFilter
+    name: CompositeFilter
+    href: Falcon.Contracts.CompositeFilter.html
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.CompositeFilter
+    name: CompositeFilter
+    href: Falcon.Contracts.CompositeFilter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Falcon.Contracts.CompositeFilter
+    name: CompositeFilter
+    href: Falcon.Contracts.CompositeFilter.html
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.CompositeFilter
+    name: CompositeFilter
+    href: Falcon.Contracts.CompositeFilter.html
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Falcon.Contracts.IQueryRequestExtensions.OrWhere*
+  commentId: Overload:Falcon.Contracts.IQueryRequestExtensions.OrWhere
+  href: Falcon.Contracts.IQueryRequestExtensions.html#Falcon_Contracts_IQueryRequestExtensions_OrWhere_Falcon_Contracts_IQueryRequest_System_Func_Falcon_Contracts_CompositeFilter_Falcon_Contracts_CompositeFilter__
+  name: OrWhere
+  nameWithType: IQueryRequestExtensions.OrWhere
+  fullName: Falcon.Contracts.IQueryRequestExtensions.OrWhere
+- uid: Falcon.Contracts.IQueryRequestExtensions.Where*
+  commentId: Overload:Falcon.Contracts.IQueryRequestExtensions.Where
+  href: Falcon.Contracts.IQueryRequestExtensions.html#Falcon_Contracts_IQueryRequestExtensions_Where_Falcon_Contracts_IQueryRequest_System_String_Falcon_Contracts_FieldOperator_System_Object_
+  name: Where
+  nameWithType: IQueryRequestExtensions.Where
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Where
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Falcon.Contracts.FieldOperator
+  commentId: T:Falcon.Contracts.FieldOperator
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.FieldOperator.html
+  name: FieldOperator
+  nameWithType: FieldOperator
+  fullName: Falcon.Contracts.FieldOperator
+- uid: Falcon.Contracts.IFilter
+  commentId: T:Falcon.Contracts.IFilter
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IFilter.html
+  name: IFilter
+  nameWithType: IFilter
+  fullName: Falcon.Contracts.IFilter
+- uid: Falcon.Contracts.IQueryRequestExtensions.Include*
+  commentId: Overload:Falcon.Contracts.IQueryRequestExtensions.Include
+  href: Falcon.Contracts.IQueryRequestExtensions.html#Falcon_Contracts_IQueryRequestExtensions_Include_Falcon_Contracts_IQueryRequest_System_String_
+  name: Include
+  nameWithType: IQueryRequestExtensions.Include
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Include
+- uid: Falcon.Contracts.Include
+  commentId: T:Falcon.Contracts.Include
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.Include.html
+  name: Include
+  nameWithType: Include
+  fullName: Falcon.Contracts.Include
+- uid: Falcon.Contracts.IQueryRequestExtensions.Includes*
+  commentId: Overload:Falcon.Contracts.IQueryRequestExtensions.Includes
+  href: Falcon.Contracts.IQueryRequestExtensions.html#Falcon_Contracts_IQueryRequestExtensions_Includes_Falcon_Contracts_IQueryRequest_Falcon_Contracts_Include___
+  name: Includes
+  nameWithType: IQueryRequestExtensions.Includes
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Includes
+- uid: Falcon.Contracts.Include[]
+  isExternal: true
+  href: Falcon.Contracts.Include.html
+  name: Include[]
+  nameWithType: Include[]
+  fullName: Falcon.Contracts.Include[]
+  nameWithType.vb: Include()
+  fullName.vb: Falcon.Contracts.Include()
+  name.vb: Include()
+  spec.csharp:
+  - uid: Falcon.Contracts.Include
+    name: Include
+    href: Falcon.Contracts.Include.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Falcon.Contracts.Include
+    name: Include
+    href: Falcon.Contracts.Include.html
+  - name: (
+  - name: )
+- uid: Falcon.Contracts.IQueryRequestExtensions.Sort*
+  commentId: Overload:Falcon.Contracts.IQueryRequestExtensions.Sort
+  href: Falcon.Contracts.IQueryRequestExtensions.html#Falcon_Contracts_IQueryRequestExtensions_Sort_Falcon_Contracts_IQueryRequest_System_String_Falcon_Contracts_Direction_
+  name: Sort
+  nameWithType: IQueryRequestExtensions.Sort
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Sort
+- uid: Falcon.Contracts.Direction
+  commentId: T:Falcon.Contracts.Direction
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.Direction.html
+  name: Direction
+  nameWithType: Direction
+  fullName: Falcon.Contracts.Direction
+- uid: Falcon.Contracts.Sort
+  commentId: T:Falcon.Contracts.Sort
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.Sort.html
+  name: Sort
+  nameWithType: Sort
+  fullName: Falcon.Contracts.Sort
+- uid: Falcon.Contracts.Sort[]
+  isExternal: true
+  href: Falcon.Contracts.Sort.html
+  name: Sort[]
+  nameWithType: Sort[]
+  fullName: Falcon.Contracts.Sort[]
+  nameWithType.vb: Sort()
+  fullName.vb: Falcon.Contracts.Sort()
+  name.vb: Sort()
+  spec.csharp:
+  - uid: Falcon.Contracts.Sort
+    name: Sort
+    href: Falcon.Contracts.Sort.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Falcon.Contracts.Sort
+    name: Sort
+    href: Falcon.Contracts.Sort.html
+  - name: (
+  - name: )
+- uid: Falcon.Contracts.IQueryRequestExtensions.Page*
+  commentId: Overload:Falcon.Contracts.IQueryRequestExtensions.Page
+  href: Falcon.Contracts.IQueryRequestExtensions.html#Falcon_Contracts_IQueryRequestExtensions_Page_Falcon_Contracts_IQueryRequest_System_Int32_System_Int32_
+  name: Page
+  nameWithType: IQueryRequestExtensions.Page
+  fullName: Falcon.Contracts.IQueryRequestExtensions.Page
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Falcon.Contracts.PageContext
+  commentId: T:Falcon.Contracts.PageContext
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.PageContext.html
+  name: PageContext
+  nameWithType: PageContext
+  fullName: Falcon.Contracts.PageContext
+- uid: Falcon.Contracts.IQueryRequestExtensions.NextPage*
+  commentId: Overload:Falcon.Contracts.IQueryRequestExtensions.NextPage
+  href: Falcon.Contracts.IQueryRequestExtensions.html#Falcon_Contracts_IQueryRequestExtensions_NextPage_Falcon_Contracts_IQueryRequest_
+  name: NextPage
+  nameWithType: IQueryRequestExtensions.NextPage
+  fullName: Falcon.Contracts.IQueryRequestExtensions.NextPage

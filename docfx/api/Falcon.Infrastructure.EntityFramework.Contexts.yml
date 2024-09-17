@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Infrastructure.EntityFramework.Contexts
+  commentId: N:Falcon.Infrastructure.EntityFramework.Contexts
+  id: Falcon.Infrastructure.EntityFramework.Contexts
+  children:
+  - Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+  - Falcon.Infrastructure.EntityFramework.Contexts.ModelConfigurations
+  - Falcon.Infrastructure.EntityFramework.Contexts.SqlDbContext
+  - Falcon.Infrastructure.EntityFramework.Contexts.SqlDbContextOptions
+  langs:
+  - csharp
+  - vb
+  name: Falcon.Infrastructure.EntityFramework.Contexts
+  nameWithType: Falcon.Infrastructure.EntityFramework.Contexts
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts
+  type: Namespace
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework
+references:
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+  commentId: T:Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+  parent: Falcon.Infrastructure.EntityFramework.Contexts
+  href: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.html
+  name: ISqlDbModelConfiguration
+  nameWithType: ISqlDbModelConfiguration
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.ModelConfigurations
+  commentId: T:Falcon.Infrastructure.EntityFramework.Contexts.ModelConfigurations
+  parent: Falcon.Infrastructure.EntityFramework.Contexts
+  href: Falcon.Infrastructure.EntityFramework.Contexts.ModelConfigurations.html
+  name: ModelConfigurations
+  nameWithType: ModelConfigurations
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.ModelConfigurations
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.SqlDbContext
+  commentId: T:Falcon.Infrastructure.EntityFramework.Contexts.SqlDbContext
+  parent: Falcon.Infrastructure.EntityFramework.Contexts
+  href: Falcon.Infrastructure.EntityFramework.Contexts.SqlDbContext.html
+  name: SqlDbContext
+  nameWithType: SqlDbContext
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.SqlDbContext
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.SqlDbContextOptions
+  commentId: T:Falcon.Infrastructure.EntityFramework.Contexts.SqlDbContextOptions
+  parent: Falcon.Infrastructure.EntityFramework.Contexts
+  href: Falcon.Infrastructure.EntityFramework.Contexts.SqlDbContextOptions.html
+  name: SqlDbContextOptions
+  nameWithType: SqlDbContextOptions
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.SqlDbContextOptions
+- uid: Falcon.Infrastructure.EntityFramework.Contexts
+  commentId: N:Falcon.Infrastructure.EntityFramework.Contexts
+  href: Falcon.html
+  name: Falcon.Infrastructure.EntityFramework.Contexts
+  nameWithType: Falcon.Infrastructure.EntityFramework.Contexts
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts
+    name: Contexts
+    href: Falcon.Infrastructure.EntityFramework.Contexts.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts
+    name: Contexts
+    href: Falcon.Infrastructure.EntityFramework.Contexts.html

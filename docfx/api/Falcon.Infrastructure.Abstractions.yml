@@ -1,0 +1,265 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Infrastructure.Abstractions
+  commentId: N:Falcon.Infrastructure.Abstractions
+  id: Falcon.Infrastructure.Abstractions
+  children:
+  - Falcon.Infrastructure.Abstractions.AssemblyCache
+  - Falcon.Infrastructure.Abstractions.CreateEntityException
+  - Falcon.Infrastructure.Abstractions.DbConfig
+  - Falcon.Infrastructure.Abstractions.DeleteEntityException
+  - Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  - Falcon.Infrastructure.Abstractions.IDbContextOptionsProvider
+  - Falcon.Infrastructure.Abstractions.IRepositoryProvider
+  - Falcon.Infrastructure.Abstractions.IRequestContext`1
+  - Falcon.Infrastructure.Abstractions.ITenant
+  - Falcon.Infrastructure.Abstractions.ITenantOptions`1
+  - Falcon.Infrastructure.Abstractions.ModuleExtensions
+  - Falcon.Infrastructure.Abstractions.PagedResult`1
+  - Falcon.Infrastructure.Abstractions.PersistenceException
+  - Falcon.Infrastructure.Abstractions.QueryEntityException
+  - Falcon.Infrastructure.Abstractions.RequestContext`1
+  - Falcon.Infrastructure.Abstractions.TenantOptions`1
+  - Falcon.Infrastructure.Abstractions.UpdateEntityException
+  langs:
+  - csharp
+  - vb
+  name: Falcon.Infrastructure.Abstractions
+  nameWithType: Falcon.Infrastructure.Abstractions
+  fullName: Falcon.Infrastructure.Abstractions
+  type: Namespace
+  assemblies:
+  - Falcon.Infrastructure.Abstractions
+references:
+- uid: Falcon.Infrastructure.Abstractions.AssemblyCache
+  commentId: T:Falcon.Infrastructure.Abstractions.AssemblyCache
+  href: Falcon.Infrastructure.Abstractions.AssemblyCache.html
+  name: AssemblyCache
+  nameWithType: AssemblyCache
+  fullName: Falcon.Infrastructure.Abstractions.AssemblyCache
+- uid: Falcon.Infrastructure.Abstractions.TenantOptions`1
+  commentId: T:Falcon.Infrastructure.Abstractions.TenantOptions`1
+  href: Falcon.Infrastructure.Abstractions.TenantOptions-1.html
+  name: TenantOptions<TOptions>
+  nameWithType: TenantOptions<TOptions>
+  fullName: Falcon.Infrastructure.Abstractions.TenantOptions<TOptions>
+  nameWithType.vb: TenantOptions(Of TOptions)
+  fullName.vb: Falcon.Infrastructure.Abstractions.TenantOptions(Of TOptions)
+  name.vb: TenantOptions(Of TOptions)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.TenantOptions`1
+    name: TenantOptions
+    href: Falcon.Infrastructure.Abstractions.TenantOptions-1.html
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.TenantOptions`1
+    name: TenantOptions
+    href: Falcon.Infrastructure.Abstractions.TenantOptions-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.PersistenceException
+  commentId: T:Falcon.Infrastructure.Abstractions.PersistenceException
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.PersistenceException.html
+  name: PersistenceException
+  nameWithType: PersistenceException
+  fullName: Falcon.Infrastructure.Abstractions.PersistenceException
+- uid: Falcon.Infrastructure.Abstractions.CreateEntityException
+  commentId: T:Falcon.Infrastructure.Abstractions.CreateEntityException
+  href: Falcon.Infrastructure.Abstractions.CreateEntityException.html
+  name: CreateEntityException
+  nameWithType: CreateEntityException
+  fullName: Falcon.Infrastructure.Abstractions.CreateEntityException
+- uid: Falcon.Infrastructure.Abstractions.DeleteEntityException
+  commentId: T:Falcon.Infrastructure.Abstractions.DeleteEntityException
+  href: Falcon.Infrastructure.Abstractions.DeleteEntityException.html
+  name: DeleteEntityException
+  nameWithType: DeleteEntityException
+  fullName: Falcon.Infrastructure.Abstractions.DeleteEntityException
+- uid: Falcon.Infrastructure.Abstractions.QueryEntityException
+  commentId: T:Falcon.Infrastructure.Abstractions.QueryEntityException
+  href: Falcon.Infrastructure.Abstractions.QueryEntityException.html
+  name: QueryEntityException
+  nameWithType: QueryEntityException
+  fullName: Falcon.Infrastructure.Abstractions.QueryEntityException
+- uid: Falcon.Infrastructure.Abstractions.UpdateEntityException
+  commentId: T:Falcon.Infrastructure.Abstractions.UpdateEntityException
+  href: Falcon.Infrastructure.Abstractions.UpdateEntityException.html
+  name: UpdateEntityException
+  nameWithType: UpdateEntityException
+  fullName: Falcon.Infrastructure.Abstractions.UpdateEntityException
+- uid: Falcon.Infrastructure.Abstractions.DbConfig
+  commentId: T:Falcon.Infrastructure.Abstractions.DbConfig
+  href: Falcon.Infrastructure.Abstractions.DbConfig.html
+  name: DbConfig
+  nameWithType: DbConfig
+  fullName: Falcon.Infrastructure.Abstractions.DbConfig
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  commentId: T:Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html
+  name: EntityAuditExtentions
+  nameWithType: EntityAuditExtentions
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+- uid: Falcon.Infrastructure.Abstractions.PagedResult`1
+  commentId: T:Falcon.Infrastructure.Abstractions.PagedResult`1
+  href: Falcon.Infrastructure.Abstractions.PagedResult-1.html
+  name: PagedResult<TResult>
+  nameWithType: PagedResult<TResult>
+  fullName: Falcon.Infrastructure.Abstractions.PagedResult<TResult>
+  nameWithType.vb: PagedResult(Of TResult)
+  fullName.vb: Falcon.Infrastructure.Abstractions.PagedResult(Of TResult)
+  name.vb: PagedResult(Of TResult)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.PagedResult`1
+    name: PagedResult
+    href: Falcon.Infrastructure.Abstractions.PagedResult-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.PagedResult`1
+    name: PagedResult
+    href: Falcon.Infrastructure.Abstractions.PagedResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.RequestContext`1
+  commentId: T:Falcon.Infrastructure.Abstractions.RequestContext`1
+  href: Falcon.Infrastructure.Abstractions.RequestContext-1.html
+  name: RequestContext<TId>
+  nameWithType: RequestContext<TId>
+  fullName: Falcon.Infrastructure.Abstractions.RequestContext<TId>
+  nameWithType.vb: RequestContext(Of TId)
+  fullName.vb: Falcon.Infrastructure.Abstractions.RequestContext(Of TId)
+  name.vb: RequestContext(Of TId)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.RequestContext`1
+    name: RequestContext
+    href: Falcon.Infrastructure.Abstractions.RequestContext-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.RequestContext`1
+    name: RequestContext
+    href: Falcon.Infrastructure.Abstractions.RequestContext-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.IDbContextOptionsProvider
+  commentId: T:Falcon.Infrastructure.Abstractions.IDbContextOptionsProvider
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.IDbContextOptionsProvider.html
+  name: IDbContextOptionsProvider
+  nameWithType: IDbContextOptionsProvider
+  fullName: Falcon.Infrastructure.Abstractions.IDbContextOptionsProvider
+- uid: Falcon.Infrastructure.Abstractions.IRepositoryProvider
+  commentId: T:Falcon.Infrastructure.Abstractions.IRepositoryProvider
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.IRepositoryProvider.html
+  name: IRepositoryProvider
+  nameWithType: IRepositoryProvider
+  fullName: Falcon.Infrastructure.Abstractions.IRepositoryProvider
+- uid: Falcon.Infrastructure.Abstractions.IRequestContext`1
+  commentId: T:Falcon.Infrastructure.Abstractions.IRequestContext`1
+  href: Falcon.Infrastructure.Abstractions.IRequestContext-1.html
+  name: IRequestContext<TId>
+  nameWithType: IRequestContext<TId>
+  fullName: Falcon.Infrastructure.Abstractions.IRequestContext<TId>
+  nameWithType.vb: IRequestContext(Of TId)
+  fullName.vb: Falcon.Infrastructure.Abstractions.IRequestContext(Of TId)
+  name.vb: IRequestContext(Of TId)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.IRequestContext`1
+    name: IRequestContext
+    href: Falcon.Infrastructure.Abstractions.IRequestContext-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.IRequestContext`1
+    name: IRequestContext
+    href: Falcon.Infrastructure.Abstractions.IRequestContext-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.ITenant
+  commentId: T:Falcon.Infrastructure.Abstractions.ITenant
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.ITenant.html
+  name: ITenant
+  nameWithType: ITenant
+  fullName: Falcon.Infrastructure.Abstractions.ITenant
+- uid: Falcon.Infrastructure.Abstractions.ITenantOptions`1
+  commentId: T:Falcon.Infrastructure.Abstractions.ITenantOptions`1
+  href: Falcon.Infrastructure.Abstractions.ITenantOptions-1.html
+  name: ITenantOptions<TOptions>
+  nameWithType: ITenantOptions<TOptions>
+  fullName: Falcon.Infrastructure.Abstractions.ITenantOptions<TOptions>
+  nameWithType.vb: ITenantOptions(Of TOptions)
+  fullName.vb: Falcon.Infrastructure.Abstractions.ITenantOptions(Of TOptions)
+  name.vb: ITenantOptions(Of TOptions)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.ITenantOptions`1
+    name: ITenantOptions
+    href: Falcon.Infrastructure.Abstractions.ITenantOptions-1.html
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.ITenantOptions`1
+    name: ITenantOptions
+    href: Falcon.Infrastructure.Abstractions.ITenantOptions-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.ModuleExtensions
+  commentId: T:Falcon.Infrastructure.Abstractions.ModuleExtensions
+  href: Falcon.Infrastructure.Abstractions.ModuleExtensions.html
+  name: ModuleExtensions
+  nameWithType: ModuleExtensions
+  fullName: Falcon.Infrastructure.Abstractions.ModuleExtensions
+- uid: Falcon.Infrastructure.Abstractions
+  commentId: N:Falcon.Infrastructure.Abstractions
+  href: Falcon.html
+  name: Falcon.Infrastructure.Abstractions
+  nameWithType: Falcon.Infrastructure.Abstractions
+  fullName: Falcon.Infrastructure.Abstractions
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html

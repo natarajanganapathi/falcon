@@ -1,0 +1,169 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities
+  commentId: N:Falcon.Domain.Abstractions.Interfaces.Entities
+  id: Falcon.Domain.Abstractions.Interfaces.Entities
+  children:
+  - Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus
+  - Falcon.Domain.Abstractions.Interfaces.Entities.IAuditableEntity`1
+  - Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity
+  - Falcon.Domain.Abstractions.Interfaces.Entities.IConcurrencyEntity
+  - Falcon.Domain.Abstractions.Interfaces.Entities.IDeletableEntity
+  - Falcon.Domain.Abstractions.Interfaces.Entities.IEntity`1
+  - Falcon.Domain.Abstractions.Interfaces.Entities.IMultiTenantEntity`1
+  langs:
+  - csharp
+  - vb
+  name: Falcon.Domain.Abstractions.Interfaces.Entities
+  nameWithType: Falcon.Domain.Abstractions.Interfaces.Entities
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities
+  type: Namespace
+  assemblies:
+  - Falcon.Domain.Abstractions
+references:
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities.IAuditableEntity`1
+  commentId: T:Falcon.Domain.Abstractions.Interfaces.Entities.IAuditableEntity`1
+  href: Falcon.Domain.Abstractions.Interfaces.Entities.IAuditableEntity-1.html
+  name: IAuditableEntity<TUserId>
+  nameWithType: IAuditableEntity<TUserId>
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities.IAuditableEntity<TUserId>
+  nameWithType.vb: IAuditableEntity(Of TUserId)
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Entities.IAuditableEntity(Of TUserId)
+  name.vb: IAuditableEntity(Of TUserId)
+  spec.csharp:
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities.IAuditableEntity`1
+    name: IAuditableEntity
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.IAuditableEntity-1.html
+  - name: <
+  - name: TUserId
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities.IAuditableEntity`1
+    name: IAuditableEntity
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.IAuditableEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TUserId
+  - name: )
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity
+  commentId: T:Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity
+  href: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity.html
+  name: ICompositeEntity
+  nameWithType: ICompositeEntity
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities.IConcurrencyEntity
+  commentId: T:Falcon.Domain.Abstractions.Interfaces.Entities.IConcurrencyEntity
+  href: Falcon.Domain.Abstractions.Interfaces.Entities.IConcurrencyEntity.html
+  name: IConcurrencyEntity
+  nameWithType: IConcurrencyEntity
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities.IConcurrencyEntity
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus
+  commentId: T:Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus
+  parent: Falcon.Domain.Abstractions.Interfaces.Entities
+  href: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus.html
+  name: DeletableEntityStatus
+  nameWithType: DeletableEntityStatus
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities.IDeletableEntity
+  commentId: T:Falcon.Domain.Abstractions.Interfaces.Entities.IDeletableEntity
+  href: Falcon.Domain.Abstractions.Interfaces.Entities.IDeletableEntity.html
+  name: IDeletableEntity
+  nameWithType: IDeletableEntity
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities.IDeletableEntity
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities.IEntity`1
+  commentId: T:Falcon.Domain.Abstractions.Interfaces.Entities.IEntity`1
+  href: Falcon.Domain.Abstractions.Interfaces.Entities.IEntity-1.html
+  name: IEntity<TId>
+  nameWithType: IEntity<TId>
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities.IEntity<TId>
+  nameWithType.vb: IEntity(Of TId)
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Entities.IEntity(Of TId)
+  name.vb: IEntity(Of TId)
+  spec.csharp:
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities.IEntity`1
+    name: IEntity
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.IEntity-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities.IEntity`1
+    name: IEntity
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.IEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities.IMultiTenantEntity`1
+  commentId: T:Falcon.Domain.Abstractions.Interfaces.Entities.IMultiTenantEntity`1
+  href: Falcon.Domain.Abstractions.Interfaces.Entities.IMultiTenantEntity-1.html
+  name: IMultiTenantEntity<TId>
+  nameWithType: IMultiTenantEntity<TId>
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities.IMultiTenantEntity<TId>
+  nameWithType.vb: IMultiTenantEntity(Of TId)
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Entities.IMultiTenantEntity(Of TId)
+  name.vb: IMultiTenantEntity(Of TId)
+  spec.csharp:
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities.IMultiTenantEntity`1
+    name: IMultiTenantEntity
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.IMultiTenantEntity-1.html
+  - name: <
+  - name: TId
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities.IMultiTenantEntity`1
+    name: IMultiTenantEntity
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.IMultiTenantEntity-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: )
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities
+  commentId: N:Falcon.Domain.Abstractions.Interfaces.Entities
+  href: Falcon.html
+  name: Falcon.Domain.Abstractions.Interfaces.Entities
+  nameWithType: Falcon.Domain.Abstractions.Interfaces.Entities
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Domain
+    name: Domain
+    href: Falcon.Domain.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions
+    name: Abstractions
+    href: Falcon.Domain.Abstractions.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces
+    name: Interfaces
+    href: Falcon.Domain.Abstractions.Interfaces.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities
+    name: Entities
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Domain
+    name: Domain
+    href: Falcon.Domain.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions
+    name: Abstractions
+    href: Falcon.Domain.Abstractions.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces
+    name: Interfaces
+    href: Falcon.Domain.Abstractions.Interfaces.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities
+    name: Entities
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.html

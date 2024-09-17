@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  commentId: N:Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  id: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  children:
+  - Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.HomeDbContext
+  - Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.HomeDbContextOptions
+  - Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.HomeModelConfigurations
+  - Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  nameWithType: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  type: Namespace
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework
+references:
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.HomeDbContext
+  commentId: T:Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.HomeDbContext
+  parent: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.HomeDbContext.html
+  name: HomeDbContext
+  nameWithType: HomeDbContext
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.HomeDbContext
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.HomeDbContextOptions
+  commentId: T:Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.HomeDbContextOptions
+  parent: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.HomeDbContextOptions.html
+  name: HomeDbContextOptions
+  nameWithType: HomeDbContextOptions
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.HomeDbContextOptions
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.HomeModelConfigurations
+  commentId: T:Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.HomeModelConfigurations
+  href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.HomeModelConfigurations.html
+  name: HomeModelConfigurations
+  nameWithType: HomeModelConfigurations
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.HomeModelConfigurations
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration
+  commentId: T:Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration
+  parent: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration.html
+  name: IHomeDbModelConfiguration
+  nameWithType: IHomeDbModelConfiguration
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  commentId: N:Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  href: Falcon.html
+  name: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  nameWithType: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts
+    name: Contexts
+    href: Falcon.Infrastructure.EntityFramework.Contexts.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+    name: HomeDb
+    href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts
+    name: Contexts
+    href: Falcon.Infrastructure.EntityFramework.Contexts.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+    name: HomeDb
+    href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.html

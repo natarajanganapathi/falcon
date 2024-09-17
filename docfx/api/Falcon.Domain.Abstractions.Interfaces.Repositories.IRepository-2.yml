@@ -1,0 +1,1164 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+  commentId: T:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+  id: IRepository`2
+  parent: Falcon.Domain.Abstractions.Interfaces.Repositories
+  children:
+  - Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.CountAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  - Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.CreateAsync(Falcon.Contracts.ICommandRequest{`1},System.Threading.CancellationToken)
+  - Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.DeleteAsync(`0,System.Threading.CancellationToken)
+  - Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.FindAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  - Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.GetAsync(`0,System.Threading.CancellationToken)
+  - Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.PatchAsync(`0,Falcon.Contracts.ICommandRequest{Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{`1}},System.Threading.CancellationToken)
+  - Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.QueryAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  - Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.UpdateAsync(`0,Falcon.Contracts.ICommandRequest{`1},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IRepository<TId, TEntity>
+  nameWithType: IRepository<TId, TEntity>
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>
+  type: Interface
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: IRepository
+    path: ../src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+    startLine: 2
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Repositories
+  syntax:
+    content: 'public interface IRepository<TId, TEntity> where TEntity : class, IEntity<TId>'
+    typeParameters:
+    - id: TId
+    - id: TEntity
+    content.vb: Public Interface IRepository(Of TId, TEntity As {Class, IEntity(Of TId)})
+  extensionMethods:
+  - Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  - Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  nameWithType.vb: IRepository(Of TId, TEntity)
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity)
+  name.vb: IRepository(Of TId, TEntity)
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.FindAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  commentId: M:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.FindAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  id: FindAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  parent: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+  langs:
+  - csharp
+  - vb
+  name: FindAsync(IQueryRequest, CancellationToken)
+  nameWithType: IRepository<TId, TEntity>.FindAsync(IQueryRequest, CancellationToken)
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.FindAsync(Falcon.Contracts.IQueryRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: FindAsync
+    path: ../src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+    startLine: 4
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Repositories
+  syntax:
+    content: Task<IList<TEntity>> FindAsync(IQueryRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IList{{TEntity}}}
+    content.vb: Function FindAsync(request As IQueryRequest, cancellationToken As CancellationToken = Nothing) As Task(Of IList(Of TEntity))
+  overload: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.FindAsync*
+  nameWithType.vb: IRepository(Of TId, TEntity).FindAsync(IQueryRequest, CancellationToken)
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).FindAsync(Falcon.Contracts.IQueryRequest, System.Threading.CancellationToken)
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.QueryAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  commentId: M:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.QueryAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  id: QueryAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  parent: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+  langs:
+  - csharp
+  - vb
+  name: QueryAsync(IQueryRequest, CancellationToken)
+  nameWithType: IRepository<TId, TEntity>.QueryAsync(IQueryRequest, CancellationToken)
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.QueryAsync(Falcon.Contracts.IQueryRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: QueryAsync
+    path: ../src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+    startLine: 5
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Repositories
+  syntax:
+    content: Task<IList<JObject>> QueryAsync(IQueryRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IList{Newtonsoft.Json.Linq.JObject}}
+    content.vb: Function QueryAsync(request As IQueryRequest, cancellationToken As CancellationToken = Nothing) As Task(Of IList(Of JObject))
+  overload: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.QueryAsync*
+  nameWithType.vb: IRepository(Of TId, TEntity).QueryAsync(IQueryRequest, CancellationToken)
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).QueryAsync(Falcon.Contracts.IQueryRequest, System.Threading.CancellationToken)
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.CountAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  commentId: M:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.CountAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  id: CountAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  parent: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+  langs:
+  - csharp
+  - vb
+  name: CountAsync(IQueryRequest, CancellationToken)
+  nameWithType: IRepository<TId, TEntity>.CountAsync(IQueryRequest, CancellationToken)
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.CountAsync(Falcon.Contracts.IQueryRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: CountAsync
+    path: ../src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+    startLine: 6
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Repositories
+  syntax:
+    content: Task<long> CountAsync(IQueryRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.IQueryRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Int64}
+    content.vb: Function CountAsync(request As IQueryRequest, cancellationToken As CancellationToken = Nothing) As Task(Of Long)
+  overload: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.CountAsync*
+  nameWithType.vb: IRepository(Of TId, TEntity).CountAsync(IQueryRequest, CancellationToken)
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).CountAsync(Falcon.Contracts.IQueryRequest, System.Threading.CancellationToken)
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.GetAsync(`0,System.Threading.CancellationToken)
+  commentId: M:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.GetAsync(`0,System.Threading.CancellationToken)
+  id: GetAsync(`0,System.Threading.CancellationToken)
+  parent: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(TId, CancellationToken)
+  nameWithType: IRepository<TId, TEntity>.GetAsync(TId, CancellationToken)
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.GetAsync(TId, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: GetAsync
+    path: ../src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+    startLine: 7
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Repositories
+  syntax:
+    content: Task<TEntity> GetAsync(TId id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: '{TId}'
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{{TEntity}}
+    content.vb: Function GetAsync(id As TId, cancellationToken As CancellationToken = Nothing) As Task(Of TEntity)
+  overload: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.GetAsync*
+  nameWithType.vb: IRepository(Of TId, TEntity).GetAsync(TId, CancellationToken)
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).GetAsync(TId, System.Threading.CancellationToken)
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.CreateAsync(Falcon.Contracts.ICommandRequest{`1},System.Threading.CancellationToken)
+  commentId: M:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.CreateAsync(Falcon.Contracts.ICommandRequest{`1},System.Threading.CancellationToken)
+  id: CreateAsync(Falcon.Contracts.ICommandRequest{`1},System.Threading.CancellationToken)
+  parent: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(ICommandRequest<TEntity>, CancellationToken)
+  nameWithType: IRepository<TId, TEntity>.CreateAsync(ICommandRequest<TEntity>, CancellationToken)
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.CreateAsync(Falcon.Contracts.ICommandRequest<TEntity>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: CreateAsync
+    path: ../src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+    startLine: 8
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Repositories
+  syntax:
+    content: Task<TEntity> CreateAsync(ICommandRequest<TEntity> request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Falcon.Contracts.ICommandRequest{{TEntity}}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{{TEntity}}
+    content.vb: Function CreateAsync(request As ICommandRequest(Of TEntity), cancellationToken As CancellationToken = Nothing) As Task(Of TEntity)
+  overload: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.CreateAsync*
+  nameWithType.vb: IRepository(Of TId, TEntity).CreateAsync(ICommandRequest(Of TEntity), CancellationToken)
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).CreateAsync(Falcon.Contracts.ICommandRequest(Of TEntity), System.Threading.CancellationToken)
+  name.vb: CreateAsync(ICommandRequest(Of TEntity), CancellationToken)
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.UpdateAsync(`0,Falcon.Contracts.ICommandRequest{`1},System.Threading.CancellationToken)
+  commentId: M:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.UpdateAsync(`0,Falcon.Contracts.ICommandRequest{`1},System.Threading.CancellationToken)
+  id: UpdateAsync(`0,Falcon.Contracts.ICommandRequest{`1},System.Threading.CancellationToken)
+  parent: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(TId, ICommandRequest<TEntity>, CancellationToken)
+  nameWithType: IRepository<TId, TEntity>.UpdateAsync(TId, ICommandRequest<TEntity>, CancellationToken)
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.UpdateAsync(TId, Falcon.Contracts.ICommandRequest<TEntity>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: UpdateAsync
+    path: ../src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+    startLine: 9
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Repositories
+  syntax:
+    content: Task<TEntity> UpdateAsync(TId id, ICommandRequest<TEntity> request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: '{TId}'
+    - id: request
+      type: Falcon.Contracts.ICommandRequest{{TEntity}}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{{TEntity}}
+    content.vb: Function UpdateAsync(id As TId, request As ICommandRequest(Of TEntity), cancellationToken As CancellationToken = Nothing) As Task(Of TEntity)
+  overload: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.UpdateAsync*
+  nameWithType.vb: IRepository(Of TId, TEntity).UpdateAsync(TId, ICommandRequest(Of TEntity), CancellationToken)
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).UpdateAsync(TId, Falcon.Contracts.ICommandRequest(Of TEntity), System.Threading.CancellationToken)
+  name.vb: UpdateAsync(TId, ICommandRequest(Of TEntity), CancellationToken)
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.PatchAsync(`0,Falcon.Contracts.ICommandRequest{Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{`1}},System.Threading.CancellationToken)
+  commentId: M:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.PatchAsync(`0,Falcon.Contracts.ICommandRequest{Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{`1}},System.Threading.CancellationToken)
+  id: PatchAsync(`0,Falcon.Contracts.ICommandRequest{Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{`1}},System.Threading.CancellationToken)
+  parent: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+  langs:
+  - csharp
+  - vb
+  name: PatchAsync(TId, ICommandRequest<JsonPatchDocument<TEntity>>, CancellationToken)
+  nameWithType: IRepository<TId, TEntity>.PatchAsync(TId, ICommandRequest<JsonPatchDocument<TEntity>>, CancellationToken)
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.PatchAsync(TId, Falcon.Contracts.ICommandRequest<Microsoft.AspNetCore.JsonPatch.JsonPatchDocument<TEntity>>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: PatchAsync
+    path: ../src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+    startLine: 10
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Repositories
+  syntax:
+    content: Task<TEntity> PatchAsync(TId id, ICommandRequest<JsonPatchDocument<TEntity>> request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: '{TId}'
+    - id: request
+      type: Falcon.Contracts.ICommandRequest{Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{{TEntity}}}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{{TEntity}}
+    content.vb: Function PatchAsync(id As TId, request As ICommandRequest(Of JsonPatchDocument(Of TEntity)), cancellationToken As CancellationToken = Nothing) As Task(Of TEntity)
+  overload: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.PatchAsync*
+  nameWithType.vb: IRepository(Of TId, TEntity).PatchAsync(TId, ICommandRequest(Of JsonPatchDocument(Of TEntity)), CancellationToken)
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).PatchAsync(TId, Falcon.Contracts.ICommandRequest(Of Microsoft.AspNetCore.JsonPatch.JsonPatchDocument(Of TEntity)), System.Threading.CancellationToken)
+  name.vb: PatchAsync(TId, ICommandRequest(Of JsonPatchDocument(Of TEntity)), CancellationToken)
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.DeleteAsync(`0,System.Threading.CancellationToken)
+  commentId: M:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.DeleteAsync(`0,System.Threading.CancellationToken)
+  id: DeleteAsync(`0,System.Threading.CancellationToken)
+  parent: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(TId, CancellationToken)
+  nameWithType: IRepository<TId, TEntity>.DeleteAsync(TId, CancellationToken)
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.DeleteAsync(TId, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: DeleteAsync
+    path: ../src/Domain/Abstractions/Interfaces/Repositories/IRepository.cs
+    startLine: 11
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Repositories
+  syntax:
+    content: Task<TEntity> DeleteAsync(TId id, CancellationToken cancellationToken = default)
+    parameters:
+    - id: id
+      type: '{TId}'
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{{TEntity}}
+    content.vb: Function DeleteAsync(id As TId, cancellationToken As CancellationToken = Nothing) As Task(Of TEntity)
+  overload: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.DeleteAsync*
+  nameWithType.vb: IRepository(Of TId, TEntity).DeleteAsync(TId, CancellationToken)
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).DeleteAsync(TId, System.Threading.CancellationToken)
+references:
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories
+  commentId: N:Falcon.Domain.Abstractions.Interfaces.Repositories
+  href: Falcon.html
+  name: Falcon.Domain.Abstractions.Interfaces.Repositories
+  nameWithType: Falcon.Domain.Abstractions.Interfaces.Repositories
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Domain
+    name: Domain
+    href: Falcon.Domain.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions
+    name: Abstractions
+    href: Falcon.Domain.Abstractions.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces
+    name: Interfaces
+    href: Falcon.Domain.Abstractions.Interfaces.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces.Repositories
+    name: Repositories
+    href: Falcon.Domain.Abstractions.Interfaces.Repositories.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Domain
+    name: Domain
+    href: Falcon.Domain.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions
+    name: Abstractions
+    href: Falcon.Domain.Abstractions.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces
+    name: Interfaces
+    href: Falcon.Domain.Abstractions.Interfaces.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces.Repositories
+    name: Repositories
+    href: Falcon.Domain.Abstractions.Interfaces.Repositories.html
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, IRepository<TId, TEntity>>(IRepository<TId, TEntity>, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, IRepository<TId, TEntity>>(IRepository<TId, TEntity>, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>>(Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, IRepository(Of TId, TEntity))(IRepository(Of TId, TEntity), TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity))(Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity), TId, Date)
+  name.vb: AuditForCreate(Of TId, IRepository(Of TId, TEntity))(IRepository(Of TId, TEntity), TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository{`0,`1},``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+    name: IRepository
+    href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+    name: IRepository
+    href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository{`0,`1},``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+    name: IRepository
+    href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+  - name: (
+  - uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+    name: IRepository
+    href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, IRepository<TId, TEntity>>(IRepository<TId, TEntity>, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, IRepository<TId, TEntity>>(IRepository<TId, TEntity>, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>>(Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, IRepository(Of TId, TEntity))(IRepository(Of TId, TEntity), TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity))(Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity), TId, Date)
+  name.vb: AuditForUpdate(Of TId, IRepository(Of TId, TEntity))(IRepository(Of TId, TEntity), TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository{`0,`1},``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+    name: IRepository
+    href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+    name: IRepository
+    href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository{`0,`1},``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+    name: IRepository
+    href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+  - name: (
+  - uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2
+    name: IRepository
+    href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  commentId: T:Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html
+  name: EntityAuditExtentions
+  nameWithType: EntityAuditExtentions
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions
+  commentId: N:Falcon.Infrastructure.Abstractions
+  href: Falcon.html
+  name: Falcon.Infrastructure.Abstractions
+  nameWithType: Falcon.Infrastructure.Abstractions
+  fullName: Falcon.Infrastructure.Abstractions
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.FindAsync*
+  commentId: Overload:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.FindAsync
+  href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html#Falcon_Domain_Abstractions_Interfaces_Repositories_IRepository_2_FindAsync_Falcon_Contracts_IQueryRequest_System_Threading_CancellationToken_
+  name: FindAsync
+  nameWithType: IRepository<TId, TEntity>.FindAsync
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.FindAsync
+  nameWithType.vb: IRepository(Of TId, TEntity).FindAsync
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).FindAsync
+- uid: Falcon.Contracts.IQueryRequest
+  commentId: T:Falcon.Contracts.IQueryRequest
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IQueryRequest.html
+  name: IQueryRequest
+  nameWithType: IQueryRequest
+  fullName: Falcon.Contracts.IQueryRequest
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IList{{TEntity}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IList{`1}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IList<TEntity>>
+  nameWithType: Task<IList<TEntity>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IList<TEntity>>
+  nameWithType.vb: Task(Of IList(Of TEntity))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IList(Of TEntity))
+  name.vb: Task(Of IList(Of TEntity))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+- uid: Falcon.Contracts
+  commentId: N:Falcon.Contracts
+  href: Falcon.html
+  name: Falcon.Contracts
+  nameWithType: Falcon.Contracts
+  fullName: Falcon.Contracts
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.QueryAsync*
+  commentId: Overload:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.QueryAsync
+  href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html#Falcon_Domain_Abstractions_Interfaces_Repositories_IRepository_2_QueryAsync_Falcon_Contracts_IQueryRequest_System_Threading_CancellationToken_
+  name: QueryAsync
+  nameWithType: IRepository<TId, TEntity>.QueryAsync
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.QueryAsync
+  nameWithType.vb: IRepository(Of TId, TEntity).QueryAsync
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).QueryAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IList{Newtonsoft.Json.Linq.JObject}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IList{Newtonsoft.Json.Linq.JObject}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IList<JObject>>
+  nameWithType: Task<IList<JObject>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IList<Newtonsoft.Json.Linq.JObject>>
+  nameWithType.vb: Task(Of IList(Of JObject))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IList(Of Newtonsoft.Json.Linq.JObject))
+  name.vb: Task(Of IList(Of JObject))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: Newtonsoft.Json.Linq.JObject
+    name: JObject
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Newtonsoft.Json.Linq.JObject
+    name: JObject
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.CountAsync*
+  commentId: Overload:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.CountAsync
+  href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html#Falcon_Domain_Abstractions_Interfaces_Repositories_IRepository_2_CountAsync_Falcon_Contracts_IQueryRequest_System_Threading_CancellationToken_
+  name: CountAsync
+  nameWithType: IRepository<TId, TEntity>.CountAsync
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.CountAsync
+  nameWithType.vb: IRepository(Of TId, TEntity).CountAsync
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).CountAsync
+- uid: System.Threading.Tasks.Task{System.Int64}
+  commentId: T:System.Threading.Tasks.Task{System.Int64}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<long>
+  nameWithType: Task<long>
+  fullName: System.Threading.Tasks.Task<long>
+  nameWithType.vb: Task(Of Long)
+  fullName.vb: System.Threading.Tasks.Task(Of Long)
+  name.vb: Task(Of Long)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.GetAsync*
+  commentId: Overload:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.GetAsync
+  href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html#Falcon_Domain_Abstractions_Interfaces_Repositories_IRepository_2_GetAsync__0_System_Threading_CancellationToken_
+  name: GetAsync
+  nameWithType: IRepository<TId, TEntity>.GetAsync
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.GetAsync
+  nameWithType.vb: IRepository(Of TId, TEntity).GetAsync
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).GetAsync
+- uid: '{TId}'
+  commentId: '!:TId'
+  definition: TId
+  name: TId
+  nameWithType: TId
+  fullName: TId
+- uid: System.Threading.Tasks.Task{{TEntity}}
+  commentId: T:System.Threading.Tasks.Task{`1}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TEntity>
+  nameWithType: Task<TEntity>
+  fullName: System.Threading.Tasks.Task<TEntity>
+  nameWithType.vb: Task(Of TEntity)
+  fullName.vb: System.Threading.Tasks.Task(Of TEntity)
+  name.vb: Task(Of TEntity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: TId
+  name: TId
+  nameWithType: TId
+  fullName: TId
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.CreateAsync*
+  commentId: Overload:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.CreateAsync
+  href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html#Falcon_Domain_Abstractions_Interfaces_Repositories_IRepository_2_CreateAsync_Falcon_Contracts_ICommandRequest__1__System_Threading_CancellationToken_
+  name: CreateAsync
+  nameWithType: IRepository<TId, TEntity>.CreateAsync
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.CreateAsync
+  nameWithType.vb: IRepository(Of TId, TEntity).CreateAsync
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).CreateAsync
+- uid: Falcon.Contracts.ICommandRequest{{TEntity}}
+  commentId: T:Falcon.Contracts.ICommandRequest{`0}
+  parent: Falcon.Contracts
+  definition: Falcon.Contracts.ICommandRequest`1
+  href: Falcon.Contracts.ICommandRequest-1.html
+  name: ICommandRequest<TEntity>
+  nameWithType: ICommandRequest<TEntity>
+  fullName: Falcon.Contracts.ICommandRequest<TEntity>
+  nameWithType.vb: ICommandRequest(Of TEntity)
+  fullName.vb: Falcon.Contracts.ICommandRequest(Of TEntity)
+  name.vb: ICommandRequest(Of TEntity)
+  spec.csharp:
+  - uid: Falcon.Contracts.ICommandRequest`1
+    name: ICommandRequest
+    href: Falcon.Contracts.ICommandRequest-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Contracts.ICommandRequest`1
+    name: ICommandRequest
+    href: Falcon.Contracts.ICommandRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Falcon.Contracts.ICommandRequest`1
+  commentId: T:Falcon.Contracts.ICommandRequest`1
+  href: Falcon.Contracts.ICommandRequest-1.html
+  name: ICommandRequest<TEntity>
+  nameWithType: ICommandRequest<TEntity>
+  fullName: Falcon.Contracts.ICommandRequest<TEntity>
+  nameWithType.vb: ICommandRequest(Of TEntity)
+  fullName.vb: Falcon.Contracts.ICommandRequest(Of TEntity)
+  name.vb: ICommandRequest(Of TEntity)
+  spec.csharp:
+  - uid: Falcon.Contracts.ICommandRequest`1
+    name: ICommandRequest
+    href: Falcon.Contracts.ICommandRequest-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Contracts.ICommandRequest`1
+    name: ICommandRequest
+    href: Falcon.Contracts.ICommandRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.UpdateAsync*
+  commentId: Overload:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.UpdateAsync
+  href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html#Falcon_Domain_Abstractions_Interfaces_Repositories_IRepository_2_UpdateAsync__0_Falcon_Contracts_ICommandRequest__1__System_Threading_CancellationToken_
+  name: UpdateAsync
+  nameWithType: IRepository<TId, TEntity>.UpdateAsync
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.UpdateAsync
+  nameWithType.vb: IRepository(Of TId, TEntity).UpdateAsync
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).UpdateAsync
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.PatchAsync*
+  commentId: Overload:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.PatchAsync
+  href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html#Falcon_Domain_Abstractions_Interfaces_Repositories_IRepository_2_PatchAsync__0_Falcon_Contracts_ICommandRequest_Microsoft_AspNetCore_JsonPatch_JsonPatchDocument__1___System_Threading_CancellationToken_
+  name: PatchAsync
+  nameWithType: IRepository<TId, TEntity>.PatchAsync
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.PatchAsync
+  nameWithType.vb: IRepository(Of TId, TEntity).PatchAsync
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).PatchAsync
+- uid: Falcon.Contracts.ICommandRequest{Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{{TEntity}}}
+  commentId: T:Falcon.Contracts.ICommandRequest{Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{`1}}
+  parent: Falcon.Contracts
+  definition: Falcon.Contracts.ICommandRequest`1
+  href: Falcon.Contracts.ICommandRequest-1.html
+  name: ICommandRequest<JsonPatchDocument<TEntity>>
+  nameWithType: ICommandRequest<JsonPatchDocument<TEntity>>
+  fullName: Falcon.Contracts.ICommandRequest<Microsoft.AspNetCore.JsonPatch.JsonPatchDocument<TEntity>>
+  nameWithType.vb: ICommandRequest(Of JsonPatchDocument(Of TEntity))
+  fullName.vb: Falcon.Contracts.ICommandRequest(Of Microsoft.AspNetCore.JsonPatch.JsonPatchDocument(Of TEntity))
+  name.vb: ICommandRequest(Of JsonPatchDocument(Of TEntity))
+  spec.csharp:
+  - uid: Falcon.Contracts.ICommandRequest`1
+    name: ICommandRequest
+    href: Falcon.Contracts.ICommandRequest-1.html
+  - name: <
+  - uid: Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1
+    name: JsonPatchDocument
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.jsonpatch.jsonpatchdocument-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Contracts.ICommandRequest`1
+    name: ICommandRequest
+    href: Falcon.Contracts.ICommandRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1
+    name: JsonPatchDocument
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.jsonpatch.jsonpatchdocument-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+- uid: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.DeleteAsync*
+  commentId: Overload:Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository`2.DeleteAsync
+  href: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html#Falcon_Domain_Abstractions_Interfaces_Repositories_IRepository_2_DeleteAsync__0_System_Threading_CancellationToken_
+  name: DeleteAsync
+  nameWithType: IRepository<TId, TEntity>.DeleteAsync
+  fullName: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository<TId, TEntity>.DeleteAsync
+  nameWithType.vb: IRepository(Of TId, TEntity).DeleteAsync
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository(Of TId, TEntity).DeleteAsync

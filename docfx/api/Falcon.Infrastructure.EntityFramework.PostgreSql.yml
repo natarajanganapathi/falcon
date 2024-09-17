@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Infrastructure.EntityFramework.PostgreSql
+  commentId: N:Falcon.Infrastructure.EntityFramework.PostgreSql
+  id: Falcon.Infrastructure.EntityFramework.PostgreSql
+  children:
+  - Falcon.Infrastructure.EntityFramework.PostgreSql.ModuleExtensions
+  - Falcon.Infrastructure.EntityFramework.PostgreSql.PostgreSqlDbContextOptionsProvider
+  langs:
+  - csharp
+  - vb
+  name: Falcon.Infrastructure.EntityFramework.PostgreSql
+  nameWithType: Falcon.Infrastructure.EntityFramework.PostgreSql
+  fullName: Falcon.Infrastructure.EntityFramework.PostgreSql
+  type: Namespace
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.PostgreSql
+references:
+- uid: Falcon.Infrastructure.EntityFramework.PostgreSql.ModuleExtensions
+  commentId: T:Falcon.Infrastructure.EntityFramework.PostgreSql.ModuleExtensions
+  href: Falcon.Infrastructure.EntityFramework.PostgreSql.ModuleExtensions.html
+  name: ModuleExtensions
+  nameWithType: ModuleExtensions
+  fullName: Falcon.Infrastructure.EntityFramework.PostgreSql.ModuleExtensions
+- uid: Falcon.Infrastructure.EntityFramework.PostgreSql.PostgreSqlDbContextOptionsProvider
+  commentId: T:Falcon.Infrastructure.EntityFramework.PostgreSql.PostgreSqlDbContextOptionsProvider
+  href: Falcon.Infrastructure.EntityFramework.PostgreSql.PostgreSqlDbContextOptionsProvider.html
+  name: PostgreSqlDbContextOptionsProvider
+  nameWithType: PostgreSqlDbContextOptionsProvider
+  fullName: Falcon.Infrastructure.EntityFramework.PostgreSql.PostgreSqlDbContextOptionsProvider

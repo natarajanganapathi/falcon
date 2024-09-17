@@ -1,0 +1,1090 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Contracts.QueryResponse
+  commentId: T:Falcon.Contracts.QueryResponse
+  id: QueryResponse
+  parent: Falcon.Contracts
+  children:
+  - Falcon.Contracts.QueryResponse.#ctor(System.Collections.Generic.IEnumerable{System.Object},Falcon.Contracts.IPageContext)
+  - Falcon.Contracts.QueryResponse.Data
+  - Falcon.Contracts.QueryResponse.Page
+  langs:
+  - csharp
+  - vb
+  name: QueryResponse
+  nameWithType: QueryResponse
+  fullName: Falcon.Contracts.QueryResponse
+  type: Class
+  source:
+    remote:
+      path: src/Shared/Contracts/Response/QueryResponse.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: QueryResponse
+    path: ../src/Shared/Contracts/Response/QueryResponse.cs
+    startLine: 2
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: 'public record QueryResponse : IQueryResponse, IApiResponse, IEquatable<QueryResponse>'
+    content.vb: Public Class QueryResponse Implements IQueryResponse, IApiResponse, IEquatable(Of QueryResponse)
+  inheritance:
+  - System.Object
+  implements:
+  - Falcon.Contracts.IQueryResponse
+  - Falcon.Contracts.IApiResponse
+  - System.IEquatable{Falcon.Contracts.QueryResponse}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Falcon.Contracts.IQueryResponse.Falcon.Contracts.Extensions.SetData(System.Collections.Generic.IEnumerable{System.Object})
+  - Falcon.Contracts.IQueryResponse.Falcon.Contracts.Extensions.SetPageContext(Falcon.Contracts.IPageContext)
+  - Falcon.Contracts.QueryResponse.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  - Falcon.Contracts.QueryResponse.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+- uid: Falcon.Contracts.QueryResponse.#ctor(System.Collections.Generic.IEnumerable{System.Object},Falcon.Contracts.IPageContext)
+  commentId: M:Falcon.Contracts.QueryResponse.#ctor(System.Collections.Generic.IEnumerable{System.Object},Falcon.Contracts.IPageContext)
+  id: '#ctor(System.Collections.Generic.IEnumerable{System.Object},Falcon.Contracts.IPageContext)'
+  parent: Falcon.Contracts.QueryResponse
+  langs:
+  - csharp
+  - vb
+  name: QueryResponse(IEnumerable<object>?, IPageContext?)
+  nameWithType: QueryResponse.QueryResponse(IEnumerable<object>?, IPageContext?)
+  fullName: Falcon.Contracts.QueryResponse.QueryResponse(System.Collections.Generic.IEnumerable<object>?, Falcon.Contracts.IPageContext?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Shared/Contracts/Response/QueryResponse.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: .ctor
+    path: ../src/Shared/Contracts/Response/QueryResponse.cs
+    startLine: 4
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public QueryResponse(IEnumerable<object>? data = null, IPageContext? pc = null)
+    parameters:
+    - id: data
+      type: System.Collections.Generic.IEnumerable{System.Object}
+    - id: pc
+      type: Falcon.Contracts.IPageContext
+    content.vb: Public Sub New(data As IEnumerable(Of Object) = Nothing, pc As IPageContext = Nothing)
+  overload: Falcon.Contracts.QueryResponse.#ctor*
+  nameWithType.vb: QueryResponse.New(IEnumerable(Of Object), IPageContext)
+  fullName.vb: Falcon.Contracts.QueryResponse.New(System.Collections.Generic.IEnumerable(Of Object), Falcon.Contracts.IPageContext)
+  name.vb: New(IEnumerable(Of Object), IPageContext)
+- uid: Falcon.Contracts.QueryResponse.Page
+  commentId: P:Falcon.Contracts.QueryResponse.Page
+  id: Page
+  parent: Falcon.Contracts.QueryResponse
+  langs:
+  - csharp
+  - vb
+  name: Page
+  nameWithType: QueryResponse.Page
+  fullName: Falcon.Contracts.QueryResponse.Page
+  type: Property
+  source:
+    remote:
+      path: src/Shared/Contracts/Response/QueryResponse.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Page
+    path: ../src/Shared/Contracts/Response/QueryResponse.cs
+    startLine: 9
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  example: []
+  syntax:
+    content: public IPageContext? Page { get; set; }
+    parameters: []
+    return:
+      type: Falcon.Contracts.IPageContext
+    content.vb: Public Property Page As IPageContext
+  overload: Falcon.Contracts.QueryResponse.Page*
+  implements:
+  - Falcon.Contracts.IQueryResponse.Page
+- uid: Falcon.Contracts.QueryResponse.Data
+  commentId: P:Falcon.Contracts.QueryResponse.Data
+  id: Data
+  parent: Falcon.Contracts.QueryResponse
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: QueryResponse.Data
+  fullName: Falcon.Contracts.QueryResponse.Data
+  type: Property
+  source:
+    remote:
+      path: src/Shared/Contracts/Response/QueryResponse.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Data
+    path: ../src/Shared/Contracts/Response/QueryResponse.cs
+    startLine: 10
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  example: []
+  syntax:
+    content: public IEnumerable<object>? Data { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Object}
+    content.vb: Public Property Data As IEnumerable(Of Object)
+  overload: Falcon.Contracts.QueryResponse.Data*
+  implements:
+  - Falcon.Contracts.IQueryResponse.Data
+references:
+- uid: Falcon.Contracts
+  commentId: N:Falcon.Contracts
+  href: Falcon.html
+  name: Falcon.Contracts
+  nameWithType: Falcon.Contracts
+  fullName: Falcon.Contracts
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Falcon.Contracts.IQueryResponse
+  commentId: T:Falcon.Contracts.IQueryResponse
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IQueryResponse.html
+  name: IQueryResponse
+  nameWithType: IQueryResponse
+  fullName: Falcon.Contracts.IQueryResponse
+- uid: Falcon.Contracts.IApiResponse
+  commentId: T:Falcon.Contracts.IApiResponse
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IApiResponse.html
+  name: IApiResponse
+  nameWithType: IApiResponse
+  fullName: Falcon.Contracts.IApiResponse
+- uid: System.IEquatable{Falcon.Contracts.QueryResponse}
+  commentId: T:System.IEquatable{Falcon.Contracts.QueryResponse}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<QueryResponse>
+  nameWithType: IEquatable<QueryResponse>
+  fullName: System.IEquatable<Falcon.Contracts.QueryResponse>
+  nameWithType.vb: IEquatable(Of QueryResponse)
+  fullName.vb: System.IEquatable(Of Falcon.Contracts.QueryResponse)
+  name.vb: IEquatable(Of QueryResponse)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Falcon.Contracts.QueryResponse
+    name: QueryResponse
+    href: Falcon.Contracts.QueryResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Falcon.Contracts.QueryResponse
+    name: QueryResponse
+    href: Falcon.Contracts.QueryResponse.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Falcon.Contracts.IQueryResponse.Falcon.Contracts.Extensions.SetData(System.Collections.Generic.IEnumerable{System.Object})
+  commentId: M:Falcon.Contracts.Extensions.SetData(Falcon.Contracts.IQueryResponse,System.Collections.Generic.IEnumerable{System.Object})
+  parent: Falcon.Contracts.Extensions
+  definition: Falcon.Contracts.Extensions.SetData(Falcon.Contracts.IQueryResponse,System.Collections.Generic.IEnumerable{System.Object})
+  href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_SetData_Falcon_Contracts_IQueryResponse_System_Collections_Generic_IEnumerable_System_Object__
+  name: SetData(IQueryResponse, IEnumerable<object>)
+  nameWithType: Extensions.SetData(IQueryResponse, IEnumerable<object>)
+  fullName: Falcon.Contracts.Extensions.SetData(Falcon.Contracts.IQueryResponse, System.Collections.Generic.IEnumerable<object>)
+  nameWithType.vb: Extensions.SetData(IQueryResponse, IEnumerable(Of Object))
+  fullName.vb: Falcon.Contracts.Extensions.SetData(Falcon.Contracts.IQueryResponse, System.Collections.Generic.IEnumerable(Of Object))
+  name.vb: SetData(IQueryResponse, IEnumerable(Of Object))
+  spec.csharp:
+  - uid: Falcon.Contracts.Extensions.SetData(Falcon.Contracts.IQueryResponse,System.Collections.Generic.IEnumerable{System.Object})
+    name: SetData
+    href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_SetData_Falcon_Contracts_IQueryResponse_System_Collections_Generic_IEnumerable_System_Object__
+  - name: (
+  - uid: Falcon.Contracts.IQueryResponse
+    name: IQueryResponse
+    href: Falcon.Contracts.IQueryResponse.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Falcon.Contracts.Extensions.SetData(Falcon.Contracts.IQueryResponse,System.Collections.Generic.IEnumerable{System.Object})
+    name: SetData
+    href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_SetData_Falcon_Contracts_IQueryResponse_System_Collections_Generic_IEnumerable_System_Object__
+  - name: (
+  - uid: Falcon.Contracts.IQueryResponse
+    name: IQueryResponse
+    href: Falcon.Contracts.IQueryResponse.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: Falcon.Contracts.IQueryResponse.Falcon.Contracts.Extensions.SetPageContext(Falcon.Contracts.IPageContext)
+  commentId: M:Falcon.Contracts.Extensions.SetPageContext(Falcon.Contracts.IQueryResponse,Falcon.Contracts.IPageContext)
+  parent: Falcon.Contracts.Extensions
+  definition: Falcon.Contracts.Extensions.SetPageContext(Falcon.Contracts.IQueryResponse,Falcon.Contracts.IPageContext)
+  href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_SetPageContext_Falcon_Contracts_IQueryResponse_Falcon_Contracts_IPageContext_
+  name: SetPageContext(IQueryResponse, IPageContext)
+  nameWithType: Extensions.SetPageContext(IQueryResponse, IPageContext)
+  fullName: Falcon.Contracts.Extensions.SetPageContext(Falcon.Contracts.IQueryResponse, Falcon.Contracts.IPageContext)
+  spec.csharp:
+  - uid: Falcon.Contracts.Extensions.SetPageContext(Falcon.Contracts.IQueryResponse,Falcon.Contracts.IPageContext)
+    name: SetPageContext
+    href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_SetPageContext_Falcon_Contracts_IQueryResponse_Falcon_Contracts_IPageContext_
+  - name: (
+  - uid: Falcon.Contracts.IQueryResponse
+    name: IQueryResponse
+    href: Falcon.Contracts.IQueryResponse.html
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IPageContext
+    name: IPageContext
+    href: Falcon.Contracts.IPageContext.html
+  - name: )
+  spec.vb:
+  - uid: Falcon.Contracts.Extensions.SetPageContext(Falcon.Contracts.IQueryResponse,Falcon.Contracts.IPageContext)
+    name: SetPageContext
+    href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_SetPageContext_Falcon_Contracts_IQueryResponse_Falcon_Contracts_IPageContext_
+  - name: (
+  - uid: Falcon.Contracts.IQueryResponse
+    name: IQueryResponse
+    href: Falcon.Contracts.IQueryResponse.html
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IPageContext
+    name: IPageContext
+    href: Falcon.Contracts.IPageContext.html
+  - name: )
+- uid: Falcon.Contracts.QueryResponse.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, QueryResponse>(QueryResponse, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, QueryResponse>(QueryResponse, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, Falcon.Contracts.QueryResponse>(Falcon.Contracts.QueryResponse, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, QueryResponse)(QueryResponse, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, Falcon.Contracts.QueryResponse)(Falcon.Contracts.QueryResponse, TId, Date)
+  name.vb: AuditForCreate(Of TId, QueryResponse)(QueryResponse, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Contracts.QueryResponse,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.QueryResponse
+    name: QueryResponse
+    href: Falcon.Contracts.QueryResponse.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.QueryResponse
+    name: QueryResponse
+    href: Falcon.Contracts.QueryResponse.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Contracts.QueryResponse,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.QueryResponse
+    name: QueryResponse
+    href: Falcon.Contracts.QueryResponse.html
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.QueryResponse
+    name: QueryResponse
+    href: Falcon.Contracts.QueryResponse.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Contracts.QueryResponse.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, QueryResponse>(QueryResponse, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, QueryResponse>(QueryResponse, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, Falcon.Contracts.QueryResponse>(Falcon.Contracts.QueryResponse, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, QueryResponse)(QueryResponse, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, Falcon.Contracts.QueryResponse)(Falcon.Contracts.QueryResponse, TId, Date)
+  name.vb: AuditForUpdate(Of TId, QueryResponse)(QueryResponse, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Contracts.QueryResponse,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.QueryResponse
+    name: QueryResponse
+    href: Falcon.Contracts.QueryResponse.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.QueryResponse
+    name: QueryResponse
+    href: Falcon.Contracts.QueryResponse.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Contracts.QueryResponse,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.QueryResponse
+    name: QueryResponse
+    href: Falcon.Contracts.QueryResponse.html
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.QueryResponse
+    name: QueryResponse
+    href: Falcon.Contracts.QueryResponse.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Falcon.Contracts.Extensions.SetData(Falcon.Contracts.IQueryResponse,System.Collections.Generic.IEnumerable{System.Object})
+  commentId: M:Falcon.Contracts.Extensions.SetData(Falcon.Contracts.IQueryResponse,System.Collections.Generic.IEnumerable{System.Object})
+  isExternal: true
+  href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_SetData_Falcon_Contracts_IQueryResponse_System_Collections_Generic_IEnumerable_System_Object__
+  name: SetData(IQueryResponse, IEnumerable<object>)
+  nameWithType: Extensions.SetData(IQueryResponse, IEnumerable<object>)
+  fullName: Falcon.Contracts.Extensions.SetData(Falcon.Contracts.IQueryResponse, System.Collections.Generic.IEnumerable<object>)
+  nameWithType.vb: Extensions.SetData(IQueryResponse, IEnumerable(Of Object))
+  fullName.vb: Falcon.Contracts.Extensions.SetData(Falcon.Contracts.IQueryResponse, System.Collections.Generic.IEnumerable(Of Object))
+  name.vb: SetData(IQueryResponse, IEnumerable(Of Object))
+  spec.csharp:
+  - uid: Falcon.Contracts.Extensions.SetData(Falcon.Contracts.IQueryResponse,System.Collections.Generic.IEnumerable{System.Object})
+    name: SetData
+    href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_SetData_Falcon_Contracts_IQueryResponse_System_Collections_Generic_IEnumerable_System_Object__
+  - name: (
+  - uid: Falcon.Contracts.IQueryResponse
+    name: IQueryResponse
+    href: Falcon.Contracts.IQueryResponse.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Falcon.Contracts.Extensions.SetData(Falcon.Contracts.IQueryResponse,System.Collections.Generic.IEnumerable{System.Object})
+    name: SetData
+    href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_SetData_Falcon_Contracts_IQueryResponse_System_Collections_Generic_IEnumerable_System_Object__
+  - name: (
+  - uid: Falcon.Contracts.IQueryResponse
+    name: IQueryResponse
+    href: Falcon.Contracts.IQueryResponse.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: Falcon.Contracts.Extensions
+  commentId: T:Falcon.Contracts.Extensions
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.Extensions.html
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Falcon.Contracts.Extensions
+- uid: Falcon.Contracts.Extensions.SetPageContext(Falcon.Contracts.IQueryResponse,Falcon.Contracts.IPageContext)
+  commentId: M:Falcon.Contracts.Extensions.SetPageContext(Falcon.Contracts.IQueryResponse,Falcon.Contracts.IPageContext)
+  href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_SetPageContext_Falcon_Contracts_IQueryResponse_Falcon_Contracts_IPageContext_
+  name: SetPageContext(IQueryResponse, IPageContext)
+  nameWithType: Extensions.SetPageContext(IQueryResponse, IPageContext)
+  fullName: Falcon.Contracts.Extensions.SetPageContext(Falcon.Contracts.IQueryResponse, Falcon.Contracts.IPageContext)
+  spec.csharp:
+  - uid: Falcon.Contracts.Extensions.SetPageContext(Falcon.Contracts.IQueryResponse,Falcon.Contracts.IPageContext)
+    name: SetPageContext
+    href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_SetPageContext_Falcon_Contracts_IQueryResponse_Falcon_Contracts_IPageContext_
+  - name: (
+  - uid: Falcon.Contracts.IQueryResponse
+    name: IQueryResponse
+    href: Falcon.Contracts.IQueryResponse.html
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IPageContext
+    name: IPageContext
+    href: Falcon.Contracts.IPageContext.html
+  - name: )
+  spec.vb:
+  - uid: Falcon.Contracts.Extensions.SetPageContext(Falcon.Contracts.IQueryResponse,Falcon.Contracts.IPageContext)
+    name: SetPageContext
+    href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_SetPageContext_Falcon_Contracts_IQueryResponse_Falcon_Contracts_IPageContext_
+  - name: (
+  - uid: Falcon.Contracts.IQueryResponse
+    name: IQueryResponse
+    href: Falcon.Contracts.IQueryResponse.html
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IPageContext
+    name: IPageContext
+    href: Falcon.Contracts.IPageContext.html
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  commentId: T:Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html
+  name: EntityAuditExtentions
+  nameWithType: EntityAuditExtentions
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions
+  commentId: N:Falcon.Infrastructure.Abstractions
+  href: Falcon.html
+  name: Falcon.Infrastructure.Abstractions
+  nameWithType: Falcon.Infrastructure.Abstractions
+  fullName: Falcon.Infrastructure.Abstractions
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+- uid: Falcon.Contracts.QueryResponse.#ctor*
+  commentId: Overload:Falcon.Contracts.QueryResponse.#ctor
+  href: Falcon.Contracts.QueryResponse.html#Falcon_Contracts_QueryResponse__ctor_System_Collections_Generic_IEnumerable_System_Object__Falcon_Contracts_IPageContext_
+  name: QueryResponse
+  nameWithType: QueryResponse.QueryResponse
+  fullName: Falcon.Contracts.QueryResponse.QueryResponse
+  nameWithType.vb: QueryResponse.New
+  fullName.vb: Falcon.Contracts.QueryResponse.New
+  name.vb: New
+- uid: System.Collections.Generic.IEnumerable{System.Object}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<object>
+  nameWithType: IEnumerable<object>
+  fullName: System.Collections.Generic.IEnumerable<object>
+  nameWithType.vb: IEnumerable(Of Object)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Object)
+  name.vb: IEnumerable(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Falcon.Contracts.IPageContext
+  commentId: T:Falcon.Contracts.IPageContext
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IPageContext.html
+  name: IPageContext
+  nameWithType: IPageContext
+  fullName: Falcon.Contracts.IPageContext
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Falcon.Contracts.QueryResponse.Page*
+  commentId: Overload:Falcon.Contracts.QueryResponse.Page
+  href: Falcon.Contracts.QueryResponse.html#Falcon_Contracts_QueryResponse_Page
+  name: Page
+  nameWithType: QueryResponse.Page
+  fullName: Falcon.Contracts.QueryResponse.Page
+- uid: Falcon.Contracts.IQueryResponse.Page
+  commentId: P:Falcon.Contracts.IQueryResponse.Page
+  parent: Falcon.Contracts.IQueryResponse
+  href: Falcon.Contracts.IQueryResponse.html#Falcon_Contracts_IQueryResponse_Page
+  name: Page
+  nameWithType: IQueryResponse.Page
+  fullName: Falcon.Contracts.IQueryResponse.Page
+- uid: Falcon.Contracts.QueryResponse.Data*
+  commentId: Overload:Falcon.Contracts.QueryResponse.Data
+  href: Falcon.Contracts.QueryResponse.html#Falcon_Contracts_QueryResponse_Data
+  name: Data
+  nameWithType: QueryResponse.Data
+  fullName: Falcon.Contracts.QueryResponse.Data
+- uid: Falcon.Contracts.IQueryResponse.Data
+  commentId: P:Falcon.Contracts.IQueryResponse.Data
+  parent: Falcon.Contracts.IQueryResponse
+  href: Falcon.Contracts.IQueryResponse.html#Falcon_Contracts_IQueryResponse_Data
+  name: Data
+  nameWithType: IQueryResponse.Data
+  fullName: Falcon.Contracts.IQueryResponse.Data

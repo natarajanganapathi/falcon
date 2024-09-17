@@ -10,7 +10,5 @@ public class SingleTenant : ITenant
             { $"{nameof(DbConfig)}:{nameof(value.ConnectionString)}", value.ConnectionString }
         };
     }
-    public string? Id { get; set; }
-    public string? Name { get; set; }
-    public IDictionary<string, string?> Options { get; set; } = new Dictionary<string, string?>();
+    public IDictionary<string, string?> Options { get; }
 }

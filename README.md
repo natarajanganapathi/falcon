@@ -31,6 +31,7 @@ versionize                             1.21.0          versionize
 ## Architecure References
 1. [Clean Architecture](https://github.com/jasontaylordev/CleanArchitecture)
 2. [Clean Architecture](https://github.com/amantinband/clean-architecture)
+3. [Aspire Samples](https://github.com/dotnet/aspire-samples)
 
 ## Development Refernce
 1. [Endpoint Groupgings](https://www.linkedin.com/feed/update/urn:li:activity:7071491219628912640/)

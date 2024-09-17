@@ -13,13 +13,10 @@ clean:
 	-dotnet clean
 	-rimraf docs
 
-build: build-library build-src build-modules build-samples
+build: build-src build-samples
 
 build-src:
 	-dotnet build ./Falcon.sln
-
-build-modules:
-	-dotnet build ./samples/samples.sln
 
 build-samples:
 	-dotnet build ./samples/samples.sln
@@ -42,7 +39,7 @@ packages:
 docfx:
 	-docfx docfx/docfx.json
 
-docs:
+docs: 
 	-docfx docfx/docfx.json --serve
 
 outdated:

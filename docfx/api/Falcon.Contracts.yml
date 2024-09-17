@@ -1,0 +1,448 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Contracts
+  commentId: N:Falcon.Contracts
+  id: Falcon.Contracts
+  children:
+  - Falcon.Contracts.CommandRequest`1
+  - Falcon.Contracts.CommandResponse`1
+  - Falcon.Contracts.CompositeFilter
+  - Falcon.Contracts.CompositeOperator
+  - Falcon.Contracts.CompositeRequest
+  - Falcon.Contracts.CompositeResponse
+  - Falcon.Contracts.ConditionFilter
+  - Falcon.Contracts.Direction
+  - Falcon.Contracts.ErrorResponse
+  - Falcon.Contracts.ExceptionExtension
+  - Falcon.Contracts.Extensions
+  - Falcon.Contracts.FieldFilter
+  - Falcon.Contracts.FieldOperator
+  - Falcon.Contracts.Filter
+  - Falcon.Contracts.FilterConverter
+  - Falcon.Contracts.FilterType
+  - Falcon.Contracts.FilterValueType
+  - Falcon.Contracts.IApiRequest
+  - Falcon.Contracts.IApiResponse
+  - Falcon.Contracts.ICommandRequest`1
+  - Falcon.Contracts.ICommandResponse`1
+  - Falcon.Contracts.ICompositeFilter
+  - Falcon.Contracts.ICompositeRequest
+  - Falcon.Contracts.ICompositeResponse
+  - Falcon.Contracts.IConditionFilter
+  - Falcon.Contracts.IErrorResponse
+  - Falcon.Contracts.IFieldFilter
+  - Falcon.Contracts.IFilter
+  - Falcon.Contracts.IInclude
+  - Falcon.Contracts.IPageContext
+  - Falcon.Contracts.IQueryRequest
+  - Falcon.Contracts.IQueryRequestExtensions
+  - Falcon.Contracts.IQueryResponse
+  - Falcon.Contracts.ISort
+  - Falcon.Contracts.IUnaryFilter
+  - Falcon.Contracts.Include
+  - Falcon.Contracts.PageContext
+  - Falcon.Contracts.PageContextExtensions
+  - Falcon.Contracts.QueryRequest
+  - Falcon.Contracts.QueryResponse
+  - Falcon.Contracts.Sort
+  - Falcon.Contracts.UnaryFilter
+  - Falcon.Contracts.UnaryOperator
+  langs:
+  - csharp
+  - vb
+  name: Falcon.Contracts
+  nameWithType: Falcon.Contracts
+  fullName: Falcon.Contracts
+  type: Namespace
+  assemblies:
+  - Falcon.Contracts.Abstractions
+references:
+- uid: Falcon.Contracts.CommandRequest`1
+  commentId: T:Falcon.Contracts.CommandRequest`1
+  href: Falcon.Contracts.CommandRequest-1.html
+  name: CommandRequest<TEntity>
+  nameWithType: CommandRequest<TEntity>
+  fullName: Falcon.Contracts.CommandRequest<TEntity>
+  nameWithType.vb: CommandRequest(Of TEntity)
+  fullName.vb: Falcon.Contracts.CommandRequest(Of TEntity)
+  name.vb: CommandRequest(Of TEntity)
+  spec.csharp:
+  - uid: Falcon.Contracts.CommandRequest`1
+    name: CommandRequest
+    href: Falcon.Contracts.CommandRequest-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Contracts.CommandRequest`1
+    name: CommandRequest
+    href: Falcon.Contracts.CommandRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Falcon.Contracts.IInclude
+  commentId: T:Falcon.Contracts.IInclude
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IInclude.html
+  name: IInclude
+  nameWithType: IInclude
+  fullName: Falcon.Contracts.IInclude
+- uid: Falcon.Contracts.Include
+  commentId: T:Falcon.Contracts.Include
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.Include.html
+  name: Include
+  nameWithType: Include
+  fullName: Falcon.Contracts.Include
+- uid: Falcon.Contracts.IPageContext
+  commentId: T:Falcon.Contracts.IPageContext
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IPageContext.html
+  name: IPageContext
+  nameWithType: IPageContext
+  fullName: Falcon.Contracts.IPageContext
+- uid: Falcon.Contracts.ISort
+  commentId: T:Falcon.Contracts.ISort
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.ISort.html
+  name: ISort
+  nameWithType: ISort
+  fullName: Falcon.Contracts.ISort
+- uid: Falcon.Contracts.Direction
+  commentId: T:Falcon.Contracts.Direction
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.Direction.html
+  name: Direction
+  nameWithType: Direction
+  fullName: Falcon.Contracts.Direction
+- uid: Falcon.Contracts.PageContext
+  commentId: T:Falcon.Contracts.PageContext
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.PageContext.html
+  name: PageContext
+  nameWithType: PageContext
+  fullName: Falcon.Contracts.PageContext
+- uid: Falcon.Contracts.PageContextExtensions
+  commentId: T:Falcon.Contracts.PageContextExtensions
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.PageContextExtensions.html
+  name: PageContextExtensions
+  nameWithType: PageContextExtensions
+  fullName: Falcon.Contracts.PageContextExtensions
+- uid: Falcon.Contracts.Sort
+  commentId: T:Falcon.Contracts.Sort
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.Sort.html
+  name: Sort
+  nameWithType: Sort
+  fullName: Falcon.Contracts.Sort
+- uid: Falcon.Contracts.CompositeRequest
+  commentId: T:Falcon.Contracts.CompositeRequest
+  href: Falcon.Contracts.CompositeRequest.html
+  name: CompositeRequest
+  nameWithType: CompositeRequest
+  fullName: Falcon.Contracts.CompositeRequest
+- uid: Falcon.Contracts.Extensions
+  commentId: T:Falcon.Contracts.Extensions
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.Extensions.html
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Falcon.Contracts.Extensions
+- uid: Falcon.Contracts.CompositeFilter
+  commentId: T:Falcon.Contracts.CompositeFilter
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.CompositeFilter.html
+  name: CompositeFilter
+  nameWithType: CompositeFilter
+  fullName: Falcon.Contracts.CompositeFilter
+- uid: Falcon.Contracts.ConditionFilter
+  commentId: T:Falcon.Contracts.ConditionFilter
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.ConditionFilter.html
+  name: ConditionFilter
+  nameWithType: ConditionFilter
+  fullName: Falcon.Contracts.ConditionFilter
+- uid: Falcon.Contracts.FieldFilter
+  commentId: T:Falcon.Contracts.FieldFilter
+  href: Falcon.Contracts.FieldFilter.html
+  name: FieldFilter
+  nameWithType: FieldFilter
+  fullName: Falcon.Contracts.FieldFilter
+- uid: Falcon.Contracts.Filter
+  commentId: T:Falcon.Contracts.Filter
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.Filter.html
+  name: Filter
+  nameWithType: Filter
+  fullName: Falcon.Contracts.Filter
+- uid: Falcon.Contracts.FilterConverter
+  commentId: T:Falcon.Contracts.FilterConverter
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.FilterConverter.html
+  name: FilterConverter
+  nameWithType: FilterConverter
+  fullName: Falcon.Contracts.FilterConverter
+- uid: Falcon.Contracts.FilterType
+  commentId: T:Falcon.Contracts.FilterType
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.FilterType.html
+  name: FilterType
+  nameWithType: FilterType
+  fullName: Falcon.Contracts.FilterType
+- uid: Falcon.Contracts.FilterValueType
+  commentId: T:Falcon.Contracts.FilterValueType
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.FilterValueType.html
+  name: FilterValueType
+  nameWithType: FilterValueType
+  fullName: Falcon.Contracts.FilterValueType
+- uid: Falcon.Contracts.IFilter
+  commentId: T:Falcon.Contracts.IFilter
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IFilter.html
+  name: IFilter
+  nameWithType: IFilter
+  fullName: Falcon.Contracts.IFilter
+- uid: Falcon.Contracts.ICompositeFilter
+  commentId: T:Falcon.Contracts.ICompositeFilter
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.ICompositeFilter.html
+  name: ICompositeFilter
+  nameWithType: ICompositeFilter
+  fullName: Falcon.Contracts.ICompositeFilter
+- uid: Falcon.Contracts.IConditionFilter
+  commentId: T:Falcon.Contracts.IConditionFilter
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IConditionFilter.html
+  name: IConditionFilter
+  nameWithType: IConditionFilter
+  fullName: Falcon.Contracts.IConditionFilter
+- uid: Falcon.Contracts.IFieldFilter
+  commentId: T:Falcon.Contracts.IFieldFilter
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IFieldFilter.html
+  name: IFieldFilter
+  nameWithType: IFieldFilter
+  fullName: Falcon.Contracts.IFieldFilter
+- uid: Falcon.Contracts.IUnaryFilter
+  commentId: T:Falcon.Contracts.IUnaryFilter
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IUnaryFilter.html
+  name: IUnaryFilter
+  nameWithType: IUnaryFilter
+  fullName: Falcon.Contracts.IUnaryFilter
+- uid: Falcon.Contracts.CompositeOperator
+  commentId: T:Falcon.Contracts.CompositeOperator
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.CompositeOperator.html
+  name: CompositeOperator
+  nameWithType: CompositeOperator
+  fullName: Falcon.Contracts.CompositeOperator
+- uid: Falcon.Contracts.FieldOperator
+  commentId: T:Falcon.Contracts.FieldOperator
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.FieldOperator.html
+  name: FieldOperator
+  nameWithType: FieldOperator
+  fullName: Falcon.Contracts.FieldOperator
+- uid: Falcon.Contracts.UnaryOperator
+  commentId: T:Falcon.Contracts.UnaryOperator
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.UnaryOperator.html
+  name: UnaryOperator
+  nameWithType: UnaryOperator
+  fullName: Falcon.Contracts.UnaryOperator
+- uid: Falcon.Contracts.UnaryFilter
+  commentId: T:Falcon.Contracts.UnaryFilter
+  href: Falcon.Contracts.UnaryFilter.html
+  name: UnaryFilter
+  nameWithType: UnaryFilter
+  fullName: Falcon.Contracts.UnaryFilter
+- uid: Falcon.Contracts.IApiRequest
+  commentId: T:Falcon.Contracts.IApiRequest
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IApiRequest.html
+  name: IApiRequest
+  nameWithType: IApiRequest
+  fullName: Falcon.Contracts.IApiRequest
+- uid: Falcon.Contracts.ICommandRequest`1
+  commentId: T:Falcon.Contracts.ICommandRequest`1
+  href: Falcon.Contracts.ICommandRequest-1.html
+  name: ICommandRequest<TEntity>
+  nameWithType: ICommandRequest<TEntity>
+  fullName: Falcon.Contracts.ICommandRequest<TEntity>
+  nameWithType.vb: ICommandRequest(Of TEntity)
+  fullName.vb: Falcon.Contracts.ICommandRequest(Of TEntity)
+  name.vb: ICommandRequest(Of TEntity)
+  spec.csharp:
+  - uid: Falcon.Contracts.ICommandRequest`1
+    name: ICommandRequest
+    href: Falcon.Contracts.ICommandRequest-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Contracts.ICommandRequest`1
+    name: ICommandRequest
+    href: Falcon.Contracts.ICommandRequest-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Falcon.Contracts.ICompositeRequest
+  commentId: T:Falcon.Contracts.ICompositeRequest
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.ICompositeRequest.html
+  name: ICompositeRequest
+  nameWithType: ICompositeRequest
+  fullName: Falcon.Contracts.ICompositeRequest
+- uid: Falcon.Contracts.IQueryRequest
+  commentId: T:Falcon.Contracts.IQueryRequest
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IQueryRequest.html
+  name: IQueryRequest
+  nameWithType: IQueryRequest
+  fullName: Falcon.Contracts.IQueryRequest
+- uid: Falcon.Contracts.QueryRequest
+  commentId: T:Falcon.Contracts.QueryRequest
+  href: Falcon.Contracts.QueryRequest.html
+  name: QueryRequest
+  nameWithType: QueryRequest
+  fullName: Falcon.Contracts.QueryRequest
+- uid: Falcon.Contracts.IQueryRequestExtensions
+  commentId: T:Falcon.Contracts.IQueryRequestExtensions
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IQueryRequestExtensions.html
+  name: IQueryRequestExtensions
+  nameWithType: IQueryRequestExtensions
+  fullName: Falcon.Contracts.IQueryRequestExtensions
+- uid: Falcon.Contracts.CommandResponse`1
+  commentId: T:Falcon.Contracts.CommandResponse`1
+  href: Falcon.Contracts.CommandResponse-1.html
+  name: CommandResponse<TEntity>
+  nameWithType: CommandResponse<TEntity>
+  fullName: Falcon.Contracts.CommandResponse<TEntity>
+  nameWithType.vb: CommandResponse(Of TEntity)
+  fullName.vb: Falcon.Contracts.CommandResponse(Of TEntity)
+  name.vb: CommandResponse(Of TEntity)
+  spec.csharp:
+  - uid: Falcon.Contracts.CommandResponse`1
+    name: CommandResponse
+    href: Falcon.Contracts.CommandResponse-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Contracts.CommandResponse`1
+    name: CommandResponse
+    href: Falcon.Contracts.CommandResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Falcon.Contracts.CompositeResponse
+  commentId: T:Falcon.Contracts.CompositeResponse
+  href: Falcon.Contracts.CompositeResponse.html
+  name: CompositeResponse
+  nameWithType: CompositeResponse
+  fullName: Falcon.Contracts.CompositeResponse
+- uid: Falcon.Contracts.ErrorResponse
+  commentId: T:Falcon.Contracts.ErrorResponse
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.ErrorResponse.html
+  name: ErrorResponse
+  nameWithType: ErrorResponse
+  fullName: Falcon.Contracts.ErrorResponse
+- uid: Falcon.Contracts.ExceptionExtension
+  commentId: T:Falcon.Contracts.ExceptionExtension
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.ExceptionExtension.html
+  name: ExceptionExtension
+  nameWithType: ExceptionExtension
+  fullName: Falcon.Contracts.ExceptionExtension
+- uid: Falcon.Contracts.IApiResponse
+  commentId: T:Falcon.Contracts.IApiResponse
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IApiResponse.html
+  name: IApiResponse
+  nameWithType: IApiResponse
+  fullName: Falcon.Contracts.IApiResponse
+- uid: Falcon.Contracts.ICommandResponse`1
+  commentId: T:Falcon.Contracts.ICommandResponse`1
+  href: Falcon.Contracts.ICommandResponse-1.html
+  name: ICommandResponse<TEntity>
+  nameWithType: ICommandResponse<TEntity>
+  fullName: Falcon.Contracts.ICommandResponse<TEntity>
+  nameWithType.vb: ICommandResponse(Of TEntity)
+  fullName.vb: Falcon.Contracts.ICommandResponse(Of TEntity)
+  name.vb: ICommandResponse(Of TEntity)
+  spec.csharp:
+  - uid: Falcon.Contracts.ICommandResponse`1
+    name: ICommandResponse
+    href: Falcon.Contracts.ICommandResponse-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Contracts.ICommandResponse`1
+    name: ICommandResponse
+    href: Falcon.Contracts.ICommandResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Falcon.Contracts.ICompositeResponse
+  commentId: T:Falcon.Contracts.ICompositeResponse
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.ICompositeResponse.html
+  name: ICompositeResponse
+  nameWithType: ICompositeResponse
+  fullName: Falcon.Contracts.ICompositeResponse
+- uid: Falcon.Contracts.IErrorResponse
+  commentId: T:Falcon.Contracts.IErrorResponse
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IErrorResponse.html
+  name: IErrorResponse
+  nameWithType: IErrorResponse
+  fullName: Falcon.Contracts.IErrorResponse
+- uid: Falcon.Contracts.IQueryResponse
+  commentId: T:Falcon.Contracts.IQueryResponse
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IQueryResponse.html
+  name: IQueryResponse
+  nameWithType: IQueryResponse
+  fullName: Falcon.Contracts.IQueryResponse
+- uid: Falcon.Contracts.QueryResponse
+  commentId: T:Falcon.Contracts.QueryResponse
+  href: Falcon.Contracts.QueryResponse.html
+  name: QueryResponse
+  nameWithType: QueryResponse
+  fullName: Falcon.Contracts.QueryResponse
+- uid: Falcon.Contracts
+  commentId: N:Falcon.Contracts
+  href: Falcon.html
+  name: Falcon.Contracts
+  nameWithType: Falcon.Contracts
+  fullName: Falcon.Contracts
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
