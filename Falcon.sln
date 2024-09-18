@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstractions", "src\Infrastructure\Abstractions\Abstractions.csproj", "{CB87A2D2-3E12-4B48-A268-D99628AD2D91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework", "src\Infrastructure\EntityFramework\EntityFramework\EntityFramework.csproj", "{D9F9B30E-DC23-473E-9959-B3587E37C1F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework", "src\Infrastructure\EntityFramework\Abstractions\Abstractions.csproj", "{D9F9B30E-DC23-473E-9959-B3587E37C1F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostgreSql", "src\Infrastructure\EntityFramework\PostgreSql\PostgreSql.csproj", "{2C1332D9-1257-45DC-A9E3-A816DA594E20}"
 EndProject
