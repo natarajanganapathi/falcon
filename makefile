@@ -12,6 +12,8 @@ format:
 clean:
 	-dotnet clean
 	-rimraf docs
+	-rimraf packages
+	
 
 build: build-src build-samples
 
