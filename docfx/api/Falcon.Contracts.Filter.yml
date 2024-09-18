@@ -1,0 +1,817 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Contracts.Filter
+  commentId: T:Falcon.Contracts.Filter
+  id: Filter
+  parent: Falcon.Contracts
+  children:
+  - Falcon.Contracts.Filter.#ctor(Falcon.Contracts.FilterType)
+  - Falcon.Contracts.Filter.Kind
+  langs:
+  - csharp
+  - vb
+  name: Filter
+  nameWithType: Filter
+  fullName: Falcon.Contracts.Filter
+  type: Class
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Filter.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Filter
+    path: ../src/Shared/Contracts/Request/Filter/Filter.cs
+    startLine: 2
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: >-
+      [JsonConverter(typeof(FilterConverter))]
+
+      public class Filter : IFilter
+    content.vb: >-
+      <JsonConverter(GetType(FilterConverter))>
+
+      Public Class Filter Implements IFilter
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Falcon.Contracts.CompositeFilter
+  - Falcon.Contracts.ConditionFilter
+  implements:
+  - Falcon.Contracts.IFilter
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Falcon.Contracts.Filter.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  - Falcon.Contracts.Filter.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  - Falcon.Contracts.IFilter.Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1
+  attributes:
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Falcon.Contracts.FilterConverter
+- uid: Falcon.Contracts.Filter.#ctor(Falcon.Contracts.FilterType)
+  commentId: M:Falcon.Contracts.Filter.#ctor(Falcon.Contracts.FilterType)
+  id: '#ctor(Falcon.Contracts.FilterType)'
+  parent: Falcon.Contracts.Filter
+  langs:
+  - csharp
+  - vb
+  name: Filter(FilterType)
+  nameWithType: Filter.Filter(FilterType)
+  fullName: Falcon.Contracts.Filter.Filter(Falcon.Contracts.FilterType)
+  type: Constructor
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Filter.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: .ctor
+    path: ../src/Shared/Contracts/Request/Filter/Filter.cs
+    startLine: 5
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public Filter(FilterType filterType)
+    parameters:
+    - id: filterType
+      type: Falcon.Contracts.FilterType
+    content.vb: Public Sub New(filterType As FilterType)
+  overload: Falcon.Contracts.Filter.#ctor*
+  nameWithType.vb: Filter.New(FilterType)
+  fullName.vb: Falcon.Contracts.Filter.New(Falcon.Contracts.FilterType)
+  name.vb: New(FilterType)
+- uid: Falcon.Contracts.Filter.Kind
+  commentId: P:Falcon.Contracts.Filter.Kind
+  id: Kind
+  parent: Falcon.Contracts.Filter
+  langs:
+  - csharp
+  - vb
+  name: Kind
+  nameWithType: Filter.Kind
+  fullName: Falcon.Contracts.Filter.Kind
+  type: Property
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Filter.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Kind
+    path: ../src/Shared/Contracts/Request/Filter/Filter.cs
+    startLine: 9
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  example: []
+  syntax:
+    content: public FilterType Kind { get; set; }
+    parameters: []
+    return:
+      type: Falcon.Contracts.FilterType
+    content.vb: Public Property Kind As FilterType
+  overload: Falcon.Contracts.Filter.Kind*
+  implements:
+  - Falcon.Contracts.IFilter.Kind
+references:
+- uid: Falcon.Contracts
+  commentId: N:Falcon.Contracts
+  href: Falcon.html
+  name: Falcon.Contracts
+  nameWithType: Falcon.Contracts
+  fullName: Falcon.Contracts
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Falcon.Contracts.IFilter
+  commentId: T:Falcon.Contracts.IFilter
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IFilter.html
+  name: IFilter
+  nameWithType: IFilter
+  fullName: Falcon.Contracts.IFilter
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Falcon.Contracts.Filter.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, Filter>(Filter, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, Filter>(Filter, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, Falcon.Contracts.Filter>(Falcon.Contracts.Filter, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, Filter)(Filter, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, Falcon.Contracts.Filter)(Falcon.Contracts.Filter, TId, Date)
+  name.vb: AuditForCreate(Of TId, Filter)(Filter, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Contracts.Filter,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.Filter
+    name: Filter
+    href: Falcon.Contracts.Filter.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.Filter
+    name: Filter
+    href: Falcon.Contracts.Filter.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Contracts.Filter,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.Filter
+    name: Filter
+    href: Falcon.Contracts.Filter.html
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.Filter
+    name: Filter
+    href: Falcon.Contracts.Filter.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Contracts.Filter.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, Filter>(Filter, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, Filter>(Filter, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, Falcon.Contracts.Filter>(Falcon.Contracts.Filter, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, Filter)(Filter, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, Falcon.Contracts.Filter)(Falcon.Contracts.Filter, TId, Date)
+  name.vb: AuditForUpdate(Of TId, Filter)(Filter, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Contracts.Filter,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.Filter
+    name: Filter
+    href: Falcon.Contracts.Filter.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.Filter
+    name: Filter
+    href: Falcon.Contracts.Filter.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Contracts.Filter,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.Filter
+    name: Filter
+    href: Falcon.Contracts.Filter.html
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.Filter
+    name: Filter
+    href: Falcon.Contracts.Filter.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Contracts.IFilter.Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1
+  commentId: M:Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions
+  definition: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_FilterExtentions_GetFilterExpression__1_Falcon_Contracts_IFilter_
+  name: GetFilterExpression<TEntity>(IFilter)
+  nameWithType: FilterExtentions.GetFilterExpression<TEntity>(IFilter)
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression<TEntity>(Falcon.Contracts.IFilter)
+  nameWithType.vb: FilterExtentions.GetFilterExpression(Of TEntity)(IFilter)
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression(Of TEntity)(Falcon.Contracts.IFilter)
+  name.vb: GetFilterExpression(Of TEntity)(IFilter)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+    name: GetFilterExpression
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_FilterExtentions_GetFilterExpression__1_Falcon_Contracts_IFilter_
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.IFilter
+    name: IFilter
+    href: Falcon.Contracts.IFilter.html
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+    name: GetFilterExpression
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_FilterExtentions_GetFilterExpression__1_Falcon_Contracts_IFilter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.IFilter
+    name: IFilter
+    href: Falcon.Contracts.IFilter.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  commentId: T:Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html
+  name: EntityAuditExtentions
+  nameWithType: EntityAuditExtentions
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+  commentId: M:Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_FilterExtentions_GetFilterExpression__1_Falcon_Contracts_IFilter_
+  name: GetFilterExpression<TEntity>(IFilter)
+  nameWithType: FilterExtentions.GetFilterExpression<TEntity>(IFilter)
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression<TEntity>(Falcon.Contracts.IFilter)
+  nameWithType.vb: FilterExtentions.GetFilterExpression(Of TEntity)(IFilter)
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression(Of TEntity)(Falcon.Contracts.IFilter)
+  name.vb: GetFilterExpression(Of TEntity)(IFilter)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+    name: GetFilterExpression
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_FilterExtentions_GetFilterExpression__1_Falcon_Contracts_IFilter_
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.IFilter
+    name: IFilter
+    href: Falcon.Contracts.IFilter.html
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+    name: GetFilterExpression
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_FilterExtentions_GetFilterExpression__1_Falcon_Contracts_IFilter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.IFilter
+    name: IFilter
+    href: Falcon.Contracts.IFilter.html
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions
+  commentId: T:Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.html
+  name: FilterExtentions
+  nameWithType: FilterExtentions
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions
+- uid: Falcon.Infrastructure.Abstractions
+  commentId: N:Falcon.Infrastructure.Abstractions
+  href: Falcon.html
+  name: Falcon.Infrastructure.Abstractions
+  nameWithType: Falcon.Infrastructure.Abstractions
+  fullName: Falcon.Infrastructure.Abstractions
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  commentId: N:Falcon.Infrastructure.EntityFramework.QueryBuilder
+  href: Falcon.html
+  name: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  nameWithType: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.html
+- uid: Falcon.Contracts.Filter.#ctor*
+  commentId: Overload:Falcon.Contracts.Filter.#ctor
+  href: Falcon.Contracts.Filter.html#Falcon_Contracts_Filter__ctor_Falcon_Contracts_FilterType_
+  name: Filter
+  nameWithType: Filter.Filter
+  fullName: Falcon.Contracts.Filter.Filter
+  nameWithType.vb: Filter.New
+  fullName.vb: Falcon.Contracts.Filter.New
+  name.vb: New
+- uid: Falcon.Contracts.FilterType
+  commentId: T:Falcon.Contracts.FilterType
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.FilterType.html
+  name: FilterType
+  nameWithType: FilterType
+  fullName: Falcon.Contracts.FilterType
+- uid: Falcon.Contracts.Filter.Kind*
+  commentId: Overload:Falcon.Contracts.Filter.Kind
+  href: Falcon.Contracts.Filter.html#Falcon_Contracts_Filter_Kind
+  name: Kind
+  nameWithType: Filter.Kind
+  fullName: Falcon.Contracts.Filter.Kind
+- uid: Falcon.Contracts.IFilter.Kind
+  commentId: P:Falcon.Contracts.IFilter.Kind
+  parent: Falcon.Contracts.IFilter
+  href: Falcon.Contracts.IFilter.html#Falcon_Contracts_IFilter_Kind
+  name: Kind
+  nameWithType: IFilter.Kind
+  fullName: Falcon.Contracts.IFilter.Kind

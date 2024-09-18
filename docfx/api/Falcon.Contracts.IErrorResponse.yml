@@ -1,0 +1,459 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Contracts.IErrorResponse
+  commentId: T:Falcon.Contracts.IErrorResponse
+  id: IErrorResponse
+  parent: Falcon.Contracts
+  children:
+  - Falcon.Contracts.IErrorResponse.Code
+  - Falcon.Contracts.IErrorResponse.Message
+  - Falcon.Contracts.IErrorResponse.StackTrace
+  langs:
+  - csharp
+  - vb
+  name: IErrorResponse
+  nameWithType: IErrorResponse
+  fullName: Falcon.Contracts.IErrorResponse
+  type: Interface
+  source:
+    remote:
+      path: src/Shared/Contracts/Response/IErrorResponse.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: IErrorResponse
+    path: ../src/Shared/Contracts/Response/IErrorResponse.cs
+    startLine: 2
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: 'public interface IErrorResponse : IApiResponse'
+    content.vb: Public Interface IErrorResponse Inherits IApiResponse
+  extensionMethods:
+  - Falcon.Contracts.IErrorResponse.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  - Falcon.Contracts.IErrorResponse.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+- uid: Falcon.Contracts.IErrorResponse.Code
+  commentId: P:Falcon.Contracts.IErrorResponse.Code
+  id: Code
+  parent: Falcon.Contracts.IErrorResponse
+  langs:
+  - csharp
+  - vb
+  name: Code
+  nameWithType: IErrorResponse.Code
+  fullName: Falcon.Contracts.IErrorResponse.Code
+  type: Property
+  source:
+    remote:
+      path: src/Shared/Contracts/Response/IErrorResponse.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Code
+    path: ../src/Shared/Contracts/Response/IErrorResponse.cs
+    startLine: 4
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: string? Code { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Code As String
+  overload: Falcon.Contracts.IErrorResponse.Code*
+- uid: Falcon.Contracts.IErrorResponse.Message
+  commentId: P:Falcon.Contracts.IErrorResponse.Message
+  id: Message
+  parent: Falcon.Contracts.IErrorResponse
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: IErrorResponse.Message
+  fullName: Falcon.Contracts.IErrorResponse.Message
+  type: Property
+  source:
+    remote:
+      path: src/Shared/Contracts/Response/IErrorResponse.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Message
+    path: ../src/Shared/Contracts/Response/IErrorResponse.cs
+    startLine: 5
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: string? Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Message As String
+  overload: Falcon.Contracts.IErrorResponse.Message*
+- uid: Falcon.Contracts.IErrorResponse.StackTrace
+  commentId: P:Falcon.Contracts.IErrorResponse.StackTrace
+  id: StackTrace
+  parent: Falcon.Contracts.IErrorResponse
+  langs:
+  - csharp
+  - vb
+  name: StackTrace
+  nameWithType: IErrorResponse.StackTrace
+  fullName: Falcon.Contracts.IErrorResponse.StackTrace
+  type: Property
+  source:
+    remote:
+      path: src/Shared/Contracts/Response/IErrorResponse.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: StackTrace
+    path: ../src/Shared/Contracts/Response/IErrorResponse.cs
+    startLine: 6
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: string? StackTrace { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property StackTrace As String
+  overload: Falcon.Contracts.IErrorResponse.StackTrace*
+references:
+- uid: Falcon.Contracts
+  commentId: N:Falcon.Contracts
+  href: Falcon.html
+  name: Falcon.Contracts
+  nameWithType: Falcon.Contracts
+  fullName: Falcon.Contracts
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+- uid: Falcon.Contracts.IErrorResponse.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, IErrorResponse>(IErrorResponse, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, IErrorResponse>(IErrorResponse, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, Falcon.Contracts.IErrorResponse>(Falcon.Contracts.IErrorResponse, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, IErrorResponse)(IErrorResponse, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, Falcon.Contracts.IErrorResponse)(Falcon.Contracts.IErrorResponse, TId, Date)
+  name.vb: AuditForCreate(Of TId, IErrorResponse)(IErrorResponse, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Contracts.IErrorResponse,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IErrorResponse
+    name: IErrorResponse
+    href: Falcon.Contracts.IErrorResponse.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.IErrorResponse
+    name: IErrorResponse
+    href: Falcon.Contracts.IErrorResponse.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Contracts.IErrorResponse,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IErrorResponse
+    name: IErrorResponse
+    href: Falcon.Contracts.IErrorResponse.html
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.IErrorResponse
+    name: IErrorResponse
+    href: Falcon.Contracts.IErrorResponse.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Contracts.IErrorResponse.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, IErrorResponse>(IErrorResponse, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, IErrorResponse>(IErrorResponse, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, Falcon.Contracts.IErrorResponse>(Falcon.Contracts.IErrorResponse, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, IErrorResponse)(IErrorResponse, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, Falcon.Contracts.IErrorResponse)(Falcon.Contracts.IErrorResponse, TId, Date)
+  name.vb: AuditForUpdate(Of TId, IErrorResponse)(IErrorResponse, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Contracts.IErrorResponse,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IErrorResponse
+    name: IErrorResponse
+    href: Falcon.Contracts.IErrorResponse.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.IErrorResponse
+    name: IErrorResponse
+    href: Falcon.Contracts.IErrorResponse.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Contracts.IErrorResponse,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IErrorResponse
+    name: IErrorResponse
+    href: Falcon.Contracts.IErrorResponse.html
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.IErrorResponse
+    name: IErrorResponse
+    href: Falcon.Contracts.IErrorResponse.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  commentId: T:Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html
+  name: EntityAuditExtentions
+  nameWithType: EntityAuditExtentions
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions
+  commentId: N:Falcon.Infrastructure.Abstractions
+  href: Falcon.html
+  name: Falcon.Infrastructure.Abstractions
+  nameWithType: Falcon.Infrastructure.Abstractions
+  fullName: Falcon.Infrastructure.Abstractions
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+- uid: Falcon.Contracts.IErrorResponse.Code*
+  commentId: Overload:Falcon.Contracts.IErrorResponse.Code
+  href: Falcon.Contracts.IErrorResponse.html#Falcon_Contracts_IErrorResponse_Code
+  name: Code
+  nameWithType: IErrorResponse.Code
+  fullName: Falcon.Contracts.IErrorResponse.Code
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Falcon.Contracts.IErrorResponse.Message*
+  commentId: Overload:Falcon.Contracts.IErrorResponse.Message
+  href: Falcon.Contracts.IErrorResponse.html#Falcon_Contracts_IErrorResponse_Message
+  name: Message
+  nameWithType: IErrorResponse.Message
+  fullName: Falcon.Contracts.IErrorResponse.Message
+- uid: Falcon.Contracts.IErrorResponse.StackTrace*
+  commentId: Overload:Falcon.Contracts.IErrorResponse.StackTrace
+  href: Falcon.Contracts.IErrorResponse.html#Falcon_Contracts_IErrorResponse_StackTrace
+  name: StackTrace
+  nameWithType: IErrorResponse.StackTrace
+  fullName: Falcon.Contracts.IErrorResponse.StackTrace

@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Application.Abstractions
+  commentId: N:Falcon.Application.Abstractions
+  id: Falcon.Application.Abstractions
+  children:
+  - Falcon.Application.Abstractions.Endpoints`2
+  - Falcon.Application.Abstractions.IEndpoints
+  - Falcon.Application.Abstractions.ModuleExtensions
+  langs:
+  - csharp
+  - vb
+  name: Falcon.Application.Abstractions
+  nameWithType: Falcon.Application.Abstractions
+  fullName: Falcon.Application.Abstractions
+  type: Namespace
+  assemblies:
+  - Falcon.Application.Abstractions
+references:
+- uid: Falcon.Application.Abstractions.Endpoints`2
+  commentId: T:Falcon.Application.Abstractions.Endpoints`2
+  href: Falcon.Application.Abstractions.Endpoints-2.html
+  name: Endpoints<TId, TEntity>
+  nameWithType: Endpoints<TId, TEntity>
+  fullName: Falcon.Application.Abstractions.Endpoints<TId, TEntity>
+  nameWithType.vb: Endpoints(Of TId, TEntity)
+  fullName.vb: Falcon.Application.Abstractions.Endpoints(Of TId, TEntity)
+  name.vb: Endpoints(Of TId, TEntity)
+  spec.csharp:
+  - uid: Falcon.Application.Abstractions.Endpoints`2
+    name: Endpoints
+    href: Falcon.Application.Abstractions.Endpoints-2.html
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Application.Abstractions.Endpoints`2
+    name: Endpoints
+    href: Falcon.Application.Abstractions.Endpoints-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Falcon.Application.Abstractions.IEndpoints
+  commentId: T:Falcon.Application.Abstractions.IEndpoints
+  parent: Falcon.Application.Abstractions
+  href: Falcon.Application.Abstractions.IEndpoints.html
+  name: IEndpoints
+  nameWithType: IEndpoints
+  fullName: Falcon.Application.Abstractions.IEndpoints
+- uid: Falcon.Application.Abstractions.ModuleExtensions
+  commentId: T:Falcon.Application.Abstractions.ModuleExtensions
+  href: Falcon.Application.Abstractions.ModuleExtensions.html
+  name: ModuleExtensions
+  nameWithType: ModuleExtensions
+  fullName: Falcon.Application.Abstractions.ModuleExtensions
+- uid: Falcon.Application.Abstractions
+  commentId: N:Falcon.Application.Abstractions
+  href: Falcon.html
+  name: Falcon.Application.Abstractions
+  nameWithType: Falcon.Application.Abstractions
+  fullName: Falcon.Application.Abstractions
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Application
+    name: Application
+    href: Falcon.Application.html
+  - name: .
+  - uid: Falcon.Application.Abstractions
+    name: Abstractions
+    href: Falcon.Application.Abstractions.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Application
+    name: Application
+    href: Falcon.Application.html
+  - name: .
+  - uid: Falcon.Application.Abstractions
+    name: Abstractions
+    href: Falcon.Application.Abstractions.html

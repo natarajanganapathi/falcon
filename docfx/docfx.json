@@ -1,0 +1,84 @@
+{
+  "metadata": [
+    {
+      "src": [
+        { 
+          "files": ["Falcon.sln"],
+          "src": ".."
+        },
+        { 
+          "files": ["SparkPlug.Business.Menu/Menu.sln"],
+          "src": "../modules"
+        },
+        { 
+          "files": ["SparkPlug.Business.Tenancy/Tenancy.sln"],
+          "src": "../modules"
+        }],
+      "dest": "api",
+      "addReference":[],
+      "noDefaultInherit": true,
+      "includePrivateMembers": false,
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "noRestore": false,
+      "namespaceLayout": "flattened"
+    }
+  ],
+  "build": {
+    "assembly": [],
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "articles/**.md",
+          "articles/**/toc.yml",
+          "examples/**.md",
+          "examples/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "static/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "dest": "../docs",
+    "globalMetadata": {
+      "_appName": "falcon",
+      "_appTitle": "falcon",
+      "_enableSearch": "true",
+      "pdf": false
+    },
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+      "modern",
+      "templates/material"
+    ],
+    "postProcessors": [
+      "ExtractSearchIndex"
+    ],
+    "noLangKeyword": true,
+    "keepFileLink": false,
+    "disableGitFeatures": false
+  }
+}

@@ -1,0 +1,579 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Domain.Abstractions.Interfaces.Messages.INotification
+  commentId: T:Falcon.Domain.Abstractions.Interfaces.Messages.INotification
+  id: INotification
+  parent: Falcon.Domain.Abstractions.Interfaces.Messages
+  children:
+  - Falcon.Domain.Abstractions.Interfaces.Messages.INotification.PublishAsync``1(``0)
+  - Falcon.Domain.Abstractions.Interfaces.Messages.INotification.Subscribe``1(System.Func{``0,System.Threading.Tasks.Task})
+  langs:
+  - csharp
+  - vb
+  name: INotification
+  nameWithType: INotification
+  fullName: Falcon.Domain.Abstractions.Interfaces.Messages.INotification
+  type: Interface
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Messages/INotification.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: INotification
+    path: ../src/Domain/Abstractions/Interfaces/Messages/INotification.cs
+    startLine: 2
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Messages
+  syntax:
+    content: public interface INotification
+    content.vb: Public Interface INotification
+  extensionMethods:
+  - Falcon.Domain.Abstractions.Interfaces.Messages.INotification.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  - Falcon.Domain.Abstractions.Interfaces.Messages.INotification.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+- uid: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.PublishAsync``1(``0)
+  commentId: M:Falcon.Domain.Abstractions.Interfaces.Messages.INotification.PublishAsync``1(``0)
+  id: PublishAsync``1(``0)
+  parent: Falcon.Domain.Abstractions.Interfaces.Messages.INotification
+  langs:
+  - csharp
+  - vb
+  name: PublishAsync<T>(T)
+  nameWithType: INotification.PublishAsync<T>(T)
+  fullName: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.PublishAsync<T>(T)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Messages/INotification.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: PublishAsync
+    path: ../src/Domain/Abstractions/Interfaces/Messages/INotification.cs
+    startLine: 4
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Messages
+  syntax:
+    content: Task PublishAsync<T>(T message)
+    parameters:
+    - id: message
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function PublishAsync(Of T)(message As T) As Task
+  overload: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.PublishAsync*
+  nameWithType.vb: INotification.PublishAsync(Of T)(T)
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.PublishAsync(Of T)(T)
+  name.vb: PublishAsync(Of T)(T)
+- uid: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.Subscribe``1(System.Func{``0,System.Threading.Tasks.Task})
+  commentId: M:Falcon.Domain.Abstractions.Interfaces.Messages.INotification.Subscribe``1(System.Func{``0,System.Threading.Tasks.Task})
+  id: Subscribe``1(System.Func{``0,System.Threading.Tasks.Task})
+  parent: Falcon.Domain.Abstractions.Interfaces.Messages.INotification
+  langs:
+  - csharp
+  - vb
+  name: Subscribe<T>(Func<T, Task>)
+  nameWithType: INotification.Subscribe<T>(Func<T, Task>)
+  fullName: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.Subscribe<T>(System.Func<T, System.Threading.Tasks.Task>)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Messages/INotification.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Subscribe
+    path: ../src/Domain/Abstractions/Interfaces/Messages/INotification.cs
+    startLine: 5
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Messages
+  syntax:
+    content: void Subscribe<T>(Func<T, Task> handler)
+    parameters:
+    - id: handler
+      type: System.Func{{T},System.Threading.Tasks.Task}
+    typeParameters:
+    - id: T
+    content.vb: Sub Subscribe(Of T)(handler As Func(Of T, Task))
+  overload: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.Subscribe*
+  nameWithType.vb: INotification.Subscribe(Of T)(Func(Of T, Task))
+  fullName.vb: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.Subscribe(Of T)(System.Func(Of T, System.Threading.Tasks.Task))
+  name.vb: Subscribe(Of T)(Func(Of T, Task))
+references:
+- uid: Falcon.Domain.Abstractions.Interfaces.Messages
+  commentId: N:Falcon.Domain.Abstractions.Interfaces.Messages
+  href: Falcon.html
+  name: Falcon.Domain.Abstractions.Interfaces.Messages
+  nameWithType: Falcon.Domain.Abstractions.Interfaces.Messages
+  fullName: Falcon.Domain.Abstractions.Interfaces.Messages
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Domain
+    name: Domain
+    href: Falcon.Domain.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions
+    name: Abstractions
+    href: Falcon.Domain.Abstractions.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces
+    name: Interfaces
+    href: Falcon.Domain.Abstractions.Interfaces.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces.Messages
+    name: Messages
+    href: Falcon.Domain.Abstractions.Interfaces.Messages.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Domain
+    name: Domain
+    href: Falcon.Domain.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions
+    name: Abstractions
+    href: Falcon.Domain.Abstractions.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces
+    name: Interfaces
+    href: Falcon.Domain.Abstractions.Interfaces.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces.Messages
+    name: Messages
+    href: Falcon.Domain.Abstractions.Interfaces.Messages.html
+- uid: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, INotification>(INotification, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, INotification>(INotification, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, Falcon.Domain.Abstractions.Interfaces.Messages.INotification>(Falcon.Domain.Abstractions.Interfaces.Messages.INotification, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, INotification)(INotification, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, Falcon.Domain.Abstractions.Interfaces.Messages.INotification)(Falcon.Domain.Abstractions.Interfaces.Messages.INotification, TId, Date)
+  name.vb: AuditForCreate(Of TId, INotification)(INotification, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Domain.Abstractions.Interfaces.Messages.INotification,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Domain.Abstractions.Interfaces.Messages.INotification
+    name: INotification
+    href: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Domain.Abstractions.Interfaces.Messages.INotification
+    name: INotification
+    href: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Domain.Abstractions.Interfaces.Messages.INotification,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Domain.Abstractions.Interfaces.Messages.INotification
+    name: INotification
+    href: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.html
+  - name: )
+  - name: (
+  - uid: Falcon.Domain.Abstractions.Interfaces.Messages.INotification
+    name: INotification
+    href: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, INotification>(INotification, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, INotification>(INotification, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, Falcon.Domain.Abstractions.Interfaces.Messages.INotification>(Falcon.Domain.Abstractions.Interfaces.Messages.INotification, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, INotification)(INotification, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, Falcon.Domain.Abstractions.Interfaces.Messages.INotification)(Falcon.Domain.Abstractions.Interfaces.Messages.INotification, TId, Date)
+  name.vb: AuditForUpdate(Of TId, INotification)(INotification, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Domain.Abstractions.Interfaces.Messages.INotification,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Domain.Abstractions.Interfaces.Messages.INotification
+    name: INotification
+    href: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Domain.Abstractions.Interfaces.Messages.INotification
+    name: INotification
+    href: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Domain.Abstractions.Interfaces.Messages.INotification,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Domain.Abstractions.Interfaces.Messages.INotification
+    name: INotification
+    href: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.html
+  - name: )
+  - name: (
+  - uid: Falcon.Domain.Abstractions.Interfaces.Messages.INotification
+    name: INotification
+    href: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  commentId: T:Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html
+  name: EntityAuditExtentions
+  nameWithType: EntityAuditExtentions
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions
+  commentId: N:Falcon.Infrastructure.Abstractions
+  href: Falcon.html
+  name: Falcon.Infrastructure.Abstractions
+  nameWithType: Falcon.Infrastructure.Abstractions
+  fullName: Falcon.Infrastructure.Abstractions
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+- uid: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.PublishAsync*
+  commentId: Overload:Falcon.Domain.Abstractions.Interfaces.Messages.INotification.PublishAsync
+  href: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.html#Falcon_Domain_Abstractions_Interfaces_Messages_INotification_PublishAsync__1___0_
+  name: PublishAsync
+  nameWithType: INotification.PublishAsync
+  fullName: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.PublishAsync
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: T
+  commentId: '!:T'
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.Subscribe*
+  commentId: Overload:Falcon.Domain.Abstractions.Interfaces.Messages.INotification.Subscribe
+  href: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.html#Falcon_Domain_Abstractions_Interfaces_Messages_INotification_Subscribe__1_System_Func___0_System_Threading_Tasks_Task__
+  name: Subscribe
+  nameWithType: INotification.Subscribe
+  fullName: Falcon.Domain.Abstractions.Interfaces.Messages.INotification.Subscribe
+- uid: System.Func{{T},System.Threading.Tasks.Task}
+  commentId: T:System.Func{``0,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, Task>
+  nameWithType: Func<T, Task>
+  fullName: System.Func<T, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of T, Task)
+  fullName.vb: System.Func(Of T, System.Threading.Tasks.Task)
+  name.vb: Func(Of T, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

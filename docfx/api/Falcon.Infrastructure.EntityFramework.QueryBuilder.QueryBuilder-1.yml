@@ -1,0 +1,1481 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+  commentId: T:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+  id: QueryBuilder`1
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  children:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildCountAsync(Microsoft.EntityFrameworkCore.DbSet{`0},System.Threading.CancellationToken)
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildProjection(Microsoft.EntityFrameworkCore.DbSet{`0})
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildSelection(Microsoft.EntityFrameworkCore.DbSet{`0})
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Includes(Falcon.Contracts.Include[])
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.New
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.PageContext(Falcon.Contracts.PageContext)
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Select(System.String[])
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Sort(Falcon.Contracts.Sort[])
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Where(Falcon.Contracts.Filter)
+  langs:
+  - csharp
+  - vb
+  name: QueryBuilder<TEntity>
+  nameWithType: QueryBuilder<TEntity>
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>
+  type: Class
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: QueryBuilder
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+    startLine: 2
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: 'public class QueryBuilder<TEntity> where TEntity : class'
+    typeParameters:
+    - id: TEntity
+    content.vb: Public Class QueryBuilder(Of TEntity As Class)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  nameWithType.vb: QueryBuilder(Of TEntity)
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity)
+  name.vb: QueryBuilder(Of TEntity)
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.New
+  commentId: M:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.New
+  id: New
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: New()
+  nameWithType: QueryBuilder<TEntity>.New()
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.New()
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: New
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+    startLine: 10
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: public static QueryBuilder<TEntity> New()
+    return:
+      type: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    content.vb: Public Shared Function [New]() As QueryBuilder(Of TEntity)
+  overload: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.New*
+  nameWithType.vb: QueryBuilder(Of TEntity).New()
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).New()
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Select(System.String[])
+  commentId: M:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Select(System.String[])
+  id: Select(System.String[])
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Select(string[]?)
+  nameWithType: QueryBuilder<TEntity>.Select(string[]?)
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.Select(string[]?)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Select
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+    startLine: 14
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: public QueryBuilder<TEntity> Select(string[]? select)
+    parameters:
+    - id: select
+      type: System.String[]
+    return:
+      type: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    content.vb: Public Function [Select]([select] As String()) As QueryBuilder(Of TEntity)
+  overload: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Select*
+  nameWithType.vb: QueryBuilder(Of TEntity).Select(String())
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).Select(String())
+  name.vb: Select(String())
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Where(Falcon.Contracts.Filter)
+  commentId: M:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Where(Falcon.Contracts.Filter)
+  id: Where(Falcon.Contracts.Filter)
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Where(Filter?)
+  nameWithType: QueryBuilder<TEntity>.Where(Filter?)
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.Where(Falcon.Contracts.Filter?)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Where
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+    startLine: 19
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: public QueryBuilder<TEntity> Where(Filter? filter)
+    parameters:
+    - id: filter
+      type: Falcon.Contracts.Filter
+    return:
+      type: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    content.vb: Public Function Where(filter As Filter) As QueryBuilder(Of TEntity)
+  overload: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Where*
+  nameWithType.vb: QueryBuilder(Of TEntity).Where(Filter)
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).Where(Falcon.Contracts.Filter)
+  name.vb: Where(Filter)
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Sort(Falcon.Contracts.Sort[])
+  commentId: M:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Sort(Falcon.Contracts.Sort[])
+  id: Sort(Falcon.Contracts.Sort[])
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Sort(Sort[]?)
+  nameWithType: QueryBuilder<TEntity>.Sort(Sort[]?)
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.Sort(Falcon.Contracts.Sort[]?)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Sort
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+    startLine: 24
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: public QueryBuilder<TEntity> Sort(Sort[]? sort)
+    parameters:
+    - id: sort
+      type: Falcon.Contracts.Sort[]
+    return:
+      type: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    content.vb: Public Function Sort(sort As Sort()) As QueryBuilder(Of TEntity)
+  overload: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Sort*
+  nameWithType.vb: QueryBuilder(Of TEntity).Sort(Sort())
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).Sort(Falcon.Contracts.Sort())
+  name.vb: Sort(Sort())
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Includes(Falcon.Contracts.Include[])
+  commentId: M:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Includes(Falcon.Contracts.Include[])
+  id: Includes(Falcon.Contracts.Include[])
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: Includes(Include[]?)
+  nameWithType: QueryBuilder<TEntity>.Includes(Include[]?)
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.Includes(Falcon.Contracts.Include[]?)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Includes
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+    startLine: 29
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: public QueryBuilder<TEntity> Includes(Include[]? includes)
+    parameters:
+    - id: includes
+      type: Falcon.Contracts.Include[]
+    return:
+      type: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    content.vb: Public Function Includes(includes As Include()) As QueryBuilder(Of TEntity)
+  overload: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Includes*
+  nameWithType.vb: QueryBuilder(Of TEntity).Includes(Include())
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).Includes(Falcon.Contracts.Include())
+  name.vb: Includes(Include())
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.PageContext(Falcon.Contracts.PageContext)
+  commentId: M:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.PageContext(Falcon.Contracts.PageContext)
+  id: PageContext(Falcon.Contracts.PageContext)
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: PageContext(PageContext?)
+  nameWithType: QueryBuilder<TEntity>.PageContext(PageContext?)
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.PageContext(Falcon.Contracts.PageContext?)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: PageContext
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+    startLine: 34
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: public QueryBuilder<TEntity> PageContext(PageContext? pageContext)
+    parameters:
+    - id: pageContext
+      type: Falcon.Contracts.PageContext
+    return:
+      type: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    content.vb: Public Function PageContext(pageContext As PageContext) As QueryBuilder(Of TEntity)
+  overload: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.PageContext*
+  nameWithType.vb: QueryBuilder(Of TEntity).PageContext(PageContext)
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).PageContext(Falcon.Contracts.PageContext)
+  name.vb: PageContext(PageContext)
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildProjection(Microsoft.EntityFrameworkCore.DbSet{`0})
+  commentId: M:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildProjection(Microsoft.EntityFrameworkCore.DbSet{`0})
+  id: BuildProjection(Microsoft.EntityFrameworkCore.DbSet{`0})
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: BuildProjection(DbSet<TEntity>)
+  nameWithType: QueryBuilder<TEntity>.BuildProjection(DbSet<TEntity>)
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.BuildProjection(Microsoft.EntityFrameworkCore.DbSet<TEntity>)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: BuildProjection
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+    startLine: 49
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: public IQueryable<JObject> BuildProjection(DbSet<TEntity> dbSet)
+    parameters:
+    - id: dbSet
+      type: Microsoft.EntityFrameworkCore.DbSet{{TEntity}}
+    return:
+      type: System.Linq.IQueryable{Newtonsoft.Json.Linq.JObject}
+    content.vb: Public Function BuildProjection(dbSet As DbSet(Of TEntity)) As IQueryable(Of JObject)
+  overload: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildProjection*
+  nameWithType.vb: QueryBuilder(Of TEntity).BuildProjection(DbSet(Of TEntity))
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).BuildProjection(Microsoft.EntityFrameworkCore.DbSet(Of TEntity))
+  name.vb: BuildProjection(DbSet(Of TEntity))
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildSelection(Microsoft.EntityFrameworkCore.DbSet{`0})
+  commentId: M:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildSelection(Microsoft.EntityFrameworkCore.DbSet{`0})
+  id: BuildSelection(Microsoft.EntityFrameworkCore.DbSet{`0})
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: BuildSelection(DbSet<TEntity>)
+  nameWithType: QueryBuilder<TEntity>.BuildSelection(DbSet<TEntity>)
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.BuildSelection(Microsoft.EntityFrameworkCore.DbSet<TEntity>)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: BuildSelection
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+    startLine: 53
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: public IQueryable<TEntity> BuildSelection(DbSet<TEntity> dbSet)
+    parameters:
+    - id: dbSet
+      type: Microsoft.EntityFrameworkCore.DbSet{{TEntity}}
+    return:
+      type: System.Linq.IQueryable{{TEntity}}
+    content.vb: Public Function BuildSelection(dbSet As DbSet(Of TEntity)) As IQueryable(Of TEntity)
+  overload: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildSelection*
+  nameWithType.vb: QueryBuilder(Of TEntity).BuildSelection(DbSet(Of TEntity))
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).BuildSelection(Microsoft.EntityFrameworkCore.DbSet(Of TEntity))
+  name.vb: BuildSelection(DbSet(Of TEntity))
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildCountAsync(Microsoft.EntityFrameworkCore.DbSet{`0},System.Threading.CancellationToken)
+  commentId: M:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildCountAsync(Microsoft.EntityFrameworkCore.DbSet{`0},System.Threading.CancellationToken)
+  id: BuildCountAsync(Microsoft.EntityFrameworkCore.DbSet{`0},System.Threading.CancellationToken)
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+  langs:
+  - csharp
+  - vb
+  name: BuildCountAsync(DbSet<TEntity>, CancellationToken)
+  nameWithType: QueryBuilder<TEntity>.BuildCountAsync(DbSet<TEntity>, CancellationToken)
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.BuildCountAsync(Microsoft.EntityFrameworkCore.DbSet<TEntity>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: BuildCountAsync
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/QueryBuilder.cs
+    startLine: 57
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: public Task<long> BuildCountAsync(DbSet<TEntity> dbSet, CancellationToken cancellationToken = default)
+    parameters:
+    - id: dbSet
+      type: Microsoft.EntityFrameworkCore.DbSet{{TEntity}}
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Int64}
+    content.vb: Public Function BuildCountAsync(dbSet As DbSet(Of TEntity), cancellationToken As CancellationToken = Nothing) As Task(Of Long)
+  overload: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildCountAsync*
+  nameWithType.vb: QueryBuilder(Of TEntity).BuildCountAsync(DbSet(Of TEntity), CancellationToken)
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).BuildCountAsync(Microsoft.EntityFrameworkCore.DbSet(Of TEntity), System.Threading.CancellationToken)
+  name.vb: BuildCountAsync(DbSet(Of TEntity), CancellationToken)
+references:
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  commentId: N:Falcon.Infrastructure.EntityFramework.QueryBuilder
+  href: Falcon.html
+  name: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  nameWithType: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, QueryBuilder<TEntity>>(QueryBuilder<TEntity>, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, QueryBuilder<TEntity>>(QueryBuilder<TEntity>, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>>(Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, QueryBuilder(Of TEntity))(QueryBuilder(Of TEntity), TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity))(Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity), TId, Date)
+  name.vb: AuditForCreate(Of TId, QueryBuilder(Of TEntity))(QueryBuilder(Of TEntity), TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder{`0},``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder{`0},``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+  - name: (
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, QueryBuilder<TEntity>>(QueryBuilder<TEntity>, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, QueryBuilder<TEntity>>(QueryBuilder<TEntity>, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>>(Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, QueryBuilder(Of TEntity))(QueryBuilder(Of TEntity), TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity))(Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity), TId, Date)
+  name.vb: AuditForUpdate(Of TId, QueryBuilder(Of TEntity))(QueryBuilder(Of TEntity), TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder{`0},``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder{`0},``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: )
+  - name: (
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  commentId: T:Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html
+  name: EntityAuditExtentions
+  nameWithType: EntityAuditExtentions
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions
+  commentId: N:Falcon.Infrastructure.Abstractions
+  href: Falcon.html
+  name: Falcon.Infrastructure.Abstractions
+  nameWithType: Falcon.Infrastructure.Abstractions
+  fullName: Falcon.Infrastructure.Abstractions
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.New*
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.New
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_QueryBuilder_1_New
+  name: New
+  nameWithType: QueryBuilder<TEntity>.New
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.New
+  nameWithType.vb: QueryBuilder(Of TEntity).New
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).New
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+  commentId: T:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html
+  name: QueryBuilder<TEntity>
+  nameWithType: QueryBuilder<TEntity>
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>
+  nameWithType.vb: QueryBuilder(Of TEntity)
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity)
+  name.vb: QueryBuilder(Of TEntity)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Select*
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Select
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_QueryBuilder_1_Select_System_String___
+  name: Select
+  nameWithType: QueryBuilder<TEntity>.Select
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.Select
+  nameWithType.vb: QueryBuilder(Of TEntity).Select
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).Select
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Where*
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Where
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_QueryBuilder_1_Where_Falcon_Contracts_Filter_
+  name: Where
+  nameWithType: QueryBuilder<TEntity>.Where
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.Where
+  nameWithType.vb: QueryBuilder(Of TEntity).Where
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).Where
+- uid: Falcon.Contracts.Filter
+  commentId: T:Falcon.Contracts.Filter
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.Filter.html
+  name: Filter
+  nameWithType: Filter
+  fullName: Falcon.Contracts.Filter
+- uid: Falcon.Contracts
+  commentId: N:Falcon.Contracts
+  href: Falcon.html
+  name: Falcon.Contracts
+  nameWithType: Falcon.Contracts
+  fullName: Falcon.Contracts
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Sort*
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Sort
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_QueryBuilder_1_Sort_Falcon_Contracts_Sort___
+  name: Sort
+  nameWithType: QueryBuilder<TEntity>.Sort
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.Sort
+  nameWithType.vb: QueryBuilder(Of TEntity).Sort
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).Sort
+- uid: Falcon.Contracts.Sort[]
+  isExternal: true
+  href: Falcon.Contracts.Sort.html
+  name: Sort[]
+  nameWithType: Sort[]
+  fullName: Falcon.Contracts.Sort[]
+  nameWithType.vb: Sort()
+  fullName.vb: Falcon.Contracts.Sort()
+  name.vb: Sort()
+  spec.csharp:
+  - uid: Falcon.Contracts.Sort
+    name: Sort
+    href: Falcon.Contracts.Sort.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Falcon.Contracts.Sort
+    name: Sort
+    href: Falcon.Contracts.Sort.html
+  - name: (
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Includes*
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.Includes
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_QueryBuilder_1_Includes_Falcon_Contracts_Include___
+  name: Includes
+  nameWithType: QueryBuilder<TEntity>.Includes
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.Includes
+  nameWithType.vb: QueryBuilder(Of TEntity).Includes
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).Includes
+- uid: Falcon.Contracts.Include[]
+  isExternal: true
+  href: Falcon.Contracts.Include.html
+  name: Include[]
+  nameWithType: Include[]
+  fullName: Falcon.Contracts.Include[]
+  nameWithType.vb: Include()
+  fullName.vb: Falcon.Contracts.Include()
+  name.vb: Include()
+  spec.csharp:
+  - uid: Falcon.Contracts.Include
+    name: Include
+    href: Falcon.Contracts.Include.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Falcon.Contracts.Include
+    name: Include
+    href: Falcon.Contracts.Include.html
+  - name: (
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.PageContext*
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.PageContext
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_QueryBuilder_1_PageContext_Falcon_Contracts_PageContext_
+  name: PageContext
+  nameWithType: QueryBuilder<TEntity>.PageContext
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.PageContext
+  nameWithType.vb: QueryBuilder(Of TEntity).PageContext
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).PageContext
+- uid: Falcon.Contracts.PageContext
+  commentId: T:Falcon.Contracts.PageContext
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.PageContext.html
+  name: PageContext
+  nameWithType: PageContext
+  fullName: Falcon.Contracts.PageContext
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildProjection*
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildProjection
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_QueryBuilder_1_BuildProjection_Microsoft_EntityFrameworkCore_DbSet__0__
+  name: BuildProjection
+  nameWithType: QueryBuilder<TEntity>.BuildProjection
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.BuildProjection
+  nameWithType.vb: QueryBuilder(Of TEntity).BuildProjection
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).BuildProjection
+- uid: Microsoft.EntityFrameworkCore.DbSet{{TEntity}}
+  commentId: T:Microsoft.EntityFrameworkCore.DbSet{`1}
+  parent: Microsoft.EntityFrameworkCore
+  definition: Microsoft.EntityFrameworkCore.DbSet`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  name: DbSet<TEntity>
+  nameWithType: DbSet<TEntity>
+  fullName: Microsoft.EntityFrameworkCore.DbSet<TEntity>
+  nameWithType.vb: DbSet(Of TEntity)
+  fullName.vb: Microsoft.EntityFrameworkCore.DbSet(Of TEntity)
+  name.vb: DbSet(Of TEntity)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: System.Linq.IQueryable{Newtonsoft.Json.Linq.JObject}
+  commentId: T:System.Linq.IQueryable{Newtonsoft.Json.Linq.JObject}
+  parent: System.Linq
+  definition: System.Linq.IQueryable`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  name: IQueryable<JObject>
+  nameWithType: IQueryable<JObject>
+  fullName: System.Linq.IQueryable<Newtonsoft.Json.Linq.JObject>
+  nameWithType.vb: IQueryable(Of JObject)
+  fullName.vb: System.Linq.IQueryable(Of Newtonsoft.Json.Linq.JObject)
+  name.vb: IQueryable(Of JObject)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - uid: Newtonsoft.Json.Linq.JObject
+    name: JObject
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Newtonsoft.Json.Linq.JObject
+    name: JObject
+    isExternal: true
+  - name: )
+- uid: Microsoft.EntityFrameworkCore.DbSet`1
+  commentId: T:Microsoft.EntityFrameworkCore.DbSet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  name: DbSet<TEntity>
+  nameWithType: DbSet<TEntity>
+  fullName: Microsoft.EntityFrameworkCore.DbSet<TEntity>
+  nameWithType.vb: DbSet(Of TEntity)
+  fullName.vb: Microsoft.EntityFrameworkCore.DbSet(Of TEntity)
+  name.vb: DbSet(Of TEntity)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Microsoft.EntityFrameworkCore
+  commentId: N:Microsoft.EntityFrameworkCore
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.EntityFrameworkCore
+  nameWithType: Microsoft.EntityFrameworkCore
+  fullName: Microsoft.EntityFrameworkCore
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
+- uid: System.Linq.IQueryable`1
+  commentId: T:System.Linq.IQueryable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildSelection*
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildSelection
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_QueryBuilder_1_BuildSelection_Microsoft_EntityFrameworkCore_DbSet__0__
+  name: BuildSelection
+  nameWithType: QueryBuilder<TEntity>.BuildSelection
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.BuildSelection
+  nameWithType.vb: QueryBuilder(Of TEntity).BuildSelection
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).BuildSelection
+- uid: System.Linq.IQueryable{{TEntity}}
+  commentId: T:System.Linq.IQueryable{``0}
+  parent: System.Linq
+  definition: System.Linq.IQueryable`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  name: IQueryable<TEntity>
+  nameWithType: IQueryable<TEntity>
+  fullName: System.Linq.IQueryable<TEntity>
+  nameWithType.vb: IQueryable(Of TEntity)
+  fullName.vb: System.Linq.IQueryable(Of TEntity)
+  name.vb: IQueryable(Of TEntity)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: <
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildCountAsync*
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder`1.BuildCountAsync
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder-1.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_QueryBuilder_1_BuildCountAsync_Microsoft_EntityFrameworkCore_DbSet__0__System_Threading_CancellationToken_
+  name: BuildCountAsync
+  nameWithType: QueryBuilder<TEntity>.BuildCountAsync
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder<TEntity>.BuildCountAsync
+  nameWithType.vb: QueryBuilder(Of TEntity).BuildCountAsync
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.QueryBuilder(Of TEntity).BuildCountAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Int64}
+  commentId: T:System.Threading.Tasks.Task{System.Int64}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<long>
+  nameWithType: Task<long>
+  fullName: System.Threading.Tasks.Task<long>
+  nameWithType.vb: Task(Of Long)
+  fullName.vb: System.Threading.Tasks.Task(Of Long)
+  name.vb: Task(Of Long)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

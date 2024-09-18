@@ -1,0 +1,567 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Contracts.ICompositeFilter
+  commentId: T:Falcon.Contracts.ICompositeFilter
+  id: ICompositeFilter
+  parent: Falcon.Contracts
+  children:
+  - Falcon.Contracts.ICompositeFilter.Filters
+  - Falcon.Contracts.ICompositeFilter.Op
+  langs:
+  - csharp
+  - vb
+  name: ICompositeFilter
+  nameWithType: ICompositeFilter
+  fullName: Falcon.Contracts.ICompositeFilter
+  type: Interface
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/IFilter.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: ICompositeFilter
+    path: ../src/Shared/Contracts/Request/Filter/IFilter.cs
+    startLine: 6
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: 'public interface ICompositeFilter : IFilter'
+    content.vb: Public Interface ICompositeFilter Inherits IFilter
+  inheritedMembers:
+  - Falcon.Contracts.IFilter.Kind
+  extensionMethods:
+  - Falcon.Contracts.ICompositeFilter.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  - Falcon.Contracts.ICompositeFilter.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  - Falcon.Contracts.IFilter.Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1
+- uid: Falcon.Contracts.ICompositeFilter.Op
+  commentId: P:Falcon.Contracts.ICompositeFilter.Op
+  id: Op
+  parent: Falcon.Contracts.ICompositeFilter
+  langs:
+  - csharp
+  - vb
+  name: Op
+  nameWithType: ICompositeFilter.Op
+  fullName: Falcon.Contracts.ICompositeFilter.Op
+  type: Property
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/IFilter.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Op
+    path: ../src/Shared/Contracts/Request/Filter/IFilter.cs
+    startLine: 8
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: CompositeOperator Op { get; set; }
+    parameters: []
+    return:
+      type: Falcon.Contracts.CompositeOperator
+    content.vb: Property Op As CompositeOperator
+  overload: Falcon.Contracts.ICompositeFilter.Op*
+- uid: Falcon.Contracts.ICompositeFilter.Filters
+  commentId: P:Falcon.Contracts.ICompositeFilter.Filters
+  id: Filters
+  parent: Falcon.Contracts.ICompositeFilter
+  langs:
+  - csharp
+  - vb
+  name: Filters
+  nameWithType: ICompositeFilter.Filters
+  fullName: Falcon.Contracts.ICompositeFilter.Filters
+  type: Property
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/IFilter.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Filters
+    path: ../src/Shared/Contracts/Request/Filter/IFilter.cs
+    startLine: 9
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: Filter[]? Filters { get; set; }
+    parameters: []
+    return:
+      type: Falcon.Contracts.Filter[]
+    content.vb: Property Filters As Filter()
+  overload: Falcon.Contracts.ICompositeFilter.Filters*
+references:
+- uid: Falcon.Contracts
+  commentId: N:Falcon.Contracts
+  href: Falcon.html
+  name: Falcon.Contracts
+  nameWithType: Falcon.Contracts
+  fullName: Falcon.Contracts
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+- uid: Falcon.Contracts.IFilter.Kind
+  commentId: P:Falcon.Contracts.IFilter.Kind
+  parent: Falcon.Contracts.IFilter
+  href: Falcon.Contracts.IFilter.html#Falcon_Contracts_IFilter_Kind
+  name: Kind
+  nameWithType: IFilter.Kind
+  fullName: Falcon.Contracts.IFilter.Kind
+- uid: Falcon.Contracts.ICompositeFilter.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, ICompositeFilter>(ICompositeFilter, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, ICompositeFilter>(ICompositeFilter, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, Falcon.Contracts.ICompositeFilter>(Falcon.Contracts.ICompositeFilter, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, ICompositeFilter)(ICompositeFilter, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, Falcon.Contracts.ICompositeFilter)(Falcon.Contracts.ICompositeFilter, TId, Date)
+  name.vb: AuditForCreate(Of TId, ICompositeFilter)(ICompositeFilter, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Contracts.ICompositeFilter,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.ICompositeFilter
+    name: ICompositeFilter
+    href: Falcon.Contracts.ICompositeFilter.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.ICompositeFilter
+    name: ICompositeFilter
+    href: Falcon.Contracts.ICompositeFilter.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Contracts.ICompositeFilter,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.ICompositeFilter
+    name: ICompositeFilter
+    href: Falcon.Contracts.ICompositeFilter.html
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.ICompositeFilter
+    name: ICompositeFilter
+    href: Falcon.Contracts.ICompositeFilter.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Contracts.ICompositeFilter.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, ICompositeFilter>(ICompositeFilter, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, ICompositeFilter>(ICompositeFilter, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, Falcon.Contracts.ICompositeFilter>(Falcon.Contracts.ICompositeFilter, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, ICompositeFilter)(ICompositeFilter, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, Falcon.Contracts.ICompositeFilter)(Falcon.Contracts.ICompositeFilter, TId, Date)
+  name.vb: AuditForUpdate(Of TId, ICompositeFilter)(ICompositeFilter, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Contracts.ICompositeFilter,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.ICompositeFilter
+    name: ICompositeFilter
+    href: Falcon.Contracts.ICompositeFilter.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.ICompositeFilter
+    name: ICompositeFilter
+    href: Falcon.Contracts.ICompositeFilter.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Contracts.ICompositeFilter,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.ICompositeFilter
+    name: ICompositeFilter
+    href: Falcon.Contracts.ICompositeFilter.html
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.ICompositeFilter
+    name: ICompositeFilter
+    href: Falcon.Contracts.ICompositeFilter.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Contracts.IFilter.Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1
+  commentId: M:Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions
+  definition: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_FilterExtentions_GetFilterExpression__1_Falcon_Contracts_IFilter_
+  name: GetFilterExpression<TEntity>(IFilter)
+  nameWithType: FilterExtentions.GetFilterExpression<TEntity>(IFilter)
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression<TEntity>(Falcon.Contracts.IFilter)
+  nameWithType.vb: FilterExtentions.GetFilterExpression(Of TEntity)(IFilter)
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression(Of TEntity)(Falcon.Contracts.IFilter)
+  name.vb: GetFilterExpression(Of TEntity)(IFilter)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+    name: GetFilterExpression
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_FilterExtentions_GetFilterExpression__1_Falcon_Contracts_IFilter_
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.IFilter
+    name: IFilter
+    href: Falcon.Contracts.IFilter.html
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+    name: GetFilterExpression
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_FilterExtentions_GetFilterExpression__1_Falcon_Contracts_IFilter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.IFilter
+    name: IFilter
+    href: Falcon.Contracts.IFilter.html
+  - name: )
+- uid: Falcon.Contracts.IFilter
+  commentId: T:Falcon.Contracts.IFilter
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.IFilter.html
+  name: IFilter
+  nameWithType: IFilter
+  fullName: Falcon.Contracts.IFilter
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  commentId: T:Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html
+  name: EntityAuditExtentions
+  nameWithType: EntityAuditExtentions
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+  commentId: M:Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_FilterExtentions_GetFilterExpression__1_Falcon_Contracts_IFilter_
+  name: GetFilterExpression<TEntity>(IFilter)
+  nameWithType: FilterExtentions.GetFilterExpression<TEntity>(IFilter)
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression<TEntity>(Falcon.Contracts.IFilter)
+  nameWithType.vb: FilterExtentions.GetFilterExpression(Of TEntity)(IFilter)
+  fullName.vb: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression(Of TEntity)(Falcon.Contracts.IFilter)
+  name.vb: GetFilterExpression(Of TEntity)(IFilter)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+    name: GetFilterExpression
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_FilterExtentions_GetFilterExpression__1_Falcon_Contracts_IFilter_
+  - name: <
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.IFilter
+    name: IFilter
+    href: Falcon.Contracts.IFilter.html
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.GetFilterExpression``1(Falcon.Contracts.IFilter)
+    name: GetFilterExpression
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.html#Falcon_Infrastructure_EntityFramework_QueryBuilder_FilterExtentions_GetFilterExpression__1_Falcon_Contracts_IFilter_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.IFilter
+    name: IFilter
+    href: Falcon.Contracts.IFilter.html
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions
+  commentId: T:Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  href: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions.html
+  name: FilterExtentions
+  nameWithType: FilterExtentions
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.FilterExtentions
+- uid: Falcon.Infrastructure.Abstractions
+  commentId: N:Falcon.Infrastructure.Abstractions
+  href: Falcon.html
+  name: Falcon.Infrastructure.Abstractions
+  nameWithType: Falcon.Infrastructure.Abstractions
+  fullName: Falcon.Infrastructure.Abstractions
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  commentId: N:Falcon.Infrastructure.EntityFramework.QueryBuilder
+  href: Falcon.html
+  name: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  nameWithType: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.html
+- uid: Falcon.Contracts.ICompositeFilter.Op*
+  commentId: Overload:Falcon.Contracts.ICompositeFilter.Op
+  href: Falcon.Contracts.ICompositeFilter.html#Falcon_Contracts_ICompositeFilter_Op
+  name: Op
+  nameWithType: ICompositeFilter.Op
+  fullName: Falcon.Contracts.ICompositeFilter.Op
+- uid: Falcon.Contracts.CompositeOperator
+  commentId: T:Falcon.Contracts.CompositeOperator
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.CompositeOperator.html
+  name: CompositeOperator
+  nameWithType: CompositeOperator
+  fullName: Falcon.Contracts.CompositeOperator
+- uid: Falcon.Contracts.ICompositeFilter.Filters*
+  commentId: Overload:Falcon.Contracts.ICompositeFilter.Filters
+  href: Falcon.Contracts.ICompositeFilter.html#Falcon_Contracts_ICompositeFilter_Filters
+  name: Filters
+  nameWithType: ICompositeFilter.Filters
+  fullName: Falcon.Contracts.ICompositeFilter.Filters
+- uid: Falcon.Contracts.Filter[]
+  isExternal: true
+  href: Falcon.Contracts.Filter.html
+  name: Filter[]
+  nameWithType: Filter[]
+  fullName: Falcon.Contracts.Filter[]
+  nameWithType.vb: Filter()
+  fullName.vb: Falcon.Contracts.Filter()
+  name.vb: Filter()
+  spec.csharp:
+  - uid: Falcon.Contracts.Filter
+    name: Filter
+    href: Falcon.Contracts.Filter.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Falcon.Contracts.Filter
+    name: Filter
+    href: Falcon.Contracts.Filter.html
+  - name: (
+  - name: )

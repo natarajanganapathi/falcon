@@ -1,0 +1,32 @@
+name: Publish Documents
+
+on:
+  pull_request:
+    branches: [ "main"]
+  workflow_dispatch:
+
+jobs:
+  publish-docs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    
+    steps:
+    - name: Chekout
+      uses: actions/checkout@v4
+
+    - name: Dotnet Setup
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 9.x
+
+    - run: dotnet tool update -g docfx
+    - run: docfx docfx/docfx.json
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: docs

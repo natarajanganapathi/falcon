@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Infrastructure.EntityFramework.Configurations
+  commentId: N:Falcon.Infrastructure.EntityFramework.Configurations
+  id: Falcon.Infrastructure.EntityFramework.Configurations
+  children:
+  - Falcon.Infrastructure.EntityFramework.Configurations.SqlDbOptions
+  - Falcon.Infrastructure.EntityFramework.Configurations.SqlDbOptionsBuilder
+  langs:
+  - csharp
+  - vb
+  name: Falcon.Infrastructure.EntityFramework.Configurations
+  nameWithType: Falcon.Infrastructure.EntityFramework.Configurations
+  fullName: Falcon.Infrastructure.EntityFramework.Configurations
+  type: Namespace
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework
+references:
+- uid: Falcon.Infrastructure.EntityFramework.Configurations.SqlDbOptions
+  commentId: T:Falcon.Infrastructure.EntityFramework.Configurations.SqlDbOptions
+  parent: Falcon.Infrastructure.EntityFramework.Configurations
+  href: Falcon.Infrastructure.EntityFramework.Configurations.SqlDbOptions.html
+  name: SqlDbOptions
+  nameWithType: SqlDbOptions
+  fullName: Falcon.Infrastructure.EntityFramework.Configurations.SqlDbOptions
+- uid: Falcon.Infrastructure.EntityFramework.Configurations.SqlDbOptionsBuilder
+  commentId: T:Falcon.Infrastructure.EntityFramework.Configurations.SqlDbOptionsBuilder
+  parent: Falcon.Infrastructure.EntityFramework.Configurations
+  href: Falcon.Infrastructure.EntityFramework.Configurations.SqlDbOptionsBuilder.html
+  name: SqlDbOptionsBuilder
+  nameWithType: SqlDbOptionsBuilder
+  fullName: Falcon.Infrastructure.EntityFramework.Configurations.SqlDbOptionsBuilder
+- uid: Falcon.Infrastructure.EntityFramework.Configurations
+  commentId: N:Falcon.Infrastructure.EntityFramework.Configurations
+  href: Falcon.html
+  name: Falcon.Infrastructure.EntityFramework.Configurations
+  nameWithType: Falcon.Infrastructure.EntityFramework.Configurations
+  fullName: Falcon.Infrastructure.EntityFramework.Configurations
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Configurations
+    name: Configurations
+    href: Falcon.Infrastructure.EntityFramework.Configurations.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Configurations
+    name: Configurations
+    href: Falcon.Infrastructure.EntityFramework.Configurations.html

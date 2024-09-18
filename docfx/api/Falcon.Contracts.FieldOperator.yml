@@ -1,0 +1,562 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Contracts.FieldOperator
+  commentId: T:Falcon.Contracts.FieldOperator
+  id: FieldOperator
+  parent: Falcon.Contracts
+  children:
+  - Falcon.Contracts.FieldOperator.Between
+  - Falcon.Contracts.FieldOperator.Contains
+  - Falcon.Contracts.FieldOperator.EndsWith
+  - Falcon.Contracts.FieldOperator.Equal
+  - Falcon.Contracts.FieldOperator.GreaterThan
+  - Falcon.Contracts.FieldOperator.GreaterThanOrEqual
+  - Falcon.Contracts.FieldOperator.In
+  - Falcon.Contracts.FieldOperator.LessThan
+  - Falcon.Contracts.FieldOperator.LessThanOrEqual
+  - Falcon.Contracts.FieldOperator.NotEqual
+  - Falcon.Contracts.FieldOperator.NotIn
+  - Falcon.Contracts.FieldOperator.StartsWith
+  langs:
+  - csharp
+  - vb
+  name: FieldOperator
+  nameWithType: FieldOperator
+  fullName: Falcon.Contracts.FieldOperator
+  type: Enum
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: FieldOperator
+    path: ../src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+    startLine: 2
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public enum FieldOperator
+    content.vb: Public Enum FieldOperator
+- uid: Falcon.Contracts.FieldOperator.Equal
+  commentId: F:Falcon.Contracts.FieldOperator.Equal
+  id: Equal
+  parent: Falcon.Contracts.FieldOperator
+  langs:
+  - csharp
+  - vb
+  name: Equal
+  nameWithType: FieldOperator.Equal
+  fullName: Falcon.Contracts.FieldOperator.Equal
+  type: Field
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Equal
+    path: ../src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+    startLine: 4
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: >-
+      [EnumMember(Value = "eq")]
+
+      Equal = 0
+    return:
+      type: Falcon.Contracts.FieldOperator
+    content.vb: >-
+      <EnumMember(Value:="eq")>
+
+      Equal = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: eq
+- uid: Falcon.Contracts.FieldOperator.NotEqual
+  commentId: F:Falcon.Contracts.FieldOperator.NotEqual
+  id: NotEqual
+  parent: Falcon.Contracts.FieldOperator
+  langs:
+  - csharp
+  - vb
+  name: NotEqual
+  nameWithType: FieldOperator.NotEqual
+  fullName: Falcon.Contracts.FieldOperator.NotEqual
+  type: Field
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: NotEqual
+    path: ../src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+    startLine: 5
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: >-
+      [EnumMember(Value = "ne")]
+
+      NotEqual = 1
+    return:
+      type: Falcon.Contracts.FieldOperator
+    content.vb: >-
+      <EnumMember(Value:="ne")>
+
+      NotEqual = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: ne
+- uid: Falcon.Contracts.FieldOperator.GreaterThan
+  commentId: F:Falcon.Contracts.FieldOperator.GreaterThan
+  id: GreaterThan
+  parent: Falcon.Contracts.FieldOperator
+  langs:
+  - csharp
+  - vb
+  name: GreaterThan
+  nameWithType: FieldOperator.GreaterThan
+  fullName: Falcon.Contracts.FieldOperator.GreaterThan
+  type: Field
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: GreaterThan
+    path: ../src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+    startLine: 6
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: >-
+      [EnumMember(Value = "gt")]
+
+      GreaterThan = 2
+    return:
+      type: Falcon.Contracts.FieldOperator
+    content.vb: >-
+      <EnumMember(Value:="gt")>
+
+      GreaterThan = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: gt
+- uid: Falcon.Contracts.FieldOperator.GreaterThanOrEqual
+  commentId: F:Falcon.Contracts.FieldOperator.GreaterThanOrEqual
+  id: GreaterThanOrEqual
+  parent: Falcon.Contracts.FieldOperator
+  langs:
+  - csharp
+  - vb
+  name: GreaterThanOrEqual
+  nameWithType: FieldOperator.GreaterThanOrEqual
+  fullName: Falcon.Contracts.FieldOperator.GreaterThanOrEqual
+  type: Field
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: GreaterThanOrEqual
+    path: ../src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+    startLine: 7
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: >-
+      [EnumMember(Value = "ge")]
+
+      GreaterThanOrEqual = 3
+    return:
+      type: Falcon.Contracts.FieldOperator
+    content.vb: >-
+      <EnumMember(Value:="ge")>
+
+      GreaterThanOrEqual = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: ge
+- uid: Falcon.Contracts.FieldOperator.LessThan
+  commentId: F:Falcon.Contracts.FieldOperator.LessThan
+  id: LessThan
+  parent: Falcon.Contracts.FieldOperator
+  langs:
+  - csharp
+  - vb
+  name: LessThan
+  nameWithType: FieldOperator.LessThan
+  fullName: Falcon.Contracts.FieldOperator.LessThan
+  type: Field
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: LessThan
+    path: ../src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+    startLine: 8
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: >-
+      [EnumMember(Value = "lt")]
+
+      LessThan = 4
+    return:
+      type: Falcon.Contracts.FieldOperator
+    content.vb: >-
+      <EnumMember(Value:="lt")>
+
+      LessThan = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: lt
+- uid: Falcon.Contracts.FieldOperator.LessThanOrEqual
+  commentId: F:Falcon.Contracts.FieldOperator.LessThanOrEqual
+  id: LessThanOrEqual
+  parent: Falcon.Contracts.FieldOperator
+  langs:
+  - csharp
+  - vb
+  name: LessThanOrEqual
+  nameWithType: FieldOperator.LessThanOrEqual
+  fullName: Falcon.Contracts.FieldOperator.LessThanOrEqual
+  type: Field
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: LessThanOrEqual
+    path: ../src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+    startLine: 9
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: >-
+      [EnumMember(Value = "le")]
+
+      LessThanOrEqual = 5
+    return:
+      type: Falcon.Contracts.FieldOperator
+    content.vb: >-
+      <EnumMember(Value:="le")>
+
+      LessThanOrEqual = 5
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: le
+- uid: Falcon.Contracts.FieldOperator.Between
+  commentId: F:Falcon.Contracts.FieldOperator.Between
+  id: Between
+  parent: Falcon.Contracts.FieldOperator
+  langs:
+  - csharp
+  - vb
+  name: Between
+  nameWithType: FieldOperator.Between
+  fullName: Falcon.Contracts.FieldOperator.Between
+  type: Field
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Between
+    path: ../src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+    startLine: 10
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: >-
+      [EnumMember(Value = "bw")]
+
+      Between = 6
+    return:
+      type: Falcon.Contracts.FieldOperator
+    content.vb: >-
+      <EnumMember(Value:="bw")>
+
+      Between = 6
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: bw
+- uid: Falcon.Contracts.FieldOperator.In
+  commentId: F:Falcon.Contracts.FieldOperator.In
+  id: In
+  parent: Falcon.Contracts.FieldOperator
+  langs:
+  - csharp
+  - vb
+  name: In
+  nameWithType: FieldOperator.In
+  fullName: Falcon.Contracts.FieldOperator.In
+  type: Field
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: In
+    path: ../src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+    startLine: 11
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: >-
+      [EnumMember(Value = "in")]
+
+      In = 7
+    return:
+      type: Falcon.Contracts.FieldOperator
+    content.vb: >-
+      <EnumMember(Value:="in")>
+
+      In = 7
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: in
+- uid: Falcon.Contracts.FieldOperator.NotIn
+  commentId: F:Falcon.Contracts.FieldOperator.NotIn
+  id: NotIn
+  parent: Falcon.Contracts.FieldOperator
+  langs:
+  - csharp
+  - vb
+  name: NotIn
+  nameWithType: FieldOperator.NotIn
+  fullName: Falcon.Contracts.FieldOperator.NotIn
+  type: Field
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: NotIn
+    path: ../src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+    startLine: 12
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: >-
+      [EnumMember(Value = "notin")]
+
+      NotIn = 8
+    return:
+      type: Falcon.Contracts.FieldOperator
+    content.vb: >-
+      <EnumMember(Value:="notin")>
+
+      NotIn = 8
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: notin
+- uid: Falcon.Contracts.FieldOperator.EndsWith
+  commentId: F:Falcon.Contracts.FieldOperator.EndsWith
+  id: EndsWith
+  parent: Falcon.Contracts.FieldOperator
+  langs:
+  - csharp
+  - vb
+  name: EndsWith
+  nameWithType: FieldOperator.EndsWith
+  fullName: Falcon.Contracts.FieldOperator.EndsWith
+  type: Field
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: EndsWith
+    path: ../src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+    startLine: 13
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: >-
+      [EnumMember(Value = "ends")]
+
+      EndsWith = 9
+    return:
+      type: Falcon.Contracts.FieldOperator
+    content.vb: >-
+      <EnumMember(Value:="ends")>
+
+      EndsWith = 9
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: ends
+- uid: Falcon.Contracts.FieldOperator.StartsWith
+  commentId: F:Falcon.Contracts.FieldOperator.StartsWith
+  id: StartsWith
+  parent: Falcon.Contracts.FieldOperator
+  langs:
+  - csharp
+  - vb
+  name: StartsWith
+  nameWithType: FieldOperator.StartsWith
+  fullName: Falcon.Contracts.FieldOperator.StartsWith
+  type: Field
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: StartsWith
+    path: ../src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+    startLine: 14
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: >-
+      [EnumMember(Value = "starts")]
+
+      StartsWith = 10
+    return:
+      type: Falcon.Contracts.FieldOperator
+    content.vb: >-
+      <EnumMember(Value:="starts")>
+
+      StartsWith = 10
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: starts
+- uid: Falcon.Contracts.FieldOperator.Contains
+  commentId: F:Falcon.Contracts.FieldOperator.Contains
+  id: Contains
+  parent: Falcon.Contracts.FieldOperator
+  langs:
+  - csharp
+  - vb
+  name: Contains
+  nameWithType: FieldOperator.Contains
+  fullName: Falcon.Contracts.FieldOperator.Contains
+  type: Field
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Contains
+    path: ../src/Shared/Contracts/Request/Filter/Operator/FieldOperator.cs
+    startLine: 15
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: >-
+      [EnumMember(Value = "contains")]
+
+      Contains = 11
+    return:
+      type: Falcon.Contracts.FieldOperator
+    content.vb: >-
+      <EnumMember(Value:="contains")>
+
+      Contains = 11
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Value
+      type: System.String
+      value: contains
+references:
+- uid: Falcon.Contracts
+  commentId: N:Falcon.Contracts
+  href: Falcon.html
+  name: Falcon.Contracts
+  nameWithType: Falcon.Contracts
+  fullName: Falcon.Contracts
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+- uid: Falcon.Contracts.FieldOperator
+  commentId: T:Falcon.Contracts.FieldOperator
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.FieldOperator.html
+  name: FieldOperator
+  nameWithType: FieldOperator
+  fullName: Falcon.Contracts.FieldOperator

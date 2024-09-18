@@ -1,0 +1,506 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Contracts.IPageContext
+  commentId: T:Falcon.Contracts.IPageContext
+  id: IPageContext
+  parent: Falcon.Contracts
+  children:
+  - Falcon.Contracts.IPageContext.PageNo
+  - Falcon.Contracts.IPageContext.PageSize
+  - Falcon.Contracts.IPageContext.Skip
+  - Falcon.Contracts.IPageContext.Total
+  langs:
+  - csharp
+  - vb
+  name: IPageContext
+  nameWithType: IPageContext
+  fullName: Falcon.Contracts.IPageContext
+  type: Interface
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Common/IPageContext.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: IPageContext
+    path: ../src/Shared/Contracts/Request/Common/IPageContext.cs
+    startLine: 2
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: public interface IPageContext
+    content.vb: Public Interface IPageContext
+  extensionMethods:
+  - Falcon.Contracts.IPageContext.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  - Falcon.Contracts.IPageContext.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+- uid: Falcon.Contracts.IPageContext.PageNo
+  commentId: P:Falcon.Contracts.IPageContext.PageNo
+  id: PageNo
+  parent: Falcon.Contracts.IPageContext
+  langs:
+  - csharp
+  - vb
+  name: PageNo
+  nameWithType: IPageContext.PageNo
+  fullName: Falcon.Contracts.IPageContext.PageNo
+  type: Property
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Common/IPageContext.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: PageNo
+    path: ../src/Shared/Contracts/Request/Common/IPageContext.cs
+    startLine: 4
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: int PageNo { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property PageNo As Integer
+  overload: Falcon.Contracts.IPageContext.PageNo*
+- uid: Falcon.Contracts.IPageContext.PageSize
+  commentId: P:Falcon.Contracts.IPageContext.PageSize
+  id: PageSize
+  parent: Falcon.Contracts.IPageContext
+  langs:
+  - csharp
+  - vb
+  name: PageSize
+  nameWithType: IPageContext.PageSize
+  fullName: Falcon.Contracts.IPageContext.PageSize
+  type: Property
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Common/IPageContext.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: PageSize
+    path: ../src/Shared/Contracts/Request/Common/IPageContext.cs
+    startLine: 5
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: int PageSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property PageSize As Integer
+  overload: Falcon.Contracts.IPageContext.PageSize*
+- uid: Falcon.Contracts.IPageContext.Total
+  commentId: P:Falcon.Contracts.IPageContext.Total
+  id: Total
+  parent: Falcon.Contracts.IPageContext
+  langs:
+  - csharp
+  - vb
+  name: Total
+  nameWithType: IPageContext.Total
+  fullName: Falcon.Contracts.IPageContext.Total
+  type: Property
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Common/IPageContext.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Total
+    path: ../src/Shared/Contracts/Request/Common/IPageContext.cs
+    startLine: 6
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: long Total { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Property Total As Long
+  overload: Falcon.Contracts.IPageContext.Total*
+- uid: Falcon.Contracts.IPageContext.Skip
+  commentId: P:Falcon.Contracts.IPageContext.Skip
+  id: Skip
+  parent: Falcon.Contracts.IPageContext
+  langs:
+  - csharp
+  - vb
+  name: Skip
+  nameWithType: IPageContext.Skip
+  fullName: Falcon.Contracts.IPageContext.Skip
+  type: Property
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/Common/IPageContext.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Skip
+    path: ../src/Shared/Contracts/Request/Common/IPageContext.cs
+    startLine: 7
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: int Skip { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Skip As Integer
+  overload: Falcon.Contracts.IPageContext.Skip*
+references:
+- uid: Falcon.Contracts
+  commentId: N:Falcon.Contracts
+  href: Falcon.html
+  name: Falcon.Contracts
+  nameWithType: Falcon.Contracts
+  fullName: Falcon.Contracts
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+- uid: Falcon.Contracts.IPageContext.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, IPageContext>(IPageContext, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, IPageContext>(IPageContext, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, Falcon.Contracts.IPageContext>(Falcon.Contracts.IPageContext, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, IPageContext)(IPageContext, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, Falcon.Contracts.IPageContext)(Falcon.Contracts.IPageContext, TId, Date)
+  name.vb: AuditForCreate(Of TId, IPageContext)(IPageContext, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Contracts.IPageContext,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IPageContext
+    name: IPageContext
+    href: Falcon.Contracts.IPageContext.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.IPageContext
+    name: IPageContext
+    href: Falcon.Contracts.IPageContext.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Contracts.IPageContext,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IPageContext
+    name: IPageContext
+    href: Falcon.Contracts.IPageContext.html
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.IPageContext
+    name: IPageContext
+    href: Falcon.Contracts.IPageContext.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Contracts.IPageContext.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, IPageContext>(IPageContext, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, IPageContext>(IPageContext, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, Falcon.Contracts.IPageContext>(Falcon.Contracts.IPageContext, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, IPageContext)(IPageContext, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, Falcon.Contracts.IPageContext)(Falcon.Contracts.IPageContext, TId, Date)
+  name.vb: AuditForUpdate(Of TId, IPageContext)(IPageContext, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Contracts.IPageContext,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IPageContext
+    name: IPageContext
+    href: Falcon.Contracts.IPageContext.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.IPageContext
+    name: IPageContext
+    href: Falcon.Contracts.IPageContext.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Contracts.IPageContext,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IPageContext
+    name: IPageContext
+    href: Falcon.Contracts.IPageContext.html
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.IPageContext
+    name: IPageContext
+    href: Falcon.Contracts.IPageContext.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  commentId: T:Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html
+  name: EntityAuditExtentions
+  nameWithType: EntityAuditExtentions
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions
+  commentId: N:Falcon.Infrastructure.Abstractions
+  href: Falcon.html
+  name: Falcon.Infrastructure.Abstractions
+  nameWithType: Falcon.Infrastructure.Abstractions
+  fullName: Falcon.Infrastructure.Abstractions
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+- uid: Falcon.Contracts.IPageContext.PageNo*
+  commentId: Overload:Falcon.Contracts.IPageContext.PageNo
+  href: Falcon.Contracts.IPageContext.html#Falcon_Contracts_IPageContext_PageNo
+  name: PageNo
+  nameWithType: IPageContext.PageNo
+  fullName: Falcon.Contracts.IPageContext.PageNo
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Falcon.Contracts.IPageContext.PageSize*
+  commentId: Overload:Falcon.Contracts.IPageContext.PageSize
+  href: Falcon.Contracts.IPageContext.html#Falcon_Contracts_IPageContext_PageSize
+  name: PageSize
+  nameWithType: IPageContext.PageSize
+  fullName: Falcon.Contracts.IPageContext.PageSize
+- uid: Falcon.Contracts.IPageContext.Total*
+  commentId: Overload:Falcon.Contracts.IPageContext.Total
+  href: Falcon.Contracts.IPageContext.html#Falcon_Contracts_IPageContext_Total
+  name: Total
+  nameWithType: IPageContext.Total
+  fullName: Falcon.Contracts.IPageContext.Total
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Falcon.Contracts.IPageContext.Skip*
+  commentId: Overload:Falcon.Contracts.IPageContext.Skip
+  href: Falcon.Contracts.IPageContext.html#Falcon_Contracts_IPageContext_Skip
+  name: Skip
+  nameWithType: IPageContext.Skip
+  fullName: Falcon.Contracts.IPageContext.Skip

@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Application.Abstractions.Services
+  commentId: N:Falcon.Application.Abstractions.Services
+  id: Falcon.Application.Abstractions.Services
+  children:
+  - Falcon.Application.Abstractions.Services.ApplicationServiceBase`2
+  - Falcon.Application.Abstractions.Services.CommandServiceBase`2
+  - Falcon.Application.Abstractions.Services.QueryServiceBase`2
+  langs:
+  - csharp
+  - vb
+  name: Falcon.Application.Abstractions.Services
+  nameWithType: Falcon.Application.Abstractions.Services
+  fullName: Falcon.Application.Abstractions.Services
+  type: Namespace
+  assemblies:
+  - Falcon.Application.Abstractions
+references:
+- uid: Falcon.Application.Abstractions.Services.ApplicationServiceBase`2
+  commentId: T:Falcon.Application.Abstractions.Services.ApplicationServiceBase`2
+  href: Falcon.Application.Abstractions.Services.ApplicationServiceBase-2.html
+  name: ApplicationServiceBase<TId, TEntity>
+  nameWithType: ApplicationServiceBase<TId, TEntity>
+  fullName: Falcon.Application.Abstractions.Services.ApplicationServiceBase<TId, TEntity>
+  nameWithType.vb: ApplicationServiceBase(Of TId, TEntity)
+  fullName.vb: Falcon.Application.Abstractions.Services.ApplicationServiceBase(Of TId, TEntity)
+  name.vb: ApplicationServiceBase(Of TId, TEntity)
+  spec.csharp:
+  - uid: Falcon.Application.Abstractions.Services.ApplicationServiceBase`2
+    name: ApplicationServiceBase
+    href: Falcon.Application.Abstractions.Services.ApplicationServiceBase-2.html
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Application.Abstractions.Services.ApplicationServiceBase`2
+    name: ApplicationServiceBase
+    href: Falcon.Application.Abstractions.Services.ApplicationServiceBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Falcon.Application.Abstractions.Services.CommandServiceBase`2
+  commentId: T:Falcon.Application.Abstractions.Services.CommandServiceBase`2
+  href: Falcon.Application.Abstractions.Services.CommandServiceBase-2.html
+  name: CommandServiceBase<TId, TEntity>
+  nameWithType: CommandServiceBase<TId, TEntity>
+  fullName: Falcon.Application.Abstractions.Services.CommandServiceBase<TId, TEntity>
+  nameWithType.vb: CommandServiceBase(Of TId, TEntity)
+  fullName.vb: Falcon.Application.Abstractions.Services.CommandServiceBase(Of TId, TEntity)
+  name.vb: CommandServiceBase(Of TId, TEntity)
+  spec.csharp:
+  - uid: Falcon.Application.Abstractions.Services.CommandServiceBase`2
+    name: CommandServiceBase
+    href: Falcon.Application.Abstractions.Services.CommandServiceBase-2.html
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Application.Abstractions.Services.CommandServiceBase`2
+    name: CommandServiceBase
+    href: Falcon.Application.Abstractions.Services.CommandServiceBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+- uid: Falcon.Application.Abstractions.Services.QueryServiceBase`2
+  commentId: T:Falcon.Application.Abstractions.Services.QueryServiceBase`2
+  href: Falcon.Application.Abstractions.Services.QueryServiceBase-2.html
+  name: QueryServiceBase<TId, TEntity>
+  nameWithType: QueryServiceBase<TId, TEntity>
+  fullName: Falcon.Application.Abstractions.Services.QueryServiceBase<TId, TEntity>
+  nameWithType.vb: QueryServiceBase(Of TId, TEntity)
+  fullName.vb: Falcon.Application.Abstractions.Services.QueryServiceBase(Of TId, TEntity)
+  name.vb: QueryServiceBase(Of TId, TEntity)
+  spec.csharp:
+  - uid: Falcon.Application.Abstractions.Services.QueryServiceBase`2
+    name: QueryServiceBase
+    href: Falcon.Application.Abstractions.Services.QueryServiceBase-2.html
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  spec.vb:
+  - uid: Falcon.Application.Abstractions.Services.QueryServiceBase`2
+    name: QueryServiceBase
+    href: Falcon.Application.Abstractions.Services.QueryServiceBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )

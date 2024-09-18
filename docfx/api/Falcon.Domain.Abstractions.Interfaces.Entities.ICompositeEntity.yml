@@ -1,0 +1,357 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity
+  commentId: T:Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity
+  id: ICompositeEntity
+  parent: Falcon.Domain.Abstractions.Interfaces.Entities
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ICompositeEntity
+  nameWithType: ICompositeEntity
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity
+  type: Interface
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Entities/ICompositEntity.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: ICompositeEntity
+    path: ../src/Domain/Abstractions/Interfaces/Entities/ICompositEntity.cs
+    startLine: 2
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Entities
+  syntax:
+    content: public interface ICompositeEntity
+    content.vb: Public Interface ICompositeEntity
+  extensionMethods:
+  - Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  - Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+references:
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities
+  commentId: N:Falcon.Domain.Abstractions.Interfaces.Entities
+  href: Falcon.html
+  name: Falcon.Domain.Abstractions.Interfaces.Entities
+  nameWithType: Falcon.Domain.Abstractions.Interfaces.Entities
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Domain
+    name: Domain
+    href: Falcon.Domain.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions
+    name: Abstractions
+    href: Falcon.Domain.Abstractions.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces
+    name: Interfaces
+    href: Falcon.Domain.Abstractions.Interfaces.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities
+    name: Entities
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Domain
+    name: Domain
+    href: Falcon.Domain.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions
+    name: Abstractions
+    href: Falcon.Domain.Abstractions.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces
+    name: Interfaces
+    href: Falcon.Domain.Abstractions.Interfaces.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities
+    name: Entities
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.html
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, ICompositeEntity>(ICompositeEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, ICompositeEntity>(ICompositeEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity>(Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, ICompositeEntity)(ICompositeEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity)(Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity, TId, Date)
+  name.vb: AuditForCreate(Of TId, ICompositeEntity)(ICompositeEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity
+    name: ICompositeEntity
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity
+    name: ICompositeEntity
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity
+    name: ICompositeEntity
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity.html
+  - name: )
+  - name: (
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity
+    name: ICompositeEntity
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, ICompositeEntity>(ICompositeEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, ICompositeEntity>(ICompositeEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity>(Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, ICompositeEntity)(ICompositeEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity)(Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity, TId, Date)
+  name.vb: AuditForUpdate(Of TId, ICompositeEntity)(ICompositeEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity
+    name: ICompositeEntity
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity
+    name: ICompositeEntity
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity
+    name: ICompositeEntity
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity.html
+  - name: )
+  - name: (
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity
+    name: ICompositeEntity
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.ICompositeEntity.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  commentId: T:Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html
+  name: EntityAuditExtentions
+  nameWithType: EntityAuditExtentions
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions
+  commentId: N:Falcon.Infrastructure.Abstractions
+  href: Falcon.html
+  name: Falcon.Infrastructure.Abstractions
+  nameWithType: Falcon.Infrastructure.Abstractions
+  fullName: Falcon.Infrastructure.Abstractions
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html

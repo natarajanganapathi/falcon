@@ -1,0 +1,465 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names
+  commentId: T:Falcon.Infrastructure.EntityFramework.QueryBuilder.Names
+  id: Names
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  children:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.DateOnly
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.DateTime
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.EnumerableContains
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.Int32
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.Int64
+  langs:
+  - csharp
+  - vb
+  name: Names
+  nameWithType: Names
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names
+  type: Class
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/Names.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Names
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/Names.cs
+    startLine: 2
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: public static class Names
+    content.vb: Public Module Names
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.EnumerableContains
+  commentId: F:Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.EnumerableContains
+  id: EnumerableContains
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names
+  langs:
+  - csharp
+  - vb
+  name: EnumerableContains
+  nameWithType: Names.EnumerableContains
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.EnumerableContains
+  type: Field
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/Names.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: EnumerableContains
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/Names.cs
+    startLine: 4
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: public static readonly string EnumerableContains
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly EnumerableContains As String
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.DateTime
+  commentId: F:Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.DateTime
+  id: DateTime
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names
+  langs:
+  - csharp
+  - vb
+  name: DateTime
+  nameWithType: Names.DateTime
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.DateTime
+  type: Field
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/Names.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: DateTime
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/Names.cs
+    startLine: 5
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: public const string DateTime = "System.DateTime"
+    return:
+      type: System.String
+    content.vb: Public Const DateTime As String = "System.DateTime"
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.DateOnly
+  commentId: F:Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.DateOnly
+  id: DateOnly
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names
+  langs:
+  - csharp
+  - vb
+  name: DateOnly
+  nameWithType: Names.DateOnly
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.DateOnly
+  type: Field
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/Names.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: DateOnly
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/Names.cs
+    startLine: 6
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: public const string DateOnly = "System.DateOnly"
+    return:
+      type: System.String
+    content.vb: Public Const DateOnly As String = "System.DateOnly"
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.Int32
+  commentId: F:Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.Int32
+  id: Int32
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names
+  langs:
+  - csharp
+  - vb
+  name: Int32
+  nameWithType: Names.Int32
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.Int32
+  type: Field
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/Names.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Int32
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/Names.cs
+    startLine: 7
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: public const string Int32 = "System.Int32"
+    return:
+      type: System.String
+    content.vb: Public Const Int32 As String = "System.Int32"
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.Int64
+  commentId: F:Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.Int64
+  id: Int64
+  parent: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names
+  langs:
+  - csharp
+  - vb
+  name: Int64
+  nameWithType: Names.Int64
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.Names.Int64
+  type: Field
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/Names.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Int64
+    path: ../src/Infrastructure/EntityFramework/QueryBuilder/QueryBuilder/Names.cs
+    startLine: 8
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework.QueryBuilder
+  namespace: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  syntax:
+    content: public const string Int64 = "System.Int64"
+    return:
+      type: System.String
+    content.vb: Public Const Int64 As String = "System.Int64"
+references:
+- uid: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  commentId: N:Falcon.Infrastructure.EntityFramework.QueryBuilder
+  href: Falcon.html
+  name: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  nameWithType: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder
+    name: QueryBuilder
+    href: Falcon.Infrastructure.EntityFramework.QueryBuilder.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

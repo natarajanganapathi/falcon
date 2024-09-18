@@ -1,0 +1,50 @@
+name: Publish to Nuget
+on:
+  workflow_dispatch:
+    
+env:
+  PROJECT: ./Falcon.sln
+        
+jobs:
+  publish:
+    name: Build, Pack & Publish
+    runs-on: ${{ matrix.os }}
+    permissions:
+      contents: write
+    strategy:
+        matrix:
+            os: [ubuntu-latest]
+            dotnet-version: [9.0.x]
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: Set up Git configuration
+      run: |
+        git config --global user.name "Natarajan Ganapathi"
+        git config --global user.email natarajanmca11@outlook.com
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: ${{ matrix.dotnet-version }}
+
+    - name: Install Versionize
+      run: dotnet tool install -g versionize
+
+    - name: Restore dependencies
+      run: dotnet restore ${{ env.PROJECT }}
+
+    - name: Build
+      run: dotnet build -c release ${{ env.PROJECT }} --no-restore
+
+    - name: Bump versions
+      run: versionize --pre-release alpha --commit-suffix "[skip ci]"
+
+    - name: Push to Github
+      run: git push --follow-tags origin main
+
+    - name: Pack
+      run: dotnet pack --no-build -c release ${{ env.PROJECT }} -o .
+
+    - name: Publish
+      run: dotnet nuget push *.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_API_KEY}} --skip-duplicate --no-symbols

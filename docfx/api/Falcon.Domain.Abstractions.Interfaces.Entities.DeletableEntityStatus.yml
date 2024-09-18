@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus
+  commentId: T:Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus
+  id: DeletableEntityStatus
+  parent: Falcon.Domain.Abstractions.Interfaces.Entities
+  children:
+  - Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus.Active
+  - Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus.Deleted
+  langs:
+  - csharp
+  - vb
+  name: DeletableEntityStatus
+  nameWithType: DeletableEntityStatus
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus
+  type: Enum
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Entities/IDeletableEntity.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: DeletableEntityStatus
+    path: ../src/Domain/Abstractions/Interfaces/Entities/IDeletableEntity.cs
+    startLine: 2
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Entities
+  syntax:
+    content: public enum DeletableEntityStatus
+    content.vb: Public Enum DeletableEntityStatus
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus.Active
+  commentId: F:Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus.Active
+  id: Active
+  parent: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus
+  langs:
+  - csharp
+  - vb
+  name: Active
+  nameWithType: DeletableEntityStatus.Active
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus.Active
+  type: Field
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Entities/IDeletableEntity.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Active
+    path: ../src/Domain/Abstractions/Interfaces/Entities/IDeletableEntity.cs
+    startLine: 4
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Entities
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Active = 1
+    return:
+      type: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus
+    content.vb: >-
+      <EnumMember>
+
+      Active = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus.Deleted
+  commentId: F:Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus.Deleted
+  id: Deleted
+  parent: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus
+  langs:
+  - csharp
+  - vb
+  name: Deleted
+  nameWithType: DeletableEntityStatus.Deleted
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus.Deleted
+  type: Field
+  source:
+    remote:
+      path: src/Domain/Abstractions/Interfaces/Entities/IDeletableEntity.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Deleted
+    path: ../src/Domain/Abstractions/Interfaces/Entities/IDeletableEntity.cs
+    startLine: 5
+  assemblies:
+  - Falcon.Domain.Abstractions
+  namespace: Falcon.Domain.Abstractions.Interfaces.Entities
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Deleted = 2
+    return:
+      type: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus
+    content.vb: >-
+      <EnumMember>
+
+      Deleted = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+references:
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities
+  commentId: N:Falcon.Domain.Abstractions.Interfaces.Entities
+  href: Falcon.html
+  name: Falcon.Domain.Abstractions.Interfaces.Entities
+  nameWithType: Falcon.Domain.Abstractions.Interfaces.Entities
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Domain
+    name: Domain
+    href: Falcon.Domain.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions
+    name: Abstractions
+    href: Falcon.Domain.Abstractions.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces
+    name: Interfaces
+    href: Falcon.Domain.Abstractions.Interfaces.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities
+    name: Entities
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Domain
+    name: Domain
+    href: Falcon.Domain.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions
+    name: Abstractions
+    href: Falcon.Domain.Abstractions.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces
+    name: Interfaces
+    href: Falcon.Domain.Abstractions.Interfaces.html
+  - name: .
+  - uid: Falcon.Domain.Abstractions.Interfaces.Entities
+    name: Entities
+    href: Falcon.Domain.Abstractions.Interfaces.Entities.html
+- uid: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus
+  commentId: T:Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus
+  parent: Falcon.Domain.Abstractions.Interfaces.Entities
+  href: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus.html
+  name: DeletableEntityStatus
+  nameWithType: DeletableEntityStatus
+  fullName: Falcon.Domain.Abstractions.Interfaces.Entities.DeletableEntityStatus

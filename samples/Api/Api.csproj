@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Samples.Application</RootNamespace>
+    <AssemblyName>Samples.Application</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0-rc.1.24452.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Shared\Contracts\Contracts.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\Abstractions\Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\EntityFramework\EntityFramework\EntityFramework.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\EntityFramework\PostgreSql\PostgreSql.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\EntityFramework\QueryBuilder\QueryBuilder.csproj" />
+  </ItemGroup>
+
+</Project>

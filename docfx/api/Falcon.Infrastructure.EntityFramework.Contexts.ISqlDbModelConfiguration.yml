@@ -1,0 +1,420 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+  commentId: T:Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+  id: ISqlDbModelConfiguration
+  parent: Falcon.Infrastructure.EntityFramework.Contexts
+  children:
+  - Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Configure(Microsoft.EntityFrameworkCore.ModelBuilder)
+  langs:
+  - csharp
+  - vb
+  name: ISqlDbModelConfiguration
+  nameWithType: ISqlDbModelConfiguration
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+  type: Interface
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/EntityFramework/Contexts/ISqlDbModelConfiguration.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: ISqlDbModelConfiguration
+    path: ../src/Infrastructure/EntityFramework/EntityFramework/Contexts/ISqlDbModelConfiguration.cs
+    startLine: 2
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework
+  namespace: Falcon.Infrastructure.EntityFramework.Contexts
+  syntax:
+    content: public interface ISqlDbModelConfiguration
+    content.vb: Public Interface ISqlDbModelConfiguration
+  extensionMethods:
+  - Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  - Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Configure(Microsoft.EntityFrameworkCore.ModelBuilder)
+  commentId: M:Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Configure(Microsoft.EntityFrameworkCore.ModelBuilder)
+  id: Configure(Microsoft.EntityFrameworkCore.ModelBuilder)
+  parent: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Configure(ModelBuilder)
+  nameWithType: ISqlDbModelConfiguration.Configure(ModelBuilder)
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Configure(Microsoft.EntityFrameworkCore.ModelBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/EntityFramework/Contexts/ISqlDbModelConfiguration.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Configure
+    path: ../src/Infrastructure/EntityFramework/EntityFramework/Contexts/ISqlDbModelConfiguration.cs
+    startLine: 4
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework
+  namespace: Falcon.Infrastructure.EntityFramework.Contexts
+  syntax:
+    content: void Configure(ModelBuilder modelBuilder)
+    parameters:
+    - id: modelBuilder
+      type: Microsoft.EntityFrameworkCore.ModelBuilder
+    content.vb: Sub Configure(modelBuilder As ModelBuilder)
+  overload: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Configure*
+references:
+- uid: Falcon.Infrastructure.EntityFramework.Contexts
+  commentId: N:Falcon.Infrastructure.EntityFramework.Contexts
+  href: Falcon.html
+  name: Falcon.Infrastructure.EntityFramework.Contexts
+  nameWithType: Falcon.Infrastructure.EntityFramework.Contexts
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts
+    name: Contexts
+    href: Falcon.Infrastructure.EntityFramework.Contexts.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts
+    name: Contexts
+    href: Falcon.Infrastructure.EntityFramework.Contexts.html
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, ISqlDbModelConfiguration>(ISqlDbModelConfiguration, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, ISqlDbModelConfiguration>(ISqlDbModelConfiguration, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration>(Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, ISqlDbModelConfiguration)(ISqlDbModelConfiguration, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration)(Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration, TId, Date)
+  name.vb: AuditForCreate(Of TId, ISqlDbModelConfiguration)(ISqlDbModelConfiguration, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+    name: ISqlDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+    name: ISqlDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+    name: ISqlDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.html
+  - name: )
+  - name: (
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+    name: ISqlDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, ISqlDbModelConfiguration>(ISqlDbModelConfiguration, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, ISqlDbModelConfiguration>(ISqlDbModelConfiguration, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration>(Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, ISqlDbModelConfiguration)(ISqlDbModelConfiguration, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration)(Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration, TId, Date)
+  name.vb: AuditForUpdate(Of TId, ISqlDbModelConfiguration)(ISqlDbModelConfiguration, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+    name: ISqlDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+    name: ISqlDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+    name: ISqlDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.html
+  - name: )
+  - name: (
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+    name: ISqlDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  commentId: T:Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html
+  name: EntityAuditExtentions
+  nameWithType: EntityAuditExtentions
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions
+  commentId: N:Falcon.Infrastructure.Abstractions
+  href: Falcon.html
+  name: Falcon.Infrastructure.Abstractions
+  nameWithType: Falcon.Infrastructure.Abstractions
+  fullName: Falcon.Infrastructure.Abstractions
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Configure*
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Configure
+  href: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.html#Falcon_Infrastructure_EntityFramework_Contexts_ISqlDbModelConfiguration_Configure_Microsoft_EntityFrameworkCore_ModelBuilder_
+  name: Configure
+  nameWithType: ISqlDbModelConfiguration.Configure
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Configure
+- uid: Microsoft.EntityFrameworkCore.ModelBuilder
+  commentId: T:Microsoft.EntityFrameworkCore.ModelBuilder
+  parent: Microsoft.EntityFrameworkCore
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.modelbuilder
+  name: ModelBuilder
+  nameWithType: ModelBuilder
+  fullName: Microsoft.EntityFrameworkCore.ModelBuilder
+- uid: Microsoft.EntityFrameworkCore
+  commentId: N:Microsoft.EntityFrameworkCore
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.EntityFrameworkCore
+  nameWithType: Microsoft.EntityFrameworkCore
+  fullName: Microsoft.EntityFrameworkCore
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.EntityFrameworkCore
+    name: EntityFrameworkCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore

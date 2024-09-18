@@ -1,0 +1,594 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Contracts.ICompositeRequest
+  commentId: T:Falcon.Contracts.ICompositeRequest
+  id: ICompositeRequest
+  parent: Falcon.Contracts
+  children:
+  - Falcon.Contracts.ICompositeRequest.Requests
+  langs:
+  - csharp
+  - vb
+  name: ICompositeRequest
+  nameWithType: ICompositeRequest
+  fullName: Falcon.Contracts.ICompositeRequest
+  type: Interface
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/ICompositeRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: ICompositeRequest
+    path: ../src/Shared/Contracts/Request/ICompositeRequest.cs
+    startLine: 2
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: 'public interface ICompositeRequest : IApiRequest'
+    content.vb: Public Interface ICompositeRequest Inherits IApiRequest
+  extensionMethods:
+  - Falcon.Contracts.ICompositeRequest.Falcon.Contracts.Extensions.Add(System.String,Falcon.Contracts.IApiRequest)
+  - Falcon.Contracts.ICompositeRequest.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  - Falcon.Contracts.ICompositeRequest.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+- uid: Falcon.Contracts.ICompositeRequest.Requests
+  commentId: P:Falcon.Contracts.ICompositeRequest.Requests
+  id: Requests
+  parent: Falcon.Contracts.ICompositeRequest
+  langs:
+  - csharp
+  - vb
+  name: Requests
+  nameWithType: ICompositeRequest.Requests
+  fullName: Falcon.Contracts.ICompositeRequest.Requests
+  type: Property
+  source:
+    remote:
+      path: src/Shared/Contracts/Request/ICompositeRequest.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: Requests
+    path: ../src/Shared/Contracts/Request/ICompositeRequest.cs
+    startLine: 4
+  assemblies:
+  - Falcon.Contracts.Abstractions
+  namespace: Falcon.Contracts
+  syntax:
+    content: Dictionary<string, IApiRequest>? Requests { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,Falcon.Contracts.IApiRequest}
+    content.vb: Property Requests As Dictionary(Of String, IApiRequest)
+  overload: Falcon.Contracts.ICompositeRequest.Requests*
+references:
+- uid: Falcon.Contracts
+  commentId: N:Falcon.Contracts
+  href: Falcon.html
+  name: Falcon.Contracts
+  nameWithType: Falcon.Contracts
+  fullName: Falcon.Contracts
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Contracts
+    name: Contracts
+    href: Falcon.Contracts.html
+- uid: Falcon.Contracts.ICompositeRequest.Falcon.Contracts.Extensions.Add(System.String,Falcon.Contracts.IApiRequest)
+  commentId: M:Falcon.Contracts.Extensions.Add(Falcon.Contracts.ICompositeRequest,System.String,Falcon.Contracts.IApiRequest)
+  parent: Falcon.Contracts.Extensions
+  definition: Falcon.Contracts.Extensions.Add(Falcon.Contracts.ICompositeRequest,System.String,Falcon.Contracts.IApiRequest)
+  href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_Add_Falcon_Contracts_ICompositeRequest_System_String_Falcon_Contracts_IApiRequest_
+  name: Add(ICompositeRequest, string, IApiRequest)
+  nameWithType: Extensions.Add(ICompositeRequest, string, IApiRequest)
+  fullName: Falcon.Contracts.Extensions.Add(Falcon.Contracts.ICompositeRequest, string, Falcon.Contracts.IApiRequest)
+  nameWithType.vb: Extensions.Add(ICompositeRequest, String, IApiRequest)
+  fullName.vb: Falcon.Contracts.Extensions.Add(Falcon.Contracts.ICompositeRequest, String, Falcon.Contracts.IApiRequest)
+  name.vb: Add(ICompositeRequest, String, IApiRequest)
+  spec.csharp:
+  - uid: Falcon.Contracts.Extensions.Add(Falcon.Contracts.ICompositeRequest,System.String,Falcon.Contracts.IApiRequest)
+    name: Add
+    href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_Add_Falcon_Contracts_ICompositeRequest_System_String_Falcon_Contracts_IApiRequest_
+  - name: (
+  - uid: Falcon.Contracts.ICompositeRequest
+    name: ICompositeRequest
+    href: Falcon.Contracts.ICompositeRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IApiRequest
+    name: IApiRequest
+    href: Falcon.Contracts.IApiRequest.html
+  - name: )
+  spec.vb:
+  - uid: Falcon.Contracts.Extensions.Add(Falcon.Contracts.ICompositeRequest,System.String,Falcon.Contracts.IApiRequest)
+    name: Add
+    href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_Add_Falcon_Contracts_ICompositeRequest_System_String_Falcon_Contracts_IApiRequest_
+  - name: (
+  - uid: Falcon.Contracts.ICompositeRequest
+    name: ICompositeRequest
+    href: Falcon.Contracts.ICompositeRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IApiRequest
+    name: IApiRequest
+    href: Falcon.Contracts.IApiRequest.html
+  - name: )
+- uid: Falcon.Contracts.ICompositeRequest.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, ICompositeRequest>(ICompositeRequest, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, ICompositeRequest>(ICompositeRequest, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, Falcon.Contracts.ICompositeRequest>(Falcon.Contracts.ICompositeRequest, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, ICompositeRequest)(ICompositeRequest, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, Falcon.Contracts.ICompositeRequest)(Falcon.Contracts.ICompositeRequest, TId, Date)
+  name.vb: AuditForCreate(Of TId, ICompositeRequest)(ICompositeRequest, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Contracts.ICompositeRequest,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.ICompositeRequest
+    name: ICompositeRequest
+    href: Falcon.Contracts.ICompositeRequest.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.ICompositeRequest
+    name: ICompositeRequest
+    href: Falcon.Contracts.ICompositeRequest.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Contracts.ICompositeRequest,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.ICompositeRequest
+    name: ICompositeRequest
+    href: Falcon.Contracts.ICompositeRequest.html
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.ICompositeRequest
+    name: ICompositeRequest
+    href: Falcon.Contracts.ICompositeRequest.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Contracts.ICompositeRequest.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, ICompositeRequest>(ICompositeRequest, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, ICompositeRequest>(ICompositeRequest, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, Falcon.Contracts.ICompositeRequest>(Falcon.Contracts.ICompositeRequest, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, ICompositeRequest)(ICompositeRequest, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, Falcon.Contracts.ICompositeRequest)(Falcon.Contracts.ICompositeRequest, TId, Date)
+  name.vb: AuditForUpdate(Of TId, ICompositeRequest)(ICompositeRequest, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Contracts.ICompositeRequest,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.ICompositeRequest
+    name: ICompositeRequest
+    href: Falcon.Contracts.ICompositeRequest.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Contracts.ICompositeRequest
+    name: ICompositeRequest
+    href: Falcon.Contracts.ICompositeRequest.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Contracts.ICompositeRequest,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.ICompositeRequest
+    name: ICompositeRequest
+    href: Falcon.Contracts.ICompositeRequest.html
+  - name: )
+  - name: (
+  - uid: Falcon.Contracts.ICompositeRequest
+    name: ICompositeRequest
+    href: Falcon.Contracts.ICompositeRequest.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Contracts.Extensions.Add(Falcon.Contracts.ICompositeRequest,System.String,Falcon.Contracts.IApiRequest)
+  commentId: M:Falcon.Contracts.Extensions.Add(Falcon.Contracts.ICompositeRequest,System.String,Falcon.Contracts.IApiRequest)
+  isExternal: true
+  href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_Add_Falcon_Contracts_ICompositeRequest_System_String_Falcon_Contracts_IApiRequest_
+  name: Add(ICompositeRequest, string, IApiRequest)
+  nameWithType: Extensions.Add(ICompositeRequest, string, IApiRequest)
+  fullName: Falcon.Contracts.Extensions.Add(Falcon.Contracts.ICompositeRequest, string, Falcon.Contracts.IApiRequest)
+  nameWithType.vb: Extensions.Add(ICompositeRequest, String, IApiRequest)
+  fullName.vb: Falcon.Contracts.Extensions.Add(Falcon.Contracts.ICompositeRequest, String, Falcon.Contracts.IApiRequest)
+  name.vb: Add(ICompositeRequest, String, IApiRequest)
+  spec.csharp:
+  - uid: Falcon.Contracts.Extensions.Add(Falcon.Contracts.ICompositeRequest,System.String,Falcon.Contracts.IApiRequest)
+    name: Add
+    href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_Add_Falcon_Contracts_ICompositeRequest_System_String_Falcon_Contracts_IApiRequest_
+  - name: (
+  - uid: Falcon.Contracts.ICompositeRequest
+    name: ICompositeRequest
+    href: Falcon.Contracts.ICompositeRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IApiRequest
+    name: IApiRequest
+    href: Falcon.Contracts.IApiRequest.html
+  - name: )
+  spec.vb:
+  - uid: Falcon.Contracts.Extensions.Add(Falcon.Contracts.ICompositeRequest,System.String,Falcon.Contracts.IApiRequest)
+    name: Add
+    href: Falcon.Contracts.Extensions.html#Falcon_Contracts_Extensions_Add_Falcon_Contracts_ICompositeRequest_System_String_Falcon_Contracts_IApiRequest_
+  - name: (
+  - uid: Falcon.Contracts.ICompositeRequest
+    name: ICompositeRequest
+    href: Falcon.Contracts.ICompositeRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IApiRequest
+    name: IApiRequest
+    href: Falcon.Contracts.IApiRequest.html
+  - name: )
+- uid: Falcon.Contracts.Extensions
+  commentId: T:Falcon.Contracts.Extensions
+  parent: Falcon.Contracts
+  href: Falcon.Contracts.Extensions.html
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Falcon.Contracts.Extensions
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  commentId: T:Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html
+  name: EntityAuditExtentions
+  nameWithType: EntityAuditExtentions
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions
+  commentId: N:Falcon.Infrastructure.Abstractions
+  href: Falcon.html
+  name: Falcon.Infrastructure.Abstractions
+  nameWithType: Falcon.Infrastructure.Abstractions
+  fullName: Falcon.Infrastructure.Abstractions
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+- uid: Falcon.Contracts.ICompositeRequest.Requests*
+  commentId: Overload:Falcon.Contracts.ICompositeRequest.Requests
+  href: Falcon.Contracts.ICompositeRequest.html#Falcon_Contracts_ICompositeRequest_Requests
+  name: Requests
+  nameWithType: ICompositeRequest.Requests
+  fullName: Falcon.Contracts.ICompositeRequest.Requests
+- uid: System.Collections.Generic.Dictionary{System.String,Falcon.Contracts.IApiRequest}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,Falcon.Contracts.IApiRequest}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, IApiRequest>
+  nameWithType: Dictionary<string, IApiRequest>
+  fullName: System.Collections.Generic.Dictionary<string, Falcon.Contracts.IApiRequest>
+  nameWithType.vb: Dictionary(Of String, IApiRequest)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Falcon.Contracts.IApiRequest)
+  name.vb: Dictionary(Of String, IApiRequest)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IApiRequest
+    name: IApiRequest
+    href: Falcon.Contracts.IApiRequest.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Falcon.Contracts.IApiRequest
+    name: IApiRequest
+    href: Falcon.Contracts.IApiRequest.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

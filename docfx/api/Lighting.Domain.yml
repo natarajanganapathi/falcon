@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lighting.Domain
+  commentId: N:Lighting.Domain
+  id: Lighting.Domain
+  children:
+  - Lighting.Domain.Class1
+  langs:
+  - csharp
+  - vb
+  name: Lighting.Domain
+  nameWithType: Lighting.Domain
+  fullName: Lighting.Domain
+  type: Namespace
+  assemblies:
+  - Samples.Domain
+references:
+- uid: Lighting.Domain.Class1
+  commentId: T:Lighting.Domain.Class1
+  href: Lighting.Domain.Class1.html
+  name: Class1
+  nameWithType: Class1
+  fullName: Lighting.Domain.Class1

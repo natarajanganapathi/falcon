@@ -1,0 +1,432 @@
+### YamlMime:ManagedReference
+items:
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration
+  commentId: T:Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration
+  id: IHomeDbModelConfiguration
+  parent: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IHomeDbModelConfiguration
+  nameWithType: IHomeDbModelConfiguration
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration
+  type: Interface
+  source:
+    remote:
+      path: src/Infrastructure/EntityFramework/EntityFramework/Contexts/HomeDb/IHomeDbModelConfiguration.cs
+      branch: feature/development
+      repo: https://github.com/natarajanganapathi/Falcon.git
+    id: IHomeDbModelConfiguration
+    path: ../src/Infrastructure/EntityFramework/EntityFramework/Contexts/HomeDb/IHomeDbModelConfiguration.cs
+    startLine: 2
+  assemblies:
+  - Falcon.Infrastructure.EntityFramework
+  namespace: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  syntax:
+    content: 'public interface IHomeDbModelConfiguration : ISqlDbModelConfiguration'
+    content.vb: Public Interface IHomeDbModelConfiguration Inherits ISqlDbModelConfiguration
+  inheritedMembers:
+  - Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Configure(Microsoft.EntityFrameworkCore.ModelBuilder)
+  extensionMethods:
+  - Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  - Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+references:
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  commentId: N:Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  href: Falcon.html
+  name: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  nameWithType: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts
+    name: Contexts
+    href: Falcon.Infrastructure.EntityFramework.Contexts.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+    name: HomeDb
+    href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts
+    name: Contexts
+    href: Falcon.Infrastructure.EntityFramework.Contexts.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb
+    name: HomeDb
+    href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.html
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Configure(Microsoft.EntityFrameworkCore.ModelBuilder)
+  commentId: M:Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Configure(Microsoft.EntityFrameworkCore.ModelBuilder)
+  parent: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+  isExternal: true
+  href: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.html#Falcon_Infrastructure_EntityFramework_Contexts_ISqlDbModelConfiguration_Configure_Microsoft_EntityFrameworkCore_ModelBuilder_
+  name: Configure(ModelBuilder)
+  nameWithType: ISqlDbModelConfiguration.Configure(ModelBuilder)
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Configure(Microsoft.EntityFrameworkCore.ModelBuilder)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Configure(Microsoft.EntityFrameworkCore.ModelBuilder)
+    name: Configure
+    href: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.html#Falcon_Infrastructure_EntityFramework_Contexts_ISqlDbModelConfiguration_Configure_Microsoft_EntityFrameworkCore_ModelBuilder_
+  - name: (
+  - uid: Microsoft.EntityFrameworkCore.ModelBuilder
+    name: ModelBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.modelbuilder
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.Configure(Microsoft.EntityFrameworkCore.ModelBuilder)
+    name: Configure
+    href: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.html#Falcon_Infrastructure_EntityFramework_Contexts_ISqlDbModelConfiguration_Configure_Microsoft_EntityFrameworkCore_ModelBuilder_
+  - name: (
+  - uid: Microsoft.EntityFrameworkCore.ModelBuilder
+    name: ModelBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.modelbuilder
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, IHomeDbModelConfiguration>(IHomeDbModelConfiguration, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, IHomeDbModelConfiguration>(IHomeDbModelConfiguration, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration>(Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, IHomeDbModelConfiguration)(IHomeDbModelConfiguration, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration)(Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration, TId, Date)
+  name.vb: AuditForCreate(Of TId, IHomeDbModelConfiguration)(IHomeDbModelConfiguration, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration
+    name: IHomeDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration
+    name: IHomeDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration
+    name: IHomeDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration.html
+  - name: )
+  - name: (
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration
+    name: IHomeDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration.Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2({TId},System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  parent: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  definition: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, IHomeDbModelConfiguration>(IHomeDbModelConfiguration, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, IHomeDbModelConfiguration>(IHomeDbModelConfiguration, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration>(Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, IHomeDbModelConfiguration)(IHomeDbModelConfiguration, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration)(Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration, TId, Date)
+  name.vb: AuditForUpdate(Of TId, IHomeDbModelConfiguration)(IHomeDbModelConfiguration, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration
+    name: IHomeDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration.html
+  - name: '>'
+  - name: (
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration
+    name: IHomeDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration
+    name: IHomeDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration.html
+  - name: )
+  - name: (
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration
+    name: IHomeDbModelConfiguration
+    href: Falcon.Infrastructure.EntityFramework.Contexts.HomeDb.IHomeDbModelConfiguration.html
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+  commentId: T:Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+  parent: Falcon.Infrastructure.EntityFramework.Contexts
+  href: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration.html
+  name: ISqlDbModelConfiguration
+  nameWithType: ISqlDbModelConfiguration
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts.ISqlDbModelConfiguration
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  name: AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForCreate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForCreate``2(``1,``0,System.DateTime)
+    name: AuditForCreate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  commentId: T:Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+  parent: Falcon.Infrastructure.Abstractions
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html
+  name: EntityAuditExtentions
+  nameWithType: EntityAuditExtentions
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions
+- uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  commentId: M:Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+  isExternal: true
+  href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  name: AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  nameWithType: EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, DateTime)
+  fullName: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate<TId, TEntity>(TEntity, TId, System.DateTime)
+  nameWithType.vb: EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  fullName.vb: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  name.vb: AuditForUpdate(Of TId, TEntity)(TEntity, TId, Date)
+  spec.csharp:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: <
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: '>'
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.AuditForUpdate``2(``1,``0,System.DateTime)
+    name: AuditForUpdate
+    href: Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - name: TEntity
+  - name: )
+  - name: (
+  - name: TEntity
+  - name: ','
+  - name: " "
+  - name: TId
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: Falcon.Infrastructure.EntityFramework.Contexts
+  commentId: N:Falcon.Infrastructure.EntityFramework.Contexts
+  href: Falcon.html
+  name: Falcon.Infrastructure.EntityFramework.Contexts
+  nameWithType: Falcon.Infrastructure.EntityFramework.Contexts
+  fullName: Falcon.Infrastructure.EntityFramework.Contexts
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts
+    name: Contexts
+    href: Falcon.Infrastructure.EntityFramework.Contexts.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework
+    name: EntityFramework
+    href: Falcon.Infrastructure.EntityFramework.html
+  - name: .
+  - uid: Falcon.Infrastructure.EntityFramework.Contexts
+    name: Contexts
+    href: Falcon.Infrastructure.EntityFramework.Contexts.html
+- uid: Falcon.Infrastructure.Abstractions
+  commentId: N:Falcon.Infrastructure.Abstractions
+  href: Falcon.html
+  name: Falcon.Infrastructure.Abstractions
+  nameWithType: Falcon.Infrastructure.Abstractions
+  fullName: Falcon.Infrastructure.Abstractions
+  spec.csharp:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
+  spec.vb:
+  - uid: Falcon
+    name: Falcon
+    href: Falcon.html
+  - name: .
+  - uid: Falcon.Infrastructure
+    name: Infrastructure
+    href: Falcon.Infrastructure.html
+  - name: .
+  - uid: Falcon.Infrastructure.Abstractions
+    name: Abstractions
+    href: Falcon.Infrastructure.Abstractions.html
