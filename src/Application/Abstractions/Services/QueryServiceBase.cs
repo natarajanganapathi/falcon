@@ -6,21 +6,21 @@ public class QueryServiceBase<TId, TEntity> : ApplicationServiceBase<TId, TEntit
 
     public Task<TEntity> GetAsync(TId id, CancellationToken cancellationToken)
     {
-        return _repository.GetAsync(id, cancellationToken);
+        return GetRepository().GetAsync(id, cancellationToken);
     }
 
     public Task<long> CountAsync(IQueryRequest request, CancellationToken cancellationToken)
     {
-        return _repository.CountAsync(request, cancellationToken);
+        return GetRepository().CountAsync(request, cancellationToken);
     }
 
     public async Task<IList<TEntity>> FindAsync(IQueryRequest request, CancellationToken cancellationToken)
     {
-        return await _repository.FindAsync(request, cancellationToken);
+        return await GetRepository().FindAsync(request, cancellationToken);
     }
 
     public async Task<IList<JObject>> QueryAsync(IQueryRequest request, CancellationToken cancellationToken)
     {
-        return await _repository.QueryAsync(request, cancellationToken);
+        return await GetRepository().QueryAsync(request, cancellationToken);
     }
 }
