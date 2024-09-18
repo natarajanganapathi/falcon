@@ -17,7 +17,7 @@ jobs:
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
-          distribution: "microsoft"
+          distribution: "zulu"
           java-version: 21
 
       - uses: actions/checkout@v4
@@ -42,8 +42,8 @@ jobs:
       - name: Install tools
         shell: powershell
         run: |
-          dotnet tool update --global dotnet-sonarscanner  --version 6.1.0
-          dotnet tool update --global dotnet-coverage --version 17.4.4
+          dotnet tool update --global dotnet-sonarscanner  --version 8.0.3
+          dotnet tool update --global dotnet-coverage --version 17.12.4
 
       - name: Run tests and collect coverage
         run: |
@@ -52,12 +52,13 @@ jobs:
 
       - name: SonarCloud Scan
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           dotnet sonarscanner begin `
-                /k:"natarajanganapathi_sparkplug" `
+                /k:"natarajanganapathi_falcon" `
                 /o:"natarajan-ganapathi" `
-                /d:sonar.login="%SONAR_TOKEN%" `
+                /d:sonar.token="${{ secrets.SONAR_TOKEN }}" `
                 /d:sonar.cs.vscoveragexml.reportsPaths="coverage.xml" `
                 /d:sonar.host.url="https://sonarcloud.io" `
                 /d:sonar.tests="tests/" `
@@ -65,24 +66,4 @@ jobs:
                 /d:sonar.test.exclusions="**/samples/**,**/tests/**" `
                 /d:sonar.coverage.exclusions="**/samples/**,**/tests/**"
           dotnet build --no-incremental
-          dotnet sonarscanner end /d:sonar.login="%SONAR_TOKEN%"          
-          
-      # - name: Build and analyze
-      #   env:
-      #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      #   shell: powershell
-      #   run: |
-      #     dotnet tool list -g
-      #     dotnet coverage collect "dotnet test" -f xml -o "coverage.xml"
-      #     dotnet sonarscanner begin `
-      #           /k:"natarajanganapathi_sparkplug" `
-      #           /o:"natarajan-ganapathi" `
-      #           /d:sonar.login="${{ secrets.SONAR_TOKEN }}" `
-      #           /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml `
-      #           /d:sonar.host.url="https://sonarcloud.io" `
-      #           /d:sonar.tests="tests/" `
-      #           /d:sonar.exclusions="**/samples/**,**/tests/**" `
-      #           /d:sonar.test.exclusions="**/samples/**,**/tests/**" `
-      #           /d:sonar.coverage.exclusions="**/samples/**,**/tests/**"
-      #     dotnet build --no-incremental
-      #     dotnet sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+          dotnet sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
