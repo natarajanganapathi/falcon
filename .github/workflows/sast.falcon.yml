@@ -48,7 +48,7 @@ jobs:
       - name: Run tests and collect coverage
         run: |
           dotnet tool list -g
-          dotnet coverage collect "dotnet test" -f xml -o "coverage.xml"
+          dotnet coverage collect "dotnet test /tests" -f xml -o "coverage.xml"
 
       - name: SonarCloud Scan
         env:
