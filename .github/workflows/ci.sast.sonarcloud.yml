@@ -69,6 +69,7 @@ jobs:
                 /d:sonar.tests="tests/" `
                 /d:sonar.exclusions="**/samples/**,**/tests/**" `
                 /d:sonar.test.exclusions="**/samples/**,**/tests/**" `
-                /d:sonar.coverage.exclusions="**/samples/**,**/tests/**"
+                /d:sonar.coverage.exclusions="**/samples/**,**/tests/**" `
+                /d:sonar.scanner.skipJreProvisioning=true
           dotnet build --no-incremental
           dotnet sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
