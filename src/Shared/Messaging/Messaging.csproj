@@ -11,8 +11,8 @@
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
   <PropertyGroup>
-    <RootNamespace>Falcon.Messaging.IntegrationEvents</RootNamespace>
-    <AssemblyName>Falcon.Messaging.IntegrationEvents</AssemblyName>
+    <RootNamespace>Falcon.Messaging</RootNamespace>
+    <AssemblyName>Falcon.Messaging</AssemblyName>
   </PropertyGroup>
     <ItemGroup>
       <None Include="README.md" Pack="true" PackagePath="README.md" />
@@ -20,8 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MassTransit" Version="8.2.5" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Abstractions\Abstractions.csproj" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
   </ItemGroup>
 </Project>
