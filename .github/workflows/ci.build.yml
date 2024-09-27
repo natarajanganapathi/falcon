@@ -5,7 +5,7 @@ on:
     branches: [ "feature/*" ]
     paths-ignore: ["docfx", "samples", ".github"]
   pull_request:
-    branches: [ "main"]
+    branches: [ "master"]
     paths-ignore: ["docfx", "samples", ".github"]
   workflow_dispatch:
 
