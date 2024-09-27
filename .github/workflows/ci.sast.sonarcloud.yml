@@ -18,44 +18,51 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: "zulu"
-          java-version: 21
+          java-version: 17
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
 
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Cache SonarQube packages
+      - name: Cache SonarCloud packages
         uses: actions/cache@v4
         with:
-          path: ~/sonar/cache
+          path: ~\sonar\cache
           key: ${{ runner.os }}-sonar-packages
           restore-keys: ${{ runner.os }}-sonar-packages
 
-      - name: Cache SonarQube scanner
+      - name: Cache SonarCloud scanner
         id: cache-sonar-scanner
         uses: actions/cache@v4
         with:
-          path: ./.sonar/scanner
+          path: .\.sonar\scanner
           key: ${{ runner.os }}-sonar-scanner
           restore-keys: ${{ runner.os }}-sonar-scanner
 
       - name: Install tools
+        if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
         shell: powershell
         run: |
-          dotnet tool update --global dotnet-sonarscanner  --version 8.0.3
-          dotnet tool update --global dotnet-coverage --version 17.12.4
+          New-Item -Path .\.sonar\scanner -ItemType Directory
+          dotnet tool update dotnet-sonarscanner  --version 8.0.3  --tool-path .\.sonar\scanner
+          dotnet tool update dotnet-coverage --version 17.12.4  --tool-path .\.sonar\scanner
+          dotnet tool list -g
 
       - name: Run tests and collect coverage
         run: |
-          dotnet tool list -g
-          dotnet coverage collect "dotnet test" -f xml -o "coverage.xml"
+          .\.sonar\scanner\dotnet-coverage collect "dotnet test ./tests/Falcon.Tests.sln" -f xml -o "coverage.xml"
 
       - name: SonarCloud Scan
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          dotnet sonarscanner begin `
+          .\.sonar\scanner\dotnet-sonarscanner begin `
                 /k:"natarajanganapathi_falcon" `
                 /o:"natarajan-ganapathi" `
                 /d:sonar.token="${{ secrets.SONAR_TOKEN }}" `
@@ -64,6 +71,7 @@ jobs:
                 /d:sonar.tests="tests/" `
                 /d:sonar.exclusions="**/samples/**,**/tests/**" `
                 /d:sonar.test.exclusions="**/samples/**,**/tests/**" `
-                /d:sonar.coverage.exclusions="**/samples/**,**/tests/**"
-          dotnet build --no-incremental
-          dotnet sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
+                /d:sonar.coverage.exclusions="**/samples/**,**/tests/**" `
+                /d:sonar.scanner.skipJreProvisioning=true
+          dotnet build
+          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"

@@ -1,6 +1,6 @@
 namespace Falcon.Application.Abstractions;
 
-public static class ModuleExtensions
+public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddApplicationModule(this IServiceCollection services, IConfiguration configuration, string configPath)
     {

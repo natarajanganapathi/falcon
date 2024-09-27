@@ -14,6 +14,7 @@ public abstract class DomainEvent : IDomainEvent
         AggregateId = aggregateId;
         Version = version;
     }
+
     public string GetEventType()
     {
         return GetType().Name;

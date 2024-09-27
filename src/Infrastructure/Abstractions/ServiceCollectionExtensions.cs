@@ -1,6 +1,6 @@
 namespace Falcon.Infrastructure.Abstractions;
 
-public static class ModuleExtensions
+public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddInfrasttructureModule(this IServiceCollection services)
     {

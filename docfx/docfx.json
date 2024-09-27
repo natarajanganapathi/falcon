@@ -62,8 +62,8 @@
     ],
     "dest": "../docs",
     "globalMetadata": {
-      "_appName": "falcon",
-      "_appTitle": "falcon",
+      "_appName": "Falcon",
+      "_appTitle": "Falcon Documentation",
       "_enableSearch": "true",
       "pdf": false
     },

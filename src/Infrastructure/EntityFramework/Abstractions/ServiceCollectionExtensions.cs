@@ -1,26 +1,26 @@
 namespace Falcon.Infrastructure.EntityFramework;
 
-public static class ModuleExtensions
+public static class ServiceCollectionExtensions
 {
-    public static IServiceCollection AddInfrastructureEntityFrameworksModule(this IServiceCollection services, IConfiguration configuration, string configPath)
+    public static IServiceCollection AddInfrastructureEntityFramework(this IServiceCollection services, IConfiguration configuration, string configPath)
     {
         services.Configure<SqlDbOptions>(configuration.GetSection(configPath));
-        return services.AddInfrastructureEntityFrameworksModule();
+        return services.AddInfrastructureEntityFramework();
     }
 
-    public static IServiceCollection AddInfrastructureEntityFrameworksModule(this IServiceCollection services, IConfigurationSection section)
+    public static IServiceCollection AddInfrastructureEntityFramework(this IServiceCollection services, IConfigurationSection section)
     {
         services.Configure<SqlDbOptions>(section);
-        return services.AddInfrastructureEntityFrameworksModule();
+        return services.AddInfrastructureEntityFramework();
     }
 
-    public static IServiceCollection AddInfrastructureEntityFrameworksModule(this IServiceCollection services, Action<SqlDbOptions> configure)
+    public static IServiceCollection AddInfrastructureEntityFramework(this IServiceCollection services, Action<SqlDbOptions> configure)
     {
         services.Configure(configure);
-        return services.AddInfrastructureEntityFrameworksModule();
+        return services.AddInfrastructureEntityFramework();
     }
 
-    private static IServiceCollection AddInfrastructureEntityFrameworksModule(this IServiceCollection services)
+    private static IServiceCollection AddInfrastructureEntityFramework(this IServiceCollection services)
     {
         services.AddScoped(typeof(ITenant), typeof(SingleTenant));
 
@@ -43,12 +43,12 @@ public static class ModuleExtensions
         return services;
     }
 
-    public static IApplicationBuilder UsePersistenceEntityFrameworkMiddelwares(this IApplicationBuilder app)
+    public static IApplicationBuilder UseInfrastructureEntityFrameworkMiddelwares(this IApplicationBuilder app)
     {
         return app;
     }
 
-    public static IApplicationBuilder UsePersistenceEntityFrameworkModule(this IApplicationBuilder app)
+    public static IApplicationBuilder UseInfrastructureEntityFramework(this IApplicationBuilder app)
     {
         return app;
     }

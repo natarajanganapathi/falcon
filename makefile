@@ -13,6 +13,7 @@ clean:
 	-dotnet clean
 	-rimraf docs
 	-rimraf packages
+	-rimraf coverage.xml
 	
 
 build: build-src build-samples

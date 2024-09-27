@@ -1,8 +1,8 @@
 namespace Falcon.Application.Abstractions.Services;
 
-public class CommandServiceBase<TId, TEntity> : ApplicationServiceBase<TId, TEntity> where TEntity : class, IEntity<TId>, new()
+public class CommandService<TId, TEntity> : ApplicationService<TId, TEntity> where TEntity : class, IEntity<TId>, new()
 {
-    public CommandServiceBase(IServiceProvider serviceProvider) : base(serviceProvider) { }
+    public CommandService(IServiceProvider serviceProvider) : base(serviceProvider) { }
     public Task<TEntity> CreateAsync(ICommandRequest<TEntity> request, CancellationToken cancellationToken)
     {
         return GetRepository().CreateAsync(request, cancellationToken);

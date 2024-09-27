@@ -14,3 +14,4 @@ public class IntegrationEventPublisher
         await _bus.Publish(integrationEvent);
     }
 }
+

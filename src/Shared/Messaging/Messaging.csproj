@@ -7,12 +7,15 @@
     <AssemblyVersion>0.0.0.1</AssemblyVersion>
     <FileVersion>0.0.0.1</FileVersion>
     <Version>0.0.1-alpha.1</Version>
+    <Authors>Natarajan Ganapathi</Authors>
+    <PackageDescription>Falcon.Messaging is a .NET library that integrates MediatR for in-process messaging and MassTransit for distributed messaging, providing a unified messaging solution for applications. It supports scalable and reliable communication patterns, ideal for microservices and complex software architectures.</PackageDescription>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/natarajanganapathi/falcon</RepositoryUrl>
   </PropertyGroup>
   <PropertyGroup>
-    <RootNamespace>Falcon.Messaging.IntegrationEvents</RootNamespace>
-    <AssemblyName>Falcon.Messaging.IntegrationEvents</AssemblyName>
+    <RootNamespace>Falcon.Messaging</RootNamespace>
+    <AssemblyName>Falcon.Messaging</AssemblyName>
   </PropertyGroup>
     <ItemGroup>
       <None Include="README.md" Pack="true" PackagePath="README.md" />
@@ -20,8 +23,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MassTransit" Version="8.2.5" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Abstractions\Abstractions.csproj" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 namespace Falcon.Infrastructure.EntityFramework.PostgreSql;
 
-public static class ModuleExtensions
+public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddInfrastructureEntityFrameworkPostgreSql(IServiceCollection services)
     {

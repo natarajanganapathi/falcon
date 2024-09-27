@@ -1,3 +1,12 @@
+
+[![Falcon Build](https://github.com/natarajanganapathi/falcon/actions/workflows/ci.falcon.build.yml/badge.svg)](https://github.com/natarajanganapathi/falcon/actions/workflows/ci.falcon.build.yml) [![Publish to Nuget](https://github.com/natarajanganapathi/falcon/actions/workflows/cd.falcon.yml/badge.svg)](https://github.com/natarajanganapathi/falcon/actions/workflows/cd.falcon.yml) [![Sonar Cloud Analysis (SAST)](https://github.com/natarajanganapathi/falcon/actions/workflows/sast.falcon.yml/badge.svg)](https://github.com/natarajanganapathi/falcon/actions/workflows/sast.falcon.yml)[![CodeQL](https://github.com/natarajanganapathi/falcon/actions/workflows/codeql.yml/badge.svg)](https://github.com/natarajanganapathi/falcon/actions/workflows/codeql.yml) [![Dependabot Updates](https://github.com/natarajanganapathi/falcon/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/natarajanganapathi/falcon/actions/workflows/dependabot/dependabot-updates)
+
+
+## Project
+
+1. [Sonar Cloud - Static Code Analysis](https://sonarcloud.io/project/overview?id=natarajanganapathi_falcon)
+2. [Docfx - Documentation](https://natarajanganapathi.github.io/falcon/)
+
 ## Dotnet Tools
 
 The following global tools are required
