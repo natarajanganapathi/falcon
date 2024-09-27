@@ -92,6 +92,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Application.Abstractions.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Application.Abstractions.ServiceCollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Application.Abstractions.Services.ApplicationService-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Application.Abstractions.Services.ApplicationService-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Falcon.Application.Abstractions.Services.ApplicationServiceBase-2.yml",
       "output": {
         ".html": {
@@ -102,10 +122,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Application.Abstractions.Services.CommandService-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Application.Abstractions.Services.CommandService-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Falcon.Application.Abstractions.Services.CommandServiceBase-2.yml",
       "output": {
         ".html": {
           "relative_path": "api/Falcon.Application.Abstractions.Services.CommandServiceBase-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Application.Abstractions.Services.QueryService-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Application.Abstractions.Services.QueryService-2.html"
         }
       },
       "version": ""
@@ -952,6 +992,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Falcon.Infrastructure.Abstractions.TenantOptions-1.yml",
       "output": {
         ".html": {
@@ -1552,6 +1602,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Falcon.Infrastructure.EntityFramework.PostgreSql.yml",
       "output": {
         ".html": {
@@ -1646,6 +1706,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Falcon.Infrastructure.EntityFramework.QueryBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.html"
         }
       },
       "version": ""
@@ -1842,10 +1912,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.IntegrationEvents.IntegrationEventHandler-1.yml",
+      "source_relative_path": "api/Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.IntegrationEvents.IntegrationEventHandler-1.html"
+          "relative_path": "api/Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer-1.html"
         }
       },
       "version": ""
@@ -1866,6 +1936,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Falcon.Messaging.IntegrationEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Messaging.MessagingOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Messaging.MessagingOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Messaging.MessagingOptionsBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Messaging.MessagingOptionsBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Messaging.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Messaging.ServiceCollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Messaging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Messaging.html"
         }
       },
       "version": ""

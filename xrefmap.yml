@@ -28,15 +28,15 @@ references:
   fullName.vb: Falcon.Application.Abstractions.Endpoints(Of TId, TEntity)
   nameWithType: Endpoints<TId, TEntity>
   nameWithType.vb: Endpoints(Of TId, TEntity)
-- uid: Falcon.Application.Abstractions.Endpoints`2.GetAsync(`0,Falcon.Application.Abstractions.Services.QueryServiceBase{`0,`1},System.Threading.CancellationToken)
-  name: GetAsync(TId, QueryServiceBase<TId, TEntity>, CancellationToken)
-  href: api/Falcon.Application.Abstractions.Endpoints-2.html#Falcon_Application_Abstractions_Endpoints_2_GetAsync__0_Falcon_Application_Abstractions_Services_QueryServiceBase__0__1__System_Threading_CancellationToken_
-  commentId: M:Falcon.Application.Abstractions.Endpoints`2.GetAsync(`0,Falcon.Application.Abstractions.Services.QueryServiceBase{`0,`1},System.Threading.CancellationToken)
-  name.vb: GetAsync(TId, QueryServiceBase(Of TId, TEntity), CancellationToken)
-  fullName: Falcon.Application.Abstractions.Endpoints<TId, TEntity>.GetAsync(TId, Falcon.Application.Abstractions.Services.QueryServiceBase<TId, TEntity>, System.Threading.CancellationToken)
-  fullName.vb: Falcon.Application.Abstractions.Endpoints(Of TId, TEntity).GetAsync(TId, Falcon.Application.Abstractions.Services.QueryServiceBase(Of TId, TEntity), System.Threading.CancellationToken)
-  nameWithType: Endpoints<TId, TEntity>.GetAsync(TId, QueryServiceBase<TId, TEntity>, CancellationToken)
-  nameWithType.vb: Endpoints(Of TId, TEntity).GetAsync(TId, QueryServiceBase(Of TId, TEntity), CancellationToken)
+- uid: Falcon.Application.Abstractions.Endpoints`2.GetAsync(`0,Falcon.Application.Abstractions.Services.QueryService{`0,`1},System.Threading.CancellationToken)
+  name: GetAsync(TId, QueryService<TId, TEntity>, CancellationToken)
+  href: api/Falcon.Application.Abstractions.Endpoints-2.html#Falcon_Application_Abstractions_Endpoints_2_GetAsync__0_Falcon_Application_Abstractions_Services_QueryService__0__1__System_Threading_CancellationToken_
+  commentId: M:Falcon.Application.Abstractions.Endpoints`2.GetAsync(`0,Falcon.Application.Abstractions.Services.QueryService{`0,`1},System.Threading.CancellationToken)
+  name.vb: GetAsync(TId, QueryService(Of TId, TEntity), CancellationToken)
+  fullName: Falcon.Application.Abstractions.Endpoints<TId, TEntity>.GetAsync(TId, Falcon.Application.Abstractions.Services.QueryService<TId, TEntity>, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Application.Abstractions.Endpoints(Of TId, TEntity).GetAsync(TId, Falcon.Application.Abstractions.Services.QueryService(Of TId, TEntity), System.Threading.CancellationToken)
+  nameWithType: Endpoints<TId, TEntity>.GetAsync(TId, QueryService<TId, TEntity>, CancellationToken)
+  nameWithType.vb: Endpoints(Of TId, TEntity).GetAsync(TId, QueryService(Of TId, TEntity), CancellationToken)
 - uid: Falcon.Application.Abstractions.Endpoints`2.GetAsync*
   name: GetAsync
   href: api/Falcon.Application.Abstractions.Endpoints-2.html#Falcon_Application_Abstractions_Endpoints_2_GetAsync_
@@ -253,6 +253,54 @@ references:
   isSpec: "True"
   fullName: Falcon.Application.Abstractions.ModuleExtensions.UseInfrastructureModule
   nameWithType: ModuleExtensions.UseInfrastructureModule
+- uid: Falcon.Application.Abstractions.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/Falcon.Application.Abstractions.ServiceCollectionExtensions.html
+  commentId: T:Falcon.Application.Abstractions.ServiceCollectionExtensions
+  fullName: Falcon.Application.Abstractions.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: Falcon.Application.Abstractions.ServiceCollectionExtensions.AddApplicationModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name: AddApplicationModule(IServiceCollection, IConfiguration, string)
+  href: api/Falcon.Application.Abstractions.ServiceCollectionExtensions.html#Falcon_Application_Abstractions_ServiceCollectionExtensions_AddApplicationModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_
+  commentId: M:Falcon.Application.Abstractions.ServiceCollectionExtensions.AddApplicationModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name.vb: AddApplicationModule(IServiceCollection, IConfiguration, String)
+  fullName: Falcon.Application.Abstractions.ServiceCollectionExtensions.AddApplicationModule(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, string)
+  fullName.vb: Falcon.Application.Abstractions.ServiceCollectionExtensions.AddApplicationModule(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, String)
+  nameWithType: ServiceCollectionExtensions.AddApplicationModule(IServiceCollection, IConfiguration, string)
+  nameWithType.vb: ServiceCollectionExtensions.AddApplicationModule(IServiceCollection, IConfiguration, String)
+- uid: Falcon.Application.Abstractions.ServiceCollectionExtensions.AddApplicationModule*
+  name: AddApplicationModule
+  href: api/Falcon.Application.Abstractions.ServiceCollectionExtensions.html#Falcon_Application_Abstractions_ServiceCollectionExtensions_AddApplicationModule_
+  commentId: Overload:Falcon.Application.Abstractions.ServiceCollectionExtensions.AddApplicationModule
+  isSpec: "True"
+  fullName: Falcon.Application.Abstractions.ServiceCollectionExtensions.AddApplicationModule
+  nameWithType: ServiceCollectionExtensions.AddApplicationModule
+- uid: Falcon.Application.Abstractions.ServiceCollectionExtensions.UseInfrastructureMiddelwares(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  name: UseInfrastructureMiddelwares(IApplicationBuilder)
+  href: api/Falcon.Application.Abstractions.ServiceCollectionExtensions.html#Falcon_Application_Abstractions_ServiceCollectionExtensions_UseInfrastructureMiddelwares_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  commentId: M:Falcon.Application.Abstractions.ServiceCollectionExtensions.UseInfrastructureMiddelwares(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  fullName: Falcon.Application.Abstractions.ServiceCollectionExtensions.UseInfrastructureMiddelwares(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureMiddelwares(IApplicationBuilder)
+- uid: Falcon.Application.Abstractions.ServiceCollectionExtensions.UseInfrastructureMiddelwares*
+  name: UseInfrastructureMiddelwares
+  href: api/Falcon.Application.Abstractions.ServiceCollectionExtensions.html#Falcon_Application_Abstractions_ServiceCollectionExtensions_UseInfrastructureMiddelwares_
+  commentId: Overload:Falcon.Application.Abstractions.ServiceCollectionExtensions.UseInfrastructureMiddelwares
+  isSpec: "True"
+  fullName: Falcon.Application.Abstractions.ServiceCollectionExtensions.UseInfrastructureMiddelwares
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureMiddelwares
+- uid: Falcon.Application.Abstractions.ServiceCollectionExtensions.UseInfrastructureModule(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  name: UseInfrastructureModule(IApplicationBuilder)
+  href: api/Falcon.Application.Abstractions.ServiceCollectionExtensions.html#Falcon_Application_Abstractions_ServiceCollectionExtensions_UseInfrastructureModule_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  commentId: M:Falcon.Application.Abstractions.ServiceCollectionExtensions.UseInfrastructureModule(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  fullName: Falcon.Application.Abstractions.ServiceCollectionExtensions.UseInfrastructureModule(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureModule(IApplicationBuilder)
+- uid: Falcon.Application.Abstractions.ServiceCollectionExtensions.UseInfrastructureModule*
+  name: UseInfrastructureModule
+  href: api/Falcon.Application.Abstractions.ServiceCollectionExtensions.html#Falcon_Application_Abstractions_ServiceCollectionExtensions_UseInfrastructureModule_
+  commentId: Overload:Falcon.Application.Abstractions.ServiceCollectionExtensions.UseInfrastructureModule
+  isSpec: "True"
+  fullName: Falcon.Application.Abstractions.ServiceCollectionExtensions.UseInfrastructureModule
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureModule
 - uid: Falcon.Application.Abstractions.Services
   name: Falcon.Application.Abstractions.Services
   href: api/Falcon.Application.Abstractions.Services.html
@@ -322,6 +370,77 @@ references:
   fullName.vb: Falcon.Application.Abstractions.Services.ApplicationServiceBase(Of TId, TEntity).GetService(Of TService)()
   nameWithType: ApplicationServiceBase<TId, TEntity>.GetService<TService>()
   nameWithType.vb: ApplicationServiceBase(Of TId, TEntity).GetService(Of TService)()
+- uid: Falcon.Application.Abstractions.Services.ApplicationServiceBase`2._repository
+  name: _repository
+  href: api/Falcon.Application.Abstractions.Services.ApplicationServiceBase-2.html#Falcon_Application_Abstractions_Services_ApplicationServiceBase_2__repository
+  commentId: F:Falcon.Application.Abstractions.Services.ApplicationServiceBase`2._repository
+  fullName: Falcon.Application.Abstractions.Services.ApplicationServiceBase<TId, TEntity>._repository
+  fullName.vb: Falcon.Application.Abstractions.Services.ApplicationServiceBase(Of TId, TEntity)._repository
+  nameWithType: ApplicationServiceBase<TId, TEntity>._repository
+  nameWithType.vb: ApplicationServiceBase(Of TId, TEntity)._repository
+- uid: Falcon.Application.Abstractions.Services.ApplicationService`2
+  name: ApplicationService<TId, TEntity>
+  href: api/Falcon.Application.Abstractions.Services.ApplicationService-2.html
+  commentId: T:Falcon.Application.Abstractions.Services.ApplicationService`2
+  name.vb: ApplicationService(Of TId, TEntity)
+  fullName: Falcon.Application.Abstractions.Services.ApplicationService<TId, TEntity>
+  fullName.vb: Falcon.Application.Abstractions.Services.ApplicationService(Of TId, TEntity)
+  nameWithType: ApplicationService<TId, TEntity>
+  nameWithType.vb: ApplicationService(Of TId, TEntity)
+- uid: Falcon.Application.Abstractions.Services.ApplicationService`2.#ctor(System.IServiceProvider)
+  name: ApplicationService(IServiceProvider)
+  href: api/Falcon.Application.Abstractions.Services.ApplicationService-2.html#Falcon_Application_Abstractions_Services_ApplicationService_2__ctor_System_IServiceProvider_
+  commentId: M:Falcon.Application.Abstractions.Services.ApplicationService`2.#ctor(System.IServiceProvider)
+  name.vb: New(IServiceProvider)
+  fullName: Falcon.Application.Abstractions.Services.ApplicationService<TId, TEntity>.ApplicationService(System.IServiceProvider)
+  fullName.vb: Falcon.Application.Abstractions.Services.ApplicationService(Of TId, TEntity).New(System.IServiceProvider)
+  nameWithType: ApplicationService<TId, TEntity>.ApplicationService(IServiceProvider)
+  nameWithType.vb: ApplicationService(Of TId, TEntity).New(IServiceProvider)
+- uid: Falcon.Application.Abstractions.Services.ApplicationService`2.#ctor*
+  name: ApplicationService
+  href: api/Falcon.Application.Abstractions.Services.ApplicationService-2.html#Falcon_Application_Abstractions_Services_ApplicationService_2__ctor_
+  commentId: Overload:Falcon.Application.Abstractions.Services.ApplicationService`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Falcon.Application.Abstractions.Services.ApplicationService<TId, TEntity>.ApplicationService
+  fullName.vb: Falcon.Application.Abstractions.Services.ApplicationService(Of TId, TEntity).New
+  nameWithType: ApplicationService<TId, TEntity>.ApplicationService
+  nameWithType.vb: ApplicationService(Of TId, TEntity).New
+- uid: Falcon.Application.Abstractions.Services.ApplicationService`2.GetRepository
+  name: GetRepository()
+  href: api/Falcon.Application.Abstractions.Services.ApplicationService-2.html#Falcon_Application_Abstractions_Services_ApplicationService_2_GetRepository
+  commentId: M:Falcon.Application.Abstractions.Services.ApplicationService`2.GetRepository
+  fullName: Falcon.Application.Abstractions.Services.ApplicationService<TId, TEntity>.GetRepository()
+  fullName.vb: Falcon.Application.Abstractions.Services.ApplicationService(Of TId, TEntity).GetRepository()
+  nameWithType: ApplicationService<TId, TEntity>.GetRepository()
+  nameWithType.vb: ApplicationService(Of TId, TEntity).GetRepository()
+- uid: Falcon.Application.Abstractions.Services.ApplicationService`2.GetRepository*
+  name: GetRepository
+  href: api/Falcon.Application.Abstractions.Services.ApplicationService-2.html#Falcon_Application_Abstractions_Services_ApplicationService_2_GetRepository_
+  commentId: Overload:Falcon.Application.Abstractions.Services.ApplicationService`2.GetRepository
+  isSpec: "True"
+  fullName: Falcon.Application.Abstractions.Services.ApplicationService<TId, TEntity>.GetRepository
+  fullName.vb: Falcon.Application.Abstractions.Services.ApplicationService(Of TId, TEntity).GetRepository
+  nameWithType: ApplicationService<TId, TEntity>.GetRepository
+  nameWithType.vb: ApplicationService(Of TId, TEntity).GetRepository
+- uid: Falcon.Application.Abstractions.Services.ApplicationService`2.GetService*
+  name: GetService
+  href: api/Falcon.Application.Abstractions.Services.ApplicationService-2.html#Falcon_Application_Abstractions_Services_ApplicationService_2_GetService_
+  commentId: Overload:Falcon.Application.Abstractions.Services.ApplicationService`2.GetService
+  isSpec: "True"
+  fullName: Falcon.Application.Abstractions.Services.ApplicationService<TId, TEntity>.GetService
+  fullName.vb: Falcon.Application.Abstractions.Services.ApplicationService(Of TId, TEntity).GetService
+  nameWithType: ApplicationService<TId, TEntity>.GetService
+  nameWithType.vb: ApplicationService(Of TId, TEntity).GetService
+- uid: Falcon.Application.Abstractions.Services.ApplicationService`2.GetService``1
+  name: GetService<TService>()
+  href: api/Falcon.Application.Abstractions.Services.ApplicationService-2.html#Falcon_Application_Abstractions_Services_ApplicationService_2_GetService__1
+  commentId: M:Falcon.Application.Abstractions.Services.ApplicationService`2.GetService``1
+  name.vb: GetService(Of TService)()
+  fullName: Falcon.Application.Abstractions.Services.ApplicationService<TId, TEntity>.GetService<TService>()
+  fullName.vb: Falcon.Application.Abstractions.Services.ApplicationService(Of TId, TEntity).GetService(Of TService)()
+  nameWithType: ApplicationService<TId, TEntity>.GetService<TService>()
+  nameWithType.vb: ApplicationService(Of TId, TEntity).GetService(Of TService)()
 - uid: Falcon.Application.Abstractions.Services.CommandServiceBase`2
   name: CommandServiceBase<TId, TEntity>
   href: api/Falcon.Application.Abstractions.Services.CommandServiceBase-2.html
@@ -421,6 +540,105 @@ references:
   fullName.vb: Falcon.Application.Abstractions.Services.CommandServiceBase(Of TId, TEntity).UpdateAsync
   nameWithType: CommandServiceBase<TId, TEntity>.UpdateAsync
   nameWithType.vb: CommandServiceBase(Of TId, TEntity).UpdateAsync
+- uid: Falcon.Application.Abstractions.Services.CommandService`2
+  name: CommandService<TId, TEntity>
+  href: api/Falcon.Application.Abstractions.Services.CommandService-2.html
+  commentId: T:Falcon.Application.Abstractions.Services.CommandService`2
+  name.vb: CommandService(Of TId, TEntity)
+  fullName: Falcon.Application.Abstractions.Services.CommandService<TId, TEntity>
+  fullName.vb: Falcon.Application.Abstractions.Services.CommandService(Of TId, TEntity)
+  nameWithType: CommandService<TId, TEntity>
+  nameWithType.vb: CommandService(Of TId, TEntity)
+- uid: Falcon.Application.Abstractions.Services.CommandService`2.#ctor(System.IServiceProvider)
+  name: CommandService(IServiceProvider)
+  href: api/Falcon.Application.Abstractions.Services.CommandService-2.html#Falcon_Application_Abstractions_Services_CommandService_2__ctor_System_IServiceProvider_
+  commentId: M:Falcon.Application.Abstractions.Services.CommandService`2.#ctor(System.IServiceProvider)
+  name.vb: New(IServiceProvider)
+  fullName: Falcon.Application.Abstractions.Services.CommandService<TId, TEntity>.CommandService(System.IServiceProvider)
+  fullName.vb: Falcon.Application.Abstractions.Services.CommandService(Of TId, TEntity).New(System.IServiceProvider)
+  nameWithType: CommandService<TId, TEntity>.CommandService(IServiceProvider)
+  nameWithType.vb: CommandService(Of TId, TEntity).New(IServiceProvider)
+- uid: Falcon.Application.Abstractions.Services.CommandService`2.#ctor*
+  name: CommandService
+  href: api/Falcon.Application.Abstractions.Services.CommandService-2.html#Falcon_Application_Abstractions_Services_CommandService_2__ctor_
+  commentId: Overload:Falcon.Application.Abstractions.Services.CommandService`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Falcon.Application.Abstractions.Services.CommandService<TId, TEntity>.CommandService
+  fullName.vb: Falcon.Application.Abstractions.Services.CommandService(Of TId, TEntity).New
+  nameWithType: CommandService<TId, TEntity>.CommandService
+  nameWithType.vb: CommandService(Of TId, TEntity).New
+- uid: Falcon.Application.Abstractions.Services.CommandService`2.CreateAsync(Falcon.Contracts.ICommandRequest{`1},System.Threading.CancellationToken)
+  name: CreateAsync(ICommandRequest<TEntity>, CancellationToken)
+  href: api/Falcon.Application.Abstractions.Services.CommandService-2.html#Falcon_Application_Abstractions_Services_CommandService_2_CreateAsync_Falcon_Contracts_ICommandRequest__1__System_Threading_CancellationToken_
+  commentId: M:Falcon.Application.Abstractions.Services.CommandService`2.CreateAsync(Falcon.Contracts.ICommandRequest{`1},System.Threading.CancellationToken)
+  name.vb: CreateAsync(ICommandRequest(Of TEntity), CancellationToken)
+  fullName: Falcon.Application.Abstractions.Services.CommandService<TId, TEntity>.CreateAsync(Falcon.Contracts.ICommandRequest<TEntity>, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Application.Abstractions.Services.CommandService(Of TId, TEntity).CreateAsync(Falcon.Contracts.ICommandRequest(Of TEntity), System.Threading.CancellationToken)
+  nameWithType: CommandService<TId, TEntity>.CreateAsync(ICommandRequest<TEntity>, CancellationToken)
+  nameWithType.vb: CommandService(Of TId, TEntity).CreateAsync(ICommandRequest(Of TEntity), CancellationToken)
+- uid: Falcon.Application.Abstractions.Services.CommandService`2.CreateAsync*
+  name: CreateAsync
+  href: api/Falcon.Application.Abstractions.Services.CommandService-2.html#Falcon_Application_Abstractions_Services_CommandService_2_CreateAsync_
+  commentId: Overload:Falcon.Application.Abstractions.Services.CommandService`2.CreateAsync
+  isSpec: "True"
+  fullName: Falcon.Application.Abstractions.Services.CommandService<TId, TEntity>.CreateAsync
+  fullName.vb: Falcon.Application.Abstractions.Services.CommandService(Of TId, TEntity).CreateAsync
+  nameWithType: CommandService<TId, TEntity>.CreateAsync
+  nameWithType.vb: CommandService(Of TId, TEntity).CreateAsync
+- uid: Falcon.Application.Abstractions.Services.CommandService`2.DeleteAsync(`0,System.Threading.CancellationToken)
+  name: DeleteAsync(TId, CancellationToken)
+  href: api/Falcon.Application.Abstractions.Services.CommandService-2.html#Falcon_Application_Abstractions_Services_CommandService_2_DeleteAsync__0_System_Threading_CancellationToken_
+  commentId: M:Falcon.Application.Abstractions.Services.CommandService`2.DeleteAsync(`0,System.Threading.CancellationToken)
+  fullName: Falcon.Application.Abstractions.Services.CommandService<TId, TEntity>.DeleteAsync(TId, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Application.Abstractions.Services.CommandService(Of TId, TEntity).DeleteAsync(TId, System.Threading.CancellationToken)
+  nameWithType: CommandService<TId, TEntity>.DeleteAsync(TId, CancellationToken)
+  nameWithType.vb: CommandService(Of TId, TEntity).DeleteAsync(TId, CancellationToken)
+- uid: Falcon.Application.Abstractions.Services.CommandService`2.DeleteAsync*
+  name: DeleteAsync
+  href: api/Falcon.Application.Abstractions.Services.CommandService-2.html#Falcon_Application_Abstractions_Services_CommandService_2_DeleteAsync_
+  commentId: Overload:Falcon.Application.Abstractions.Services.CommandService`2.DeleteAsync
+  isSpec: "True"
+  fullName: Falcon.Application.Abstractions.Services.CommandService<TId, TEntity>.DeleteAsync
+  fullName.vb: Falcon.Application.Abstractions.Services.CommandService(Of TId, TEntity).DeleteAsync
+  nameWithType: CommandService<TId, TEntity>.DeleteAsync
+  nameWithType.vb: CommandService(Of TId, TEntity).DeleteAsync
+- uid: Falcon.Application.Abstractions.Services.CommandService`2.PatchAsync(`0,Falcon.Contracts.ICommandRequest{Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{`1}},System.Threading.CancellationToken)
+  name: PatchAsync(TId, ICommandRequest<JsonPatchDocument<TEntity>>, CancellationToken)
+  href: api/Falcon.Application.Abstractions.Services.CommandService-2.html#Falcon_Application_Abstractions_Services_CommandService_2_PatchAsync__0_Falcon_Contracts_ICommandRequest_Microsoft_AspNetCore_JsonPatch_JsonPatchDocument__1___System_Threading_CancellationToken_
+  commentId: M:Falcon.Application.Abstractions.Services.CommandService`2.PatchAsync(`0,Falcon.Contracts.ICommandRequest{Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{`1}},System.Threading.CancellationToken)
+  name.vb: PatchAsync(TId, ICommandRequest(Of JsonPatchDocument(Of TEntity)), CancellationToken)
+  fullName: Falcon.Application.Abstractions.Services.CommandService<TId, TEntity>.PatchAsync(TId, Falcon.Contracts.ICommandRequest<Microsoft.AspNetCore.JsonPatch.JsonPatchDocument<TEntity>>, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Application.Abstractions.Services.CommandService(Of TId, TEntity).PatchAsync(TId, Falcon.Contracts.ICommandRequest(Of Microsoft.AspNetCore.JsonPatch.JsonPatchDocument(Of TEntity)), System.Threading.CancellationToken)
+  nameWithType: CommandService<TId, TEntity>.PatchAsync(TId, ICommandRequest<JsonPatchDocument<TEntity>>, CancellationToken)
+  nameWithType.vb: CommandService(Of TId, TEntity).PatchAsync(TId, ICommandRequest(Of JsonPatchDocument(Of TEntity)), CancellationToken)
+- uid: Falcon.Application.Abstractions.Services.CommandService`2.PatchAsync*
+  name: PatchAsync
+  href: api/Falcon.Application.Abstractions.Services.CommandService-2.html#Falcon_Application_Abstractions_Services_CommandService_2_PatchAsync_
+  commentId: Overload:Falcon.Application.Abstractions.Services.CommandService`2.PatchAsync
+  isSpec: "True"
+  fullName: Falcon.Application.Abstractions.Services.CommandService<TId, TEntity>.PatchAsync
+  fullName.vb: Falcon.Application.Abstractions.Services.CommandService(Of TId, TEntity).PatchAsync
+  nameWithType: CommandService<TId, TEntity>.PatchAsync
+  nameWithType.vb: CommandService(Of TId, TEntity).PatchAsync
+- uid: Falcon.Application.Abstractions.Services.CommandService`2.UpdateAsync(`0,Falcon.Contracts.ICommandRequest{`1},System.Threading.CancellationToken)
+  name: UpdateAsync(TId, ICommandRequest<TEntity>, CancellationToken)
+  href: api/Falcon.Application.Abstractions.Services.CommandService-2.html#Falcon_Application_Abstractions_Services_CommandService_2_UpdateAsync__0_Falcon_Contracts_ICommandRequest__1__System_Threading_CancellationToken_
+  commentId: M:Falcon.Application.Abstractions.Services.CommandService`2.UpdateAsync(`0,Falcon.Contracts.ICommandRequest{`1},System.Threading.CancellationToken)
+  name.vb: UpdateAsync(TId, ICommandRequest(Of TEntity), CancellationToken)
+  fullName: Falcon.Application.Abstractions.Services.CommandService<TId, TEntity>.UpdateAsync(TId, Falcon.Contracts.ICommandRequest<TEntity>, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Application.Abstractions.Services.CommandService(Of TId, TEntity).UpdateAsync(TId, Falcon.Contracts.ICommandRequest(Of TEntity), System.Threading.CancellationToken)
+  nameWithType: CommandService<TId, TEntity>.UpdateAsync(TId, ICommandRequest<TEntity>, CancellationToken)
+  nameWithType.vb: CommandService(Of TId, TEntity).UpdateAsync(TId, ICommandRequest(Of TEntity), CancellationToken)
+- uid: Falcon.Application.Abstractions.Services.CommandService`2.UpdateAsync*
+  name: UpdateAsync
+  href: api/Falcon.Application.Abstractions.Services.CommandService-2.html#Falcon_Application_Abstractions_Services_CommandService_2_UpdateAsync_
+  commentId: Overload:Falcon.Application.Abstractions.Services.CommandService`2.UpdateAsync
+  isSpec: "True"
+  fullName: Falcon.Application.Abstractions.Services.CommandService<TId, TEntity>.UpdateAsync
+  fullName.vb: Falcon.Application.Abstractions.Services.CommandService(Of TId, TEntity).UpdateAsync
+  nameWithType: CommandService<TId, TEntity>.UpdateAsync
+  nameWithType.vb: CommandService(Of TId, TEntity).UpdateAsync
 - uid: Falcon.Application.Abstractions.Services.QueryServiceBase`2
   name: QueryServiceBase<TId, TEntity>
   href: api/Falcon.Application.Abstractions.Services.QueryServiceBase-2.html
@@ -517,6 +735,102 @@ references:
   fullName.vb: Falcon.Application.Abstractions.Services.QueryServiceBase(Of TId, TEntity).QueryAsync
   nameWithType: QueryServiceBase<TId, TEntity>.QueryAsync
   nameWithType.vb: QueryServiceBase(Of TId, TEntity).QueryAsync
+- uid: Falcon.Application.Abstractions.Services.QueryService`2
+  name: QueryService<TId, TEntity>
+  href: api/Falcon.Application.Abstractions.Services.QueryService-2.html
+  commentId: T:Falcon.Application.Abstractions.Services.QueryService`2
+  name.vb: QueryService(Of TId, TEntity)
+  fullName: Falcon.Application.Abstractions.Services.QueryService<TId, TEntity>
+  fullName.vb: Falcon.Application.Abstractions.Services.QueryService(Of TId, TEntity)
+  nameWithType: QueryService<TId, TEntity>
+  nameWithType.vb: QueryService(Of TId, TEntity)
+- uid: Falcon.Application.Abstractions.Services.QueryService`2.#ctor(System.IServiceProvider)
+  name: QueryService(IServiceProvider)
+  href: api/Falcon.Application.Abstractions.Services.QueryService-2.html#Falcon_Application_Abstractions_Services_QueryService_2__ctor_System_IServiceProvider_
+  commentId: M:Falcon.Application.Abstractions.Services.QueryService`2.#ctor(System.IServiceProvider)
+  name.vb: New(IServiceProvider)
+  fullName: Falcon.Application.Abstractions.Services.QueryService<TId, TEntity>.QueryService(System.IServiceProvider)
+  fullName.vb: Falcon.Application.Abstractions.Services.QueryService(Of TId, TEntity).New(System.IServiceProvider)
+  nameWithType: QueryService<TId, TEntity>.QueryService(IServiceProvider)
+  nameWithType.vb: QueryService(Of TId, TEntity).New(IServiceProvider)
+- uid: Falcon.Application.Abstractions.Services.QueryService`2.#ctor*
+  name: QueryService
+  href: api/Falcon.Application.Abstractions.Services.QueryService-2.html#Falcon_Application_Abstractions_Services_QueryService_2__ctor_
+  commentId: Overload:Falcon.Application.Abstractions.Services.QueryService`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Falcon.Application.Abstractions.Services.QueryService<TId, TEntity>.QueryService
+  fullName.vb: Falcon.Application.Abstractions.Services.QueryService(Of TId, TEntity).New
+  nameWithType: QueryService<TId, TEntity>.QueryService
+  nameWithType.vb: QueryService(Of TId, TEntity).New
+- uid: Falcon.Application.Abstractions.Services.QueryService`2.CountAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  name: CountAsync(IQueryRequest, CancellationToken)
+  href: api/Falcon.Application.Abstractions.Services.QueryService-2.html#Falcon_Application_Abstractions_Services_QueryService_2_CountAsync_Falcon_Contracts_IQueryRequest_System_Threading_CancellationToken_
+  commentId: M:Falcon.Application.Abstractions.Services.QueryService`2.CountAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  fullName: Falcon.Application.Abstractions.Services.QueryService<TId, TEntity>.CountAsync(Falcon.Contracts.IQueryRequest, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Application.Abstractions.Services.QueryService(Of TId, TEntity).CountAsync(Falcon.Contracts.IQueryRequest, System.Threading.CancellationToken)
+  nameWithType: QueryService<TId, TEntity>.CountAsync(IQueryRequest, CancellationToken)
+  nameWithType.vb: QueryService(Of TId, TEntity).CountAsync(IQueryRequest, CancellationToken)
+- uid: Falcon.Application.Abstractions.Services.QueryService`2.CountAsync*
+  name: CountAsync
+  href: api/Falcon.Application.Abstractions.Services.QueryService-2.html#Falcon_Application_Abstractions_Services_QueryService_2_CountAsync_
+  commentId: Overload:Falcon.Application.Abstractions.Services.QueryService`2.CountAsync
+  isSpec: "True"
+  fullName: Falcon.Application.Abstractions.Services.QueryService<TId, TEntity>.CountAsync
+  fullName.vb: Falcon.Application.Abstractions.Services.QueryService(Of TId, TEntity).CountAsync
+  nameWithType: QueryService<TId, TEntity>.CountAsync
+  nameWithType.vb: QueryService(Of TId, TEntity).CountAsync
+- uid: Falcon.Application.Abstractions.Services.QueryService`2.FindAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  name: FindAsync(IQueryRequest, CancellationToken)
+  href: api/Falcon.Application.Abstractions.Services.QueryService-2.html#Falcon_Application_Abstractions_Services_QueryService_2_FindAsync_Falcon_Contracts_IQueryRequest_System_Threading_CancellationToken_
+  commentId: M:Falcon.Application.Abstractions.Services.QueryService`2.FindAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  fullName: Falcon.Application.Abstractions.Services.QueryService<TId, TEntity>.FindAsync(Falcon.Contracts.IQueryRequest, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Application.Abstractions.Services.QueryService(Of TId, TEntity).FindAsync(Falcon.Contracts.IQueryRequest, System.Threading.CancellationToken)
+  nameWithType: QueryService<TId, TEntity>.FindAsync(IQueryRequest, CancellationToken)
+  nameWithType.vb: QueryService(Of TId, TEntity).FindAsync(IQueryRequest, CancellationToken)
+- uid: Falcon.Application.Abstractions.Services.QueryService`2.FindAsync*
+  name: FindAsync
+  href: api/Falcon.Application.Abstractions.Services.QueryService-2.html#Falcon_Application_Abstractions_Services_QueryService_2_FindAsync_
+  commentId: Overload:Falcon.Application.Abstractions.Services.QueryService`2.FindAsync
+  isSpec: "True"
+  fullName: Falcon.Application.Abstractions.Services.QueryService<TId, TEntity>.FindAsync
+  fullName.vb: Falcon.Application.Abstractions.Services.QueryService(Of TId, TEntity).FindAsync
+  nameWithType: QueryService<TId, TEntity>.FindAsync
+  nameWithType.vb: QueryService(Of TId, TEntity).FindAsync
+- uid: Falcon.Application.Abstractions.Services.QueryService`2.GetAsync(`0,System.Threading.CancellationToken)
+  name: GetAsync(TId, CancellationToken)
+  href: api/Falcon.Application.Abstractions.Services.QueryService-2.html#Falcon_Application_Abstractions_Services_QueryService_2_GetAsync__0_System_Threading_CancellationToken_
+  commentId: M:Falcon.Application.Abstractions.Services.QueryService`2.GetAsync(`0,System.Threading.CancellationToken)
+  fullName: Falcon.Application.Abstractions.Services.QueryService<TId, TEntity>.GetAsync(TId, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Application.Abstractions.Services.QueryService(Of TId, TEntity).GetAsync(TId, System.Threading.CancellationToken)
+  nameWithType: QueryService<TId, TEntity>.GetAsync(TId, CancellationToken)
+  nameWithType.vb: QueryService(Of TId, TEntity).GetAsync(TId, CancellationToken)
+- uid: Falcon.Application.Abstractions.Services.QueryService`2.GetAsync*
+  name: GetAsync
+  href: api/Falcon.Application.Abstractions.Services.QueryService-2.html#Falcon_Application_Abstractions_Services_QueryService_2_GetAsync_
+  commentId: Overload:Falcon.Application.Abstractions.Services.QueryService`2.GetAsync
+  isSpec: "True"
+  fullName: Falcon.Application.Abstractions.Services.QueryService<TId, TEntity>.GetAsync
+  fullName.vb: Falcon.Application.Abstractions.Services.QueryService(Of TId, TEntity).GetAsync
+  nameWithType: QueryService<TId, TEntity>.GetAsync
+  nameWithType.vb: QueryService(Of TId, TEntity).GetAsync
+- uid: Falcon.Application.Abstractions.Services.QueryService`2.QueryAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  name: QueryAsync(IQueryRequest, CancellationToken)
+  href: api/Falcon.Application.Abstractions.Services.QueryService-2.html#Falcon_Application_Abstractions_Services_QueryService_2_QueryAsync_Falcon_Contracts_IQueryRequest_System_Threading_CancellationToken_
+  commentId: M:Falcon.Application.Abstractions.Services.QueryService`2.QueryAsync(Falcon.Contracts.IQueryRequest,System.Threading.CancellationToken)
+  fullName: Falcon.Application.Abstractions.Services.QueryService<TId, TEntity>.QueryAsync(Falcon.Contracts.IQueryRequest, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Application.Abstractions.Services.QueryService(Of TId, TEntity).QueryAsync(Falcon.Contracts.IQueryRequest, System.Threading.CancellationToken)
+  nameWithType: QueryService<TId, TEntity>.QueryAsync(IQueryRequest, CancellationToken)
+  nameWithType.vb: QueryService(Of TId, TEntity).QueryAsync(IQueryRequest, CancellationToken)
+- uid: Falcon.Application.Abstractions.Services.QueryService`2.QueryAsync*
+  name: QueryAsync
+  href: api/Falcon.Application.Abstractions.Services.QueryService-2.html#Falcon_Application_Abstractions_Services_QueryService_2_QueryAsync_
+  commentId: Overload:Falcon.Application.Abstractions.Services.QueryService`2.QueryAsync
+  isSpec: "True"
+  fullName: Falcon.Application.Abstractions.Services.QueryService<TId, TEntity>.QueryAsync
+  fullName.vb: Falcon.Application.Abstractions.Services.QueryService(Of TId, TEntity).QueryAsync
+  nameWithType: QueryService<TId, TEntity>.QueryAsync
+  nameWithType.vb: QueryService(Of TId, TEntity).QueryAsync
 - uid: Falcon.Contracts
   name: Falcon.Contracts
   href: api/Falcon.Contracts.html
@@ -3930,6 +4244,51 @@ references:
   fullName.vb: Falcon.Infrastructure.Abstractions.RequestContext(Of TId).UserId
   nameWithType: RequestContext<TId>.UserId
   nameWithType.vb: RequestContext(Of TId).UserId
+- uid: Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.html
+  commentId: T:Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions
+  fullName: Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.AddInfrasttructureModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddInfrasttructureModule(IServiceCollection)
+  href: api/Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.html#Falcon_Infrastructure_Abstractions_ServiceCollectionExtensions_AddInfrasttructureModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.AddInfrasttructureModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.AddInfrasttructureModule(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.AddInfrasttructureModule(IServiceCollection)
+- uid: Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.AddInfrasttructureModule*
+  name: AddInfrasttructureModule
+  href: api/Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.html#Falcon_Infrastructure_Abstractions_ServiceCollectionExtensions_AddInfrasttructureModule_
+  commentId: Overload:Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.AddInfrasttructureModule
+  isSpec: "True"
+  fullName: Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.AddInfrasttructureModule
+  nameWithType: ServiceCollectionExtensions.AddInfrasttructureModule
+- uid: Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.UseInfrastructureMiddelwares(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  name: UseInfrastructureMiddelwares(IApplicationBuilder)
+  href: api/Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.html#Falcon_Infrastructure_Abstractions_ServiceCollectionExtensions_UseInfrastructureMiddelwares_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  commentId: M:Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.UseInfrastructureMiddelwares(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  fullName: Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.UseInfrastructureMiddelwares(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureMiddelwares(IApplicationBuilder)
+- uid: Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.UseInfrastructureMiddelwares*
+  name: UseInfrastructureMiddelwares
+  href: api/Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.html#Falcon_Infrastructure_Abstractions_ServiceCollectionExtensions_UseInfrastructureMiddelwares_
+  commentId: Overload:Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.UseInfrastructureMiddelwares
+  isSpec: "True"
+  fullName: Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.UseInfrastructureMiddelwares
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureMiddelwares
+- uid: Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.UseInfrastructureModule(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  name: UseInfrastructureModule(IApplicationBuilder)
+  href: api/Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.html#Falcon_Infrastructure_Abstractions_ServiceCollectionExtensions_UseInfrastructureModule_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  commentId: M:Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.UseInfrastructureModule(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  fullName: Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.UseInfrastructureModule(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureModule(IApplicationBuilder)
+- uid: Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.UseInfrastructureModule*
+  name: UseInfrastructureModule
+  href: api/Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.html#Falcon_Infrastructure_Abstractions_ServiceCollectionExtensions_UseInfrastructureModule_
+  commentId: Overload:Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.UseInfrastructureModule
+  isSpec: "True"
+  fullName: Falcon.Infrastructure.Abstractions.ServiceCollectionExtensions.UseInfrastructureModule
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureModule
 - uid: Falcon.Infrastructure.Abstractions.TenantOptions`1
   name: TenantOptions<TOptions>
   href: api/Falcon.Infrastructure.Abstractions.TenantOptions-1.html
@@ -5730,13 +6089,13 @@ references:
   commentId: M:Falcon.Infrastructure.EntityFramework.ModuleExtensions.AddInfrastructureEntityFrameworksModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)
   fullName: Falcon.Infrastructure.EntityFramework.ModuleExtensions.AddInfrastructureEntityFrameworksModule(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfigurationSection)
   nameWithType: ModuleExtensions.AddInfrastructureEntityFrameworksModule(IServiceCollection, IConfigurationSection)
-- uid: Falcon.Infrastructure.EntityFramework.ModuleExtensions.AddInfrastructureEntityFrameworksModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Falcon.Infrastructure.EntityFramework.Abstractions.Configurations.SqlDbOptions})
+- uid: Falcon.Infrastructure.EntityFramework.ModuleExtensions.AddInfrastructureEntityFrameworksModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Falcon.Infrastructure.EntityFramework.Configurations.SqlDbOptions})
   name: AddInfrastructureEntityFrameworksModule(IServiceCollection, Action<SqlDbOptions>)
-  href: api/Falcon.Infrastructure.EntityFramework.ModuleExtensions.html#Falcon_Infrastructure_EntityFramework_ModuleExtensions_AddInfrastructureEntityFrameworksModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Falcon_Infrastructure_EntityFramework_Abstractions_Configurations_SqlDbOptions__
-  commentId: M:Falcon.Infrastructure.EntityFramework.ModuleExtensions.AddInfrastructureEntityFrameworksModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Falcon.Infrastructure.EntityFramework.Abstractions.Configurations.SqlDbOptions})
+  href: api/Falcon.Infrastructure.EntityFramework.ModuleExtensions.html#Falcon_Infrastructure_EntityFramework_ModuleExtensions_AddInfrastructureEntityFrameworksModule_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Falcon_Infrastructure_EntityFramework_Configurations_SqlDbOptions__
+  commentId: M:Falcon.Infrastructure.EntityFramework.ModuleExtensions.AddInfrastructureEntityFrameworksModule(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Falcon.Infrastructure.EntityFramework.Configurations.SqlDbOptions})
   name.vb: AddInfrastructureEntityFrameworksModule(IServiceCollection, Action(Of SqlDbOptions))
-  fullName: Falcon.Infrastructure.EntityFramework.ModuleExtensions.AddInfrastructureEntityFrameworksModule(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Falcon.Infrastructure.EntityFramework.Abstractions.Configurations.SqlDbOptions>)
-  fullName.vb: Falcon.Infrastructure.EntityFramework.ModuleExtensions.AddInfrastructureEntityFrameworksModule(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Falcon.Infrastructure.EntityFramework.Abstractions.Configurations.SqlDbOptions))
+  fullName: Falcon.Infrastructure.EntityFramework.ModuleExtensions.AddInfrastructureEntityFrameworksModule(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Falcon.Infrastructure.EntityFramework.Configurations.SqlDbOptions>)
+  fullName.vb: Falcon.Infrastructure.EntityFramework.ModuleExtensions.AddInfrastructureEntityFrameworksModule(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Falcon.Infrastructure.EntityFramework.Configurations.SqlDbOptions))
   nameWithType: ModuleExtensions.AddInfrastructureEntityFrameworksModule(IServiceCollection, Action<SqlDbOptions>)
   nameWithType.vb: ModuleExtensions.AddInfrastructureEntityFrameworksModule(IServiceCollection, Action(Of SqlDbOptions))
 - uid: Falcon.Infrastructure.EntityFramework.ModuleExtensions.AddInfrastructureEntityFrameworksModule*
@@ -5864,6 +6223,51 @@ references:
   isSpec: "True"
   fullName: Falcon.Infrastructure.EntityFramework.PostgreSql.PostgreSqlDbContextOptionsProvider.GetDbContextOption
   nameWithType: PostgreSqlDbContextOptionsProvider.GetDbContextOption
+- uid: Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.html
+  commentId: T:Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions
+  fullName: Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.AddInfrastructureEntityFrameworkPostgreSql(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddInfrastructureEntityFrameworkPostgreSql(IServiceCollection)
+  href: api/Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.html#Falcon_Infrastructure_EntityFramework_PostgreSql_ServiceCollectionExtensions_AddInfrastructureEntityFrameworkPostgreSql_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.AddInfrastructureEntityFrameworkPostgreSql(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.AddInfrastructureEntityFrameworkPostgreSql(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.AddInfrastructureEntityFrameworkPostgreSql(IServiceCollection)
+- uid: Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.AddInfrastructureEntityFrameworkPostgreSql*
+  name: AddInfrastructureEntityFrameworkPostgreSql
+  href: api/Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.html#Falcon_Infrastructure_EntityFramework_PostgreSql_ServiceCollectionExtensions_AddInfrastructureEntityFrameworkPostgreSql_
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.AddInfrastructureEntityFrameworkPostgreSql
+  isSpec: "True"
+  fullName: Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.AddInfrastructureEntityFrameworkPostgreSql
+  nameWithType: ServiceCollectionExtensions.AddInfrastructureEntityFrameworkPostgreSql
+- uid: Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlMiddelwares(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  name: UseInfrastructureEntityFrameworkPostgreSqlMiddelwares(IApplicationBuilder)
+  href: api/Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.html#Falcon_Infrastructure_EntityFramework_PostgreSql_ServiceCollectionExtensions_UseInfrastructureEntityFrameworkPostgreSqlMiddelwares_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  commentId: M:Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlMiddelwares(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  fullName: Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlMiddelwares(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlMiddelwares(IApplicationBuilder)
+- uid: Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlMiddelwares*
+  name: UseInfrastructureEntityFrameworkPostgreSqlMiddelwares
+  href: api/Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.html#Falcon_Infrastructure_EntityFramework_PostgreSql_ServiceCollectionExtensions_UseInfrastructureEntityFrameworkPostgreSqlMiddelwares_
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlMiddelwares
+  isSpec: "True"
+  fullName: Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlMiddelwares
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlMiddelwares
+- uid: Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlModule(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  name: UseInfrastructureEntityFrameworkPostgreSqlModule(IApplicationBuilder)
+  href: api/Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.html#Falcon_Infrastructure_EntityFramework_PostgreSql_ServiceCollectionExtensions_UseInfrastructureEntityFrameworkPostgreSqlModule_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  commentId: M:Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlModule(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  fullName: Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlModule(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlModule(IApplicationBuilder)
+- uid: Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlModule*
+  name: UseInfrastructureEntityFrameworkPostgreSqlModule
+  href: api/Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.html#Falcon_Infrastructure_EntityFramework_PostgreSql_ServiceCollectionExtensions_UseInfrastructureEntityFrameworkPostgreSqlModule_
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlModule
+  isSpec: "True"
+  fullName: Falcon.Infrastructure.EntityFramework.PostgreSql.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlModule
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureEntityFrameworkPostgreSqlModule
 - uid: Falcon.Infrastructure.EntityFramework.QueryBuilder
   name: Falcon.Infrastructure.EntityFramework.QueryBuilder
   href: api/Falcon.Infrastructure.EntityFramework.QueryBuilder.html
@@ -6524,6 +6928,69 @@ references:
   commentId: F:Falcon.Infrastructure.EntityFramework.QueryBuilder.Types.StringType
   fullName: Falcon.Infrastructure.EntityFramework.QueryBuilder.Types.StringType
   nameWithType: Types.StringType
+- uid: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.html
+  commentId: T:Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions
+  fullName: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.AddInfrastructureEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name: AddInfrastructureEntityFramework(IServiceCollection, IConfiguration, string)
+  href: api/Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.html#Falcon_Infrastructure_EntityFramework_ServiceCollectionExtensions_AddInfrastructureEntityFramework_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_
+  commentId: M:Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.AddInfrastructureEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name.vb: AddInfrastructureEntityFramework(IServiceCollection, IConfiguration, String)
+  fullName: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.AddInfrastructureEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, string)
+  fullName.vb: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.AddInfrastructureEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, String)
+  nameWithType: ServiceCollectionExtensions.AddInfrastructureEntityFramework(IServiceCollection, IConfiguration, string)
+  nameWithType.vb: ServiceCollectionExtensions.AddInfrastructureEntityFramework(IServiceCollection, IConfiguration, String)
+- uid: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.AddInfrastructureEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)
+  name: AddInfrastructureEntityFramework(IServiceCollection, IConfigurationSection)
+  href: api/Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.html#Falcon_Infrastructure_EntityFramework_ServiceCollectionExtensions_AddInfrastructureEntityFramework_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfigurationSection_
+  commentId: M:Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.AddInfrastructureEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)
+  fullName: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.AddInfrastructureEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfigurationSection)
+  nameWithType: ServiceCollectionExtensions.AddInfrastructureEntityFramework(IServiceCollection, IConfigurationSection)
+- uid: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.AddInfrastructureEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Falcon.Infrastructure.EntityFramework.Abstractions.Configurations.SqlDbOptions})
+  name: AddInfrastructureEntityFramework(IServiceCollection, Action<SqlDbOptions>)
+  href: api/Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.html#Falcon_Infrastructure_EntityFramework_ServiceCollectionExtensions_AddInfrastructureEntityFramework_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Falcon_Infrastructure_EntityFramework_Abstractions_Configurations_SqlDbOptions__
+  commentId: M:Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.AddInfrastructureEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Falcon.Infrastructure.EntityFramework.Abstractions.Configurations.SqlDbOptions})
+  name.vb: AddInfrastructureEntityFramework(IServiceCollection, Action(Of SqlDbOptions))
+  fullName: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.AddInfrastructureEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Falcon.Infrastructure.EntityFramework.Abstractions.Configurations.SqlDbOptions>)
+  fullName.vb: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.AddInfrastructureEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Falcon.Infrastructure.EntityFramework.Abstractions.Configurations.SqlDbOptions))
+  nameWithType: ServiceCollectionExtensions.AddInfrastructureEntityFramework(IServiceCollection, Action<SqlDbOptions>)
+  nameWithType.vb: ServiceCollectionExtensions.AddInfrastructureEntityFramework(IServiceCollection, Action(Of SqlDbOptions))
+- uid: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.AddInfrastructureEntityFramework*
+  name: AddInfrastructureEntityFramework
+  href: api/Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.html#Falcon_Infrastructure_EntityFramework_ServiceCollectionExtensions_AddInfrastructureEntityFramework_
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.AddInfrastructureEntityFramework
+  isSpec: "True"
+  fullName: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.AddInfrastructureEntityFramework
+  nameWithType: ServiceCollectionExtensions.AddInfrastructureEntityFramework
+- uid: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.UseInfrastructureEntityFramework(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  name: UseInfrastructureEntityFramework(IApplicationBuilder)
+  href: api/Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.html#Falcon_Infrastructure_EntityFramework_ServiceCollectionExtensions_UseInfrastructureEntityFramework_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  commentId: M:Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.UseInfrastructureEntityFramework(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  fullName: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.UseInfrastructureEntityFramework(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureEntityFramework(IApplicationBuilder)
+- uid: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.UseInfrastructureEntityFramework*
+  name: UseInfrastructureEntityFramework
+  href: api/Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.html#Falcon_Infrastructure_EntityFramework_ServiceCollectionExtensions_UseInfrastructureEntityFramework_
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.UseInfrastructureEntityFramework
+  isSpec: "True"
+  fullName: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.UseInfrastructureEntityFramework
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureEntityFramework
+- uid: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkMiddelwares(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  name: UseInfrastructureEntityFrameworkMiddelwares(IApplicationBuilder)
+  href: api/Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.html#Falcon_Infrastructure_EntityFramework_ServiceCollectionExtensions_UseInfrastructureEntityFrameworkMiddelwares_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  commentId: M:Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkMiddelwares(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  fullName: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkMiddelwares(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureEntityFrameworkMiddelwares(IApplicationBuilder)
+- uid: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkMiddelwares*
+  name: UseInfrastructureEntityFrameworkMiddelwares
+  href: api/Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.html#Falcon_Infrastructure_EntityFramework_ServiceCollectionExtensions_UseInfrastructureEntityFrameworkMiddelwares_
+  commentId: Overload:Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkMiddelwares
+  isSpec: "True"
+  fullName: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkMiddelwares
+  nameWithType: ServiceCollectionExtensions.UseInfrastructureEntityFrameworkMiddelwares
 - uid: Falcon.Infrastructure.EntityFramework.SingleTenant
   name: SingleTenant
   href: api/Falcon.Infrastructure.EntityFramework.SingleTenant.html
@@ -6912,6 +7379,12 @@ references:
   fullName.vb: Falcon.Infrastructure.EntityFramework.TenantRepository(Of TId, TEntity).New
   nameWithType: TenantRepository<TId, TEntity>.TenantRepository
   nameWithType.vb: TenantRepository(Of TId, TEntity).New
+- uid: Falcon.Messaging
+  name: Falcon.Messaging
+  href: api/Falcon.Messaging.html
+  commentId: N:Falcon.Messaging
+  fullName: Falcon.Messaging
+  nameWithType: Falcon.Messaging
 - uid: Falcon.Messaging.Abstractions
   name: Falcon.Messaging.Abstractions
   href: api/Falcon.Messaging.Abstractions.html
@@ -7423,33 +7896,33 @@ references:
   isSpec: "True"
   fullName: Falcon.Messaging.IntegrationEvents.IntegrationEvent.OccurredOn
   nameWithType: IntegrationEvent.OccurredOn
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEventHandler`1
-  name: IntegrationEventHandler<TIntegrationEvent>
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEventHandler-1.html
-  commentId: T:Falcon.Messaging.IntegrationEvents.IntegrationEventHandler`1
-  name.vb: IntegrationEventHandler(Of TIntegrationEvent)
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEventHandler<TIntegrationEvent>
-  fullName.vb: Falcon.Messaging.IntegrationEvents.IntegrationEventHandler(Of TIntegrationEvent)
-  nameWithType: IntegrationEventHandler<TIntegrationEvent>
-  nameWithType.vb: IntegrationEventHandler(Of TIntegrationEvent)
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEventHandler`1.Consume(MassTransit.ConsumeContext{`0})
+- uid: Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer`1
+  name: IntegrationEventConsumer<TIntegrationEvent>
+  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer-1.html
+  commentId: T:Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer`1
+  name.vb: IntegrationEventConsumer(Of TIntegrationEvent)
+  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer<TIntegrationEvent>
+  fullName.vb: Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer(Of TIntegrationEvent)
+  nameWithType: IntegrationEventConsumer<TIntegrationEvent>
+  nameWithType.vb: IntegrationEventConsumer(Of TIntegrationEvent)
+- uid: Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer`1.Consume(MassTransit.ConsumeContext{`0})
   name: Consume(ConsumeContext<TIntegrationEvent>)
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEventHandler-1.html#Falcon_Messaging_IntegrationEvents_IntegrationEventHandler_1_Consume_MassTransit_ConsumeContext__0__
-  commentId: M:Falcon.Messaging.IntegrationEvents.IntegrationEventHandler`1.Consume(MassTransit.ConsumeContext{`0})
+  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer-1.html#Falcon_Messaging_IntegrationEvents_IntegrationEventConsumer_1_Consume_MassTransit_ConsumeContext__0__
+  commentId: M:Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer`1.Consume(MassTransit.ConsumeContext{`0})
   name.vb: Consume(ConsumeContext(Of TIntegrationEvent))
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEventHandler<TIntegrationEvent>.Consume(MassTransit.ConsumeContext<TIntegrationEvent>)
-  fullName.vb: Falcon.Messaging.IntegrationEvents.IntegrationEventHandler(Of TIntegrationEvent).Consume(MassTransit.ConsumeContext(Of TIntegrationEvent))
-  nameWithType: IntegrationEventHandler<TIntegrationEvent>.Consume(ConsumeContext<TIntegrationEvent>)
-  nameWithType.vb: IntegrationEventHandler(Of TIntegrationEvent).Consume(ConsumeContext(Of TIntegrationEvent))
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEventHandler`1.Consume*
+  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer<TIntegrationEvent>.Consume(MassTransit.ConsumeContext<TIntegrationEvent>)
+  fullName.vb: Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer(Of TIntegrationEvent).Consume(MassTransit.ConsumeContext(Of TIntegrationEvent))
+  nameWithType: IntegrationEventConsumer<TIntegrationEvent>.Consume(ConsumeContext<TIntegrationEvent>)
+  nameWithType.vb: IntegrationEventConsumer(Of TIntegrationEvent).Consume(ConsumeContext(Of TIntegrationEvent))
+- uid: Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer`1.Consume*
   name: Consume
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEventHandler-1.html#Falcon_Messaging_IntegrationEvents_IntegrationEventHandler_1_Consume_
-  commentId: Overload:Falcon.Messaging.IntegrationEvents.IntegrationEventHandler`1.Consume
+  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer-1.html#Falcon_Messaging_IntegrationEvents_IntegrationEventConsumer_1_Consume_
+  commentId: Overload:Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer`1.Consume
   isSpec: "True"
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEventHandler<TIntegrationEvent>.Consume
-  fullName.vb: Falcon.Messaging.IntegrationEvents.IntegrationEventHandler(Of TIntegrationEvent).Consume
-  nameWithType: IntegrationEventHandler<TIntegrationEvent>.Consume
-  nameWithType.vb: IntegrationEventHandler(Of TIntegrationEvent).Consume
+  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer<TIntegrationEvent>.Consume
+  fullName.vb: Falcon.Messaging.IntegrationEvents.IntegrationEventConsumer(Of TIntegrationEvent).Consume
+  nameWithType: IntegrationEventConsumer<TIntegrationEvent>.Consume
+  nameWithType.vb: IntegrationEventConsumer(Of TIntegrationEvent).Consume
 - uid: Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher
   name: IntegrationEventPublisher
   href: api/Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.html
@@ -7488,6 +7961,137 @@ references:
   isSpec: "True"
   fullName: Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.Publish
   nameWithType: IntegrationEventPublisher.Publish
+- uid: Falcon.Messaging.MessagingOptions
+  name: MessagingOptions
+  href: api/Falcon.Messaging.MessagingOptions.html
+  commentId: T:Falcon.Messaging.MessagingOptions
+  fullName: Falcon.Messaging.MessagingOptions
+  nameWithType: MessagingOptions
+- uid: Falcon.Messaging.MessagingOptions.BusRegistrationConfigurator
+  name: BusRegistrationConfigurator
+  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_BusRegistrationConfigurator
+  commentId: P:Falcon.Messaging.MessagingOptions.BusRegistrationConfigurator
+  fullName: Falcon.Messaging.MessagingOptions.BusRegistrationConfigurator
+  nameWithType: MessagingOptions.BusRegistrationConfigurator
+- uid: Falcon.Messaging.MessagingOptions.BusRegistrationConfigurator*
+  name: BusRegistrationConfigurator
+  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_BusRegistrationConfigurator_
+  commentId: Overload:Falcon.Messaging.MessagingOptions.BusRegistrationConfigurator
+  isSpec: "True"
+  fullName: Falcon.Messaging.MessagingOptions.BusRegistrationConfigurator
+  nameWithType: MessagingOptions.BusRegistrationConfigurator
+- uid: Falcon.Messaging.MessagingOptions.MediatRConfiguration
+  name: MediatRConfiguration
+  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_MediatRConfiguration
+  commentId: P:Falcon.Messaging.MessagingOptions.MediatRConfiguration
+  fullName: Falcon.Messaging.MessagingOptions.MediatRConfiguration
+  nameWithType: MessagingOptions.MediatRConfiguration
+- uid: Falcon.Messaging.MessagingOptions.MediatRConfiguration*
+  name: MediatRConfiguration
+  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_MediatRConfiguration_
+  commentId: Overload:Falcon.Messaging.MessagingOptions.MediatRConfiguration
+  isSpec: "True"
+  fullName: Falcon.Messaging.MessagingOptions.MediatRConfiguration
+  nameWithType: MessagingOptions.MediatRConfiguration
+- uid: Falcon.Messaging.MessagingOptions.PreProcessorBehavior
+  name: PreProcessorBehavior
+  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_PreProcessorBehavior
+  commentId: P:Falcon.Messaging.MessagingOptions.PreProcessorBehavior
+  fullName: Falcon.Messaging.MessagingOptions.PreProcessorBehavior
+  nameWithType: MessagingOptions.PreProcessorBehavior
+- uid: Falcon.Messaging.MessagingOptions.PreProcessorBehavior*
+  name: PreProcessorBehavior
+  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_PreProcessorBehavior_
+  commentId: Overload:Falcon.Messaging.MessagingOptions.PreProcessorBehavior
+  isSpec: "True"
+  fullName: Falcon.Messaging.MessagingOptions.PreProcessorBehavior
+  nameWithType: MessagingOptions.PreProcessorBehavior
+- uid: Falcon.Messaging.MessagingOptionsBuilder
+  name: MessagingOptionsBuilder
+  href: api/Falcon.Messaging.MessagingOptionsBuilder.html
+  commentId: T:Falcon.Messaging.MessagingOptionsBuilder
+  fullName: Falcon.Messaging.MessagingOptionsBuilder
+  nameWithType: MessagingOptionsBuilder
+- uid: Falcon.Messaging.MessagingOptionsBuilder.Build
+  name: Build()
+  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_Build
+  commentId: M:Falcon.Messaging.MessagingOptionsBuilder.Build
+  fullName: Falcon.Messaging.MessagingOptionsBuilder.Build()
+  nameWithType: MessagingOptionsBuilder.Build()
+- uid: Falcon.Messaging.MessagingOptionsBuilder.Build*
+  name: Build
+  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_Build_
+  commentId: Overload:Falcon.Messaging.MessagingOptionsBuilder.Build
+  isSpec: "True"
+  fullName: Falcon.Messaging.MessagingOptionsBuilder.Build
+  nameWithType: MessagingOptionsBuilder.Build
+- uid: Falcon.Messaging.MessagingOptionsBuilder.BusRegistrationConfigurator(System.Action{MassTransit.IBusRegistrationConfigurator})
+  name: BusRegistrationConfigurator(Action<IBusRegistrationConfigurator>)
+  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_BusRegistrationConfigurator_System_Action_MassTransit_IBusRegistrationConfigurator__
+  commentId: M:Falcon.Messaging.MessagingOptionsBuilder.BusRegistrationConfigurator(System.Action{MassTransit.IBusRegistrationConfigurator})
+  name.vb: BusRegistrationConfigurator(Action(Of IBusRegistrationConfigurator))
+  fullName: Falcon.Messaging.MessagingOptionsBuilder.BusRegistrationConfigurator(System.Action<MassTransit.IBusRegistrationConfigurator>)
+  fullName.vb: Falcon.Messaging.MessagingOptionsBuilder.BusRegistrationConfigurator(System.Action(Of MassTransit.IBusRegistrationConfigurator))
+  nameWithType: MessagingOptionsBuilder.BusRegistrationConfigurator(Action<IBusRegistrationConfigurator>)
+  nameWithType.vb: MessagingOptionsBuilder.BusRegistrationConfigurator(Action(Of IBusRegistrationConfigurator))
+- uid: Falcon.Messaging.MessagingOptionsBuilder.BusRegistrationConfigurator*
+  name: BusRegistrationConfigurator
+  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_BusRegistrationConfigurator_
+  commentId: Overload:Falcon.Messaging.MessagingOptionsBuilder.BusRegistrationConfigurator
+  isSpec: "True"
+  fullName: Falcon.Messaging.MessagingOptionsBuilder.BusRegistrationConfigurator
+  nameWithType: MessagingOptionsBuilder.BusRegistrationConfigurator
+- uid: Falcon.Messaging.MessagingOptionsBuilder.MediatRConfiguration(System.Action{Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration})
+  name: MediatRConfiguration(Action<MediatRServiceConfiguration>)
+  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_MediatRConfiguration_System_Action_Microsoft_Extensions_DependencyInjection_MediatRServiceConfiguration__
+  commentId: M:Falcon.Messaging.MessagingOptionsBuilder.MediatRConfiguration(System.Action{Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration})
+  name.vb: MediatRConfiguration(Action(Of MediatRServiceConfiguration))
+  fullName: Falcon.Messaging.MessagingOptionsBuilder.MediatRConfiguration(System.Action<Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration>)
+  fullName.vb: Falcon.Messaging.MessagingOptionsBuilder.MediatRConfiguration(System.Action(Of Microsoft.Extensions.DependencyInjection.MediatRServiceConfiguration))
+  nameWithType: MessagingOptionsBuilder.MediatRConfiguration(Action<MediatRServiceConfiguration>)
+  nameWithType.vb: MessagingOptionsBuilder.MediatRConfiguration(Action(Of MediatRServiceConfiguration))
+- uid: Falcon.Messaging.MessagingOptionsBuilder.MediatRConfiguration*
+  name: MediatRConfiguration
+  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_MediatRConfiguration_
+  commentId: Overload:Falcon.Messaging.MessagingOptionsBuilder.MediatRConfiguration
+  isSpec: "True"
+  fullName: Falcon.Messaging.MessagingOptionsBuilder.MediatRConfiguration
+  nameWithType: MessagingOptionsBuilder.MediatRConfiguration
+- uid: Falcon.Messaging.MessagingOptionsBuilder.New
+  name: New()
+  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_New
+  commentId: M:Falcon.Messaging.MessagingOptionsBuilder.New
+  fullName: Falcon.Messaging.MessagingOptionsBuilder.New()
+  nameWithType: MessagingOptionsBuilder.New()
+- uid: Falcon.Messaging.MessagingOptionsBuilder.New*
+  name: New
+  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_New_
+  commentId: Overload:Falcon.Messaging.MessagingOptionsBuilder.New
+  isSpec: "True"
+  fullName: Falcon.Messaging.MessagingOptionsBuilder.New
+  nameWithType: MessagingOptionsBuilder.New
+- uid: Falcon.Messaging.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/Falcon.Messaging.ServiceCollectionExtensions.html
+  commentId: T:Falcon.Messaging.ServiceCollectionExtensions
+  fullName: Falcon.Messaging.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: Falcon.Messaging.ServiceCollectionExtensions.AddMessaging(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{Falcon.Messaging.MessagingOptionsBuilder,Falcon.Messaging.MessagingOptionsBuilder})
+  name: AddMessaging(IServiceCollection, Func<MessagingOptionsBuilder, MessagingOptionsBuilder>)
+  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddMessaging_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Func_Falcon_Messaging_MessagingOptionsBuilder_Falcon_Messaging_MessagingOptionsBuilder__
+  commentId: M:Falcon.Messaging.ServiceCollectionExtensions.AddMessaging(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{Falcon.Messaging.MessagingOptionsBuilder,Falcon.Messaging.MessagingOptionsBuilder})
+  name.vb: AddMessaging(IServiceCollection, Func(Of MessagingOptionsBuilder, MessagingOptionsBuilder))
+  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddMessaging(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Func<Falcon.Messaging.MessagingOptionsBuilder, Falcon.Messaging.MessagingOptionsBuilder>)
+  fullName.vb: Falcon.Messaging.ServiceCollectionExtensions.AddMessaging(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Func(Of Falcon.Messaging.MessagingOptionsBuilder, Falcon.Messaging.MessagingOptionsBuilder))
+  nameWithType: ServiceCollectionExtensions.AddMessaging(IServiceCollection, Func<MessagingOptionsBuilder, MessagingOptionsBuilder>)
+  nameWithType.vb: ServiceCollectionExtensions.AddMessaging(IServiceCollection, Func(Of MessagingOptionsBuilder, MessagingOptionsBuilder))
+- uid: Falcon.Messaging.ServiceCollectionExtensions.AddMessaging*
+  name: AddMessaging
+  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddMessaging_
+  commentId: Overload:Falcon.Messaging.ServiceCollectionExtensions.AddMessaging
+  isSpec: "True"
+  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddMessaging
+  nameWithType: ServiceCollectionExtensions.AddMessaging
 - uid: Lighting.Domain
   name: Lighting.Domain
   href: api/Lighting.Domain.html

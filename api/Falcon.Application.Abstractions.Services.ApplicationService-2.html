@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class IntegrationEventHandler&lt;TIntegrationEvent&gt; | falcon </title>
+      <title>Class ApplicationService&lt;TId, TEntity&gt; | Falcon Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class IntegrationEventHandler&lt;TIntegrationEvent&gt; | falcon ">
+      <meta name="title" content="Class ApplicationService&lt;TId, TEntity&gt; | Falcon Documentation ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/master/apiSpec/new?filename=Falcon_Messaging_IntegrationEvents_IntegrationEventHandler_1.md&amp;value=---%0Auid%3A%20Falcon.Messaging.IntegrationEvents.IntegrationEventHandler%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/3/merge/apiSpec/new?filename=Falcon_Application_Abstractions_Services_ApplicationService_2.md&amp;value=---%0Auid%3A%20Falcon.Application.Abstractions.Services.ApplicationService%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -44,8 +44,8 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="falcon">
-            falcon
+            <img id="logo" class="svg" src="../logo.svg" alt="Falcon">
+            Falcon
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-three-dots"></i>
@@ -84,31 +84,33 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Falcon.Messaging.IntegrationEvents.IntegrationEventHandler`1">
+        <article data-uid="Falcon.Application.Abstractions.Services.ApplicationService`2">
 
 
 
-  <h1 id="Falcon_Messaging_IntegrationEvents_IntegrationEventHandler_1" data-uid="Falcon.Messaging.IntegrationEvents.IntegrationEventHandler`1" class="text-break">
-Class IntegrationEventHandler&lt;TIntegrationEvent&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/master/src/Shared/Messaging/IntegrationEvents/IntegrationEventHandler.cs/#L3"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Falcon_Application_Abstractions_Services_ApplicationService_2" data-uid="Falcon.Application.Abstractions.Services.ApplicationService`2" class="text-break">
+Class ApplicationService&lt;TId, TEntity&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/3/merge/src/Application/Abstractions/Services/ApplicationService.cs/#L3"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Falcon.html">Falcon</a>.<a class="xref" href="Falcon.Messaging.html">Messaging</a>.<a class="xref" href="Falcon.Messaging.IntegrationEvents.html">IntegrationEvents</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Falcon.Messaging.IntegrationEvents.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Falcon.html">Falcon</a>.<a class="xref" href="Falcon.Application.html">Application</a>.<a class="xref" href="Falcon.Application.Abstractions.html">Abstractions</a>.<a class="xref" href="Falcon.Application.Abstractions.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Falcon.Application.Abstractions.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class IntegrationEventHandler&lt;TIntegrationEvent&gt; : IConsumer&lt;TIntegrationEvent&gt;, IConsumer where TIntegrationEvent : class, IIntegrationEvent</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ApplicationService&lt;TId, TEntity&gt; where TEntity : class, IEntity&lt;TId&gt;, new()</code></pre>
   </div>
 
 
 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
-    <dt><code>TIntegrationEvent</code></dt>
+    <dt><code>TId</code></dt>
+    <dd></dd>
+    <dt><code>TEntity</code></dt>
     <dd></dd>
   </dl>
 
@@ -116,18 +118,18 @@ Class IntegrationEventHandler&lt;TIntegrationEvent&gt;  <a class="header-action 
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">IntegrationEventHandler&lt;TIntegrationEvent&gt;</span></div>
+      <div><span class="xref">ApplicationService&lt;TId, TEntity&gt;</span></div>
     </dd>
   </dl>
 
-  <dl class="typelist implements">
-    <dt>Implements</dt>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
     <dd>
-      <div><span class="xref">IConsumer</span>&lt;TIntegrationEvent&gt;</div>
-      <div><span class="xref">IConsumer</span></div>
+      <div><a class="xref" href="Falcon.Application.Abstractions.Services.CommandService-2.html">CommandService&lt;TId, TEntity&gt;</a></div>
+      <div><a class="xref" href="Falcon.Application.Abstractions.Services.QueryService-2.html">QueryService&lt;TId, TEntity&gt;</a></div>
     </dd>
   </dl>
-
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
@@ -170,36 +172,102 @@ Class IntegrationEventHandler&lt;TIntegrationEvent&gt;  <a class="header-action 
 
 
 
-  <h2 class="section" id="methods">Methods
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="Falcon_Messaging_IntegrationEvents_IntegrationEventHandler_1_Consume_" data-uid="Falcon.Messaging.IntegrationEvents.IntegrationEventHandler`1.Consume*"></a>
+  <a id="Falcon_Application_Abstractions_Services_ApplicationService_2__ctor_" data-uid="Falcon.Application.Abstractions.Services.ApplicationService`2.#ctor*"></a>
 
-  <h3 id="Falcon_Messaging_IntegrationEvents_IntegrationEventHandler_1_Consume_MassTransit_ConsumeContext__0__" data-uid="Falcon.Messaging.IntegrationEvents.IntegrationEventHandler`1.Consume(MassTransit.ConsumeContext{`0})">
-  Consume(ConsumeContext&lt;TIntegrationEvent&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/master/src/Shared/Messaging/IntegrationEvents/IntegrationEventHandler.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Falcon_Application_Abstractions_Services_ApplicationService_2__ctor_System_IServiceProvider_" data-uid="Falcon.Application.Abstractions.Services.ApplicationService`2.#ctor(System.IServiceProvider)">
+  ApplicationService(IServiceProvider)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/3/merge/src/Application/Abstractions/Services/ApplicationService.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract Task Consume(ConsumeContext&lt;TIntegrationEvent&gt; context)</code></pre>
+    <pre><code class="lang-csharp hljs">protected ApplicationService(IServiceProvider serviceProvider)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>context</code> <span class="xref">ConsumeContext</span>&lt;TIntegrationEvent&gt;</dt>
+    <dt><code>serviceProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Falcon_Application_Abstractions_Services_ApplicationService_2_GetRepository_" data-uid="Falcon.Application.Abstractions.Services.ApplicationService`2.GetRepository*"></a>
+
+  <h3 id="Falcon_Application_Abstractions_Services_ApplicationService_2_GetRepository" data-uid="Falcon.Application.Abstractions.Services.ApplicationService`2.GetRepository">
+  GetRepository()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/3/merge/src/Application/Abstractions/Services/ApplicationService.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRepository&lt;TId, TEntity&gt; GetRepository()</code></pre>
+  </div>
+
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dt><a class="xref" href="Falcon.Domain.Abstractions.Interfaces.Repositories.IRepository-2.html">IRepository</a>&lt;TId, TEntity&gt;</dt>
     <dd></dd>
   </dl>
 
+
+
+
+
+
+
+
+
+
+
+  <a id="Falcon_Application_Abstractions_Services_ApplicationService_2_GetService_" data-uid="Falcon.Application.Abstractions.Services.ApplicationService`2.GetService*"></a>
+
+  <h3 id="Falcon_Application_Abstractions_Services_ApplicationService_2_GetService__1" data-uid="Falcon.Application.Abstractions.Services.ApplicationService`2.GetService``1">
+  GetService&lt;TService&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/3/merge/src/Application/Abstractions/Services/ApplicationService.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TService GetService&lt;TService&gt;() where TService : class</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TService</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TService</code></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -214,7 +282,7 @@ Class IntegrationEventHandler&lt;TIntegrationEvent&gt;  <a class="header-action 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/natarajanganapathi/falcon/blob/master/src/Shared/Messaging/IntegrationEvents/IntegrationEventHandler.cs/#L3" class="edit-link">Edit this page</a>
+          <a href="https://github.com/natarajanganapathi/falcon/blob/3/merge/src/Application/Abstractions/Services/ApplicationService.cs/#L3" class="edit-link">Edit this page</a>
         </div>
 
 
