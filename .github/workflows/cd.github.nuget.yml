@@ -42,10 +42,14 @@ jobs:
       run: versionize --pre-release alpha --commit-suffix "[skip ci]"
 
     - name: Push to Github
-      run: git push --follow-tags origin main
+      run: git push --follow-tags origin master
 
     - name: Pack
       run: dotnet pack --no-build -c release ${{ env.PROJECT }} -o .
 
+    - name: Authenticate
+      run: dotnet nuget add source --username natarajanganapathi --password ${{ secrets.GH_PUBLISH_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/natarajanganapathi/index.json"
+
     - name: Publish
-      run: dotnet nuget push *.nupkg -s https://nuget.pkg.github.com/natarajanganapathi/index.json -k ${{secrets.GITHUB_TOKEN}} --skip-duplicate --no-symbols
+      run: dotnet nuget push "*.nupkg" --api-key ${{ secrets.GH_PUBLISH_TOKEN }} --source "github"
+
