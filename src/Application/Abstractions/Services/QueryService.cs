@@ -1,8 +1,8 @@
 namespace Falcon.Application.Abstractions.Services;
 
-public class QueryServiceBase<TId, TEntity> : ApplicationServiceBase<TId, TEntity> where TEntity : class, IEntity<TId>, new()
+public class QueryService<TId, TEntity> : ApplicationService<TId, TEntity> where TEntity : class, IEntity<TId>, new()
 {
-    public QueryServiceBase(IServiceProvider serviceProvider) : base(serviceProvider) { }
+    public QueryService(IServiceProvider serviceProvider) : base(serviceProvider) { }
 
     public Task<TEntity> GetAsync(TId id, CancellationToken cancellationToken)
     {

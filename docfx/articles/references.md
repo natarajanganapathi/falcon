@@ -15,3 +15,12 @@
 1. [DDD Reference](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/ddd-oriented-microservice)
 2. [Sample Source Reference](https://github.com/dotnet-architecture/eShopOnContainers/tree/main/src/Services/Ordering/Ordering.API)
 3. [Builder Pattern](https://www.youtube.com/watch?v=qCIr30WxJQw&t=8s)
+
+### Understandings
+1. Service layers
+    a. Domain Service
+        Domain logics
+    b. Application Service
+        Orchestrating domain operations
+    c. Infrastructure Service
+        sending emails, handling file storage, or managing database connections—essentially anything that supports application and domain layers by abstracting external systems or libraries.
