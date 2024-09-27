@@ -4,12 +4,14 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddMessaging(this IServiceCollection services, Func<MessagingOptionsBuilder, MessagingOptionsBuilder> messagingOptions)
     {
-        var options = messagingOptions.Invoke(MessagingOptionsBuilder.New())
-                                      .Build();
+        var optionBuilder = MessagingOptionsBuilder.New();
+        var options = messagingOptions.Invoke(optionBuilder).Build();
+
         services
             .AddMassTransitSetup(options)
             .AddMediatRSetup(options)
             .AddMessagingServices();
+
         return services;
     }
 
@@ -17,7 +19,6 @@ public static class ServiceCollectionExtensions
     {
         services.AddMediatR(cfg =>
         {
-            messagingOptions.MediatRConfiguration(cfg);
             if (messagingOptions.PreProcessorBehavior is not null)
             {
                 foreach (var behavior in messagingOptions.PreProcessorBehavior)
@@ -25,6 +26,7 @@ public static class ServiceCollectionExtensions
                     cfg.AddBehavior(typeof(IPipelineBehavior<,>), behavior.GetType());
                 }
             }
+            messagingOptions.MediatRConfiguration(cfg);
         });
         return services;
     }
@@ -33,6 +35,7 @@ public static class ServiceCollectionExtensions
     {
         services.AddMassTransit(cfg =>
         {
+            cfg.AddConsumer(typeof(IntegrationEventConsumer<>));
             messagingOptions.BusRegistrationConfigurator?.Invoke(cfg);
         });
         return services;
