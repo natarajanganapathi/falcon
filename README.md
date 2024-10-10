@@ -28,7 +28,7 @@ dotnet-outdated-tool                   4.6.0           dotnet-outdated
 dotnet-reportgenerator-globaltool      5.2.5           reportgenerator    
 dotnet-sonarscanner                    6.1.0           dotnet-sonarscanner
 dotnet-version-cli                     3.0.3           dotnet-version     
-husky                                  0.6.2           husky
+husky                                  0.7.1           husky
 mscl                                   1.0.0           mscl
 nbgv                                   3.6.133         nbgv
 pipelinetrigger                        1.0.0           mptd

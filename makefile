@@ -93,6 +93,8 @@ update:
 	dotnet tool update -g dotnet-outdated-tool
 	dotnet tool update -g nbgv
 	dotnet tool update -g dotnet-reportgenerator-globaltool
+	dotnet tool update -g husky
+	dotnet tool update -g csharpier
 	dotnet tool list -g
 
 install:
@@ -112,10 +114,13 @@ install:
 	-dotnet tool install -g	dotnet-outdated-tool
 	-dotnet tool install -g	nbgv
 	-dotnet tool install -g dotnet-reportgenerator-globaltool
+	-dotnet tool install -g husky
+	-dotnet tool install -g csharpier
 	dotnet tool list -g
 
 setup: install
 	-npm install -g rimraf
+	-npm install -g cspell
 
 host:
 	dotnet build ./src/Falcon.Hosts/Falcon.Hosts.csproj

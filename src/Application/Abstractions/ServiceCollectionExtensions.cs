@@ -7,7 +7,7 @@ public static class ServiceCollectionExtensions
         return services.AddTransient<IIdentityService, IdentityService>();
     }
 
-    public static IApplicationBuilder UseInfrastructureMiddelwares(this IApplicationBuilder app)
+    public static IApplicationBuilder UseInfrastructureMiddlewares(this IApplicationBuilder app)
     {
         return app;
     }

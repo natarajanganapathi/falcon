@@ -23,6 +23,5 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MassTransit" Version="8.2.5" />
-    <PackageReference Include="MediatR" Version="12.4.1" />
   </ItemGroup>
 </Project>

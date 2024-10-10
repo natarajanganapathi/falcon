@@ -2,20 +2,45 @@ namespace Falcon.Messaging;
 
 public class MessagingOptionsBuilder
 {
-    private Action<MediatRServiceConfiguration> _mediatRConfiguration = cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
-    private Action<IBusRegistrationConfigurator>? _busRegistrationConfigurator = null;
+    private static Action<IBusRegistrationConfigurator> _applicationInMemoryBusRegistration = (cfg) =>
+    {
+        cfg.UsingInMemory((context, cfg) => { cfg.ConfigureEndpoints(context); });
+        cfg.AddDefaultApplicationEventConsumers();
+    };
+
+    private static Action<IBusRegistrationConfigurator> _domainInMemoryBusRegistration = (cfg) =>
+    {
+        cfg.UsingInMemory((context, cfg) => { cfg.ConfigureEndpoints(context); });
+        cfg.AddDefaultDomainEventConsumers();
+    };
+
+    private static Action<IBusRegistrationConfigurator> _integrationInMemoryBusRegistration = (cfg) =>
+    {
+        cfg.UsingInMemory((context, cfg) => { cfg.ConfigureEndpoints(context); });
+        cfg.AddDefaultIntegrationEventConsumers();
+    };
+
+    private Action<IBusRegistrationConfigurator> _applicationBusConfigurator = _applicationInMemoryBusRegistration;
+    private Action<IBusRegistrationConfigurator> _domainBusConfigurator = _domainInMemoryBusRegistration;
+    private Action<IBusRegistrationConfigurator> _integrationBusConfigurator = _integrationInMemoryBusRegistration;
 
     public static MessagingOptionsBuilder New() => new();
 
-    public MessagingOptionsBuilder MediatRConfiguration(Action<MediatRServiceConfiguration> mediatRConfiguration)
+    public MessagingOptionsBuilder AddApplicationEvent(Action<IBusRegistrationConfigurator> applicationBusConfigurator)
     {
-        _mediatRConfiguration = mediatRConfiguration;
+        _applicationBusConfigurator = applicationBusConfigurator;
         return this;
     }
 
-     public MessagingOptionsBuilder BusRegistrationConfigurator(Action<IBusRegistrationConfigurator> busRegistrationConfigurator)
+    public MessagingOptionsBuilder AddDomainEvent(Action<IBusRegistrationConfigurator> domainBusConfigurator)
     {
-        _busRegistrationConfigurator = busRegistrationConfigurator;
+        _domainBusConfigurator = domainBusConfigurator;
+        return this;
+    }
+
+    public MessagingOptionsBuilder AddIntegrationEvent(Action<IBusRegistrationConfigurator> integrationBusConfigurator)
+    {
+        _integrationBusConfigurator = integrationBusConfigurator;
         return this;
     }
 
@@ -23,8 +48,9 @@ public class MessagingOptionsBuilder
     {
         return new MessagingOptions
         {
-            MediatRConfiguration = _mediatRConfiguration,
-            BusRegistrationConfigurator = _busRegistrationConfigurator
+            ApplicationBusConfigurator = _applicationBusConfigurator,
+            DomainBusConfigurator = _domainBusConfigurator,
+            InfrastructureBusConfigurator = _integrationBusConfigurator
         };
     }
 }

@@ -1,6 +1,6 @@
 namespace Falcon.Infrastructure.EntityFramework.QueryBuilder;
 
-public static partial class QueryableExtentions
+public static partial class QueryableExtensions
 {
     // TODO: Optimization required
     private static readonly MethodInfo? _selectMethodInfo = Array.Find(typeof(Enumerable)

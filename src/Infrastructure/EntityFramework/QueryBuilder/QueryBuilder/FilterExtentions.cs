@@ -1,6 +1,6 @@
 namespace Falcon.Infrastructure.EntityFramework.QueryBuilder;
 
-public static class FilterExtentions
+public static class FilterExtensions
 {
     private static readonly MethodInfo ContainsMethod = Types.EnumerableType.GetMethods()
                         .Single(m => m.Name == Names.EnumerableContains && m.GetParameters().Length == 2);
