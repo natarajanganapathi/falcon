@@ -9,6 +9,7 @@ public static class ServiceCollectionExtensions
         var options = optionBuilder.Build();
 
         services
+            .AddQuerySetup(options)
             .AddApplicationEventSetup(options)
             .AddDomainEventSetup(options)
             .AddIntegrationEventSetup(options);
@@ -36,6 +37,11 @@ public static class ServiceCollectionExtensions
             return new DomainEventPublisher(domainEventBus);
         });
         return services;
+    }
+
+    private static IServiceCollection AddQuerySetup(this IServiceCollection services, MessagingOptions messagingOptions)
+    {
+        return services.AddMassTransit(messagingOptions.QueryBusConfigurator);
     }
 
     private static IServiceCollection AddIntegrationEventSetup(this IServiceCollection services, MessagingOptions messagingOptions)
@@ -76,7 +82,6 @@ public static class ServiceCollectionExtensions
                             .ToList();
         cfg.AddConsumers(filteredTypes?.ToArray());
     }
-
     public static void AddDefaultIntegrationEventConsumers(this IBusRegistrationConfigurator cfg)
     {
         var filteredTypes = NonAbstractClasses
@@ -88,6 +93,26 @@ public static class ServiceCollectionExtensions
                             )
                             .ToList();
         cfg.AddConsumers(filteredTypes?.ToArray());
+    }
+    public static void AddDefaultQueryConsumers(this IBusRegistrationConfigurator cfg)
+    {
+        var filteredTypes = NonAbstractClasses
+                            .Where(type =>
+                                type.GetInterfaces().Any(i =>
+                                    i.IsGenericType &&
+                                    i.GetGenericTypeDefinition() == typeof(IQueryConsumer<>)
+                                )
+                            )
+                            .ToList();
+        cfg.AddConsumers(filteredTypes?.ToArray());
+    }
+    public static void AddDefaultQueryRequestClient(this IBusRegistrationConfigurator cfg)
+    {
+        var filteredTypes = NonAbstractClasses.Where(type => typeof(IQuery).IsAssignableFrom(type));
+        foreach (var queryType in filteredTypes)
+        {
+            cfg.AddRequestClient(queryType);
+        }
     }
 
     private static IEnumerable<Type> _allTypes = default!;
@@ -116,9 +141,9 @@ public static class ServiceCollectionExtensions
             if (_nonAbstractClasses is null)
             {
                 _nonAbstractClasses = AllTypes.Where(type =>
-                       !type.IsAbstract &&
-                       type.IsClass
-                       );
+                    !type.IsAbstract &&
+                    type.IsClass
+                );
             }
             return _nonAbstractClasses;
         }

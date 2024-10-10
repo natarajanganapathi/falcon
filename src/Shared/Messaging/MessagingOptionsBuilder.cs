@@ -20,9 +20,18 @@ public class MessagingOptionsBuilder
         cfg.AddDefaultIntegrationEventConsumers();
     };
 
+    private static Action<IBusRegistrationConfigurator> _queryInMemoryBusRegistration = (cfg) =>
+    {
+        cfg.UsingInMemory((context, cfg) => { cfg.ConfigureEndpoints(context); });
+        cfg.AddDefaultQueryConsumers();
+        cfg.AddDefaultQueryRequestClient();
+        cfg.SetDefaultRequestTimeout(TimeSpan.FromSeconds(10));
+    };
+
     private Action<IBusRegistrationConfigurator> _applicationBusConfigurator = _applicationInMemoryBusRegistration;
     private Action<IBusRegistrationConfigurator> _domainBusConfigurator = _domainInMemoryBusRegistration;
     private Action<IBusRegistrationConfigurator> _integrationBusConfigurator = _integrationInMemoryBusRegistration;
+    private Action<IBusRegistrationConfigurator> _queryBusConfigurator = _queryInMemoryBusRegistration;
 
     public static MessagingOptionsBuilder New() => new();
 
@@ -44,13 +53,20 @@ public class MessagingOptionsBuilder
         return this;
     }
 
+    public MessagingOptionsBuilder AddQuery(Action<IBusRegistrationConfigurator> queryBusConfigurator)
+    {
+        _queryBusConfigurator = queryBusConfigurator;
+        return this;
+    }
+
     public MessagingOptions Build()
     {
         return new MessagingOptions
         {
             ApplicationBusConfigurator = _applicationBusConfigurator,
             DomainBusConfigurator = _domainBusConfigurator,
-            InfrastructureBusConfigurator = _integrationBusConfigurator
+            InfrastructureBusConfigurator = _integrationBusConfigurator,
+            QueryBusConfigurator = _queryBusConfigurator
         };
     }
 }
