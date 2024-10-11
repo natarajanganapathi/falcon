@@ -1,4 +1,5 @@
 var builder = WebApplication.CreateBuilder(args);
+builder.Logging.ClearProviders();
 builder.Logging.AddSimpleConsole((options) =>
 {
     options.SingleLine = true;
@@ -6,6 +7,9 @@ builder.Logging.AddSimpleConsole((options) =>
 });
 
 builder.Services.AddOpenApi();
+#if DEBUG
+    builder.Services.LogQueryConsumers();
+#endif
 // builder.Services.AddMessaging();
 
 builder.Services.AddMessaging(cfg =>
@@ -44,13 +48,15 @@ builder.Services.AddMessaging(cfg =>
             cfg.ConfigureEndpoints(context);
         });
         queryBusConfigurator.AddDefaultQueryConsumers();
-        queryBusConfigurator.AddDefaultQueryRequestClient();        
+        queryBusConfigurator.AddDefaultQueryRequestClient();     
     });
 });
 
 
 
 var app = builder.Build();
+
+
 
 if (app.Environment.IsDevelopment())
 {

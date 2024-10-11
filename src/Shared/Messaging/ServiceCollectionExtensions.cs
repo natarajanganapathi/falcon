@@ -109,6 +109,9 @@ public static class ServiceCollectionExtensions
     #endregion
 
     #region Query
+    private static readonly IEnumerable<(Type Consumer, Type QueryType)> _queryConsumerTypes = GetQueryConsumerTypes();
+    private static IEnumerable<(Type Consumer, Type QueryType)> QueryConsumerTypes => _queryConsumerTypes;
+
     private static IServiceCollection AddQuerySetup(this IServiceCollection services, MessagingOptions messagingOptions)
     {
         return services.AddMassTransit(messagingOptions.QueryBusConfigurator);
@@ -130,7 +133,7 @@ public static class ServiceCollectionExtensions
 
     public static void AddDefaultQueryConsumers(this IBusRegistrationConfigurator cfg)
     {
-        var consumers = GetQueryConsumerTypes()?
+        var consumers = QueryConsumerTypes?
             .GroupBy(item => item.QueryType)
             .Select(group => group.FirstOrDefault().Consumer)
             .ToArray();
@@ -152,6 +155,15 @@ public static class ServiceCollectionExtensions
     #endregion
 
     #region Common
+
+    public static void LogQueryConsumers(this IServiceCollection services)
+    {
+        QueryConsumerTypes
+        .GroupBy(item => item.QueryType)
+        .ToList()
+        .ForEach(group =>
+             Console.WriteLine($"Query: {group.Key.Name}, Count: {group.Count()},  Consumers: {string.Join(", ", group.Select(x => x.Consumer.Name))}"));
+    }
 
     private static IEnumerable<Type> LoadAllTypes()
     {
