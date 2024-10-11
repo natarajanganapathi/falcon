@@ -41,15 +41,24 @@ builder.Services.AddMessaging(cfg =>
     //     integrationBusConfigurator.AddConsumers(Assembly.GetExecutingAssembly());
     // });
 
-    cfg.AddQuery((queryBusConfigurator) =>
-    {
-        queryBusConfigurator.UsingInMemory((context, cfg) =>
-        {
-            cfg.ConfigureEndpoints(context);
-        });
-        queryBusConfigurator.AddDefaultQueryConsumers();
-        queryBusConfigurator.AddDefaultQueryRequestClient();     
-    });
+    // cfg.AddQuery((queryBusConfigurator) =>
+    // {
+    //     queryBusConfigurator.UsingInMemory((context, cfg) =>
+    //     {
+    //         cfg.ConfigureEndpoints(context);
+    //     });
+    //     queryBusConfigurator.AddDefaultQueryConsumers();
+    //     queryBusConfigurator.AddDefaultQueryRequestClient();     
+    // });
+
+    // cfg.AddCommand((commandBusConfigurator) =>
+    // {
+    //     commandBusConfigurator.UsingInMemory((context, cfg) =>
+    //     {
+    //         cfg.ConfigureEndpoints(context);
+    //     });
+    //     commandBusConfigurator.AddDefaultCommandConsumers();
+    // });
 });
 
 
@@ -74,10 +83,11 @@ app.MapGet("/weatherforecast", async (
             // ApplicationEventPublisher appEventPublisher,
             // DomainEventPublisher domainEventPublisher,
             // IntegrationEventPublisher integrationEventPublisher,
+            CommandPublisher commandPublisher,
             IRequestClient<TestQuery> _client
             ) =>
 {
-    // appEventPublisher.Publish(new MyApplicationEvent(Guid.NewGuid().ToString(), typeof(MyApplicationEvent).Name)
+    // await appEventPublisher.Publish(new MyApplicationEvent(Guid.NewGuid().ToString(), typeof(MyApplicationEvent).Name)
     // {
     //     Message = "Hello from the event dispatcher beginning of the request"
     // });
@@ -89,6 +99,7 @@ app.MapGet("/weatherforecast", async (
     // {
     //     Message = "Hello from the event dispatcher end of the request"
     // });
+    commandPublisher.Publish(new TestCommand { Message = "Hello" });
 
     //  var client = Bus.Factory.CreateRequestClient<IGetUserQuery>();
     // var response = await client.GetResponse<IUserDetails>(new { UserId = userId });

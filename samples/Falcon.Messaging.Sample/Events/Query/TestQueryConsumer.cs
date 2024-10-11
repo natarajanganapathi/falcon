@@ -1,5 +1,5 @@
 
-namespace FalconSample.Events.IntegrationEvents;
+namespace FalconSample.Events.Query;
 
 public class TestQueryConsumer : IQueryConsumer<TestQuery>
 {

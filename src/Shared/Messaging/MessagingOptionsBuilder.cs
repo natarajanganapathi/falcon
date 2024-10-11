@@ -31,7 +31,7 @@ public class MessagingOptionsBuilder
     private static Action<IBusRegistrationConfigurator> _commandInMemoryBusRegistration = (cfg) =>
     {
         cfg.UsingInMemory((context, cfg) => { cfg.ConfigureEndpoints(context); });
-        cfg.AddDefaultQueryConsumers();
+        cfg.AddDefaultCommandConsumers();
     };
 
     private Action<IBusRegistrationConfigurator> _applicationBusConfigurator = _applicationInMemoryBusRegistration;

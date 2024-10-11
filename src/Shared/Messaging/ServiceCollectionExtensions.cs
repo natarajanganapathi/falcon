@@ -158,7 +158,13 @@ public static class ServiceCollectionExtensions
 
     private static IServiceCollection AddCommandSetup(this IServiceCollection services, MessagingOptions messagingOptions)
     {
-        return services.AddMassTransit(messagingOptions.CommandBusConfigurator);
+        services.AddMassTransit<ICommandBus>(messagingOptions.CommandBusConfigurator);
+        services.AddSingleton(provider =>
+        {
+            var commandBus = provider.GetRequiredService<ICommandBus>();
+            return new CommandPublisher(commandBus);
+        });
+        return services;
     }
 
     private static IEnumerable<(Type Consumer, Type CommandType)> GetCommandConsumerTypes()
