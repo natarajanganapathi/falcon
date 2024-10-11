@@ -9,6 +9,7 @@ global using Falcon.Messaging.Command;
 
 global using MassTransit;
 
+global using FalconSample;
 global using FalconSample.Events.ApplicationEvents;
 global using FalconSample.Events.DomainEvents;
 global using FalconSample.Events.IntegrationEvents;

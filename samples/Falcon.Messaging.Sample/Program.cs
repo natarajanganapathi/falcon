@@ -10,62 +10,10 @@ builder.Services.AddOpenApi();
 #if DEBUG
     builder.Services.LogQueryConsumers();
 #endif
-// builder.Services.AddMessaging();
 
-builder.Services.AddMessaging(cfg =>
-{
-    // cfg.AddApplicationEvent((applicationBusConfigurator) =>
-    // {
-    //     applicationBusConfigurator.UsingInMemory((context, cfg) =>
-    //     {
-    //         cfg.ConfigureEndpoints(context);
-    //     });
-    //     applicationBusConfigurator.AddConsumers(Assembly.GetExecutingAssembly());
-    // });
-
-    // cfg.AddDomainEvent((domainBusConfigurator) =>
-    // {
-    //     domainBusConfigurator.UsingInMemory((context, cfg) =>
-    //     {
-    //         cfg.ConfigureEndpoints(context);
-    //     });
-    //     domainBusConfigurator.AddConsumers(Assembly.GetExecutingAssembly());
-    // });
-
-    // cfg.AddIntegrationEvent((integrationBusConfigurator) =>
-    // {
-    //     integrationBusConfigurator.UsingInMemory((context, cfg) =>
-    //     {
-    //         cfg.ConfigureEndpoints(context);
-    //     });
-    //     integrationBusConfigurator.AddConsumers(Assembly.GetExecutingAssembly());
-    // });
-
-    // cfg.AddQuery((queryBusConfigurator) =>
-    // {
-    //     queryBusConfigurator.UsingInMemory((context, cfg) =>
-    //     {
-    //         cfg.ConfigureEndpoints(context);
-    //     });
-    //     queryBusConfigurator.AddDefaultQueryConsumers();
-    //     queryBusConfigurator.AddDefaultQueryRequestClient();     
-    // });
-
-    // cfg.AddCommand((commandBusConfigurator) =>
-    // {
-    //     commandBusConfigurator.UsingInMemory((context, cfg) =>
-    //     {
-    //         cfg.ConfigureEndpoints(context);
-    //     });
-    //     commandBusConfigurator.AddDefaultCommandConsumers();
-    // });
-});
-
-
+builder.Services.AddMessagingExtension();
 
 var app = builder.Build();
-
-
 
 if (app.Environment.IsDevelopment())
 {
