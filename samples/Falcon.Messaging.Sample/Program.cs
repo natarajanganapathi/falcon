@@ -44,7 +44,7 @@ builder.Services.AddMessaging(cfg =>
             cfg.ConfigureEndpoints(context);
         });
         queryBusConfigurator.AddDefaultQueryConsumers();
-        queryBusConfigurator.AddDefaultQueryRequestClient();
+        queryBusConfigurator.AddDefaultQueryRequestClient();        
     });
 });
 

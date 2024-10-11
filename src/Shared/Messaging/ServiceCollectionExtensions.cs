@@ -2,6 +2,12 @@
 
 public static class ServiceCollectionExtensions
 {
+    private static readonly IEnumerable<Type> _allTypes = LoadAllTypes();
+    private static IEnumerable<Type> AllTypes => _allTypes;
+
+    private static readonly IEnumerable<Type> _nonAbstractClasses = LoadNonAbstractClasses();
+    private static IEnumerable<Type> NonAbstractClasses => _nonAbstractClasses;
+
     public static IServiceCollection AddMessaging(this IServiceCollection services, Action<MessagingOptionsBuilder>? messagingOptionsBuilder = default)
     {
         var optionBuilder = MessagingOptionsBuilder.New();
@@ -16,6 +22,8 @@ public static class ServiceCollectionExtensions
         return services;
     }
 
+    #region Application Event
+
     private static IServiceCollection AddApplicationEventSetup(this IServiceCollection services, MessagingOptions messagingOptions)
     {
         services.AddMassTransit<IApplicationEventBus>(messagingOptions.ApplicationBusConfigurator);
@@ -25,36 +33,6 @@ public static class ServiceCollectionExtensions
             var applicationEventBus = provider.GetRequiredService<IApplicationEventBus>();
             return new ApplicationEventPublisher(applicationEventBus);
         });
-        return services;
-    }
-
-    private static IServiceCollection AddDomainEventSetup(this IServiceCollection services, MessagingOptions messagingOptions)
-    {
-        services.AddMassTransit<IDomainEventBus>(messagingOptions.DomainBusConfigurator);
-        services.AddSingleton(provider =>
-        {
-            var domainEventBus = provider.GetRequiredService<IDomainEventBus>();
-            return new DomainEventPublisher(domainEventBus);
-        });
-        return services;
-    }
-
-    private static IServiceCollection AddQuerySetup(this IServiceCollection services, MessagingOptions messagingOptions)
-    {
-        return services.AddMassTransit(messagingOptions.QueryBusConfigurator);
-    }
-
-    private static IServiceCollection AddIntegrationEventSetup(this IServiceCollection services, MessagingOptions messagingOptions)
-    {
-        if (messagingOptions.InfrastructureBusConfigurator is not null)
-        {
-            services.AddMassTransit<IIntegrationEventBus>(messagingOptions.InfrastructureBusConfigurator);
-            services.AddSingleton(provider =>
-            {
-                var integrationEventBus = provider.GetRequiredService<IIntegrationEventBus>();
-                return new IntegrationEventPublisher(integrationEventBus);
-            });
-        }
         return services;
     }
 
@@ -70,6 +48,22 @@ public static class ServiceCollectionExtensions
                             .ToList();
         cfg.AddConsumers(filteredTypes?.ToArray());
     }
+
+    #endregion
+
+    #region Domain Event
+
+    private static IServiceCollection AddDomainEventSetup(this IServiceCollection services, MessagingOptions messagingOptions)
+    {
+        services.AddMassTransit<IDomainEventBus>(messagingOptions.DomainBusConfigurator);
+        services.AddSingleton(provider =>
+        {
+            var domainEventBus = provider.GetRequiredService<IDomainEventBus>();
+            return new DomainEventPublisher(domainEventBus);
+        });
+        return services;
+    }
+
     public static void AddDefaultDomainEventConsumers(this IBusRegistrationConfigurator cfg)
     {
         var filteredTypes = NonAbstractClasses
@@ -82,6 +76,24 @@ public static class ServiceCollectionExtensions
                             .ToList();
         cfg.AddConsumers(filteredTypes?.ToArray());
     }
+    #endregion
+
+    #region Integration Event
+
+    private static IServiceCollection AddIntegrationEventSetup(this IServiceCollection services, MessagingOptions messagingOptions)
+    {
+        if (messagingOptions.InfrastructureBusConfigurator is not null)
+        {
+            services.AddMassTransit<IIntegrationEventBus>(messagingOptions.InfrastructureBusConfigurator);
+            services.AddSingleton(provider =>
+            {
+                var integrationEventBus = provider.GetRequiredService<IIntegrationEventBus>();
+                return new IntegrationEventPublisher(integrationEventBus);
+            });
+        }
+        return services;
+    }
+
     public static void AddDefaultIntegrationEventConsumers(this IBusRegistrationConfigurator cfg)
     {
         var filteredTypes = NonAbstractClasses
@@ -94,18 +106,37 @@ public static class ServiceCollectionExtensions
                             .ToList();
         cfg.AddConsumers(filteredTypes?.ToArray());
     }
+    #endregion
+
+    #region Query
+    private static IServiceCollection AddQuerySetup(this IServiceCollection services, MessagingOptions messagingOptions)
+    {
+        return services.AddMassTransit(messagingOptions.QueryBusConfigurator);
+    }
+
+    private static IEnumerable<(Type Consumer, Type QueryType)> GetQueryConsumerTypes()
+    {
+        var queryConsumerTypes = NonAbstractClasses
+                    .Select(type =>
+                    {
+                        var genericType = type.GetInterfaces()
+                            .Where(i => i.IsGenericType && i.GetGenericTypeDefinition() == typeof(IQueryConsumer<>))
+                            .Select(i => i.GenericTypeArguments[0])
+                            .FirstOrDefault();
+                        return (Consumer: type, QueryType: genericType);
+                    }).Where(x => x.QueryType is not null);
+        return queryConsumerTypes!;
+    }
+
     public static void AddDefaultQueryConsumers(this IBusRegistrationConfigurator cfg)
     {
-        var filteredTypes = NonAbstractClasses
-                            .Where(type =>
-                                type.GetInterfaces().Any(i =>
-                                    i.IsGenericType &&
-                                    i.GetGenericTypeDefinition() == typeof(IQueryConsumer<>)
-                                )
-                            )
-                            .ToList();
-        cfg.AddConsumers(filteredTypes?.ToArray());
+        var consumers = GetQueryConsumerTypes()?
+            .GroupBy(item => item.QueryType)
+            .Select(group => group.FirstOrDefault().Consumer)
+            .ToArray();
+        cfg.AddConsumers(consumers);
     }
+
     public static void AddDefaultQueryRequestClient(this IBusRegistrationConfigurator cfg)
     {
         var filteredTypes = NonAbstractClasses.Where(type => typeof(IQuery).IsAssignableFrom(type));
@@ -114,38 +145,28 @@ public static class ServiceCollectionExtensions
             cfg.AddRequestClient(queryType);
         }
     }
+    #endregion
 
-    private static IEnumerable<Type> _allTypes = default!;
-    private static IEnumerable<Type> AllTypes
+    #region Command
+
+    #endregion
+
+    #region Common
+
+    private static IEnumerable<Type> LoadAllTypes()
     {
-        get
-        {
-            if (_allTypes is null)
-            {
-                var entryAssembly = Assembly.GetEntryAssembly();
-                var assemblies = entryAssembly?.GetReferencedAssemblies()
+        var entryAssembly = Assembly.GetEntryAssembly();
+        var assemblies = entryAssembly?.GetReferencedAssemblies()
                         .Select(Assembly.Load)
                         .Append(entryAssembly)
                         .SelectMany(assembly => assembly.GetTypes());
-                _allTypes = assemblies ?? Enumerable.Empty<Type>();
-            }
-            return _allTypes;
-        }
+
+        return assemblies ?? Enumerable.Empty<Type>();
     }
 
-    private static IEnumerable<Type> _nonAbstractClasses = default!;
-    private static IEnumerable<Type> NonAbstractClasses
+    private static IEnumerable<Type> LoadNonAbstractClasses()
     {
-        get
-        {
-            if (_nonAbstractClasses is null)
-            {
-                _nonAbstractClasses = AllTypes.Where(type =>
-                    !type.IsAbstract &&
-                    type.IsClass
-                );
-            }
-            return _nonAbstractClasses;
-        }
+        return AllTypes.Where(type => !type.IsAbstract && type.IsClass);
     }
+    #endregion
 }

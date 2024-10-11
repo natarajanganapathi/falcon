@@ -12,6 +12,6 @@ public class TestQueryConsumer : IQueryConsumer<TestQuery>
     public Task Consume(ConsumeContext<TestQuery> context)
     {
         _logger.LogInformation($"Query Consumed: {context.Message.Message}");
-        return context.RespondAsync(new TestQueryResponse { Value = 15 });
+        return context.RespondAsync(new TestQueryResponse { Value = 2 });
     }
 }
