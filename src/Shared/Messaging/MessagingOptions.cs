@@ -6,5 +6,6 @@ public class MessagingOptions
     public required Action<IBusRegistrationConfigurator> DomainBusConfigurator { get; set; }
     public required Action<IBusRegistrationConfigurator> InfrastructureBusConfigurator { get; set; }
     public required Action<IBusRegistrationConfigurator> QueryBusConfigurator { get; set; }
+    public required Action<IBusRegistrationConfigurator> CommandBusConfigurator { get; set; }
 }
 

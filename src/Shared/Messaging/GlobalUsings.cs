@@ -9,3 +9,4 @@ global using Falcon.Messaging.DomainEvents;
 global using Falcon.Messaging.IntegrationEvents;
 global using Falcon.Messaging.ApplicationEvents;
 global using Falcon.Messaging.Query;
+global using Falcon.Messaging.Command;

@@ -16,6 +16,7 @@ public static class ServiceCollectionExtensions
 
         services
             .AddQuerySetup(options)
+            .AddCommandSetup(options)
             .AddApplicationEventSetup(options)
             .AddDomainEventSetup(options)
             .AddIntegrationEventSetup(options);
@@ -151,6 +152,37 @@ public static class ServiceCollectionExtensions
     #endregion
 
     #region Command
+
+    private static readonly IEnumerable<(Type Consumer, Type CommandType)> _commandConsumerTypes = GetCommandConsumerTypes();
+    private static IEnumerable<(Type Consumer, Type CommandType)> CommandConsumerTypes => _commandConsumerTypes;
+
+    private static IServiceCollection AddCommandSetup(this IServiceCollection services, MessagingOptions messagingOptions)
+    {
+        return services.AddMassTransit(messagingOptions.CommandBusConfigurator);
+    }
+
+    private static IEnumerable<(Type Consumer, Type CommandType)> GetCommandConsumerTypes()
+    {
+        var commandConsumerTypes = NonAbstractClasses
+                    .Select(type =>
+                    {
+                        var genericType = type.GetInterfaces()
+                            .Where(i => i.IsGenericType && i.GetGenericTypeDefinition() == typeof(ICommandConsumer<>))
+                            .Select(i => i.GenericTypeArguments[0])
+                            .FirstOrDefault();
+                        return (Consumer: type, CommandType: genericType);
+                    }).Where(x => x.CommandType is not null);
+        return commandConsumerTypes!;
+    }
+
+    public static void AddDefaultCommandConsumers(this IBusRegistrationConfigurator cfg)
+    {
+        var consumers = CommandConsumerTypes?
+            .GroupBy(item => item.CommandType)
+            .Select(group => group.FirstOrDefault().Consumer)
+            .ToArray();
+        cfg.AddConsumers(consumers);
+    }
 
     #endregion
 
