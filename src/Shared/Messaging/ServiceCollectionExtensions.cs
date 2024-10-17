@@ -20,6 +20,7 @@ public static class ServiceCollectionExtensions
             .AddApplicationEventSetup(options)
             .AddDomainEventSetup(options)
             .AddIntegrationEventSetup(options);
+        services.AddSingleton<QueryClient>();
         return services;
     }
 
