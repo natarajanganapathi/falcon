@@ -1,5 +1,5 @@
 
-namespace FalconSample.Events.DomainEvents;
+namespace Samples.Falcon.Messaging.Events.DomainEvents;
 
 public class MyDomainEventConsumer : IDomainEventConsumer<MyDomainEvent>
 {

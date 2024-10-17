@@ -1,4 +1,4 @@
-namespace FalconSample.Events.Query;
+namespace Samples.Falcon.Messaging.Events.Query;
 
 public class TestQuery : IQuery
 {

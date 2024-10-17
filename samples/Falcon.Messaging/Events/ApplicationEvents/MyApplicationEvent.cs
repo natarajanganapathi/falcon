@@ -1,4 +1,4 @@
-namespace FalconSample.Events.ApplicationEvents;
+namespace Samples.Falcon.Messaging.Events.ApplicationEvents;
 
 public class MyApplicationEvent : ApplicationEvent
 {

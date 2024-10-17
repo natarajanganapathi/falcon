@@ -1,4 +1,4 @@
-namespace FalconSample.Events.DomainEvents;
+namespace Samples.Falcon.Messaging.Events.DomainEvents;
 
 public class MyDomainEvent : DomainEvent
 {

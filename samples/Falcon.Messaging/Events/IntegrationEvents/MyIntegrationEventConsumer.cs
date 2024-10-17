@@ -1,5 +1,5 @@
 
-namespace FalconSample.Events.IntegrationEvents;
+namespace Samples.Falcon.Messaging.Events.IntegrationEvents;
 
 public class MyIntegrationEventConsumer : IIntegrationEventConsumer<MyIntegrationEvent>
 {

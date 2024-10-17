@@ -1,4 +1,4 @@
-namespace FalconSample.Events.Command;
+namespace Samples.Falcon.Messaging.Events.Command;
 
 public class TestCommandConsumer : ICommandConsumer<TestCommand>
 {

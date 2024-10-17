@@ -1,4 +1,4 @@
-namespace FalconSample;
+namespace Samples.Falcon.Messaging;
 
 public static class ServiceCollectionExtensions
 {
