@@ -25,7 +25,7 @@ build-samples:
 	-dotnet build ./samples/samples.sln
 
 tests:
-	-dotnet test ./tests/Falcon.Test.sln
+	-dotnet test ./tests/Falcon.Tests.sln
 
 test-result-1:
 	-dotnet test ./tests/Falcon.Test.sln --collect:"XPlat Code Coverage" --results-directory "TestResults"

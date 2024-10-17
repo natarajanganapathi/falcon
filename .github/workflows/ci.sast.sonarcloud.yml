@@ -53,6 +53,9 @@ jobs:
           dotnet tool update dotnet-coverage --version 17.12.4  --tool-path .\.sonar\scanner
           dotnet tool list --tool-path .\.sonar\scanner
 
+      - name: Restore NuGet packages
+        run: dotnet restore
+        
       - name: Run tests and collect coverage
         run: |
           .\.sonar\scanner\dotnet-coverage collect "dotnet test ./tests/Falcon.Tests.sln" -f xml -o "coverage.xml"
