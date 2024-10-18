@@ -13,32 +13,32 @@ public static class WeatherForecastEndpoints
     }
 
     public static async Task<IResult> GetAsync(
-        IRequestClient<TestQuery> query,
-        CommandPublisher commandPublisher,
-        ApplicationEventPublisher appEventPublisher,
-        DomainEventPublisher domainEventPublisher,
-        IntegrationEventPublisher integrationEventPublisher,
+        QueryClient query,
+        CommandPublisher command,
+        ApplicationEventPublisher applicationEvent,
+        DomainEventPublisher domainEvent,
+        IntegrationEventPublisher integrationEvent,
         CancellationToken cancellationToken)
     {
         string[] summaries = ["Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"];
 
-        await appEventPublisher.Publish(new MyApplicationEvent(Guid.NewGuid().ToString(), typeof(MyApplicationEvent).Name)
+        var response = await query.GetAsync<TestQuery, TestQueryResponse>(new { Message = "Hello" });
+        await command.Publish(new TestCommand { Message = "Hello" });
+
+        await applicationEvent.Publish(new MyApplicationEvent(Guid.NewGuid().ToString(), typeof(MyApplicationEvent).Name)
         {
             Message = "Hello from the event dispatcher beginning of the request"
         });
-        await domainEventPublisher.Publish(new MyDomainEvent(Guid.NewGuid(), 1)
+        await domainEvent.Publish(new MyDomainEvent(Guid.NewGuid(), 1)
         {
             Message = "Hello from the event dispatcher"
         });
-        await integrationEventPublisher.Publish(new MyIntegrationEvent("Sample")
+        await integrationEvent.Publish(new MyIntegrationEvent("Sample")
         {
             Message = "Hello from the event dispatcher end of the request"
         });
 
-        await commandPublisher.Publish(new TestCommand { Message = "Hello" });
-        var response = await query.GetResponse<TestQueryResponse>(new { Message = "Hello" });
-
-        var forecast = Enumerable.Range(1, response.Message.Value)
+        var forecast = Enumerable.Range(1, response.Value)
             .Select(index =>
             {
                 return new WeatherForecastModel
@@ -52,12 +52,3 @@ public static class WeatherForecastEndpoints
         return Results.Ok(forecast);
     }
 }
-
-// app.MapGet("/weatherforecast", async (
-//             // ApplicationEventPublisher appEventPublisher,
-//             // DomainEventPublisher domainEventPublisher,
-//             // IntegrationEventPublisher integrationEventPublisher,
-//             CommandPublisher commandPublisher,
-//             IRequestClient<TestQuery> _client
-//             ) =>
-// {
