@@ -74,6 +74,7 @@ jobs:
                 /d:sonar.sources="src" `
                 /d:sonar.exclusions="docfx/**,samples/**" `
                 /d:sonar.scanner.skipJreProvisioning=true `
+                /d:sonar.verbose=true `
                 /d:sonar.tests="tests/" 
           dotnet build --no-restore --no-incremental
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
