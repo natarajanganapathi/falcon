@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/7/merge/apiSpec/new?filename=Falcon_Messaging_ServiceCollectionExtensions.md&amp;value=---%0Auid%3A%20Falcon.Messaging.ServiceCollectionExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/8/merge/apiSpec/new?filename=Falcon_Messaging_ServiceCollectionExtensions.md&amp;value=---%0Auid%3A%20Falcon.Messaging.ServiceCollectionExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Falcon_Messaging_ServiceCollectionExtensions" data-uid="Falcon.Messaging.ServiceCollectionExtensions" class="text-break">
-Class ServiceCollectionExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/7/merge/src/Shared/Messaging/ServiceCollectionExtensions.cs/#L3"><i class="bi bi-code-slash"></i></a>
+Class ServiceCollectionExtensions  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/ServiceCollectionExtensions.cs/#L3"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -152,25 +152,211 @@ Class ServiceCollectionExtensions  <a class="header-action link-secondary" title
 </h2>
 
 
-  <a id="Falcon_Messaging_ServiceCollectionExtensions_AddMessaging_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddMessaging*"></a>
+  <a id="Falcon_Messaging_ServiceCollectionExtensions_AddDefaultApplicationEventConsumers_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddDefaultApplicationEventConsumers*"></a>
 
-  <h3 id="Falcon_Messaging_ServiceCollectionExtensions_AddMessaging_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Func_Falcon_Messaging_MessagingOptionsBuilder_Falcon_Messaging_MessagingOptionsBuilder__" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddMessaging(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{Falcon.Messaging.MessagingOptionsBuilder,Falcon.Messaging.MessagingOptionsBuilder})">
-  AddMessaging(IServiceCollection, Func&lt;MessagingOptionsBuilder, MessagingOptionsBuilder&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/7/merge/src/Shared/Messaging/ServiceCollectionExtensions.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Falcon_Messaging_ServiceCollectionExtensions_AddDefaultApplicationEventConsumers_MassTransit_IBusRegistrationConfigurator_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddDefaultApplicationEventConsumers(MassTransit.IBusRegistrationConfigurator)">
+  AddDefaultApplicationEventConsumers(IBusRegistrationConfigurator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/ServiceCollectionExtensions.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IServiceCollection AddMessaging(this IServiceCollection services, Func&lt;MessagingOptionsBuilder, MessagingOptionsBuilder&gt; messagingOptions)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AddDefaultApplicationEventConsumers(this IBusRegistrationConfigurator cfg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cfg</code> <span class="xref">IBusRegistrationConfigurator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Falcon_Messaging_ServiceCollectionExtensions_AddDefaultCommandConsumers_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddDefaultCommandConsumers*"></a>
+
+  <h3 id="Falcon_Messaging_ServiceCollectionExtensions_AddDefaultCommandConsumers_MassTransit_IBusRegistrationConfigurator_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddDefaultCommandConsumers(MassTransit.IBusRegistrationConfigurator)">
+  AddDefaultCommandConsumers(IBusRegistrationConfigurator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/ServiceCollectionExtensions.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddDefaultCommandConsumers(this IBusRegistrationConfigurator cfg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cfg</code> <span class="xref">IBusRegistrationConfigurator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Falcon_Messaging_ServiceCollectionExtensions_AddDefaultDomainEventConsumers_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddDefaultDomainEventConsumers*"></a>
+
+  <h3 id="Falcon_Messaging_ServiceCollectionExtensions_AddDefaultDomainEventConsumers_MassTransit_IBusRegistrationConfigurator_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddDefaultDomainEventConsumers(MassTransit.IBusRegistrationConfigurator)">
+  AddDefaultDomainEventConsumers(IBusRegistrationConfigurator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/ServiceCollectionExtensions.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddDefaultDomainEventConsumers(this IBusRegistrationConfigurator cfg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cfg</code> <span class="xref">IBusRegistrationConfigurator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Falcon_Messaging_ServiceCollectionExtensions_AddDefaultIntegrationEventConsumers_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers*"></a>
+
+  <h3 id="Falcon_Messaging_ServiceCollectionExtensions_AddDefaultIntegrationEventConsumers_MassTransit_IBusRegistrationConfigurator_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers(MassTransit.IBusRegistrationConfigurator)">
+  AddDefaultIntegrationEventConsumers(IBusRegistrationConfigurator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/ServiceCollectionExtensions.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddDefaultIntegrationEventConsumers(this IBusRegistrationConfigurator cfg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cfg</code> <span class="xref">IBusRegistrationConfigurator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Falcon_Messaging_ServiceCollectionExtensions_AddDefaultQueryConsumers_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryConsumers*"></a>
+
+  <h3 id="Falcon_Messaging_ServiceCollectionExtensions_AddDefaultQueryConsumers_MassTransit_IBusRegistrationConfigurator_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryConsumers(MassTransit.IBusRegistrationConfigurator)">
+  AddDefaultQueryConsumers(IBusRegistrationConfigurator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/ServiceCollectionExtensions.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddDefaultQueryConsumers(this IBusRegistrationConfigurator cfg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cfg</code> <span class="xref">IBusRegistrationConfigurator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Falcon_Messaging_ServiceCollectionExtensions_AddDefaultQueryRequestClient_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryRequestClient*"></a>
+
+  <h3 id="Falcon_Messaging_ServiceCollectionExtensions_AddDefaultQueryRequestClient_MassTransit_IBusRegistrationConfigurator_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryRequestClient(MassTransit.IBusRegistrationConfigurator)">
+  AddDefaultQueryRequestClient(IBusRegistrationConfigurator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/ServiceCollectionExtensions.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddDefaultQueryRequestClient(this IBusRegistrationConfigurator cfg)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cfg</code> <span class="xref">IBusRegistrationConfigurator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Falcon_Messaging_ServiceCollectionExtensions_AddMessaging_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddMessaging*"></a>
+
+  <h3 id="Falcon_Messaging_ServiceCollectionExtensions_AddMessaging_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Falcon_Messaging_MessagingOptionsBuilder__" data-uid="Falcon.Messaging.ServiceCollectionExtensions.AddMessaging(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Falcon.Messaging.MessagingOptionsBuilder})">
+  AddMessaging(IServiceCollection, Action&lt;MessagingOptionsBuilder&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/ServiceCollectionExtensions.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IServiceCollection AddMessaging(this IServiceCollection services, Action&lt;MessagingOptionsBuilder&gt;? messagingOptionsBuilder = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
     <dd></dd>
-    <dt><code>messagingOptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Falcon.Messaging.MessagingOptionsBuilder.html">MessagingOptionsBuilder</a>, <a class="xref" href="Falcon.Messaging.MessagingOptionsBuilder.html">MessagingOptionsBuilder</a>&gt;</dt>
+    <dt><code>messagingOptionsBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Falcon.Messaging.MessagingOptionsBuilder.html">MessagingOptionsBuilder</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -190,11 +376,78 @@ Class ServiceCollectionExtensions  <a class="header-action link-secondary" title
 
 
 
+  <a id="Falcon_Messaging_ServiceCollectionExtensions_LogQueryConsumers_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.LogQueryConsumers*"></a>
+
+  <h3 id="Falcon_Messaging_ServiceCollectionExtensions_LogQueryConsumers_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.LogQueryConsumers(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+  LogQueryConsumers(IServiceCollection)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/ServiceCollectionExtensions.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogQueryConsumers(this IServiceCollection services)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Falcon_Messaging_ServiceCollectionExtensions_UseMessaging_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.UseMessaging*"></a>
+
+  <h3 id="Falcon_Messaging_ServiceCollectionExtensions_UseMessaging_System_IServiceProvider_" data-uid="Falcon.Messaging.ServiceCollectionExtensions.UseMessaging(System.IServiceProvider)">
+  UseMessaging(IServiceProvider)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/ServiceCollectionExtensions.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IServiceProvider UseMessaging(this IServiceProvider serviceProvider)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>serviceProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/natarajanganapathi/falcon/blob/7/merge/src/Shared/Messaging/ServiceCollectionExtensions.cs/#L3" class="edit-link">Edit this page</a>
+          <a href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/ServiceCollectionExtensions.cs/#L3" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/7/merge/apiSpec/new?filename=Falcon_Messaging_DomainEvents_DomainEvent.md&amp;value=---%0Auid%3A%20Falcon.Messaging.DomainEvents.DomainEvent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/8/merge/apiSpec/new?filename=Falcon_Messaging_DomainEvents_DomainEvent.md&amp;value=---%0Auid%3A%20Falcon.Messaging.DomainEvents.DomainEvent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Falcon_Messaging_DomainEvents_DomainEvent" data-uid="Falcon.Messaging.DomainEvents.DomainEvent" class="text-break">
-Class DomainEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/7/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L3"><i class="bi bi-code-slash"></i></a>
+Class DomainEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L3"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,7 @@ Class DomainEvent  <a class="header-action link-secondary" title="View source" h
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class DomainEvent : IDomainEvent, IEvent, INotification</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class DomainEvent : IDomainEvent, IEvent</code></pre>
   </div>
 
 
@@ -120,7 +120,6 @@ Class DomainEvent  <a class="header-action link-secondary" title="View source" h
     <dd>
       <div><a class="xref" href="Falcon.Messaging.Abstractions.IDomainEvent.html">IDomainEvent</a></div>
       <div><a class="xref" href="Falcon.Messaging.Abstractions.IEvent.html">IEvent</a></div>
-      <div><span class="xref">INotification</span></div>
     </dd>
   </dl>
 
@@ -155,10 +154,13 @@ Class DomainEvent  <a class="header-action link-secondary" title="View source" h
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForCreate__2___1___0_System_DateTime_">EntityAuditExtentions.AuditForCreate&lt;TId, TEntity&gt;(TEntity, TId, DateTime)</a>
+      <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtensions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtensions_AuditForCreate__2___1___0_System_DateTime_">EntityAuditExtensions.AuditForCreate&lt;TId, TEntity&gt;(TEntity, TId, DateTime)</a>
   </div>
   <div>
-      <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtentions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtentions_AuditForUpdate__2___1___0_System_DateTime_">EntityAuditExtentions.AuditForUpdate&lt;TId, TEntity&gt;(TEntity, TId, DateTime)</a>
+      <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtensions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtensions_AuditForUpdate__2___1___0_System_DateTime_">EntityAuditExtensions.AuditForUpdate&lt;TId, TEntity&gt;(TEntity, TId, DateTime)</a>
+  </div>
+  <div>
+      <a class="xref" href="Falcon.Messaging.EventPublisherExtensions.html#Falcon_Messaging_EventPublisherExtensions_PublishAsync__1___0_System_Threading_CancellationToken_">EventPublisherExtensions.PublishAsync&lt;TEvent&gt;(TEvent, CancellationToken)</a>
   </div>
   </dd></dl>
 
@@ -174,7 +176,7 @@ Class DomainEvent  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Falcon_Messaging_DomainEvents_DomainEvent__ctor_System_Guid_System_Int32_" data-uid="Falcon.Messaging.DomainEvents.DomainEvent.#ctor(System.Guid,System.Int32)">
   DomainEvent(Guid, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/7/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -211,7 +213,7 @@ Class DomainEvent  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Falcon_Messaging_DomainEvents_DomainEvent_AggregateId" data-uid="Falcon.Messaging.DomainEvents.DomainEvent.AggregateId">
   AggregateId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/7/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -242,7 +244,7 @@ Class DomainEvent  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Falcon_Messaging_DomainEvents_DomainEvent_Id" data-uid="Falcon.Messaging.DomainEvents.DomainEvent.Id">
   Id
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/7/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L5"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -273,7 +275,7 @@ Class DomainEvent  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Falcon_Messaging_DomainEvents_DomainEvent_OccurredOn" data-uid="Falcon.Messaging.DomainEvents.DomainEvent.OccurredOn">
   OccurredOn
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/7/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -304,7 +306,7 @@ Class DomainEvent  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Falcon_Messaging_DomainEvents_DomainEvent_Version" data-uid="Falcon.Messaging.DomainEvents.DomainEvent.Version">
   Version
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/7/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -339,7 +341,7 @@ Class DomainEvent  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="Falcon_Messaging_DomainEvents_DomainEvent_GetEventType" data-uid="Falcon.Messaging.DomainEvents.DomainEvent.GetEventType">
   GetEventType()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/7/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -370,7 +372,7 @@ Class DomainEvent  <a class="header-action link-secondary" title="View source" h
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/natarajanganapathi/falcon/blob/7/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L3" class="edit-link">Edit this page</a>
+          <a href="https://github.com/natarajanganapathi/falcon/blob/8/merge/src/Shared/Messaging/DomainEvents/DomainEvent.cs/#L3" class="edit-link">Edit this page</a>
         </div>
 
 
