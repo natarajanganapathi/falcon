@@ -1,7 +1,16 @@
 namespace Falcon.Messaging.Command;
 
-public class CommandPublisher : BusInstance<ICommandBus>, ICommandBus
+public class CommandSender
 {
-    public CommandPublisher(IBusControl busControl) : base(busControl) { }
-}
+    private readonly ICommandBus _commandBus;
 
+    public CommandSender(CommandBus commandBus)
+    {
+        _commandBus = commandBus;
+    }
+
+    public Task SendAsync<TCommand>(TCommand command, CancellationToken cancellationToken = default) where TCommand : ICommand
+    {
+        return _commandBus.Publish(command, cancellationToken);
+    }
+}

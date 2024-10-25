@@ -9,10 +9,10 @@ public class QueryClient
         _serviceProvider = serviceProvider;
     }
 
-    public async Task<TResponse> GetAsync<TRequest, TResponse>(object requeset, CancellationToken cancellationToken = default) where TRequest: class, IQuery where TResponse : class
+    public async Task<TResponse> GetAsync<TRequest, TResponse>(TRequest requeset, CancellationToken cancellationToken = default) where TRequest : class, IQuery where TResponse : class
     {
         var query = _serviceProvider.GetRequiredService<IRequestClient<TRequest>>();
-        var response = await query.GetResponse<TResponse>(requeset);
+        var response = await query.GetResponse<TResponse>(requeset, cancellationToken);
         return response.Message;
     }
 }

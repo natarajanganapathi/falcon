@@ -11,6 +11,7 @@ global using Falcon.Messaging.ApplicationEvents;
 global using Falcon.Messaging.IntegrationEvents;
 global using Falcon.Messaging.Query;
 global using Falcon.Messaging.Command;
+global using Falcon.Messaging.Abstractions;
 
 global using MassTransit;
 

@@ -1,6 +1,16 @@
 namespace Falcon.Messaging.DomainEvents;
 
-public class DomainEventPublisher : BusInstance<IDomainEventBus>, IDomainEventBus
+public class DomainEventPublisher : IEventPublisher
 {
-    public DomainEventPublisher(IBusControl busControl) : base(busControl) { }
+    private readonly IDomainEventBus _domainEventBus;
+
+    public DomainEventPublisher(DomainEventBus domainEventBus)
+    {
+        _domainEventBus = domainEventBus;
+    }
+
+    public Task PublishAsync<TEvent>(TEvent @event, CancellationToken cancellationToken = default) where TEvent : class, IEvent
+    {
+        return _domainEventBus.Publish(@event, cancellationToken);
+    }
 }

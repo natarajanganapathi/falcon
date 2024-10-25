@@ -20,8 +20,13 @@ public static class ServiceCollectionExtensions
             .AddApplicationEventSetup(options)
             .AddDomainEventSetup(options)
             .AddIntegrationEventSetup(options);
-        services.AddTransient<QueryClient>();
         return services;
+    }
+
+    public static IServiceProvider UseMessaging(this IServiceProvider serviceProvider)
+    {
+        EventPublisherExtensions.Initialize(serviceProvider);
+        return serviceProvider;
     }
 
     #region Application Event
@@ -29,12 +34,12 @@ public static class ServiceCollectionExtensions
     private static IServiceCollection AddApplicationEventSetup(this IServiceCollection services, MessagingOptions messagingOptions)
     {
         services.AddMassTransit<IApplicationEventBus>(messagingOptions.ApplicationBusConfigurator);
-
         services.AddSingleton(provider =>
         {
             var applicationEventBus = provider.GetRequiredService<IApplicationEventBus>();
-            return new ApplicationEventPublisher(applicationEventBus);
-        });
+            return new ApplicationEventBus(applicationEventBus);
+        })
+        .AddSingleton<ApplicationEventPublisher>();
         return services;
     }
 
@@ -61,8 +66,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton(provider =>
         {
             var domainEventBus = provider.GetRequiredService<IDomainEventBus>();
-            return new DomainEventPublisher(domainEventBus);
-        });
+            return new DomainEventBus(domainEventBus);
+        })
+        .AddSingleton<DomainEventPublisher>();
         return services;
     }
 
@@ -90,8 +96,9 @@ public static class ServiceCollectionExtensions
             services.AddSingleton(provider =>
             {
                 var integrationEventBus = provider.GetRequiredService<IIntegrationEventBus>();
-                return new IntegrationEventPublisher(integrationEventBus);
-            });
+                return new IntegrationEventBus(integrationEventBus);
+            })
+            .AddSingleton<IntegrationEventPublisher>();
         }
         return services;
     }
@@ -116,7 +123,8 @@ public static class ServiceCollectionExtensions
 
     private static IServiceCollection AddQuerySetup(this IServiceCollection services, MessagingOptions messagingOptions)
     {
-        return services.AddMassTransit(messagingOptions.QueryBusConfigurator);
+        return services.AddMassTransit(messagingOptions.QueryBusConfigurator)
+            .AddTransient<QueryClient>();
     }
 
     private static IEnumerable<(Type Consumer, Type QueryType)> GetQueryConsumerTypes()
@@ -163,8 +171,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton(provider =>
         {
             var commandBus = provider.GetRequiredService<ICommandBus>();
-            return new CommandPublisher(commandBus);
-        });
+            return new CommandBus(commandBus);
+        })
+        .AddSingleton<CommandSender>();
         return services;
     }
 

@@ -19,7 +19,7 @@ clean:
 build: build-src build-samples
 
 build-src:
-	-dotnet build ./Falcon.sln
+	-dotnet build ./Falcon.sln --no-restore --no-incremental
 
 build-samples:
 	-dotnet build ./samples/samples.sln

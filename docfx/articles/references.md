@@ -85,6 +85,9 @@
 28. Open Policy Agent
     [OPA Playground](https://play.openpolicyagent.org/)    
 
+29. Elsa (Dotnet code sample & EF migration code sample) 
+    [ELSA](https://github.com/elsa-workflows/elsa-core)
+
 ## DevOps Reference
 1. [Bump Version Number](https://github.com/marketplace/actions/dotnet-bump-versions)
  

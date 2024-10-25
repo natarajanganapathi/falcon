@@ -1,6 +1,16 @@
 namespace Falcon.Messaging.ApplicationEvents;
 
-public class ApplicationEventPublisher : BusInstance<IApplicationEventBus>, IApplicationEventBus
+public class ApplicationEventPublisher : IEventPublisher
 {
-    public ApplicationEventPublisher(IBusControl busControl) : base(busControl) { }
+    private readonly IApplicationEventBus _applicationEventBus;
+
+    public ApplicationEventPublisher(ApplicationEventBus applicationEventBus)
+    {
+        _applicationEventBus = applicationEventBus;
+    }
+
+    public Task PublishAsync<TEvent>(TEvent @event, CancellationToken cancellationToken = default) where TEvent : class, IEvent
+    {
+        return _applicationEventBus.Publish(@event, cancellationToken);
+    }
 }

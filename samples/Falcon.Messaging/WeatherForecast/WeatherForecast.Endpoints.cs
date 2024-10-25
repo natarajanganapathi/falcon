@@ -13,30 +13,42 @@ public static class WeatherForecastEndpoints
     }
 
     public static async Task<IResult> GetAsync(
-        QueryClient query,
-        CommandPublisher command,
-        ApplicationEventPublisher applicationEvent,
-        DomainEventPublisher domainEvent,
-        IntegrationEventPublisher integrationEvent,
+        // QueryClient queryPublisher,
+        // CommandSender commandSender,
+        // DomainEventPublisher domainEventPublisher,
+        // IntegrationEventPublisher integrationEventPublisher,
+        // ApplicationEventPublisher applicationEventPublisher,
         CancellationToken cancellationToken)
     {
         string[] summaries = ["Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"];
 
-        var response = await query.GetAsync<TestQuery, TestQueryResponse>(new { Message = "Hello" });
-        await command.Publish(new TestCommand { Message = "Hello" });
+        var query = new TestQuery { Message = "Hello Query" };
+        TestCommand command = new TestCommand { Message = "Hello Command" };
+        var applicationEvent = new MyApplicationEvent(Guid.NewGuid().ToString(), typeof(MyApplicationEvent).Name)
+        {
+            Message = "Hello App"
+        };
+        var domainEvent = new MyDomainEvent(Guid.NewGuid(), 1)
+        {
+            Message = "Hello Domain"
+        };
+        var integrationEvent = new MyIntegrationEvent("Sample")
+        {
+            Message = "Hello Integration"
+        };
 
-        await applicationEvent.Publish(new MyApplicationEvent(Guid.NewGuid().ToString(), typeof(MyApplicationEvent).Name)
-        {
-            Message = "Hello from the event dispatcher beginning of the request"
-        });
-        await domainEvent.Publish(new MyDomainEvent(Guid.NewGuid(), 1)
-        {
-            Message = "Hello from the event dispatcher"
-        });
-        await integrationEvent.Publish(new MyIntegrationEvent("Sample")
-        {
-            Message = "Hello from the event dispatcher end of the request"
-        });
+        var response = await query.GetAsync<TestQuery, TestQueryResponse>(cancellationToken);
+
+        await applicationEvent.PublishAsync(cancellationToken);
+        await domainEvent.PublishAsync(cancellationToken);
+        await integrationEvent.PublishAsync(cancellationToken);
+        await command.SendAsync(cancellationToken);
+
+        // var response = await queryPublisher.GetAsync<TestQuery, TestQueryResponse>(query, cancellationToken);
+        // await commandSender.SendAsync(command, cancellationToken);
+        // await applicationEventPublisher.PublishAsync(applicationEvent, cancellationToken);
+        // await domainEventPublisher.PublishAsync(domainEvnt, cancellationToken);
+        // await integrationEventPublisher.PublishAsync(integrationEvent, cancellationToken);
 
         var forecast = Enumerable.Range(1, response.Value)
             .Select(index =>
