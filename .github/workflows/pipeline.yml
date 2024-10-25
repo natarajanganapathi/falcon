@@ -83,7 +83,7 @@ jobs:
         run: |
             .\.sonar\scanner\dotnet-coverage collect "dotnet test ./tests/Falcon.Tests.sln" -f xml -o "coverage.xml"
 
-      - name: SonarCloud Scan
+      - name: SonarCloud Scan Begin
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
@@ -100,7 +100,14 @@ jobs:
                 /d:sonar.scanner.skipJreProvisioning=true `
                 /d:sonar.verbose=true `
                 /d:sonar.tests="tests/" 
-            dotnet build --no-restore --no-incremental
+
+      - name: Dotnet build
+        run: dotnet build Falcon.sln --no-restore --no-incremental
+
+      - name: SonarCloud Scan End
+        env:
+            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: |
             .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
 
   analyze:
