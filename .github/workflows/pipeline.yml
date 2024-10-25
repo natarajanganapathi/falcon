@@ -72,8 +72,8 @@ jobs:
         shell: powershell
         run: |
             New-Item -Path .\.sonar\scanner -ItemType Directory
-            dotnet tool update dotnet-sonarscanner  --version 8.0.3  --tool-path .\.sonar\scanner
-            dotnet tool update dotnet-coverage --version 17.12.4  --tool-path .\.sonar\scanner
+            dotnet tool update dotnet-sonarscanner  --version 9.0.1  --tool-path .\.sonar\scanner
+            dotnet tool update dotnet-coverage --version 17.12.6  --tool-path .\.sonar\scanner
             dotnet tool list --tool-path .\.sonar\scanner
 
       - name: Restore NuGet packages
