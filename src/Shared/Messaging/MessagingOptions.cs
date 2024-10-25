@@ -2,10 +2,10 @@ namespace Falcon.Messaging;
 
 public class MessagingOptions
 {
-    // MediatR configuration
-    public required Action<MediatRServiceConfiguration> MediatRConfiguration { get; set; }
-    public IEnumerable<IPipelineBehavior<dynamic, dynamic>>? PreProcessorBehavior { get; set; }
-    // MassTransit configuration
-    public Action<IBusRegistrationConfigurator>? BusRegistrationConfigurator { get; set; }
+    public required Action<IBusRegistrationConfigurator> ApplicationBusConfigurator { get; set; }
+    public required Action<IBusRegistrationConfigurator> DomainBusConfigurator { get; set; }
+    public required Action<IBusRegistrationConfigurator> InfrastructureBusConfigurator { get; set; }
+    public required Action<IBusRegistrationConfigurator> QueryBusConfigurator { get; set; }
+    public required Action<IBusRegistrationConfigurator> CommandBusConfigurator { get; set; }
 }
 

@@ -39,13 +39,13 @@ public static class ExceptionExtension
         int level = 0;
         while (exception != null)
         {
-            sb = sb.Append("Level: ").Append(level++)
-                .Append(", Exception: ")
-                .Append(exception.Message)
-                .Append(", StatckTrace: ")
-                .Append(exception.StackTrace)
-                .Append(Environment.NewLine);
-            exception = exception.InnerException;
+            sb.Append("Level: ").Append(level)
+              .Append(", Exception: ").Append(exception.Message)
+              .Append(", StackTrace: ").Append(exception.StackTrace)
+              .Append(Environment.NewLine);
+
+            level++; // Increment level after appending to StringBuilder
+            exception = exception.InnerException; // Move to the next inner exception
         }
         return sb.ToString();
     }

@@ -1,17 +1,17 @@
 namespace Falcon.Messaging.IntegrationEvents;
 
-public class IntegrationEventPublisher
+public class IntegrationEventPublisher : IEventPublisher
 {
-    private readonly IBus _bus;
-
-    public IntegrationEventPublisher(IBus bus)
+    private readonly IIntegrationEventBus _integrationEventBus;
+    
+    public IntegrationEventPublisher(IntegrationEventBus integrationEventBus)
     {
-        _bus = bus;
+        _integrationEventBus = integrationEventBus;
     }
 
-    public async Task Publish(IIntegrationEvent integrationEvent)
+    public Task PublishAsync<TEvent>(TEvent @event, CancellationToken cancellationToken = default) where TEvent : class, IEvent
     {
-        await _bus.Publish(integrationEvent);
+        return _integrationEventBus.Publish(@event, cancellationToken);
     }
 }
 

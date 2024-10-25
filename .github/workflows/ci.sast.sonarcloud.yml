@@ -33,8 +33,8 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~\sonar\cache
-          key: ${{ runner.os }}-sonar-packages
-          restore-keys: ${{ runner.os }}-sonar-packages
+          key: ${{ runner.os }}-sonar
+          restore-keys: ${{ runner.os }}-sonar
 
       - name: Cache SonarCloud scanner
         id: cache-sonar-scanner
@@ -51,8 +51,11 @@ jobs:
           New-Item -Path .\.sonar\scanner -ItemType Directory
           dotnet tool update dotnet-sonarscanner  --version 8.0.3  --tool-path .\.sonar\scanner
           dotnet tool update dotnet-coverage --version 17.12.4  --tool-path .\.sonar\scanner
-          dotnet tool list -g
+          dotnet tool list --tool-path .\.sonar\scanner
 
+      - name: Restore NuGet packages
+        run: dotnet restore
+        
       - name: Run tests and collect coverage
         run: |
           .\.sonar\scanner\dotnet-coverage collect "dotnet test ./tests/Falcon.Tests.sln" -f xml -o "coverage.xml"
@@ -68,6 +71,11 @@ jobs:
                 /d:sonar.token="${{ secrets.SONAR_TOKEN }}" `
                 /d:sonar.cs.vscoveragexml.reportsPaths="coverage.xml" `
                 /d:sonar.host.url="https://sonarcloud.io" `
+                /d:sonar.sources="src" `
+                /d:sonar.exclusions="docfx/**,samples/**" `
+                /d:sonar.language="cs" 
+                /d:sonar.scanner.skipJreProvisioning=true `
+                /d:sonar.verbose=true `
                 /d:sonar.tests="tests/" 
-          dotnet build
+          dotnet build --no-restore --no-incremental
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"

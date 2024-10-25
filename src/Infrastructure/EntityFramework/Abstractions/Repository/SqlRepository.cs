@@ -144,12 +144,12 @@ public abstract class SqlRepository<TId, TEntity> : IRepository<TId, TEntity> wh
         var sourceEntity = await GetAsync(id, cancellationToken);
         sourceEntity = sourceEntity ?? throw new UpdateEntityException("Id is invalid");
         DbContext.Entry(sourceEntity).CurrentValues.SetValues(entity);
-        var modifyedCount = await DbContext.SaveChangesAsync(requestContext.UserId, cancellationToken);
-        if (modifyedCount == 0) throw new UpdateEntityException("No records are replaced");
+        var modifiedCount = await DbContext.SaveChangesAsync(requestContext.UserId, cancellationToken);
+        if (modifiedCount == 0) throw new UpdateEntityException("No records are replaced");
         return sourceEntity;
     }
 
-    private QueryBuilder<TEntity> GetQueryBuilder(IQueryRequest request)
+    private static QueryBuilder<TEntity> GetQueryBuilder(IQueryRequest request)
     {
         return QueryBuilder<TEntity>
             .New()
