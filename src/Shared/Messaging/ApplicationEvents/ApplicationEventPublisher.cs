@@ -2,7 +2,7 @@ namespace Falcon.Messaging.ApplicationEvents;
 
 public class ApplicationEventPublisher : IEventPublisher
 {
-    private readonly IApplicationEventBus _applicationEventBus;
+    private readonly ApplicationEventBus _applicationEventBus;
 
     public ApplicationEventPublisher(ApplicationEventBus applicationEventBus)
     {

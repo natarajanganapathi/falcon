@@ -45,12 +45,19 @@ public static partial class QueryableExtensions
         {
             var propertyExp = Expression.Property(parameterExp, order.Field);
             var lambdaExp = Expression.Lambda<Func<TEntity, object>>(Expression.Convert(propertyExp, typeof(object)), parameterExp);
-            orderedQuery = orderedQuery == null
-                    ? order.Direction == Direction.Ascending ? query.OrderBy(lambdaExp) : query.OrderByDescending(lambdaExp)
-                    : order.Direction == Direction.Ascending ? orderedQuery.ThenBy(lambdaExp) : orderedQuery.ThenByDescending(lambdaExp);
+            orderedQuery = ApplyOrdering(orderedQuery ?? query, lambdaExp, order.Direction, orderedQuery == null);
         }
+
         return orderedQuery!;
     }
+
+    private static IOrderedQueryable<T> ApplyOrdering<T>(IQueryable<T> query, Expression<Func<T, object>> lambdaExp, Direction direction, bool isInitialOrder)
+    {
+        return isInitialOrder
+            ? (direction == Direction.Ascending ? query.OrderBy(lambdaExp) : query.OrderByDescending(lambdaExp))
+            : (direction == Direction.Ascending ? ((IOrderedQueryable<T>)query).ThenBy(lambdaExp) : ((IOrderedQueryable<T>)query).ThenByDescending(lambdaExp));
+    }
+
     #endregion
 
     #region Page Context
@@ -115,34 +122,18 @@ public static partial class QueryableExtensions
 
     private static Expression? GetExpression(MemberExpression propAccessExpression, Type type, Include? include)
     {
-        // Expression? value = type switch
-        // {
-        //     { IsEnum: true } => GetEnumValueExpression(propAccessExpression),
-        //     { FullName: "System.String" } => GetValueExpression(propAccessExpression),
-        //     { IsArray: true } or { IsGenericType: true } => GetCollectionValueExpression(type.GenericTypeArguments[0], propAccessExpression, include?.Select, include?.Includes),
-        //     { IsClass: true } => GetJObjectValueExpression(type, propAccessExpression, include?.Select, include?.Includes),
-        //     _ => GetValueExpression(propAccessExpression)
-        // };
-        if (type.IsEnum)
+        return type switch
         {
-            return GetEnumValueExpression(propAccessExpression);
-        }
-        else if (type == typeof(string))
-        {
-            return GetValueExpression(propAccessExpression);
-        }
-        else if (type.IsArray || (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(List<>)))
-        {
-            return GetCollectionValueExpression(type.GenericTypeArguments[0], propAccessExpression, include?.Select, include?.Includes);
-        }
-        else if (type.IsClass)
-        {
-            return GetJObjectValueExpression(type, propAccessExpression, include?.Select, include?.Includes);
-        }
-        else
-        {
-            return GetValueExpression(propAccessExpression);
-        }
+            { IsPrimitive: true } => GetValueExpression(propAccessExpression),
+            { IsEnum: true } => GetEnumValueExpression(propAccessExpression),
+            { FullName: "System.String" } => GetValueExpression(propAccessExpression),
+            { IsArray: true } => GetCollectionValueExpression(type.GetElementType()!, propAccessExpression, include?.Select, include?.Includes),
+            { IsGenericType: true } when type.GetGenericTypeDefinition() == typeof(List<>) => GetCollectionValueExpression(type.GenericTypeArguments[0], propAccessExpression, include?.Select, include?.Includes),
+            { IsGenericType: true } when typeof(IEnumerable<>).IsAssignableFrom(type.GetGenericTypeDefinition()) => GetCollectionValueExpression(type.GenericTypeArguments[0], propAccessExpression, include?.Select, include?.Includes),
+            { IsValueType: true } when Nullable.GetUnderlyingType(type) != null => GetValueExpression(propAccessExpression),
+            { IsClass: true } => GetJObjectValueExpression(type, propAccessExpression, include?.Select, include?.Includes),
+            _ => GetValueExpression(propAccessExpression)
+        };
     }
 
     public static Expression GetCollectionValueExpression(Type elementType, MemberExpression propAccessExpression, string[]? select, Include[]? includes)

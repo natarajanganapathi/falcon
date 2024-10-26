@@ -53,7 +53,7 @@ public static class ServiceCollectionExtensions
                                 )
                             )
                             .ToList();
-        cfg.AddConsumers(filteredTypes?.ToArray());
+        cfg.AddConsumers(filteredTypes.ToArray());
     }
 
     #endregion
@@ -82,7 +82,7 @@ public static class ServiceCollectionExtensions
                                 )
                             )
                             .ToList();
-        cfg.AddConsumers(filteredTypes?.ToArray());
+        cfg.AddConsumers(filteredTypes.ToArray());
     }
     #endregion
 
@@ -113,7 +113,7 @@ public static class ServiceCollectionExtensions
                                 )
                             )
                             .ToList();
-        cfg.AddConsumers(filteredTypes?.ToArray());
+        cfg.AddConsumers(filteredTypes.ToArray());
     }
     #endregion
 

@@ -2,7 +2,8 @@ namespace Falcon.Domain.Abstractions.Interfaces.Repositories;
 
 public interface IRepository<TId, TEntity> where TEntity : class, IEntity<TId>
 {
-    Task<IList<TEntity>> FindAsync(IQueryRequest request, CancellationToken cancellationToken = default); // TODO: IAsyncEnumerable<TEntity> instead of Task<IList<TEntity>>
+    // TODO: IAsyncEnumerable<TEntity> instead of Task<IList<TEntity>>
+    Task<IList<TEntity>> FindAsync(IQueryRequest request, CancellationToken cancellationToken = default);
     Task<IList<JObject>> QueryAsync(IQueryRequest request, CancellationToken cancellationToken = default);
     Task<long> CountAsync(IQueryRequest request, CancellationToken cancellationToken = default);
     Task<TEntity> GetAsync(TId id, CancellationToken cancellationToken = default);

@@ -2,8 +2,8 @@ namespace Falcon.Messaging.IntegrationEvents;
 
 public class IntegrationEventPublisher : IEventPublisher
 {
-    private readonly IIntegrationEventBus _integrationEventBus;
-    
+    private readonly IntegrationEventBus _integrationEventBus;
+
     public IntegrationEventPublisher(IntegrationEventBus integrationEventBus)
     {
         _integrationEventBus = integrationEventBus;

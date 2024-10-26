@@ -2,7 +2,7 @@ namespace Falcon.Messaging.DomainEvents;
 
 public class DomainEventPublisher : IEventPublisher
 {
-    private readonly IDomainEventBus _domainEventBus;
+    private readonly DomainEventBus _domainEventBus;
 
     public DomainEventPublisher(DomainEventBus domainEventBus)
     {

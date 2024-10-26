@@ -2,7 +2,7 @@ namespace Falcon.Messaging.Command;
 
 public class CommandSender
 {
-    private readonly ICommandBus _commandBus;
+    private readonly CommandBus _commandBus;
 
     public CommandSender(CommandBus commandBus)
     {
