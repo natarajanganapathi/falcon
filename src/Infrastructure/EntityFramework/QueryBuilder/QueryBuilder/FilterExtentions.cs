@@ -119,7 +119,7 @@ public static class FilterExtensions
         return valueType switch
         {
             FilterValueType.UtcDateTime => Expressions.ToUniversalTime(value),
-            FilterValueType.DateOnly => () => DateOnly.Parse(value.ToString() ?? string.Empty),
+            FilterValueType.DateOnly => () => DateOnly.Parse(value.ToString() ?? string.Empty, CultureInfo.InvariantCulture),
             _ => throw new QueryBuilderException(new StringBuilder().Append(valueType).Append(" is not valid type for FilterValueType").ToString())
         };
     }

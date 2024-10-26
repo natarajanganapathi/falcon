@@ -1,6 +1,5 @@
 namespace Falcon.Contracts;
 
-[Serializable]
 public class ContractException : Exception
 {
     public ContractException() { }

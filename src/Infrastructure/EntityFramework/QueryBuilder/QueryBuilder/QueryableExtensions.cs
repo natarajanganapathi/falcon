@@ -166,11 +166,12 @@ public static partial class QueryableExtensions
         return Expression.Call(toArrayMethod!, Expression.Call(selectMethod!, propAccessExpression, selectLambda));
     }
 
+    private static readonly char[] SplitChars = { '_', ' ' };
     public static string ToCamelCase(this string str)
     {
         if (string.IsNullOrEmpty(str)) return str;
         var builder = new StringBuilder(str.Length);
-        var words = str.Split(new[] { '_', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        var words = str.Split(SplitChars, StringSplitOptions.RemoveEmptyEntries);
         builder.Append(char.ToLower(words[0][0]));
         builder.Append(words[0][1..]);
         for (int i = 1; i < words.Length; i++)

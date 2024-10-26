@@ -2,14 +2,14 @@ namespace Falcon.Infrastructure.EntityFramework.Abstractions.Contexts;
 
 public abstract class ModelConfigurations
 {
-    public void Configure<T>(ModelBuilder modelBuilder) where T : Attribute
+    public static void Configure<T>(ModelBuilder modelBuilder) where T : Attribute
     {
         var modelsType = AssemblyCache.Types
            .Where(t => !string.IsNullOrEmpty(t.Namespace) && t.GetCustomAttributes<T>().Any());
         foreach (var hmType in modelsType)
         {
-            var configType = AssemblyCache.EntityTypeConfiguration
-                .FirstOrDefault(type =>
+            var configType = Array.Find(AssemblyCache.EntityTypeConfiguration,
+                type =>
                 {
                     var interfaces = type.GetInterfaces();
                     var genericArguments = interfaces

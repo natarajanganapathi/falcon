@@ -127,7 +127,7 @@ public abstract class SqlRepository<TId, TEntity> : IRepository<TId, TEntity> wh
         await DbContext.SaveChangesAsync(requestContext.UserId, cancellationToken);
         return entity;
     }
-    public async Task<TEntity> DeleteAsync(TId id, CancellationToken cancellationToken)
+    public async Task<TEntity> DeleteAsync(TId id, CancellationToken cancellationToken = default)
     {
         TEntity entityToDelete = await GetAsync(id, cancellationToken);
         if (entityToDelete is IDeletableEntity obj) { obj.Status = DeletableEntityStatus.Deleted; }
