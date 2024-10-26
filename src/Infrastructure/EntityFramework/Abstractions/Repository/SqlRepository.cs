@@ -45,7 +45,9 @@ public abstract class SqlRepository<TId, TEntity> : IRepository<TId, TEntity> wh
 
     public async Task<long> CountAsync(IQueryRequest request, CancellationToken cancellationToken = default)
     {
-        return await QueryBuilder<TEntity>.New().Where(request.Where).BuildCountAsync(DbSet);
+        return await QueryBuilder<TEntity>.New()
+                        .Where(request.Where)
+                        .BuildCountAsync(DbSet, cancellationToken);
     }
 
     public async Task<TEntity> GetAsync(TId id, CancellationToken cancellationToken = default)

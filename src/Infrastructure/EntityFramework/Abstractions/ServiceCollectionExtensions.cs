@@ -22,12 +22,12 @@ public static class ServiceCollectionExtensions
 
     private static IServiceCollection AddInfrastructureEntityFramework(this IServiceCollection services)
     {
-        services.AddScoped(typeof(ITenant), typeof(SingleTenant));
+        services.AddScoped<ITenant, SingleTenant>();
 
         services.AddDbContext<HomeDbContext>(ServiceLifetime.Singleton);
         services.AddScoped<HomeDbContextOptions>();
         services.AddScoped(typeof(HomeRepository<,>));
-        services.AddScoped(typeof(IOptions<DbConfig>), typeof(HomeOptions<DbConfig>));
+        services.AddScoped<IOptions<DbConfig>, HomeOptions<DbConfig>>();
 
         services.AddDbContext<TenantDbContext>(ServiceLifetime.Scoped);
         services.AddScoped<TenantDbContextOptions>();
