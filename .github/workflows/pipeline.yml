@@ -94,7 +94,7 @@ jobs:
                 /d:sonar.token="${{ secrets.SONAR_TOKEN }}" `
                 /d:sonar.cs.vscoveragexml.reportsPaths="coverage.xml" `
                 /d:sonar.host.url="https://sonarcloud.io" `
-                /d:sonar.sources="src" `
+                /d:sonar.sources="." `
                 /d:sonar.exclusions="docfx/**,samples/**" `
                 /d:sonar.scanner.scanAll=false `
                 /d:sonar.scanner.skipJreProvisioning=true `
@@ -102,7 +102,7 @@ jobs:
                 /d:sonar.tests="tests/" 
 
       - name: Dotnet build
-        run: dotnet build Falcon.sln --no-restore --no-incremental
+        run: dotnet build Falcon.sln --no-restore
 
       - name: SonarCloud Scan End
         env:
