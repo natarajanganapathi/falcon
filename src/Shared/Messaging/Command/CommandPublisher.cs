@@ -2,15 +2,15 @@ namespace Falcon.Messaging.Command;
 
 public class CommandSender
 {
-    private readonly CommandBus _commandBus;
+    private readonly IMediator _mediator;
 
-    public CommandSender(CommandBus commandBus)
+    public CommandSender(IMediator mediator)
     {
-        _commandBus = commandBus;
+        _mediator = mediator;
     }
 
     public Task SendAsync<TCommand>(TCommand command, CancellationToken cancellationToken = default) where TCommand : ICommand
     {
-        return _commandBus.Publish(command, cancellationToken);
+        return _mediator.Send(command, cancellationToken);
     }
 }

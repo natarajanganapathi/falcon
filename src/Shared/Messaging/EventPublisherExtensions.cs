@@ -23,7 +23,8 @@ public static class EventPublisherExtensions
 
     public static Task SendAsync<TEvent>(this TEvent @event, CancellationToken cancellationToken = default) where TEvent : class, ICommand
     {
-        var commandSender = _serviceProvider!.GetRequiredService<CommandSender>();
+        using var scope = _serviceProvider!.CreateScope();
+        var commandSender = scope.ServiceProvider.GetRequiredService<CommandSender>();
         return commandSender.SendAsync(@event, cancellationToken);
     }
 

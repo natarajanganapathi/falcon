@@ -27,7 +27,7 @@ public class ExceptionHandlingMiddleware
 
     private Task HandleExceptionAsync(HttpContext context, Exception ex)
     {
-        _logger.LogError(ex, ex.Message);
+        _logger.LogError(ex, "An error occurred: {ErrorMessage}", ex.Message);
         context.Response.ContentType = "text/plain";
         context.Response.StatusCode = 500;
         return context.Response.WriteAsync("An unexpected error occurred. Please try again later.");

@@ -167,13 +167,8 @@ public static class ServiceCollectionExtensions
 
     private static IServiceCollection AddCommandSetup(this IServiceCollection services, MessagingOptions messagingOptions)
     {
-        services.AddMassTransit<ICommandBus>(messagingOptions.CommandBusConfigurator);
-        services.AddSingleton(provider =>
-        {
-            var commandBus = provider.GetRequiredService<ICommandBus>();
-            return new CommandBus(commandBus);
-        })
-        .AddSingleton<CommandSender>();
+        services.AddMediator(messagingOptions.CommandBusConfigurator);
+        services.AddTransient<CommandSender>();
         return services;
     }
 
@@ -191,7 +186,7 @@ public static class ServiceCollectionExtensions
         return commandConsumerTypes!;
     }
 
-    public static void AddDefaultCommandConsumers(this IBusRegistrationConfigurator cfg)
+    public static void AddDefaultCommandConsumers(this IMediatorRegistrationConfigurator cfg)
     {
         var consumers = CommandConsumerTypes?
             .GroupBy(item => item.CommandType)

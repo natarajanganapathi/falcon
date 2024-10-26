@@ -28,9 +28,8 @@ public class MessagingOptionsBuilder
         cfg.SetDefaultRequestTimeout(TimeSpan.FromSeconds(10));
     };
 
-    private static Action<IBusRegistrationConfigurator> _commandInMemoryBusRegistration = (cfg) =>
+    private static Action<IMediatorRegistrationConfigurator> _commandInMemoryBusRegistration = (cfg) =>
     {
-        cfg.UsingInMemory((context, cfg) => { cfg.ConfigureEndpoints(context); });
         cfg.AddDefaultCommandConsumers();
     };
 
@@ -38,7 +37,7 @@ public class MessagingOptionsBuilder
     private Action<IBusRegistrationConfigurator> _domainBusConfigurator = _domainInMemoryBusRegistration;
     private Action<IBusRegistrationConfigurator> _integrationBusConfigurator = _integrationInMemoryBusRegistration;
     private Action<IBusRegistrationConfigurator> _queryBusConfigurator = _queryInMemoryBusRegistration;
-    private Action<IBusRegistrationConfigurator> _commandBusConfigurator = _commandInMemoryBusRegistration;
+    private Action<IMediatorRegistrationConfigurator> _commandBusConfigurator = _commandInMemoryBusRegistration;
 
     public static MessagingOptionsBuilder New() => new();
 
@@ -66,7 +65,7 @@ public class MessagingOptionsBuilder
         return this;
     }
 
-    public MessagingOptionsBuilder AddCommand(Action<IBusRegistrationConfigurator> commandBusConfigurator)
+    public MessagingOptionsBuilder AddCommand(Action<IMediatorRegistrationConfigurator> commandBusConfigurator)
     {
         _commandBusConfigurator = commandBusConfigurator;
         return this;

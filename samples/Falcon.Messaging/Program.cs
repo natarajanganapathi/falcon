@@ -8,13 +8,13 @@ builder.Logging.AddSimpleConsole((options) =>
 
 builder.Services.AddOpenApi();
 #if DEBUG
-    builder.Services.LogQueryConsumers();
+builder.Services.LogQueryConsumers();
 #endif
 
 builder.Services.AddMessagingExtension();
 
 var app = builder.Build();
-
+app.Services.UseMessaging();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
