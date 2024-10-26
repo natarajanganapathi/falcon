@@ -16,12 +16,12 @@ clean:
 	-rimraf coverage.xml
 	
 
-build: build-src build-samples
+build: src samples
 
-build-src:
+src:
 	-dotnet build ./Falcon.sln --no-restore --no-incremental
 
-build-samples:
+samples:
 	-dotnet build ./samples/samples.sln
 
 tests:
