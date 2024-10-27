@@ -4,7 +4,7 @@ public abstract class SqlRepository<TId, TEntity> : IRepository<TId, TEntity> wh
 {
     public SqlDbContext DbContext { get; }
     internal readonly ILogger<SqlRepository<TId, TEntity>> logger;
-    internal readonly IRequestContext<TId> requestContext;
+    internal readonly IRequestContext requestContext;
     private DbSet<TEntity>? _dbSet;
     public virtual DbSet<TEntity> DbSet
     {
@@ -25,7 +25,7 @@ public abstract class SqlRepository<TId, TEntity> : IRepository<TId, TEntity> wh
     {
         DbContext = dbContext;
         logger = serviceProvider.GetRequiredService<ILogger<SqlRepository<TId, TEntity>>>();
-        requestContext = serviceProvider.GetRequiredService<IRequestContext<TId>>();
+        requestContext = serviceProvider.GetRequiredService<IRequestContext>();
     }
 
     public async Task<IList<JObject>> QueryAsync(IQueryRequest request, CancellationToken cancellationToken = default)
@@ -122,7 +122,7 @@ public abstract class SqlRepository<TId, TEntity> : IRepository<TId, TEntity> wh
     private async Task<TEntity> UpdateAsync(TEntity entity, CancellationToken cancellationToken = default)
     {
         DbSet.Attach(entity);
-        if (entity is IConcurrencyEntity obj) { obj.ConcurrencyStamp++; }
+        if (entity is IConcurrencyEntity obj) { obj.Revision ++; }
         DbContext.Entry(entity).State = EntityState.Modified;
         await DbContext.SaveChangesAsync(requestContext.UserId, cancellationToken);
         return entity;

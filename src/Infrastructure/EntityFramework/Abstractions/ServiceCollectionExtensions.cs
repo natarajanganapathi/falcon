@@ -2,6 +2,8 @@ namespace Falcon.Infrastructure.EntityFramework;
 
 public static class ServiceCollectionExtensions
 {
+    private interface IModuleMarker { }
+    private sealed class ModuleMarker : IModuleMarker { }
     public static IServiceCollection AddInfrastructureEntityFramework(this IServiceCollection services, IConfiguration configuration, string configPath)
     {
         services.Configure<SqlDbOptions>(configuration.GetSection(configPath));
@@ -22,6 +24,12 @@ public static class ServiceCollectionExtensions
 
     private static IServiceCollection AddInfrastructureEntityFramework(this IServiceCollection services)
     {
+        if (services.Any(s => s.ServiceType == typeof(IModuleMarker)))
+        {
+            return services;
+        }
+        services.AddSingleton<IModuleMarker, ModuleMarker>();
+
         services.AddScoped<ITenant, SingleTenant>();
 
         services.AddDbContext<HomeDbContext>(ServiceLifetime.Singleton);

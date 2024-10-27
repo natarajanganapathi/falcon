@@ -4,7 +4,7 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddInfrasttructureModule(this IServiceCollection services)
     {
-        return services.AddScoped(typeof(IRequestContext<>), typeof(RequestContext<>))
+        return services.AddScoped(typeof(IRequestContext), typeof(RequestContext))
                         // .AddScoped(typeof(BaseService<,>))
                         .AddScoped(typeof(ITenantOptions<>), typeof(TenantOptions<>));
     }

@@ -1,6 +1,10 @@
 namespace Falcon.Infrastructure.Abstractions;
 
-public class RequestContext<TId> : IRequestContext<TId> where TId : new()
+public class RequestContext : IRequestContext
 {
-    public TId UserId { get; set; } = new();
+    public RequestContext(IUserId userId)
+    {
+        UserId = userId;
+    }
+    public IUserId UserId { get; set; }
 }

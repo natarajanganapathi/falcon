@@ -1,9 +1,9 @@
 namespace Falcon.Domain.Abstractions.Interfaces.Entities;
 
-public interface IAuditableEntity<TUserId>
+public interface IAuditableEntity
 {
     DateTime CreatedAtUtc { get; set; }
-    TUserId CreatedByUserId { get; set; }
+    IUserId CreatedByUserId { get; set; }
     DateTime ModifiedAtUtc { get; set; }
-    TUserId ModifiedByUserId { get; set; }
+    IUserId ModifiedByUserId { get; set; }
 }
