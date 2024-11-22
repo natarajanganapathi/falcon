@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -8,21 +8,17 @@
     <FileVersion>0.0.0.1</FileVersion>
     <Version>0.0.1-alpha.1</Version>
     <Authors>Natarajan Ganapathi</Authors>
-    <PackageDescription></PackageDescription>
+    <PackageDescription>Falcon.Messaging is a .NET library that integrates MassTransit's Mediator for in-process messaging and MassTransit for distributed messaging, providing a unified messaging solution for applications. It supports scalable and reliable communication patterns, ideal for microservices and complex software architectures.</PackageDescription>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <RepositoryUrl>https://github.com/natarajanganapathi/falcon</RepositoryUrl>
   </PropertyGroup>
   <PropertyGroup>
-    <RootNamespace>Falcon.Domain.Abstractions</RootNamespace>
-    <AssemblyName>Falcon.Domain.Abstractions</AssemblyName>
+    <RootNamespace>Falcon.Messaging.Abstrations</RootNamespace>
+    <AssemblyName>Falcon.Messaging.Abstrations</AssemblyName>
   </PropertyGroup>
-  <ItemGroup>
+    <ItemGroup>
       <None Include="README.md" Pack="true" PackagePath="\" />
       <None Include="LICENSE.txt" Pack="true" PackagePath="\" />
-  </ItemGroup>
- <ItemGroup>
-    <ProjectReference Include="..\..\Shared\Contracts\Contracts.csproj" />
-    <ProjectReference Include="..\..\Shared\Messaging\Abstractions\Abstractions.csproj" />
   </ItemGroup>
 </Project>

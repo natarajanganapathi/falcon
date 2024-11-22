@@ -7,8 +7,7 @@ global using Microsoft.AspNetCore.JsonPatch;
 global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.Extensions.Configuration;
 
-global using Newtonsoft.Json.Linq;
-
+global using Falcon.Application.Abstractions;
 global using Falcon.Contracts;
 global using Falcon.Domain.Abstractions.Interfaces.Entities;
 global using Falcon.Domain.Abstractions.Interfaces.Repositories;

@@ -20,6 +20,7 @@ global using Newtonsoft.Json.Linq;
 
 global using Falcon.Contracts;
 global using Falcon.Infrastructure.Abstractions;
+global using Falcon.Infrastructure.EntityFramework.QueryBuilder;
 global using Falcon.Infrastructure.EntityFramework.Abstractions.Configurations;
 global using Falcon.Infrastructure.EntityFramework.Abstractions.Contexts;
 global using Falcon.Infrastructure.EntityFramework.Abstractions.Contexts.HomeDb;
@@ -27,7 +28,6 @@ global using Falcon.Infrastructure.EntityFramework.Abstractions.Contexts.TenantD
 global using Falcon.Infrastructure.EntityFramework.Abstractions.Repository;
 global using Falcon.Infrastructure.EntityFramework.Abstractions.HealthCheck;
 
+global using Falcon.Domain.Abstractions.Attributes;
 global using Falcon.Domain.Abstractions.Interfaces.Repositories;
 global using Falcon.Domain.Abstractions.Interfaces.Entities;
-global using Falcon.Infrastructure.Abstractions.Attributes;
-global using Falcon.Infrastructure.EntityFramework.QueryBuilder;
