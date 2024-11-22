@@ -4,7 +4,7 @@ public abstract class SqlRepository<TId, TEntity> : IRepository<TId, TEntity> wh
 {
     public SqlDbContext DbContext { get; }
     internal readonly ILogger<SqlRepository<TId, TEntity>> logger;
-    internal readonly IRequestContext<TId> requestContext;
+    internal readonly IRequestContext requestContext;
     private DbSet<TEntity>? _dbSet;
     public virtual DbSet<TEntity> DbSet
     {
@@ -25,7 +25,7 @@ public abstract class SqlRepository<TId, TEntity> : IRepository<TId, TEntity> wh
     {
         DbContext = dbContext;
         logger = serviceProvider.GetRequiredService<ILogger<SqlRepository<TId, TEntity>>>();
-        requestContext = serviceProvider.GetRequiredService<IRequestContext<TId>>();
+        requestContext = serviceProvider.GetRequiredService<IRequestContext>();
     }
 
     public async Task<IList<JObject>> QueryAsync(IQueryRequest request, CancellationToken cancellationToken = default)
@@ -45,7 +45,9 @@ public abstract class SqlRepository<TId, TEntity> : IRepository<TId, TEntity> wh
 
     public async Task<long> CountAsync(IQueryRequest request, CancellationToken cancellationToken = default)
     {
-        return await QueryBuilder<TEntity>.New().Where(request.Where).BuildCountAsync(DbSet);
+        return await QueryBuilder<TEntity>.New()
+                        .Where(request.Where)
+                        .BuildCountAsync(DbSet, cancellationToken);
     }
 
     public async Task<TEntity> GetAsync(TId id, CancellationToken cancellationToken = default)
@@ -120,12 +122,12 @@ public abstract class SqlRepository<TId, TEntity> : IRepository<TId, TEntity> wh
     private async Task<TEntity> UpdateAsync(TEntity entity, CancellationToken cancellationToken = default)
     {
         DbSet.Attach(entity);
-        if (entity is IConcurrencyEntity obj) { obj.ConcurrencyStamp++; }
+        if (entity is IConcurrencyEntity obj) { obj.Revision ++; }
         DbContext.Entry(entity).State = EntityState.Modified;
         await DbContext.SaveChangesAsync(requestContext.UserId, cancellationToken);
         return entity;
     }
-    public async Task<TEntity> DeleteAsync(TId id, CancellationToken cancellationToken)
+    public async Task<TEntity> DeleteAsync(TId id, CancellationToken cancellationToken = default)
     {
         TEntity entityToDelete = await GetAsync(id, cancellationToken);
         if (entityToDelete is IDeletableEntity obj) { obj.Status = DeletableEntityStatus.Deleted; }

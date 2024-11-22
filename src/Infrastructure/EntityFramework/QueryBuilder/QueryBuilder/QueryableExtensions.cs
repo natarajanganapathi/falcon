@@ -45,12 +45,19 @@ public static partial class QueryableExtensions
         {
             var propertyExp = Expression.Property(parameterExp, order.Field);
             var lambdaExp = Expression.Lambda<Func<TEntity, object>>(Expression.Convert(propertyExp, typeof(object)), parameterExp);
-            orderedQuery = orderedQuery == null
-                    ? order.Direction == Direction.Ascending ? query.OrderBy(lambdaExp) : query.OrderByDescending(lambdaExp)
-                    : order.Direction == Direction.Ascending ? orderedQuery.ThenBy(lambdaExp) : orderedQuery.ThenByDescending(lambdaExp);
+            orderedQuery = ApplyOrdering(orderedQuery ?? query, lambdaExp, order.Direction, orderedQuery == null);
         }
+
         return orderedQuery!;
     }
+
+    private static IOrderedQueryable<T> ApplyOrdering<T>(IQueryable<T> query, Expression<Func<T, object>> lambdaExp, Direction direction, bool isInitialOrder)
+    {
+        return isInitialOrder
+            ? (direction == Direction.Ascending ? query.OrderBy(lambdaExp) : query.OrderByDescending(lambdaExp))
+            : (direction == Direction.Ascending ? ((IOrderedQueryable<T>)query).ThenBy(lambdaExp) : ((IOrderedQueryable<T>)query).ThenByDescending(lambdaExp));
+    }
+
     #endregion
 
     #region Page Context
@@ -65,18 +72,18 @@ public static partial class QueryableExtensions
     public static IQueryable<JObject> ApplyProjection<TEntity>(this IQueryable<TEntity> query, string[]? select, Include[]? includes)
     {
         var elementType = typeof(TEntity);
-        select = select is null or { Length: 0 } ? GetProperties(elementType).ToArray() : select;
+        select = select is null or { Length: 0 } ? GetNonIgnoredPropertyNames(elementType).ToArray() : select;
         var sourceParameter = Expression.Parameter(elementType, elementType.Name);
         var jObjectInitExpression = GetJObjectValueExpression(elementType, sourceParameter, select, includes);
         var lambda = Expression.Lambda<Func<TEntity, JObject>>(jObjectInitExpression, sourceParameter);
         return query.Select(lambda);
     }
 
-    public static IEnumerable<string> GetProperties(Type type)
+    public static IEnumerable<string> GetNonIgnoredPropertyNames(Type type)
     {
         return type.GetProperties(BindingFlags.Public | BindingFlags.Instance)
-            .Where(p => !p.GetCustomAttributes(typeof(JsonIgnoreAttribute), true).Any())
-            .Select(prop => prop.Name);
+               .Where(p => p.GetCustomAttributes(typeof(JsonIgnoreAttribute), true).Length == 0)
+               .Select(prop => prop.Name);
     }
 
     public static Expression GetValueExpression(MemberExpression propAccessExpression)
@@ -92,7 +99,7 @@ public static partial class QueryableExtensions
 
     public static Expression GetJObjectValueExpression(Type elementType, Expression sourceParameter, string[]? select, Include[]? includes)
     {
-        select = select is null or { Length: 0 } ? GetProperties(elementType).ToArray() : select;
+        select = select is null or { Length: 0 } ? GetNonIgnoredPropertyNames(elementType).ToArray() : select;
         var jObjectExpression = Expression.New(typeof(JObject));
         var addMethodInfo = typeof(JObject).GetMethod(nameof(JObject.Add), [typeof(string), typeof(JToken)]);
         var jPropertiesExpressions = select.Select(property =>
@@ -115,34 +122,18 @@ public static partial class QueryableExtensions
 
     private static Expression? GetExpression(MemberExpression propAccessExpression, Type type, Include? include)
     {
-        // Expression? value = type switch
-        // {
-        //     { IsEnum: true } => GetEnumValueExpression(propAccessExpression),
-        //     { FullName: "System.String" } => GetValueExpression(propAccessExpression),
-        //     { IsArray: true } or { IsGenericType: true } => GetCollectionValueExpression(type.GenericTypeArguments[0], propAccessExpression, include?.Select, include?.Includes),
-        //     { IsClass: true } => GetJObjectValueExpression(type, propAccessExpression, include?.Select, include?.Includes),
-        //     _ => GetValueExpression(propAccessExpression)
-        // };
-        if (type.IsEnum)
+        return type switch
         {
-            return GetEnumValueExpression(propAccessExpression);
-        }
-        else if (type == typeof(string))
-        {
-            return GetValueExpression(propAccessExpression);
-        }
-        else if (type.IsArray || (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(List<>)))
-        {
-            return GetCollectionValueExpression(type.GenericTypeArguments[0], propAccessExpression, include?.Select, include?.Includes);
-        }
-        else if (type.IsClass)
-        {
-            return GetJObjectValueExpression(type, propAccessExpression, include?.Select, include?.Includes);
-        }
-        else
-        {
-            return GetValueExpression(propAccessExpression);
-        }
+            { IsPrimitive: true } => GetValueExpression(propAccessExpression),
+            { IsEnum: true } => GetEnumValueExpression(propAccessExpression),
+            { FullName: "System.String" } => GetValueExpression(propAccessExpression),
+            { IsArray: true } => GetCollectionValueExpression(type.GetElementType()!, propAccessExpression, include?.Select, include?.Includes),
+            { IsGenericType: true } when type.GetGenericTypeDefinition() == typeof(List<>) => GetCollectionValueExpression(type.GenericTypeArguments[0], propAccessExpression, include?.Select, include?.Includes),
+            { IsGenericType: true } when typeof(IEnumerable<>).IsAssignableFrom(type.GetGenericTypeDefinition()) => GetCollectionValueExpression(type.GenericTypeArguments[0], propAccessExpression, include?.Select, include?.Includes),
+            { IsValueType: true } when Nullable.GetUnderlyingType(type) != null => GetValueExpression(propAccessExpression),
+            { IsClass: true } => GetJObjectValueExpression(type, propAccessExpression, include?.Select, include?.Includes),
+            _ => GetValueExpression(propAccessExpression)
+        };
     }
 
     public static Expression GetCollectionValueExpression(Type elementType, MemberExpression propAccessExpression, string[]? select, Include[]? includes)
@@ -175,11 +166,12 @@ public static partial class QueryableExtensions
         return Expression.Call(toArrayMethod!, Expression.Call(selectMethod!, propAccessExpression, selectLambda));
     }
 
+    private static readonly char[] SplitChars = { '_', ' ' };
     public static string ToCamelCase(this string str)
     {
         if (string.IsNullOrEmpty(str)) return str;
         var builder = new StringBuilder(str.Length);
-        var words = str.Split(new[] { '_', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        var words = str.Split(SplitChars, StringSplitOptions.RemoveEmptyEntries);
         builder.Append(char.ToLower(words[0][0]));
         builder.Append(words[0][1..]);
         for (int i = 1; i < words.Length; i++)
@@ -206,10 +198,10 @@ public static partial class QueryableExtensions
         foreach (var propertyName in propertyNames)
         {
             var propertyInfo = type.GetProperty(propertyName, BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance) ?? throw new ArgumentException($"property {propertyName} not available in type {type}", propertyName);
-            if (propertyInfo.PropertyType.IsClass && includes != null && Array.Exists(includes, i => i.Name == propertyInfo.Name) == true)
+            if (propertyInfo.PropertyType.IsClass && includes != null && Array.Exists(includes, i => i.Name == propertyInfo.Name))
             {
                 var include = includes.First(i => i.Name == propertyInfo.Name);
-                var selects = include.Select?.Length > 0 ? include.Select : GetProperties(propertyInfo.PropertyType).ToArray();
+                var selects = include.Select?.Length > 0 ? include.Select : GetNonIgnoredPropertyNames(propertyInfo.PropertyType).ToArray();
                 MemberExpression inProperty = Expression.Property(parameter, propertyInfo.Name);
                 var inExpression = GetMemberInitExpression(propertyInfo.PropertyType, inProperty, selects, include.Includes);
                 yield return GetMemberBinding(propertyInfo, inExpression);
@@ -220,11 +212,11 @@ public static partial class QueryableExtensions
             }
         }
     }
-    private static MemberBinding GetMemberBinding(PropertyInfo propertyInfo, Expression parameter)
+    private static MemberAssignment GetMemberBinding(PropertyInfo propertyInfo, Expression parameter)
     {
         return Expression.Bind(propertyInfo, Expression.Property(parameter, propertyInfo.Name));
     }
-    private static MemberBinding GetMemberBinding(PropertyInfo propertyInfo, MemberInitExpression initExpression)
+    private static MemberAssignment GetMemberBinding(PropertyInfo propertyInfo, MemberInitExpression initExpression)
     {
         return Expression.Bind(propertyInfo, initExpression);
     }

@@ -1,6 +1,6 @@
 namespace Falcon.Infrastructure.Abstractions;
 
-public interface IRequestContext<out TId>
+public interface IRequestContext
 {
-    public TId UserId { get; }
+    IUserId UserId { get; }
 }

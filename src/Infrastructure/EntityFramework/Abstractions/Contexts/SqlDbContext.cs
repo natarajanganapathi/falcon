@@ -10,20 +10,20 @@ public abstract class SqlDbContext(DbContextOptions sqlOptions) : DbContext(sqlO
         ModelConfigProvider.Configure(modelBuilder);
     }
 
-    public async Task<int> SaveChangesAsync<TId>(TId userId, CancellationToken cancellationToken)
+    public async Task<int> SaveChangesAsync(IUserId userId, CancellationToken cancellationToken)
     {
-        var entries = ChangeTracker.Entries<IAuditableEntity<TId>>()
+        var entries = ChangeTracker.Entries<IAuditableEntity>()
                   .Where(x => x.State == EntityState.Added || x.State == EntityState.Modified);
         var dateTime = DateTime.UtcNow;
         foreach (var entry in entries)
         {
             if (entry.State == EntityState.Added)
             {
-                entry.Property(nameof(IAuditableEntity<TId>.CreatedAtUtc)).CurrentValue = dateTime;
-                entry.Property(nameof(IAuditableEntity<TId>.CreatedByUserId)).CurrentValue = userId;
+                entry.Property(nameof(IAuditableEntity.CreatedAtUtc)).CurrentValue = dateTime;
+                entry.Property(nameof(IAuditableEntity.CreatedByUserId)).CurrentValue = userId;
             }
-            entry.Property(nameof(IAuditableEntity<TId>.ModifiedAtUtc)).CurrentValue = dateTime;
-            entry.Property(nameof(IAuditableEntity<TId>.ModifiedByUserId)).CurrentValue = userId;
+            entry.Property(nameof(IAuditableEntity.ModifiedAtUtc)).CurrentValue = dateTime;
+            entry.Property(nameof(IAuditableEntity.ModifiedByUserId)).CurrentValue = userId;
         }
         return await SaveChangesAsync(cancellationToken);
     }

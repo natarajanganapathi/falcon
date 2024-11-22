@@ -5,6 +5,7 @@ global using Microsoft.AspNetCore.Http;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.Extensions.Configuration;
+global using System.Runtime.Serialization;
 
 global using Falcon.Contracts;
 global using Falcon.Domain.Abstractions.Interfaces.Entities;

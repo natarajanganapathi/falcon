@@ -88,7 +88,7 @@ public static class FilterExtensions
     #endregion
 
     #region Field Filter
-    private static Expression PropertyExpression(ParameterExpression parameter, IConditionFilter filter)
+    private static MemberExpression PropertyExpression(ParameterExpression parameter, IConditionFilter filter)
     {
         var path = filter.Field.Split(".");
         var property = Expression.Property(parameter, path[0]);
@@ -119,17 +119,17 @@ public static class FilterExtensions
         return valueType switch
         {
             FilterValueType.UtcDateTime => Expressions.ToUniversalTime(value),
-            FilterValueType.DateOnly => () => DateOnly.Parse(value.ToString() ?? string.Empty),
+            FilterValueType.DateOnly => () => DateOnly.Parse(value.ToString() ?? string.Empty, CultureInfo.InvariantCulture),
             _ => throw new QueryBuilderException(new StringBuilder().Append(valueType).Append(" is not valid type for FilterValueType").ToString())
         };
     }
-    private static Expression InOperatorExpresson(Expression left, IFieldFilter filter)
+    private static MethodCallExpression InOperatorExpresson(Expression left, IFieldFilter filter)
     {
         var right = filter.Value;
         if (right is not JArray) throw new ArgumentException("Field Filter value should not be null", nameof(filter));
         return Expression.Call(ContainsMethod.MakeGenericMethod(left.Type), Expression.Constant((right as JArray)?.ToObject(left.Type.MakeArrayType())), left);
     }
-    private static Expression BetweenOperatorExpression(Expression left, IFieldFilter filter)
+    private static BinaryExpression BetweenOperatorExpression(Expression left, IFieldFilter filter)
     {
         var right = filter.Value;
         if (right is not JArray) throw new ArgumentException("Field Filter value cannot be null", nameof(filter));

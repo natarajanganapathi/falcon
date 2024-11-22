@@ -1,6 +1,5 @@
 namespace Falcon.Domain.Abstractions.Exceptions;
 
-[Serializable]
 public class DomainException : Exception
 {
     public DomainException() { }
