@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace Falcon.Messaging.Abstractions | Falcon Documentation </title>
+      <title>Interface IApplicationEventConsumer&lt;TApplicationEvent&gt; | Falcon Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace Falcon.Messaging.Abstractions | Falcon Documentation ">
+      <meta name="title" content="Interface IApplicationEventConsumer&lt;TApplicationEvent&gt; | Falcon Documentation ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/13/merge/apiSpec/new?filename=Falcon_Messaging_ApplicationEvents_IApplicationEventConsumer_1.md&amp;value=---%0Auid%3A%20Falcon.Messaging.ApplicationEvents.IApplicationEventConsumer%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,41 +84,65 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Falcon.Messaging.Abstractions">
+        <article data-uid="Falcon.Messaging.ApplicationEvents.IApplicationEventConsumer`1">
 
-  <h1 id="Falcon_Messaging_Abstractions" data-uid="Falcon.Messaging.Abstractions" class="text-break">Namespace Falcon.Messaging.Abstractions</h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
 
-    <h3 id="interfaces">
-Interfaces
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Falcon.Messaging.Abstractions.IApplicationEvent.html">IApplicationEvent</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Falcon.Messaging.Abstractions.IDomainEvent.html">IDomainEvent</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Falcon.Messaging.Abstractions.IEvent.html">IEvent</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Falcon.Messaging.Abstractions.IEventPublisher.html">IEventPublisher</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="Falcon.Messaging.Abstractions.IIntegrationEvent.html">IIntegrationEvent</a></dt>
-      <dd></dd>
-    </dl>
+
+  <h1 id="Falcon_Messaging_ApplicationEvents_IApplicationEventConsumer_1" data-uid="Falcon.Messaging.ApplicationEvents.IApplicationEventConsumer`1" class="text-break">
+Interface IApplicationEventConsumer&lt;TApplicationEvent&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/ApplicationEvents/IApplicationEventConsumer.cs/#L3"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Falcon.html">Falcon</a>.<a class="xref" href="Falcon.Messaging.html">Messaging</a>.<a class="xref" href="Falcon.Messaging.ApplicationEvents.html">ApplicationEvents</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Falcon.Messaging.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IApplicationEventConsumer&lt;in TApplicationEvent&gt; : IConsumer&lt;TApplicationEvent&gt;, IConsumer where TApplicationEvent : class, IApplicationEvent</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TApplicationEvent</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">IConsumer&lt;TApplicationEvent&gt;.Consume(ConsumeContext&lt;TApplicationEvent&gt;)</span>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtensions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtensions_AuditForCreate__2___1_Falcon_Domain_Abstractions_Interfaces_Entities_IUserId_System_DateTime_">EntityAuditExtensions.AuditForCreate&lt;TId, TEntity&gt;(TEntity, IUserId, DateTime)</a>
+  </div>
+  <div>
+      <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtensions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtensions_AuditForUpdate__2___1_Falcon_Domain_Abstractions_Interfaces_Entities_IUserId_System_DateTime_">EntityAuditExtensions.AuditForUpdate&lt;TId, TEntity&gt;(TEntity, IUserId, DateTime)</a>
+  </div>
+  </dd></dl>
+
+
+
+
 
 
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/ApplicationEvents/IApplicationEventConsumer.cs/#L3" class="edit-link">Edit this page</a>
         </div>
 
 

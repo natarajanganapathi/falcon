@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class EndpointOptions | Falcon Documentation </title>
+      <title>Class ApplicationEventPublisher | Falcon Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class EndpointOptions | Falcon Documentation ">
+      <meta name="title" content="Class ApplicationEventPublisher | Falcon Documentation ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/13/merge/apiSpec/new?filename=Falcon_Application_Abstractions_Endpoints_EndpointOptions.md&amp;value=---%0Auid%3A%20Falcon.Application.Abstractions.Endpoints.EndpointOptions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/13/merge/apiSpec/new?filename=Falcon_Messaging_ApplicationEvents_ApplicationEventPublisher.md&amp;value=---%0Auid%3A%20Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,24 +84,24 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Falcon.Application.Abstractions.Endpoints.EndpointOptions">
+        <article data-uid="Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher">
 
 
 
-  <h1 id="Falcon_Application_Abstractions_Endpoints_EndpointOptions" data-uid="Falcon.Application.Abstractions.Endpoints.EndpointOptions" class="text-break">
-Class EndpointOptions  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Application/Abstractions/Endpoints/EndpointOptions.cs/#L3"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Falcon_Messaging_ApplicationEvents_ApplicationEventPublisher" data-uid="Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher" class="text-break">
+Class ApplicationEventPublisher  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/ApplicationEvents/ApplicationEventPublisher.cs/#L3"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Falcon.html">Falcon</a>.<a class="xref" href="Falcon.Application.html">Application</a>.<a class="xref" href="Falcon.Application.Abstractions.html">Abstractions</a>.<a class="xref" href="Falcon.Application.Abstractions.Endpoints.html">Endpoints</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Falcon.Application.Abstractions.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Falcon.html">Falcon</a>.<a class="xref" href="Falcon.Messaging.html">Messaging</a>.<a class="xref" href="Falcon.Messaging.ApplicationEvents.html">ApplicationEvents</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Falcon.Messaging.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EndpointOptions</code></pre>
+    <pre><code class="lang-csharp hljs">public class ApplicationEventPublisher : IEventPublisher</code></pre>
   </div>
 
 
@@ -111,10 +111,16 @@ Class EndpointOptions  <a class="header-action link-secondary" title="View sourc
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">EndpointOptions</span></div>
+      <div><span class="xref">ApplicationEventPublisher</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Falcon.Messaging.Abstractions.IEventPublisher.html">IEventPublisher</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -158,11 +164,93 @@ Class EndpointOptions  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Falcon_Messaging_ApplicationEvents_ApplicationEventPublisher__ctor_" data-uid="Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.#ctor*"></a>
+
+  <h3 id="Falcon_Messaging_ApplicationEvents_ApplicationEventPublisher__ctor_Falcon_Messaging_ApplicationEvents_ApplicationEventBus_" data-uid="Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.#ctor(Falcon.Messaging.ApplicationEvents.ApplicationEventBus)">
+  ApplicationEventPublisher(ApplicationEventBus)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/ApplicationEvents/ApplicationEventPublisher.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApplicationEventPublisher(ApplicationEventBus applicationEventBus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>applicationEventBus</code> <a class="xref" href="Falcon.Messaging.ApplicationEvents.ApplicationEventBus.html">ApplicationEventBus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Falcon_Messaging_ApplicationEvents_ApplicationEventPublisher_PublishAsync_" data-uid="Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.PublishAsync*"></a>
+
+  <h3 id="Falcon_Messaging_ApplicationEvents_ApplicationEventPublisher_PublishAsync__1___0_System_Threading_CancellationToken_" data-uid="Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.PublishAsync``1(``0,System.Threading.CancellationToken)">
+  PublishAsync&lt;TEvent&gt;(TEvent, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/ApplicationEvents/ApplicationEventPublisher.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task PublishAsync&lt;TEvent&gt;(TEvent @event, CancellationToken cancellationToken = default) where TEvent : class, IEvent</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>event</code> <span class="xref">TEvent</span></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TEvent</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Application/Abstractions/Endpoints/EndpointOptions.cs/#L3" class="edit-link">Edit this page</a>
+          <a href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/ApplicationEvents/ApplicationEventPublisher.cs/#L3" class="edit-link">Edit this page</a>
         </div>
 
 
