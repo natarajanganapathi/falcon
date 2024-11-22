@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/12/merge/apiSpec/new?filename=Falcon_Domain_Abstractions_Entity_1.md&amp;value=---%0Auid%3A%20Falcon.Domain.Abstractions.Entity%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/13/merge/apiSpec/new?filename=Falcon_Domain_Abstractions_Entity_1.md&amp;value=---%0Auid%3A%20Falcon.Domain.Abstractions.Entity%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Falcon_Domain_Abstractions_Entity_1" data-uid="Falcon.Domain.Abstractions.Entity`1" class="text-break">
-Class Entity&lt;TId&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/12/merge/src/Domain/Abstractions/Abstractions/Entity.cs/#L3"><i class="bi bi-code-slash"></i></a>
+Class Entity&lt;TId&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Domain/Abstractions/Entity.cs/#L3"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,7 @@ Class Entity&lt;TId&gt;  <a class="header-action link-secondary" title="View sou
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Entity&lt;TId&gt; : IEntity&lt;TId&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class Entity&lt;TId&gt;</code></pre>
   </div>
 
 
@@ -120,12 +120,6 @@ Class Entity&lt;TId&gt;  <a class="header-action link-secondary" title="View sou
     </dd>
   </dl>
 
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="Falcon.Domain.Abstractions.Interfaces.Entities.IEntity-1.html">IEntity</a>&lt;TId&gt;</div>
-    </dd>
-  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -158,10 +152,10 @@ Class Entity&lt;TId&gt;  <a class="header-action link-secondary" title="View sou
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtensions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtensions_AuditForCreate__2___1___0_System_DateTime_">EntityAuditExtensions.AuditForCreate&lt;TId, TEntity&gt;(TEntity, TId, DateTime)</a>
+      <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtensions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtensions_AuditForCreate__2___1_Falcon_Domain_Abstractions_Interfaces_Entities_IUserId_System_DateTime_">EntityAuditExtensions.AuditForCreate&lt;TId, TEntity&gt;(TEntity, IUserId, DateTime)</a>
   </div>
   <div>
-      <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtensions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtensions_AuditForUpdate__2___1___0_System_DateTime_">EntityAuditExtensions.AuditForUpdate&lt;TId, TEntity&gt;(TEntity, TId, DateTime)</a>
+      <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtensions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtensions_AuditForUpdate__2___1_Falcon_Domain_Abstractions_Interfaces_Entities_IUserId_System_DateTime_">EntityAuditExtensions.AuditForUpdate&lt;TId, TEntity&gt;(TEntity, IUserId, DateTime)</a>
   </div>
   </dd></dl>
 
@@ -173,18 +167,50 @@ Class Entity&lt;TId&gt;  <a class="header-action link-secondary" title="View sou
 </h2>
 
 
-  <a id="Falcon_Domain_Abstractions_Entity_1_Id_" data-uid="Falcon.Domain.Abstractions.Entity`1.Id*"></a>
+  <a id="Falcon_Domain_Abstractions_Entity_1_DomainEvents_" data-uid="Falcon.Domain.Abstractions.Entity`1.DomainEvents*"></a>
 
-  <h3 id="Falcon_Domain_Abstractions_Entity_1_Id" data-uid="Falcon.Domain.Abstractions.Entity`1.Id">
-  Id
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/12/merge/src/Domain/Abstractions/Abstractions/Entity.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Falcon_Domain_Abstractions_Entity_1_DomainEvents" data-uid="Falcon.Domain.Abstractions.Entity`1.DomainEvents">
+  DomainEvents
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Domain/Abstractions/Entity.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual required TId Id { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[NotMapped]
+public IReadOnlyCollection&lt;DomainEvent&gt; DomainEvents { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Falcon.Messaging.Abstractions.DomainEvent.html">DomainEvent</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Falcon_Domain_Abstractions_Entity_1_Id_" data-uid="Falcon.Domain.Abstractions.Entity`1.Id*"></a>
+
+  <h3 id="Falcon_Domain_Abstractions_Entity_1_Id" data-uid="Falcon.Domain.Abstractions.Entity`1.Id">
+  Id
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Domain/Abstractions/Entity.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TId Id { get; set; }</code></pre>
   </div>
 
 
@@ -208,26 +234,83 @@ Class Entity&lt;TId&gt;  <a class="header-action link-secondary" title="View sou
 </h2>
 
 
-  <a id="Falcon_Domain_Abstractions_Entity_1_GetId_" data-uid="Falcon.Domain.Abstractions.Entity`1.GetId*"></a>
+  <a id="Falcon_Domain_Abstractions_Entity_1_AddDomainEvent_" data-uid="Falcon.Domain.Abstractions.Entity`1.AddDomainEvent*"></a>
 
-  <h3 id="Falcon_Domain_Abstractions_Entity_1_GetId" data-uid="Falcon.Domain.Abstractions.Entity`1.GetId">
-  GetId()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/12/merge/src/Domain/Abstractions/Abstractions/Entity.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Falcon_Domain_Abstractions_Entity_1_AddDomainEvent_Falcon_Messaging_Abstractions_DomainEvent_" data-uid="Falcon.Domain.Abstractions.Entity`1.AddDomainEvent(Falcon.Messaging.Abstractions.DomainEvent)">
+  AddDomainEvent(DomainEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Domain/Abstractions/Entity.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual TId GetId()</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddDomainEvent(DomainEvent domainEvent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>domainEvent</code> <a class="xref" href="Falcon.Messaging.Abstractions.DomainEvent.html">DomainEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Falcon_Domain_Abstractions_Entity_1_ClearDomainEvents_" data-uid="Falcon.Domain.Abstractions.Entity`1.ClearDomainEvents*"></a>
+
+  <h3 id="Falcon_Domain_Abstractions_Entity_1_ClearDomainEvents" data-uid="Falcon.Domain.Abstractions.Entity`1.ClearDomainEvents">
+  ClearDomainEvents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Domain/Abstractions/Entity.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearDomainEvents()</code></pre>
   </div>
 
 
-  <h4 class="section">Returns</h4>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Falcon_Domain_Abstractions_Entity_1_RemoveDomainEvent_" data-uid="Falcon.Domain.Abstractions.Entity`1.RemoveDomainEvent*"></a>
+
+  <h3 id="Falcon_Domain_Abstractions_Entity_1_RemoveDomainEvent_Falcon_Messaging_Abstractions_DomainEvent_" data-uid="Falcon.Domain.Abstractions.Entity`1.RemoveDomainEvent(Falcon.Messaging.Abstractions.DomainEvent)">
+  RemoveDomainEvent(DomainEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Domain/Abstractions/Entity.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveDomainEvent(DomainEvent domainEvent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><span class="xref">TId</span></dt>
+    <dt><code>domainEvent</code> <a class="xref" href="Falcon.Messaging.Abstractions.DomainEvent.html">DomainEvent</a></dt>
     <dd></dd>
   </dl>
+
 
 
 
@@ -243,7 +326,7 @@ Class Entity&lt;TId&gt;  <a class="header-action link-secondary" title="View sou
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/natarajanganapathi/falcon/blob/12/merge/src/Domain/Abstractions/Abstractions/Entity.cs/#L3" class="edit-link">Edit this page</a>
+          <a href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Domain/Abstractions/Entity.cs/#L3" class="edit-link">Edit this page</a>
         </div>
 
 

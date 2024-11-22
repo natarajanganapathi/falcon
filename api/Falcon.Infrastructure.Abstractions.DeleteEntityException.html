@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/12/merge/apiSpec/new?filename=Falcon_Infrastructure_Abstractions_DeleteEntityException.md&amp;value=---%0Auid%3A%20Falcon.Infrastructure.Abstractions.DeleteEntityException%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/13/merge/apiSpec/new?filename=Falcon_Infrastructure_Abstractions_DeleteEntityException.md&amp;value=---%0Auid%3A%20Falcon.Infrastructure.Abstractions.DeleteEntityException%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Falcon_Infrastructure_Abstractions_DeleteEntityException" data-uid="Falcon.Infrastructure.Abstractions.DeleteEntityException" class="text-break">
-Class DeleteEntityException  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/12/merge/src/Infrastructure/Abstractions/Exceptions/PersistenceException.cs/#L19"><i class="bi bi-code-slash"></i></a>
+Class DeleteEntityException  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Infrastructure/Abstractions/Exceptions/PersistenceException.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,8 +101,7 @@ Class DeleteEntityException  <a class="header-action link-secondary" title="View
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Serializable]
-public class DeleteEntityException : PersistenceException, ISerializable</code></pre>
+    <pre><code class="lang-csharp hljs">public class DeleteEntityException : PersistenceException, ISerializable</code></pre>
   </div>
 
 
@@ -186,10 +185,10 @@ public class DeleteEntityException : PersistenceException, ISerializable</code><
     <dt>Extension Methods</dt>
     <dd>
   <div>
-      <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtensions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtensions_AuditForCreate__2___1___0_System_DateTime_">EntityAuditExtensions.AuditForCreate&lt;TId, TEntity&gt;(TEntity, TId, DateTime)</a>
+      <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtensions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtensions_AuditForCreate__2___1_Falcon_Domain_Abstractions_Interfaces_Entities_IUserId_System_DateTime_">EntityAuditExtensions.AuditForCreate&lt;TId, TEntity&gt;(TEntity, IUserId, DateTime)</a>
   </div>
   <div>
-      <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtensions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtensions_AuditForUpdate__2___1___0_System_DateTime_">EntityAuditExtensions.AuditForUpdate&lt;TId, TEntity&gt;(TEntity, TId, DateTime)</a>
+      <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtensions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtensions_AuditForUpdate__2___1_Falcon_Domain_Abstractions_Interfaces_Entities_IUserId_System_DateTime_">EntityAuditExtensions.AuditForUpdate&lt;TId, TEntity&gt;(TEntity, IUserId, DateTime)</a>
   </div>
   <div>
       <a class="xref" href="Falcon.Contracts.ExceptionExtension.html#Falcon_Contracts_ExceptionExtension_GetInnerStackTrace_System_Exception_">ExceptionExtension.GetInnerStackTrace(Exception?)</a>
@@ -208,7 +207,7 @@ public class DeleteEntityException : PersistenceException, ISerializable</code><
 
   <h3 id="Falcon_Infrastructure_Abstractions_DeleteEntityException__ctor" data-uid="Falcon.Infrastructure.Abstractions.DeleteEntityException.#ctor">
   DeleteEntityException()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/12/merge/src/Infrastructure/Abstractions/Exceptions/PersistenceException.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Infrastructure/Abstractions/Exceptions/PersistenceException.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -233,15 +232,15 @@ public class DeleteEntityException : PersistenceException, ISerializable</code><
   <a id="Falcon_Infrastructure_Abstractions_DeleteEntityException__ctor_" data-uid="Falcon.Infrastructure.Abstractions.DeleteEntityException.#ctor*"></a>
 
   <h3 id="Falcon_Infrastructure_Abstractions_DeleteEntityException__ctor_System_String_" data-uid="Falcon.Infrastructure.Abstractions.DeleteEntityException.#ctor(System.String)">
-  DeleteEntityException(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/12/merge/src/Infrastructure/Abstractions/Exceptions/PersistenceException.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  DeleteEntityException(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Infrastructure/Abstractions/Exceptions/PersistenceException.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DeleteEntityException(string? message)</code></pre>
+    <pre><code class="lang-csharp hljs">public DeleteEntityException(string message)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -264,15 +263,15 @@ public class DeleteEntityException : PersistenceException, ISerializable</code><
   <a id="Falcon_Infrastructure_Abstractions_DeleteEntityException__ctor_" data-uid="Falcon.Infrastructure.Abstractions.DeleteEntityException.#ctor*"></a>
 
   <h3 id="Falcon_Infrastructure_Abstractions_DeleteEntityException__ctor_System_String_System_Exception_" data-uid="Falcon.Infrastructure.Abstractions.DeleteEntityException.#ctor(System.String,System.Exception)">
-  DeleteEntityException(string?, Exception?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/12/merge/src/Infrastructure/Abstractions/Exceptions/PersistenceException.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  DeleteEntityException(string, Exception)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Infrastructure/Abstractions/Exceptions/PersistenceException.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DeleteEntityException(string? message, Exception? innerException)</code></pre>
+    <pre><code class="lang-csharp hljs">public DeleteEntityException(string message, Exception innerException)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -298,7 +297,7 @@ public class DeleteEntityException : PersistenceException, ISerializable</code><
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/natarajanganapathi/falcon/blob/12/merge/src/Infrastructure/Abstractions/Exceptions/PersistenceException.cs/#L19" class="edit-link">Edit this page</a>
+          <a href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Infrastructure/Abstractions/Exceptions/PersistenceException.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 

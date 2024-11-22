@@ -212,6 +212,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Contracts.ContractException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Contracts.ContractException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Falcon.Contracts.Direction.yml",
       "output": {
         ".html": {
@@ -582,6 +592,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Domain.Abstractions.Attributes.HomeDbAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Domain.Abstractions.Attributes.HomeDbAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Domain.Abstractions.Attributes.TenantDbAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Domain.Abstractions.Attributes.TenantDbAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Domain.Abstractions.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Domain.Abstractions.Attributes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Falcon.Domain.Abstractions.Entity-1.yml",
       "output": {
         ".html": {
@@ -622,10 +662,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Domain.Abstractions.Interfaces.Entities.IAuditableEntity-1.yml",
+      "source_relative_path": "api/Falcon.Domain.Abstractions.Interfaces.Entities.IAuditableEntity.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Domain.Abstractions.Interfaces.Entities.IAuditableEntity-1.html"
+          "relative_path": "api/Falcon.Domain.Abstractions.Interfaces.Entities.IAuditableEntity.html"
         }
       },
       "version": ""
@@ -682,30 +722,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Domain.Abstractions.Interfaces.Entities.IUserId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Domain.Abstractions.Interfaces.Entities.IUserId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Falcon.Domain.Abstractions.Interfaces.Entities.yml",
       "output": {
         ".html": {
           "relative_path": "api/Falcon.Domain.Abstractions.Interfaces.Entities.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Domain.Abstractions.Interfaces.Messages.INotification.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Falcon.Domain.Abstractions.Interfaces.Messages.INotification.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Domain.Abstractions.Interfaces.Messages.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Falcon.Domain.Abstractions.Interfaces.Messages.html"
         }
       },
       "version": ""
@@ -756,36 +786,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Falcon.Infrastructure.Abstractions.AssemblyCache.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Infrastructure.Abstractions.Attributes.HomeDbAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Falcon.Infrastructure.Abstractions.Attributes.HomeDbAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Infrastructure.Abstractions.Attributes.TenantDbAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Falcon.Infrastructure.Abstractions.Attributes.TenantDbAttribute.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Infrastructure.Abstractions.Attributes.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Falcon.Infrastructure.Abstractions.Attributes.html"
         }
       },
       "version": ""
@@ -852,10 +852,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Infrastructure.Abstractions.IRequestContext-1.yml",
+      "source_relative_path": "api/Falcon.Infrastructure.Abstractions.IRequestContext.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Infrastructure.Abstractions.IRequestContext-1.html"
+          "relative_path": "api/Falcon.Infrastructure.Abstractions.IRequestContext.html"
         }
       },
       "version": ""
@@ -932,10 +932,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Infrastructure.Abstractions.RequestContext-1.yml",
+      "source_relative_path": "api/Falcon.Infrastructure.Abstractions.RequestContext.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Infrastructure.Abstractions.RequestContext-1.html"
+          "relative_path": "api/Falcon.Infrastructure.Abstractions.RequestContext.html"
         }
       },
       "version": ""
@@ -1422,10 +1422,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Messaging.Abstractions.ApplicationEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Messaging.Abstractions.ApplicationEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Messaging.Abstractions.DomainEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Messaging.Abstractions.DomainEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Falcon.Messaging.Abstractions.IApplicationEvent.yml",
       "output": {
         ".html": {
           "relative_path": "api/Falcon.Messaging.Abstractions.IApplicationEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Messaging.Abstractions.ICommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Messaging.Abstractions.ICommand.html"
         }
       },
       "version": ""
@@ -1472,6 +1502,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Messaging.Abstractions.IQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Messaging.Abstractions.IQuery.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Falcon.Messaging.Abstractions.IntegrationEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Falcon.Messaging.Abstractions.IntegrationEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Falcon.Messaging.Abstractions.yml",
       "output": {
         ".html": {
@@ -1482,330 +1532,260 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.ApplicationEvents.ApplicationEvent.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.ApplicationEvents.ApplicationEvent.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.ApplicationEvents.ApplicationEventBus.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.ApplicationEvents.ApplicationEventBus.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.ApplicationEvents.IApplicationEventBus.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.ApplicationEvents.IApplicationEventBus.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.ApplicationEvents.IApplicationEventBus.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.ApplicationEvents.IApplicationEventConsumer-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.ApplicationEvents.IApplicationEventBus.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.ApplicationEvents.IApplicationEventConsumer-1.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.ApplicationEvents.IApplicationEventConsumer-1.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.ApplicationEvents.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.ApplicationEvents.IApplicationEventConsumer-1.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.ApplicationEvents.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.ApplicationEvents.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.Command.CommandSender.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.ApplicationEvents.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.Command.CommandSender.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.Command.CommandBus.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.Command.ICommandConsumer-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.Command.CommandBus.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.Command.ICommandConsumer-1.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.Command.CommandSender.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.Command.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.Command.CommandSender.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.Command.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.Command.ICommand.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.Command.ICommand.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.Command.ICommandBus.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.Command.ICommandBus.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.Command.ICommandConsumer-1.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.DomainEvents.IDomainEventBus.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.Command.ICommandConsumer-1.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.DomainEvents.IDomainEventBus.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.Command.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.DomainEvents.IDomainEventConsumer-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.Command.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.DomainEvents.IDomainEventConsumer-1.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.DomainEvents.DomainEvent.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.DomainEvents.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.DomainEvents.DomainEvent.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.DomainEvents.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.DomainEvents.DomainEventBus.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.EventPublisherExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.DomainEvents.DomainEventBus.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.EventPublisherExtensions.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.DomainEvents.DomainEventPublisher.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.IntegrationEvents.IIntegrationEventBus.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.DomainEvents.DomainEventPublisher.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.IntegrationEvents.IIntegrationEventBus.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.DomainEvents.IDomainEventBus.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.IntegrationEvents.IIntegrationEventConsumer-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.DomainEvents.IDomainEventBus.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.IntegrationEvents.IIntegrationEventConsumer-1.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.DomainEvents.IDomainEventConsumer-1.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.DomainEvents.IDomainEventConsumer-1.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.DomainEvents.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.DomainEvents.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.EventPublisherExtensions.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.IntegrationEvents.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.EventPublisherExtensions.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.IntegrationEvents.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.IntegrationEvents.IIntegrationEventBus.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.MessagingOptions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.IntegrationEvents.IIntegrationEventBus.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.MessagingOptions.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.IntegrationEvents.IIntegrationEventConsumer-1.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.IntegrationEvents.IIntegrationEventConsumer-1.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.IntegrationEvents.IntegrationEvent.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.Query.IQueryConsumer-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.IntegrationEvents.IntegrationEvent.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.Query.IQueryConsumer-1.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.IntegrationEvents.IntegrationEventBus.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.Query.QueryClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.IntegrationEvents.IntegrationEventBus.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.Query.QueryClient.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.Query.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.Query.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.IntegrationEvents.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.IntegrationEvents.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.MessagingOptions.yml",
+      "source_relative_path": "api/Falcon.Messaging.MassTransit.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Falcon.Messaging.MessagingOptions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.MessagingOptionsBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Falcon.Messaging.MessagingOptionsBuilder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.Query.IQuery.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Falcon.Messaging.Query.IQuery.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.Query.IQueryConsumer-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Falcon.Messaging.Query.IQueryConsumer-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.Query.QueryClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Falcon.Messaging.Query.QueryClient.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.Query.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Falcon.Messaging.Query.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.ServiceCollectionExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Falcon.Messaging.ServiceCollectionExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Falcon.Messaging.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Falcon.Messaging.html"
+          "relative_path": "api/Falcon.Messaging.MassTransit.html"
         }
       },
       "version": ""
@@ -1819,6 +1799,16 @@
         },
         ".html": {
           "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/clean-architecture.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/clean-architecture.html"
         }
       },
       "version": ""
