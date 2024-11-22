@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IDomainEvent | Falcon Documentation </title>
+      <title>Interface IDomainEventConsumer&lt;TDomainEvent&gt; | Falcon Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IDomainEvent | Falcon Documentation ">
+      <meta name="title" content="Interface IDomainEventConsumer&lt;TDomainEvent&gt; | Falcon Documentation ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/13/merge/apiSpec/new?filename=Falcon_Messaging_Abstractions_IDomainEvent.md&amp;value=---%0Auid%3A%20Falcon.Messaging.Abstractions.IDomainEvent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/13/merge/apiSpec/new?filename=Falcon_Messaging_MassTransit_DomainEvents_IDomainEventConsumer_1.md&amp;value=---%0Auid%3A%20Falcon.Messaging.MassTransit.DomainEvents.IDomainEventConsumer%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,28 +84,33 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Falcon.Messaging.Abstractions.IDomainEvent">
+        <article data-uid="Falcon.Messaging.MassTransit.DomainEvents.IDomainEventConsumer`1">
 
 
 
-  <h1 id="Falcon_Messaging_Abstractions_IDomainEvent" data-uid="Falcon.Messaging.Abstractions.IDomainEvent" class="text-break">
-Interface IDomainEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/Abstractions/IDomainEvent.cs/#L3"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Falcon_Messaging_MassTransit_DomainEvents_IDomainEventConsumer_1" data-uid="Falcon.Messaging.MassTransit.DomainEvents.IDomainEventConsumer`1" class="text-break">
+Interface IDomainEventConsumer&lt;TDomainEvent&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/MassTransit/DomainEvents/IDomainEventConsumer.cs/#L3"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Falcon.html">Falcon</a>.<a class="xref" href="Falcon.Messaging.html">Messaging</a>.<a class="xref" href="Falcon.Messaging.Abstractions.html">Abstractions</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Falcon.Messaging.Abstrations.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Falcon.html">Falcon</a>.<a class="xref" href="Falcon.Messaging.html">Messaging</a>.<a class="xref" href="Falcon.Messaging.MassTransit.html">MassTransit</a>.<a class="xref" href="Falcon.Messaging.MassTransit.DomainEvents.html">DomainEvents</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Falcon.Messaging.MassTransit.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IDomainEvent : IEvent</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IDomainEventConsumer&lt;in TDomainEvent&gt; : IConsumer&lt;TDomainEvent&gt;, IConsumer where TDomainEvent : class, IDomainEvent</code></pre>
   </div>
 
 
 
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TDomainEvent</code></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -114,10 +119,7 @@ Interface IDomainEvent  <a class="header-action link-secondary" title="View sour
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="Falcon.Messaging.Abstractions.IEvent.html#Falcon_Messaging_Abstractions_IEvent_Id">IEvent.Id</a>
-    </div>
-    <div>
-      <a class="xref" href="Falcon.Messaging.Abstractions.IEvent.html#Falcon_Messaging_Abstractions_IEvent_OccurredOn">IEvent.OccurredOn</a>
+      <span class="xref">IConsumer&lt;TDomainEvent&gt;.Consume(ConsumeContext&lt;TDomainEvent&gt;)</span>
     </div>
   </dd></dl>
 
@@ -130,111 +132,7 @@ Interface IDomainEvent  <a class="header-action link-secondary" title="View sour
   <div>
       <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtensions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtensions_AuditForUpdate__2___1_Falcon_Domain_Abstractions_Interfaces_Entities_IUserId_System_DateTime_">EntityAuditExtensions.AuditForUpdate&lt;TId, TEntity&gt;(TEntity, IUserId, DateTime)</a>
   </div>
-  <div>
-      <a class="xref" href="Falcon.Messaging.MassTransit.EventPublisherExtensions.html#Falcon_Messaging_MassTransit_EventPublisherExtensions_PublishAsync__1___0_System_Threading_CancellationToken_">EventPublisherExtensions.PublishAsync&lt;TEvent&gt;(TEvent, CancellationToken)</a>
-  </div>
   </dd></dl>
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
-  <a id="Falcon_Messaging_Abstractions_IDomainEvent_AggregateId_" data-uid="Falcon.Messaging.Abstractions.IDomainEvent.AggregateId*"></a>
-
-  <h3 id="Falcon_Messaging_Abstractions_IDomainEvent_AggregateId" data-uid="Falcon.Messaging.Abstractions.IDomainEvent.AggregateId">
-  AggregateId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/Abstractions/IDomainEvent.cs/#L5"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Guid AggregateId { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Falcon_Messaging_Abstractions_IDomainEvent_Version_" data-uid="Falcon.Messaging.Abstractions.IDomainEvent.Version*"></a>
-
-  <h3 id="Falcon_Messaging_Abstractions_IDomainEvent_Version" data-uid="Falcon.Messaging.Abstractions.IDomainEvent.Version">
-  Version
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/Abstractions/IDomainEvent.cs/#L6"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int Version { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="Falcon_Messaging_Abstractions_IDomainEvent_GetEventType_" data-uid="Falcon.Messaging.Abstractions.IDomainEvent.GetEventType*"></a>
-
-  <h3 id="Falcon_Messaging_Abstractions_IDomainEvent_GetEventType" data-uid="Falcon.Messaging.Abstractions.IDomainEvent.GetEventType">
-  GetEventType()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/Abstractions/IDomainEvent.cs/#L7"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string GetEventType()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
 
 
 
@@ -244,7 +142,7 @@ Interface IDomainEvent  <a class="header-action link-secondary" title="View sour
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/Abstractions/IDomainEvent.cs/#L3" class="edit-link">Edit this page</a>
+          <a href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/MassTransit/DomainEvents/IDomainEventConsumer.cs/#L3" class="edit-link">Edit this page</a>
         </div>
 
 

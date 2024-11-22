@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Entity&lt;TId&gt; | Falcon Documentation </title>
+      <title>Class ApplicationEvent | Falcon Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Entity&lt;TId&gt; | Falcon Documentation ">
+      <meta name="title" content="Class ApplicationEvent | Falcon Documentation ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/13/merge/apiSpec/new?filename=Falcon_Domain_Abstractions_Entity_1.md&amp;value=---%0Auid%3A%20Falcon.Domain.Abstractions.Entity%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/natarajanganapathi/falcon/new/13/merge/apiSpec/new?filename=Falcon_Messaging_Abstractions_ApplicationEvent.md&amp;value=---%0Auid%3A%20Falcon.Messaging.Abstractions.ApplicationEvent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,42 +84,44 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Falcon.Domain.Abstractions.Entity`1">
+        <article data-uid="Falcon.Messaging.Abstractions.ApplicationEvent">
 
 
 
-  <h1 id="Falcon_Domain_Abstractions_Entity_1" data-uid="Falcon.Domain.Abstractions.Entity`1" class="text-break">
-Class Entity&lt;TId&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Domain/Abstractions/Entity.cs/#L3"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Falcon_Messaging_Abstractions_ApplicationEvent" data-uid="Falcon.Messaging.Abstractions.ApplicationEvent" class="text-break">
+Class ApplicationEvent  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/Abstractions/ApplicationEvent.cs/#L3"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Falcon.html">Falcon</a>.<a class="xref" href="Falcon.Domain.html">Domain</a>.<a class="xref" href="Falcon.Domain.Abstractions.html">Abstractions</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Falcon.Domain.Abstractions.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Falcon.html">Falcon</a>.<a class="xref" href="Falcon.Messaging.html">Messaging</a>.<a class="xref" href="Falcon.Messaging.Abstractions.html">Abstractions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Falcon.Messaging.Abstrations.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Entity&lt;TId&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ApplicationEvent : IApplicationEvent, IEvent</code></pre>
   </div>
 
 
 
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>TId</code></dt>
-    <dd></dd>
-  </dl>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">Entity&lt;TId&gt;</span></div>
+      <div><span class="xref">ApplicationEvent</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Falcon.Messaging.Abstractions.IApplicationEvent.html">IApplicationEvent</a></div>
+      <div><a class="xref" href="Falcon.Messaging.Abstractions.IEvent.html">IEvent</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -157,7 +159,47 @@ Class Entity&lt;TId&gt;  <a class="header-action link-secondary" title="View sou
   <div>
       <a class="xref" href="Falcon.Infrastructure.Abstractions.EntityAuditExtensions.html#Falcon_Infrastructure_Abstractions_EntityAuditExtensions_AuditForUpdate__2___1_Falcon_Domain_Abstractions_Interfaces_Entities_IUserId_System_DateTime_">EntityAuditExtensions.AuditForUpdate&lt;TId, TEntity&gt;(TEntity, IUserId, DateTime)</a>
   </div>
+  <div>
+      <a class="xref" href="Falcon.Messaging.MassTransit.EventPublisherExtensions.html#Falcon_Messaging_MassTransit_EventPublisherExtensions_PublishAsync__1___0_System_Threading_CancellationToken_">EventPublisherExtensions.PublishAsync&lt;TEvent&gt;(TEvent, CancellationToken)</a>
+  </div>
   </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Falcon_Messaging_Abstractions_ApplicationEvent__ctor_" data-uid="Falcon.Messaging.Abstractions.ApplicationEvent.#ctor*"></a>
+
+  <h3 id="Falcon_Messaging_Abstractions_ApplicationEvent__ctor_System_String_System_String_" data-uid="Falcon.Messaging.Abstractions.ApplicationEvent.#ctor(System.String,System.String)">
+  ApplicationEvent(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/Abstractions/ApplicationEvent.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ApplicationEvent(string userId, string eventType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>eventType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 
@@ -167,19 +209,18 @@ Class Entity&lt;TId&gt;  <a class="header-action link-secondary" title="View sou
 </h2>
 
 
-  <a id="Falcon_Domain_Abstractions_Entity_1_DomainEvents_" data-uid="Falcon.Domain.Abstractions.Entity`1.DomainEvents*"></a>
+  <a id="Falcon_Messaging_Abstractions_ApplicationEvent_EventType_" data-uid="Falcon.Messaging.Abstractions.ApplicationEvent.EventType*"></a>
 
-  <h3 id="Falcon_Domain_Abstractions_Entity_1_DomainEvents" data-uid="Falcon.Domain.Abstractions.Entity`1.DomainEvents">
-  DomainEvents
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Domain/Abstractions/Entity.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Falcon_Messaging_Abstractions_ApplicationEvent_EventType" data-uid="Falcon.Messaging.Abstractions.ApplicationEvent.EventType">
+  EventType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/Abstractions/ApplicationEvent.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[NotMapped]
-public IReadOnlyCollection&lt;DomainEvent&gt; DomainEvents { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string EventType { get; }</code></pre>
   </div>
 
 
@@ -188,7 +229,7 @@ public IReadOnlyCollection&lt;DomainEvent&gt; DomainEvents { get; }</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Falcon.Messaging.Abstractions.DomainEvent.html">DomainEvent</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -199,18 +240,18 @@ public IReadOnlyCollection&lt;DomainEvent&gt; DomainEvents { get; }</code></pre>
 
 
 
-  <a id="Falcon_Domain_Abstractions_Entity_1_Id_" data-uid="Falcon.Domain.Abstractions.Entity`1.Id*"></a>
+  <a id="Falcon_Messaging_Abstractions_ApplicationEvent_Id_" data-uid="Falcon.Messaging.Abstractions.ApplicationEvent.Id*"></a>
 
-  <h3 id="Falcon_Domain_Abstractions_Entity_1_Id" data-uid="Falcon.Domain.Abstractions.Entity`1.Id">
+  <h3 id="Falcon_Messaging_Abstractions_ApplicationEvent_Id" data-uid="Falcon.Messaging.Abstractions.ApplicationEvent.Id">
   Id
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Domain/Abstractions/Entity.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/Abstractions/ApplicationEvent.cs/#L5"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TId Id { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Guid Id { get; }</code></pre>
   </div>
 
 
@@ -219,7 +260,7 @@ public IReadOnlyCollection&lt;DomainEvent&gt; DomainEvents { get; }</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">TId</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
     <dd></dd>
   </dl>
 
@@ -230,27 +271,27 @@ public IReadOnlyCollection&lt;DomainEvent&gt; DomainEvents { get; }</code></pre>
 
 
 
-  <h2 class="section" id="methods">Methods
-</h2>
+  <a id="Falcon_Messaging_Abstractions_ApplicationEvent_OccurredOn_" data-uid="Falcon.Messaging.Abstractions.ApplicationEvent.OccurredOn*"></a>
 
-
-  <a id="Falcon_Domain_Abstractions_Entity_1_AddDomainEvent_" data-uid="Falcon.Domain.Abstractions.Entity`1.AddDomainEvent*"></a>
-
-  <h3 id="Falcon_Domain_Abstractions_Entity_1_AddDomainEvent_Falcon_Messaging_Abstractions_DomainEvent_" data-uid="Falcon.Domain.Abstractions.Entity`1.AddDomainEvent(Falcon.Messaging.Abstractions.DomainEvent)">
-  AddDomainEvent(DomainEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Domain/Abstractions/Entity.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Falcon_Messaging_Abstractions_ApplicationEvent_OccurredOn" data-uid="Falcon.Messaging.Abstractions.ApplicationEvent.OccurredOn">
+  OccurredOn
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/Abstractions/ApplicationEvent.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddDomainEvent(DomainEvent domainEvent)</code></pre>
+    <pre><code class="lang-csharp hljs">public DateTime OccurredOn { get; }</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
+
+
+
+
+  <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><code>domainEvent</code> <a class="xref" href="Falcon.Messaging.Abstractions.DomainEvent.html">DomainEvent</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
     <dd></dd>
   </dl>
 
@@ -261,59 +302,29 @@ public IReadOnlyCollection&lt;DomainEvent&gt; DomainEvents { get; }</code></pre>
 
 
 
+  <a id="Falcon_Messaging_Abstractions_ApplicationEvent_UserId_" data-uid="Falcon.Messaging.Abstractions.ApplicationEvent.UserId*"></a>
 
-
-
-
-  <a id="Falcon_Domain_Abstractions_Entity_1_ClearDomainEvents_" data-uid="Falcon.Domain.Abstractions.Entity`1.ClearDomainEvents*"></a>
-
-  <h3 id="Falcon_Domain_Abstractions_Entity_1_ClearDomainEvents" data-uid="Falcon.Domain.Abstractions.Entity`1.ClearDomainEvents">
-  ClearDomainEvents()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Domain/Abstractions/Entity.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Falcon_Messaging_Abstractions_ApplicationEvent_UserId" data-uid="Falcon.Messaging.Abstractions.ApplicationEvent.UserId">
+  UserId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/Abstractions/ApplicationEvent.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ClearDomainEvents()</code></pre>
+    <pre><code class="lang-csharp hljs">public string UserId { get; }</code></pre>
   </div>
 
 
 
 
 
-
-
-
-
-
-
-
-
-  <a id="Falcon_Domain_Abstractions_Entity_1_RemoveDomainEvent_" data-uid="Falcon.Domain.Abstractions.Entity`1.RemoveDomainEvent*"></a>
-
-  <h3 id="Falcon_Domain_Abstractions_Entity_1_RemoveDomainEvent_Falcon_Messaging_Abstractions_DomainEvent_" data-uid="Falcon.Domain.Abstractions.Entity`1.RemoveDomainEvent(Falcon.Messaging.Abstractions.DomainEvent)">
-  RemoveDomainEvent(DomainEvent)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Domain/Abstractions/Entity.cs/#L17"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RemoveDomainEvent(DomainEvent domainEvent)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
+  <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><code>domainEvent</code> <a class="xref" href="Falcon.Messaging.Abstractions.DomainEvent.html">DomainEvent</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
-
-
-
-
 
 
 
@@ -326,7 +337,7 @@ public IReadOnlyCollection&lt;DomainEvent&gt; DomainEvents { get; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Domain/Abstractions/Entity.cs/#L3" class="edit-link">Edit this page</a>
+          <a href="https://github.com/natarajanganapathi/falcon/blob/13/merge/src/Shared/Messaging/Abstractions/ApplicationEvent.cs/#L3" class="edit-link">Edit this page</a>
         </div>
 
 

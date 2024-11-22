@@ -2890,6 +2890,24 @@ references:
   commentId: N:Falcon.Domain.Abstractions
   fullName: Falcon.Domain.Abstractions
   nameWithType: Falcon.Domain.Abstractions
+- uid: Falcon.Domain.Abstractions.Attributes
+  name: Falcon.Domain.Abstractions.Attributes
+  href: api/Falcon.Domain.Abstractions.Attributes.html
+  commentId: N:Falcon.Domain.Abstractions.Attributes
+  fullName: Falcon.Domain.Abstractions.Attributes
+  nameWithType: Falcon.Domain.Abstractions.Attributes
+- uid: Falcon.Domain.Abstractions.Attributes.HomeDbAttribute
+  name: HomeDbAttribute
+  href: api/Falcon.Domain.Abstractions.Attributes.HomeDbAttribute.html
+  commentId: T:Falcon.Domain.Abstractions.Attributes.HomeDbAttribute
+  fullName: Falcon.Domain.Abstractions.Attributes.HomeDbAttribute
+  nameWithType: HomeDbAttribute
+- uid: Falcon.Domain.Abstractions.Attributes.TenantDbAttribute
+  name: TenantDbAttribute
+  href: api/Falcon.Domain.Abstractions.Attributes.TenantDbAttribute.html
+  commentId: T:Falcon.Domain.Abstractions.Attributes.TenantDbAttribute
+  fullName: Falcon.Domain.Abstractions.Attributes.TenantDbAttribute
+  nameWithType: TenantDbAttribute
 - uid: Falcon.Domain.Abstractions.Entity`1
   name: Entity<TId>
   href: api/Falcon.Domain.Abstractions.Entity-1.html
@@ -2899,23 +2917,57 @@ references:
   fullName.vb: Falcon.Domain.Abstractions.Entity(Of TId)
   nameWithType: Entity<TId>
   nameWithType.vb: Entity(Of TId)
-- uid: Falcon.Domain.Abstractions.Entity`1.GetId
-  name: GetId()
-  href: api/Falcon.Domain.Abstractions.Entity-1.html#Falcon_Domain_Abstractions_Entity_1_GetId
-  commentId: M:Falcon.Domain.Abstractions.Entity`1.GetId
-  fullName: Falcon.Domain.Abstractions.Entity<TId>.GetId()
-  fullName.vb: Falcon.Domain.Abstractions.Entity(Of TId).GetId()
-  nameWithType: Entity<TId>.GetId()
-  nameWithType.vb: Entity(Of TId).GetId()
-- uid: Falcon.Domain.Abstractions.Entity`1.GetId*
-  name: GetId
-  href: api/Falcon.Domain.Abstractions.Entity-1.html#Falcon_Domain_Abstractions_Entity_1_GetId_
-  commentId: Overload:Falcon.Domain.Abstractions.Entity`1.GetId
+- uid: Falcon.Domain.Abstractions.Entity`1.AddDomainEvent(Falcon.Messaging.Abstractions.DomainEvent)
+  name: AddDomainEvent(DomainEvent)
+  href: api/Falcon.Domain.Abstractions.Entity-1.html#Falcon_Domain_Abstractions_Entity_1_AddDomainEvent_Falcon_Messaging_Abstractions_DomainEvent_
+  commentId: M:Falcon.Domain.Abstractions.Entity`1.AddDomainEvent(Falcon.Messaging.Abstractions.DomainEvent)
+  fullName: Falcon.Domain.Abstractions.Entity<TId>.AddDomainEvent(Falcon.Messaging.Abstractions.DomainEvent)
+  fullName.vb: Falcon.Domain.Abstractions.Entity(Of TId).AddDomainEvent(Falcon.Messaging.Abstractions.DomainEvent)
+  nameWithType: Entity<TId>.AddDomainEvent(DomainEvent)
+  nameWithType.vb: Entity(Of TId).AddDomainEvent(DomainEvent)
+- uid: Falcon.Domain.Abstractions.Entity`1.AddDomainEvent*
+  name: AddDomainEvent
+  href: api/Falcon.Domain.Abstractions.Entity-1.html#Falcon_Domain_Abstractions_Entity_1_AddDomainEvent_
+  commentId: Overload:Falcon.Domain.Abstractions.Entity`1.AddDomainEvent
   isSpec: "True"
-  fullName: Falcon.Domain.Abstractions.Entity<TId>.GetId
-  fullName.vb: Falcon.Domain.Abstractions.Entity(Of TId).GetId
-  nameWithType: Entity<TId>.GetId
-  nameWithType.vb: Entity(Of TId).GetId
+  fullName: Falcon.Domain.Abstractions.Entity<TId>.AddDomainEvent
+  fullName.vb: Falcon.Domain.Abstractions.Entity(Of TId).AddDomainEvent
+  nameWithType: Entity<TId>.AddDomainEvent
+  nameWithType.vb: Entity(Of TId).AddDomainEvent
+- uid: Falcon.Domain.Abstractions.Entity`1.ClearDomainEvents
+  name: ClearDomainEvents()
+  href: api/Falcon.Domain.Abstractions.Entity-1.html#Falcon_Domain_Abstractions_Entity_1_ClearDomainEvents
+  commentId: M:Falcon.Domain.Abstractions.Entity`1.ClearDomainEvents
+  fullName: Falcon.Domain.Abstractions.Entity<TId>.ClearDomainEvents()
+  fullName.vb: Falcon.Domain.Abstractions.Entity(Of TId).ClearDomainEvents()
+  nameWithType: Entity<TId>.ClearDomainEvents()
+  nameWithType.vb: Entity(Of TId).ClearDomainEvents()
+- uid: Falcon.Domain.Abstractions.Entity`1.ClearDomainEvents*
+  name: ClearDomainEvents
+  href: api/Falcon.Domain.Abstractions.Entity-1.html#Falcon_Domain_Abstractions_Entity_1_ClearDomainEvents_
+  commentId: Overload:Falcon.Domain.Abstractions.Entity`1.ClearDomainEvents
+  isSpec: "True"
+  fullName: Falcon.Domain.Abstractions.Entity<TId>.ClearDomainEvents
+  fullName.vb: Falcon.Domain.Abstractions.Entity(Of TId).ClearDomainEvents
+  nameWithType: Entity<TId>.ClearDomainEvents
+  nameWithType.vb: Entity(Of TId).ClearDomainEvents
+- uid: Falcon.Domain.Abstractions.Entity`1.DomainEvents
+  name: DomainEvents
+  href: api/Falcon.Domain.Abstractions.Entity-1.html#Falcon_Domain_Abstractions_Entity_1_DomainEvents
+  commentId: P:Falcon.Domain.Abstractions.Entity`1.DomainEvents
+  fullName: Falcon.Domain.Abstractions.Entity<TId>.DomainEvents
+  fullName.vb: Falcon.Domain.Abstractions.Entity(Of TId).DomainEvents
+  nameWithType: Entity<TId>.DomainEvents
+  nameWithType.vb: Entity(Of TId).DomainEvents
+- uid: Falcon.Domain.Abstractions.Entity`1.DomainEvents*
+  name: DomainEvents
+  href: api/Falcon.Domain.Abstractions.Entity-1.html#Falcon_Domain_Abstractions_Entity_1_DomainEvents_
+  commentId: Overload:Falcon.Domain.Abstractions.Entity`1.DomainEvents
+  isSpec: "True"
+  fullName: Falcon.Domain.Abstractions.Entity<TId>.DomainEvents
+  fullName.vb: Falcon.Domain.Abstractions.Entity(Of TId).DomainEvents
+  nameWithType: Entity<TId>.DomainEvents
+  nameWithType.vb: Entity(Of TId).DomainEvents
 - uid: Falcon.Domain.Abstractions.Entity`1.Id
   name: Id
   href: api/Falcon.Domain.Abstractions.Entity-1.html#Falcon_Domain_Abstractions_Entity_1_Id
@@ -2933,6 +2985,23 @@ references:
   fullName.vb: Falcon.Domain.Abstractions.Entity(Of TId).Id
   nameWithType: Entity<TId>.Id
   nameWithType.vb: Entity(Of TId).Id
+- uid: Falcon.Domain.Abstractions.Entity`1.RemoveDomainEvent(Falcon.Messaging.Abstractions.DomainEvent)
+  name: RemoveDomainEvent(DomainEvent)
+  href: api/Falcon.Domain.Abstractions.Entity-1.html#Falcon_Domain_Abstractions_Entity_1_RemoveDomainEvent_Falcon_Messaging_Abstractions_DomainEvent_
+  commentId: M:Falcon.Domain.Abstractions.Entity`1.RemoveDomainEvent(Falcon.Messaging.Abstractions.DomainEvent)
+  fullName: Falcon.Domain.Abstractions.Entity<TId>.RemoveDomainEvent(Falcon.Messaging.Abstractions.DomainEvent)
+  fullName.vb: Falcon.Domain.Abstractions.Entity(Of TId).RemoveDomainEvent(Falcon.Messaging.Abstractions.DomainEvent)
+  nameWithType: Entity<TId>.RemoveDomainEvent(DomainEvent)
+  nameWithType.vb: Entity(Of TId).RemoveDomainEvent(DomainEvent)
+- uid: Falcon.Domain.Abstractions.Entity`1.RemoveDomainEvent*
+  name: RemoveDomainEvent
+  href: api/Falcon.Domain.Abstractions.Entity-1.html#Falcon_Domain_Abstractions_Entity_1_RemoveDomainEvent_
+  commentId: Overload:Falcon.Domain.Abstractions.Entity`1.RemoveDomainEvent
+  isSpec: "True"
+  fullName: Falcon.Domain.Abstractions.Entity<TId>.RemoveDomainEvent
+  fullName.vb: Falcon.Domain.Abstractions.Entity(Of TId).RemoveDomainEvent
+  nameWithType: Entity<TId>.RemoveDomainEvent
+  nameWithType.vb: Entity(Of TId).RemoveDomainEvent
 - uid: Falcon.Domain.Abstractions.Exceptions
   name: Falcon.Domain.Abstractions.Exceptions
   href: api/Falcon.Domain.Abstractions.Exceptions.html
@@ -3377,24 +3446,6 @@ references:
   isSpec: "True"
   fullName: Falcon.Infrastructure.Abstractions.AssemblyCache.Types
   nameWithType: AssemblyCache.Types
-- uid: Falcon.Infrastructure.Abstractions.Attributes
-  name: Falcon.Infrastructure.Abstractions.Attributes
-  href: api/Falcon.Infrastructure.Abstractions.Attributes.html
-  commentId: N:Falcon.Infrastructure.Abstractions.Attributes
-  fullName: Falcon.Infrastructure.Abstractions.Attributes
-  nameWithType: Falcon.Infrastructure.Abstractions.Attributes
-- uid: Falcon.Infrastructure.Abstractions.Attributes.HomeDbAttribute
-  name: HomeDbAttribute
-  href: api/Falcon.Infrastructure.Abstractions.Attributes.HomeDbAttribute.html
-  commentId: T:Falcon.Infrastructure.Abstractions.Attributes.HomeDbAttribute
-  fullName: Falcon.Infrastructure.Abstractions.Attributes.HomeDbAttribute
-  nameWithType: HomeDbAttribute
-- uid: Falcon.Infrastructure.Abstractions.Attributes.TenantDbAttribute
-  name: TenantDbAttribute
-  href: api/Falcon.Infrastructure.Abstractions.Attributes.TenantDbAttribute.html
-  commentId: T:Falcon.Infrastructure.Abstractions.Attributes.TenantDbAttribute
-  fullName: Falcon.Infrastructure.Abstractions.Attributes.TenantDbAttribute
-  nameWithType: TenantDbAttribute
 - uid: Falcon.Infrastructure.Abstractions.CreateEntityException
   name: CreateEntityException
   href: api/Falcon.Infrastructure.Abstractions.CreateEntityException.html
@@ -5869,18 +5920,179 @@ references:
   isSpec: "True"
   fullName: Falcon.Infrastructure.EntityFramework.ServiceCollectionExtensions.UseInfrastructureEntityFrameworkMiddelwares
   nameWithType: ServiceCollectionExtensions.UseInfrastructureEntityFrameworkMiddelwares
-- uid: Falcon.Messaging
-  name: Falcon.Messaging
-  href: api/Falcon.Messaging.html
-  commentId: N:Falcon.Messaging
-  fullName: Falcon.Messaging
-  nameWithType: Falcon.Messaging
 - uid: Falcon.Messaging.Abstractions
   name: Falcon.Messaging.Abstractions
   href: api/Falcon.Messaging.Abstractions.html
   commentId: N:Falcon.Messaging.Abstractions
   fullName: Falcon.Messaging.Abstractions
   nameWithType: Falcon.Messaging.Abstractions
+- uid: Falcon.Messaging.Abstractions.ApplicationEvent
+  name: ApplicationEvent
+  href: api/Falcon.Messaging.Abstractions.ApplicationEvent.html
+  commentId: T:Falcon.Messaging.Abstractions.ApplicationEvent
+  fullName: Falcon.Messaging.Abstractions.ApplicationEvent
+  nameWithType: ApplicationEvent
+- uid: Falcon.Messaging.Abstractions.ApplicationEvent.#ctor(System.String,System.String)
+  name: ApplicationEvent(string, string)
+  href: api/Falcon.Messaging.Abstractions.ApplicationEvent.html#Falcon_Messaging_Abstractions_ApplicationEvent__ctor_System_String_System_String_
+  commentId: M:Falcon.Messaging.Abstractions.ApplicationEvent.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: Falcon.Messaging.Abstractions.ApplicationEvent.ApplicationEvent(string, string)
+  fullName.vb: Falcon.Messaging.Abstractions.ApplicationEvent.New(String, String)
+  nameWithType: ApplicationEvent.ApplicationEvent(string, string)
+  nameWithType.vb: ApplicationEvent.New(String, String)
+- uid: Falcon.Messaging.Abstractions.ApplicationEvent.#ctor*
+  name: ApplicationEvent
+  href: api/Falcon.Messaging.Abstractions.ApplicationEvent.html#Falcon_Messaging_Abstractions_ApplicationEvent__ctor_
+  commentId: Overload:Falcon.Messaging.Abstractions.ApplicationEvent.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Falcon.Messaging.Abstractions.ApplicationEvent.ApplicationEvent
+  fullName.vb: Falcon.Messaging.Abstractions.ApplicationEvent.New
+  nameWithType: ApplicationEvent.ApplicationEvent
+  nameWithType.vb: ApplicationEvent.New
+- uid: Falcon.Messaging.Abstractions.ApplicationEvent.EventType
+  name: EventType
+  href: api/Falcon.Messaging.Abstractions.ApplicationEvent.html#Falcon_Messaging_Abstractions_ApplicationEvent_EventType
+  commentId: P:Falcon.Messaging.Abstractions.ApplicationEvent.EventType
+  fullName: Falcon.Messaging.Abstractions.ApplicationEvent.EventType
+  nameWithType: ApplicationEvent.EventType
+- uid: Falcon.Messaging.Abstractions.ApplicationEvent.EventType*
+  name: EventType
+  href: api/Falcon.Messaging.Abstractions.ApplicationEvent.html#Falcon_Messaging_Abstractions_ApplicationEvent_EventType_
+  commentId: Overload:Falcon.Messaging.Abstractions.ApplicationEvent.EventType
+  isSpec: "True"
+  fullName: Falcon.Messaging.Abstractions.ApplicationEvent.EventType
+  nameWithType: ApplicationEvent.EventType
+- uid: Falcon.Messaging.Abstractions.ApplicationEvent.Id
+  name: Id
+  href: api/Falcon.Messaging.Abstractions.ApplicationEvent.html#Falcon_Messaging_Abstractions_ApplicationEvent_Id
+  commentId: P:Falcon.Messaging.Abstractions.ApplicationEvent.Id
+  fullName: Falcon.Messaging.Abstractions.ApplicationEvent.Id
+  nameWithType: ApplicationEvent.Id
+- uid: Falcon.Messaging.Abstractions.ApplicationEvent.Id*
+  name: Id
+  href: api/Falcon.Messaging.Abstractions.ApplicationEvent.html#Falcon_Messaging_Abstractions_ApplicationEvent_Id_
+  commentId: Overload:Falcon.Messaging.Abstractions.ApplicationEvent.Id
+  isSpec: "True"
+  fullName: Falcon.Messaging.Abstractions.ApplicationEvent.Id
+  nameWithType: ApplicationEvent.Id
+- uid: Falcon.Messaging.Abstractions.ApplicationEvent.OccurredOn
+  name: OccurredOn
+  href: api/Falcon.Messaging.Abstractions.ApplicationEvent.html#Falcon_Messaging_Abstractions_ApplicationEvent_OccurredOn
+  commentId: P:Falcon.Messaging.Abstractions.ApplicationEvent.OccurredOn
+  fullName: Falcon.Messaging.Abstractions.ApplicationEvent.OccurredOn
+  nameWithType: ApplicationEvent.OccurredOn
+- uid: Falcon.Messaging.Abstractions.ApplicationEvent.OccurredOn*
+  name: OccurredOn
+  href: api/Falcon.Messaging.Abstractions.ApplicationEvent.html#Falcon_Messaging_Abstractions_ApplicationEvent_OccurredOn_
+  commentId: Overload:Falcon.Messaging.Abstractions.ApplicationEvent.OccurredOn
+  isSpec: "True"
+  fullName: Falcon.Messaging.Abstractions.ApplicationEvent.OccurredOn
+  nameWithType: ApplicationEvent.OccurredOn
+- uid: Falcon.Messaging.Abstractions.ApplicationEvent.UserId
+  name: UserId
+  href: api/Falcon.Messaging.Abstractions.ApplicationEvent.html#Falcon_Messaging_Abstractions_ApplicationEvent_UserId
+  commentId: P:Falcon.Messaging.Abstractions.ApplicationEvent.UserId
+  fullName: Falcon.Messaging.Abstractions.ApplicationEvent.UserId
+  nameWithType: ApplicationEvent.UserId
+- uid: Falcon.Messaging.Abstractions.ApplicationEvent.UserId*
+  name: UserId
+  href: api/Falcon.Messaging.Abstractions.ApplicationEvent.html#Falcon_Messaging_Abstractions_ApplicationEvent_UserId_
+  commentId: Overload:Falcon.Messaging.Abstractions.ApplicationEvent.UserId
+  isSpec: "True"
+  fullName: Falcon.Messaging.Abstractions.ApplicationEvent.UserId
+  nameWithType: ApplicationEvent.UserId
+- uid: Falcon.Messaging.Abstractions.DomainEvent
+  name: DomainEvent
+  href: api/Falcon.Messaging.Abstractions.DomainEvent.html
+  commentId: T:Falcon.Messaging.Abstractions.DomainEvent
+  fullName: Falcon.Messaging.Abstractions.DomainEvent
+  nameWithType: DomainEvent
+- uid: Falcon.Messaging.Abstractions.DomainEvent.#ctor(System.Guid,System.Int32)
+  name: DomainEvent(Guid, int)
+  href: api/Falcon.Messaging.Abstractions.DomainEvent.html#Falcon_Messaging_Abstractions_DomainEvent__ctor_System_Guid_System_Int32_
+  commentId: M:Falcon.Messaging.Abstractions.DomainEvent.#ctor(System.Guid,System.Int32)
+  name.vb: New(Guid, Integer)
+  fullName: Falcon.Messaging.Abstractions.DomainEvent.DomainEvent(System.Guid, int)
+  fullName.vb: Falcon.Messaging.Abstractions.DomainEvent.New(System.Guid, Integer)
+  nameWithType: DomainEvent.DomainEvent(Guid, int)
+  nameWithType.vb: DomainEvent.New(Guid, Integer)
+- uid: Falcon.Messaging.Abstractions.DomainEvent.#ctor*
+  name: DomainEvent
+  href: api/Falcon.Messaging.Abstractions.DomainEvent.html#Falcon_Messaging_Abstractions_DomainEvent__ctor_
+  commentId: Overload:Falcon.Messaging.Abstractions.DomainEvent.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Falcon.Messaging.Abstractions.DomainEvent.DomainEvent
+  fullName.vb: Falcon.Messaging.Abstractions.DomainEvent.New
+  nameWithType: DomainEvent.DomainEvent
+  nameWithType.vb: DomainEvent.New
+- uid: Falcon.Messaging.Abstractions.DomainEvent.AggregateId
+  name: AggregateId
+  href: api/Falcon.Messaging.Abstractions.DomainEvent.html#Falcon_Messaging_Abstractions_DomainEvent_AggregateId
+  commentId: P:Falcon.Messaging.Abstractions.DomainEvent.AggregateId
+  fullName: Falcon.Messaging.Abstractions.DomainEvent.AggregateId
+  nameWithType: DomainEvent.AggregateId
+- uid: Falcon.Messaging.Abstractions.DomainEvent.AggregateId*
+  name: AggregateId
+  href: api/Falcon.Messaging.Abstractions.DomainEvent.html#Falcon_Messaging_Abstractions_DomainEvent_AggregateId_
+  commentId: Overload:Falcon.Messaging.Abstractions.DomainEvent.AggregateId
+  isSpec: "True"
+  fullName: Falcon.Messaging.Abstractions.DomainEvent.AggregateId
+  nameWithType: DomainEvent.AggregateId
+- uid: Falcon.Messaging.Abstractions.DomainEvent.GetEventType
+  name: GetEventType()
+  href: api/Falcon.Messaging.Abstractions.DomainEvent.html#Falcon_Messaging_Abstractions_DomainEvent_GetEventType
+  commentId: M:Falcon.Messaging.Abstractions.DomainEvent.GetEventType
+  fullName: Falcon.Messaging.Abstractions.DomainEvent.GetEventType()
+  nameWithType: DomainEvent.GetEventType()
+- uid: Falcon.Messaging.Abstractions.DomainEvent.GetEventType*
+  name: GetEventType
+  href: api/Falcon.Messaging.Abstractions.DomainEvent.html#Falcon_Messaging_Abstractions_DomainEvent_GetEventType_
+  commentId: Overload:Falcon.Messaging.Abstractions.DomainEvent.GetEventType
+  isSpec: "True"
+  fullName: Falcon.Messaging.Abstractions.DomainEvent.GetEventType
+  nameWithType: DomainEvent.GetEventType
+- uid: Falcon.Messaging.Abstractions.DomainEvent.Id
+  name: Id
+  href: api/Falcon.Messaging.Abstractions.DomainEvent.html#Falcon_Messaging_Abstractions_DomainEvent_Id
+  commentId: P:Falcon.Messaging.Abstractions.DomainEvent.Id
+  fullName: Falcon.Messaging.Abstractions.DomainEvent.Id
+  nameWithType: DomainEvent.Id
+- uid: Falcon.Messaging.Abstractions.DomainEvent.Id*
+  name: Id
+  href: api/Falcon.Messaging.Abstractions.DomainEvent.html#Falcon_Messaging_Abstractions_DomainEvent_Id_
+  commentId: Overload:Falcon.Messaging.Abstractions.DomainEvent.Id
+  isSpec: "True"
+  fullName: Falcon.Messaging.Abstractions.DomainEvent.Id
+  nameWithType: DomainEvent.Id
+- uid: Falcon.Messaging.Abstractions.DomainEvent.OccurredOn
+  name: OccurredOn
+  href: api/Falcon.Messaging.Abstractions.DomainEvent.html#Falcon_Messaging_Abstractions_DomainEvent_OccurredOn
+  commentId: P:Falcon.Messaging.Abstractions.DomainEvent.OccurredOn
+  fullName: Falcon.Messaging.Abstractions.DomainEvent.OccurredOn
+  nameWithType: DomainEvent.OccurredOn
+- uid: Falcon.Messaging.Abstractions.DomainEvent.OccurredOn*
+  name: OccurredOn
+  href: api/Falcon.Messaging.Abstractions.DomainEvent.html#Falcon_Messaging_Abstractions_DomainEvent_OccurredOn_
+  commentId: Overload:Falcon.Messaging.Abstractions.DomainEvent.OccurredOn
+  isSpec: "True"
+  fullName: Falcon.Messaging.Abstractions.DomainEvent.OccurredOn
+  nameWithType: DomainEvent.OccurredOn
+- uid: Falcon.Messaging.Abstractions.DomainEvent.Version
+  name: Version
+  href: api/Falcon.Messaging.Abstractions.DomainEvent.html#Falcon_Messaging_Abstractions_DomainEvent_Version
+  commentId: P:Falcon.Messaging.Abstractions.DomainEvent.Version
+  fullName: Falcon.Messaging.Abstractions.DomainEvent.Version
+  nameWithType: DomainEvent.Version
+- uid: Falcon.Messaging.Abstractions.DomainEvent.Version*
+  name: Version
+  href: api/Falcon.Messaging.Abstractions.DomainEvent.html#Falcon_Messaging_Abstractions_DomainEvent_Version_
+  commentId: Overload:Falcon.Messaging.Abstractions.DomainEvent.Version
+  isSpec: "True"
+  fullName: Falcon.Messaging.Abstractions.DomainEvent.Version
+  nameWithType: DomainEvent.Version
 - uid: Falcon.Messaging.Abstractions.IApplicationEvent
   name: IApplicationEvent
   href: api/Falcon.Messaging.Abstractions.IApplicationEvent.html
@@ -5913,6 +6125,12 @@ references:
   isSpec: "True"
   fullName: Falcon.Messaging.Abstractions.IApplicationEvent.UserId
   nameWithType: IApplicationEvent.UserId
+- uid: Falcon.Messaging.Abstractions.ICommand
+  name: ICommand
+  href: api/Falcon.Messaging.Abstractions.ICommand.html
+  commentId: T:Falcon.Messaging.Abstractions.ICommand
+  fullName: Falcon.Messaging.Abstractions.ICommand
+  nameWithType: ICommand
 - uid: Falcon.Messaging.Abstractions.IDomainEvent
   name: IDomainEvent
   href: api/Falcon.Messaging.Abstractions.IDomainEvent.html
@@ -6031,982 +6249,815 @@ references:
   isSpec: "True"
   fullName: Falcon.Messaging.Abstractions.IIntegrationEvent.EventSource
   nameWithType: IIntegrationEvent.EventSource
-- uid: Falcon.Messaging.ApplicationEvents
-  name: Falcon.Messaging.ApplicationEvents
-  href: api/Falcon.Messaging.ApplicationEvents.html
-  commentId: N:Falcon.Messaging.ApplicationEvents
-  fullName: Falcon.Messaging.ApplicationEvents
-  nameWithType: Falcon.Messaging.ApplicationEvents
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEvent
-  name: ApplicationEvent
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEvent.html
-  commentId: T:Falcon.Messaging.ApplicationEvents.ApplicationEvent
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEvent
-  nameWithType: ApplicationEvent
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEvent.#ctor(System.String,System.String)
-  name: ApplicationEvent(string, string)
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEvent.html#Falcon_Messaging_ApplicationEvents_ApplicationEvent__ctor_System_String_System_String_
-  commentId: M:Falcon.Messaging.ApplicationEvents.ApplicationEvent.#ctor(System.String,System.String)
-  name.vb: New(String, String)
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEvent.ApplicationEvent(string, string)
-  fullName.vb: Falcon.Messaging.ApplicationEvents.ApplicationEvent.New(String, String)
-  nameWithType: ApplicationEvent.ApplicationEvent(string, string)
-  nameWithType.vb: ApplicationEvent.New(String, String)
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEvent.#ctor*
-  name: ApplicationEvent
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEvent.html#Falcon_Messaging_ApplicationEvents_ApplicationEvent__ctor_
-  commentId: Overload:Falcon.Messaging.ApplicationEvents.ApplicationEvent.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEvent.ApplicationEvent
-  fullName.vb: Falcon.Messaging.ApplicationEvents.ApplicationEvent.New
-  nameWithType: ApplicationEvent.ApplicationEvent
-  nameWithType.vb: ApplicationEvent.New
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEvent.EventType
-  name: EventType
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEvent.html#Falcon_Messaging_ApplicationEvents_ApplicationEvent_EventType
-  commentId: P:Falcon.Messaging.ApplicationEvents.ApplicationEvent.EventType
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEvent.EventType
-  nameWithType: ApplicationEvent.EventType
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEvent.EventType*
-  name: EventType
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEvent.html#Falcon_Messaging_ApplicationEvents_ApplicationEvent_EventType_
-  commentId: Overload:Falcon.Messaging.ApplicationEvents.ApplicationEvent.EventType
-  isSpec: "True"
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEvent.EventType
-  nameWithType: ApplicationEvent.EventType
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEvent.Id
-  name: Id
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEvent.html#Falcon_Messaging_ApplicationEvents_ApplicationEvent_Id
-  commentId: P:Falcon.Messaging.ApplicationEvents.ApplicationEvent.Id
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEvent.Id
-  nameWithType: ApplicationEvent.Id
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEvent.Id*
-  name: Id
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEvent.html#Falcon_Messaging_ApplicationEvents_ApplicationEvent_Id_
-  commentId: Overload:Falcon.Messaging.ApplicationEvents.ApplicationEvent.Id
-  isSpec: "True"
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEvent.Id
-  nameWithType: ApplicationEvent.Id
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEvent.OccurredOn
-  name: OccurredOn
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEvent.html#Falcon_Messaging_ApplicationEvents_ApplicationEvent_OccurredOn
-  commentId: P:Falcon.Messaging.ApplicationEvents.ApplicationEvent.OccurredOn
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEvent.OccurredOn
-  nameWithType: ApplicationEvent.OccurredOn
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEvent.OccurredOn*
-  name: OccurredOn
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEvent.html#Falcon_Messaging_ApplicationEvents_ApplicationEvent_OccurredOn_
-  commentId: Overload:Falcon.Messaging.ApplicationEvents.ApplicationEvent.OccurredOn
-  isSpec: "True"
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEvent.OccurredOn
-  nameWithType: ApplicationEvent.OccurredOn
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEvent.UserId
-  name: UserId
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEvent.html#Falcon_Messaging_ApplicationEvents_ApplicationEvent_UserId
-  commentId: P:Falcon.Messaging.ApplicationEvents.ApplicationEvent.UserId
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEvent.UserId
-  nameWithType: ApplicationEvent.UserId
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEvent.UserId*
-  name: UserId
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEvent.html#Falcon_Messaging_ApplicationEvents_ApplicationEvent_UserId_
-  commentId: Overload:Falcon.Messaging.ApplicationEvents.ApplicationEvent.UserId
-  isSpec: "True"
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEvent.UserId
-  nameWithType: ApplicationEvent.UserId
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEventBus
-  name: ApplicationEventBus
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEventBus.html
-  commentId: T:Falcon.Messaging.ApplicationEvents.ApplicationEventBus
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEventBus
-  nameWithType: ApplicationEventBus
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEventBus.#ctor(MassTransit.IBusControl)
-  name: ApplicationEventBus(IBusControl)
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEventBus.html#Falcon_Messaging_ApplicationEvents_ApplicationEventBus__ctor_MassTransit_IBusControl_
-  commentId: M:Falcon.Messaging.ApplicationEvents.ApplicationEventBus.#ctor(MassTransit.IBusControl)
-  name.vb: New(IBusControl)
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEventBus.ApplicationEventBus(MassTransit.IBusControl)
-  fullName.vb: Falcon.Messaging.ApplicationEvents.ApplicationEventBus.New(MassTransit.IBusControl)
-  nameWithType: ApplicationEventBus.ApplicationEventBus(IBusControl)
-  nameWithType.vb: ApplicationEventBus.New(IBusControl)
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEventBus.#ctor*
-  name: ApplicationEventBus
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEventBus.html#Falcon_Messaging_ApplicationEvents_ApplicationEventBus__ctor_
-  commentId: Overload:Falcon.Messaging.ApplicationEvents.ApplicationEventBus.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEventBus.ApplicationEventBus
-  fullName.vb: Falcon.Messaging.ApplicationEvents.ApplicationEventBus.New
-  nameWithType: ApplicationEventBus.ApplicationEventBus
-  nameWithType.vb: ApplicationEventBus.New
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher
-  name: ApplicationEventPublisher
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.html
-  commentId: T:Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher
-  nameWithType: ApplicationEventPublisher
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.#ctor(Falcon.Messaging.ApplicationEvents.ApplicationEventBus)
-  name: ApplicationEventPublisher(ApplicationEventBus)
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.html#Falcon_Messaging_ApplicationEvents_ApplicationEventPublisher__ctor_Falcon_Messaging_ApplicationEvents_ApplicationEventBus_
-  commentId: M:Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.#ctor(Falcon.Messaging.ApplicationEvents.ApplicationEventBus)
-  name.vb: New(ApplicationEventBus)
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.ApplicationEventPublisher(Falcon.Messaging.ApplicationEvents.ApplicationEventBus)
-  fullName.vb: Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.New(Falcon.Messaging.ApplicationEvents.ApplicationEventBus)
-  nameWithType: ApplicationEventPublisher.ApplicationEventPublisher(ApplicationEventBus)
-  nameWithType.vb: ApplicationEventPublisher.New(ApplicationEventBus)
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.#ctor*
-  name: ApplicationEventPublisher
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.html#Falcon_Messaging_ApplicationEvents_ApplicationEventPublisher__ctor_
-  commentId: Overload:Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.ApplicationEventPublisher
-  fullName.vb: Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.New
-  nameWithType: ApplicationEventPublisher.ApplicationEventPublisher
-  nameWithType.vb: ApplicationEventPublisher.New
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.PublishAsync*
-  name: PublishAsync
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.html#Falcon_Messaging_ApplicationEvents_ApplicationEventPublisher_PublishAsync_
-  commentId: Overload:Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.PublishAsync
-  isSpec: "True"
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.PublishAsync
-  nameWithType: ApplicationEventPublisher.PublishAsync
-- uid: Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
-  name: PublishAsync<TEvent>(TEvent, CancellationToken)
-  href: api/Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.html#Falcon_Messaging_ApplicationEvents_ApplicationEventPublisher_PublishAsync__1___0_System_Threading_CancellationToken_
-  commentId: M:Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
-  name.vb: PublishAsync(Of TEvent)(TEvent, CancellationToken)
-  fullName: Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.PublishAsync<TEvent>(TEvent, System.Threading.CancellationToken)
-  fullName.vb: Falcon.Messaging.ApplicationEvents.ApplicationEventPublisher.PublishAsync(Of TEvent)(TEvent, System.Threading.CancellationToken)
-  nameWithType: ApplicationEventPublisher.PublishAsync<TEvent>(TEvent, CancellationToken)
-  nameWithType.vb: ApplicationEventPublisher.PublishAsync(Of TEvent)(TEvent, CancellationToken)
-- uid: Falcon.Messaging.ApplicationEvents.IApplicationEventBus
-  name: IApplicationEventBus
-  href: api/Falcon.Messaging.ApplicationEvents.IApplicationEventBus.html
-  commentId: T:Falcon.Messaging.ApplicationEvents.IApplicationEventBus
-  fullName: Falcon.Messaging.ApplicationEvents.IApplicationEventBus
-  nameWithType: IApplicationEventBus
-- uid: Falcon.Messaging.ApplicationEvents.IApplicationEventConsumer`1
-  name: IApplicationEventConsumer<TApplicationEvent>
-  href: api/Falcon.Messaging.ApplicationEvents.IApplicationEventConsumer-1.html
-  commentId: T:Falcon.Messaging.ApplicationEvents.IApplicationEventConsumer`1
-  name.vb: IApplicationEventConsumer(Of TApplicationEvent)
-  fullName: Falcon.Messaging.ApplicationEvents.IApplicationEventConsumer<TApplicationEvent>
-  fullName.vb: Falcon.Messaging.ApplicationEvents.IApplicationEventConsumer(Of TApplicationEvent)
-  nameWithType: IApplicationEventConsumer<TApplicationEvent>
-  nameWithType.vb: IApplicationEventConsumer(Of TApplicationEvent)
-- uid: Falcon.Messaging.Command
-  name: Falcon.Messaging.Command
-  href: api/Falcon.Messaging.Command.html
-  commentId: N:Falcon.Messaging.Command
-  fullName: Falcon.Messaging.Command
-  nameWithType: Falcon.Messaging.Command
-- uid: Falcon.Messaging.Command.CommandSender
-  name: CommandSender
-  href: api/Falcon.Messaging.Command.CommandSender.html
-  commentId: T:Falcon.Messaging.Command.CommandSender
-  fullName: Falcon.Messaging.Command.CommandSender
-  nameWithType: CommandSender
-- uid: Falcon.Messaging.Command.CommandSender.#ctor(MassTransit.Mediator.IMediator)
-  name: CommandSender(IMediator)
-  href: api/Falcon.Messaging.Command.CommandSender.html#Falcon_Messaging_Command_CommandSender__ctor_MassTransit_Mediator_IMediator_
-  commentId: M:Falcon.Messaging.Command.CommandSender.#ctor(MassTransit.Mediator.IMediator)
-  name.vb: New(IMediator)
-  fullName: Falcon.Messaging.Command.CommandSender.CommandSender(MassTransit.Mediator.IMediator)
-  fullName.vb: Falcon.Messaging.Command.CommandSender.New(MassTransit.Mediator.IMediator)
-  nameWithType: CommandSender.CommandSender(IMediator)
-  nameWithType.vb: CommandSender.New(IMediator)
-- uid: Falcon.Messaging.Command.CommandSender.#ctor*
-  name: CommandSender
-  href: api/Falcon.Messaging.Command.CommandSender.html#Falcon_Messaging_Command_CommandSender__ctor_
-  commentId: Overload:Falcon.Messaging.Command.CommandSender.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Falcon.Messaging.Command.CommandSender.CommandSender
-  fullName.vb: Falcon.Messaging.Command.CommandSender.New
-  nameWithType: CommandSender.CommandSender
-  nameWithType.vb: CommandSender.New
-- uid: Falcon.Messaging.Command.CommandSender.SendAsync*
-  name: SendAsync
-  href: api/Falcon.Messaging.Command.CommandSender.html#Falcon_Messaging_Command_CommandSender_SendAsync_
-  commentId: Overload:Falcon.Messaging.Command.CommandSender.SendAsync
-  isSpec: "True"
-  fullName: Falcon.Messaging.Command.CommandSender.SendAsync
-  nameWithType: CommandSender.SendAsync
-- uid: Falcon.Messaging.Command.CommandSender.SendAsync``1(``0,System.Threading.CancellationToken)
-  name: SendAsync<TCommand>(TCommand, CancellationToken)
-  href: api/Falcon.Messaging.Command.CommandSender.html#Falcon_Messaging_Command_CommandSender_SendAsync__1___0_System_Threading_CancellationToken_
-  commentId: M:Falcon.Messaging.Command.CommandSender.SendAsync``1(``0,System.Threading.CancellationToken)
-  name.vb: SendAsync(Of TCommand)(TCommand, CancellationToken)
-  fullName: Falcon.Messaging.Command.CommandSender.SendAsync<TCommand>(TCommand, System.Threading.CancellationToken)
-  fullName.vb: Falcon.Messaging.Command.CommandSender.SendAsync(Of TCommand)(TCommand, System.Threading.CancellationToken)
-  nameWithType: CommandSender.SendAsync<TCommand>(TCommand, CancellationToken)
-  nameWithType.vb: CommandSender.SendAsync(Of TCommand)(TCommand, CancellationToken)
-- uid: Falcon.Messaging.Command.ICommand
-  name: ICommand
-  href: api/Falcon.Messaging.Command.ICommand.html
-  commentId: T:Falcon.Messaging.Command.ICommand
-  fullName: Falcon.Messaging.Command.ICommand
-  nameWithType: ICommand
-- uid: Falcon.Messaging.Command.ICommandConsumer`1
-  name: ICommandConsumer<TEntity>
-  href: api/Falcon.Messaging.Command.ICommandConsumer-1.html
-  commentId: T:Falcon.Messaging.Command.ICommandConsumer`1
-  name.vb: ICommandConsumer(Of TEntity)
-  fullName: Falcon.Messaging.Command.ICommandConsumer<TEntity>
-  fullName.vb: Falcon.Messaging.Command.ICommandConsumer(Of TEntity)
-  nameWithType: ICommandConsumer<TEntity>
-  nameWithType.vb: ICommandConsumer(Of TEntity)
-- uid: Falcon.Messaging.DomainEvents
-  name: Falcon.Messaging.DomainEvents
-  href: api/Falcon.Messaging.DomainEvents.html
-  commentId: N:Falcon.Messaging.DomainEvents
-  fullName: Falcon.Messaging.DomainEvents
-  nameWithType: Falcon.Messaging.DomainEvents
-- uid: Falcon.Messaging.DomainEvents.DomainEvent
-  name: DomainEvent
-  href: api/Falcon.Messaging.DomainEvents.DomainEvent.html
-  commentId: T:Falcon.Messaging.DomainEvents.DomainEvent
-  fullName: Falcon.Messaging.DomainEvents.DomainEvent
-  nameWithType: DomainEvent
-- uid: Falcon.Messaging.DomainEvents.DomainEvent.#ctor(System.Guid,System.Int32)
-  name: DomainEvent(Guid, int)
-  href: api/Falcon.Messaging.DomainEvents.DomainEvent.html#Falcon_Messaging_DomainEvents_DomainEvent__ctor_System_Guid_System_Int32_
-  commentId: M:Falcon.Messaging.DomainEvents.DomainEvent.#ctor(System.Guid,System.Int32)
-  name.vb: New(Guid, Integer)
-  fullName: Falcon.Messaging.DomainEvents.DomainEvent.DomainEvent(System.Guid, int)
-  fullName.vb: Falcon.Messaging.DomainEvents.DomainEvent.New(System.Guid, Integer)
-  nameWithType: DomainEvent.DomainEvent(Guid, int)
-  nameWithType.vb: DomainEvent.New(Guid, Integer)
-- uid: Falcon.Messaging.DomainEvents.DomainEvent.#ctor*
-  name: DomainEvent
-  href: api/Falcon.Messaging.DomainEvents.DomainEvent.html#Falcon_Messaging_DomainEvents_DomainEvent__ctor_
-  commentId: Overload:Falcon.Messaging.DomainEvents.DomainEvent.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Falcon.Messaging.DomainEvents.DomainEvent.DomainEvent
-  fullName.vb: Falcon.Messaging.DomainEvents.DomainEvent.New
-  nameWithType: DomainEvent.DomainEvent
-  nameWithType.vb: DomainEvent.New
-- uid: Falcon.Messaging.DomainEvents.DomainEvent.AggregateId
-  name: AggregateId
-  href: api/Falcon.Messaging.DomainEvents.DomainEvent.html#Falcon_Messaging_DomainEvents_DomainEvent_AggregateId
-  commentId: P:Falcon.Messaging.DomainEvents.DomainEvent.AggregateId
-  fullName: Falcon.Messaging.DomainEvents.DomainEvent.AggregateId
-  nameWithType: DomainEvent.AggregateId
-- uid: Falcon.Messaging.DomainEvents.DomainEvent.AggregateId*
-  name: AggregateId
-  href: api/Falcon.Messaging.DomainEvents.DomainEvent.html#Falcon_Messaging_DomainEvents_DomainEvent_AggregateId_
-  commentId: Overload:Falcon.Messaging.DomainEvents.DomainEvent.AggregateId
-  isSpec: "True"
-  fullName: Falcon.Messaging.DomainEvents.DomainEvent.AggregateId
-  nameWithType: DomainEvent.AggregateId
-- uid: Falcon.Messaging.DomainEvents.DomainEvent.GetEventType
-  name: GetEventType()
-  href: api/Falcon.Messaging.DomainEvents.DomainEvent.html#Falcon_Messaging_DomainEvents_DomainEvent_GetEventType
-  commentId: M:Falcon.Messaging.DomainEvents.DomainEvent.GetEventType
-  fullName: Falcon.Messaging.DomainEvents.DomainEvent.GetEventType()
-  nameWithType: DomainEvent.GetEventType()
-- uid: Falcon.Messaging.DomainEvents.DomainEvent.GetEventType*
-  name: GetEventType
-  href: api/Falcon.Messaging.DomainEvents.DomainEvent.html#Falcon_Messaging_DomainEvents_DomainEvent_GetEventType_
-  commentId: Overload:Falcon.Messaging.DomainEvents.DomainEvent.GetEventType
-  isSpec: "True"
-  fullName: Falcon.Messaging.DomainEvents.DomainEvent.GetEventType
-  nameWithType: DomainEvent.GetEventType
-- uid: Falcon.Messaging.DomainEvents.DomainEvent.Id
-  name: Id
-  href: api/Falcon.Messaging.DomainEvents.DomainEvent.html#Falcon_Messaging_DomainEvents_DomainEvent_Id
-  commentId: P:Falcon.Messaging.DomainEvents.DomainEvent.Id
-  fullName: Falcon.Messaging.DomainEvents.DomainEvent.Id
-  nameWithType: DomainEvent.Id
-- uid: Falcon.Messaging.DomainEvents.DomainEvent.Id*
-  name: Id
-  href: api/Falcon.Messaging.DomainEvents.DomainEvent.html#Falcon_Messaging_DomainEvents_DomainEvent_Id_
-  commentId: Overload:Falcon.Messaging.DomainEvents.DomainEvent.Id
-  isSpec: "True"
-  fullName: Falcon.Messaging.DomainEvents.DomainEvent.Id
-  nameWithType: DomainEvent.Id
-- uid: Falcon.Messaging.DomainEvents.DomainEvent.OccurredOn
-  name: OccurredOn
-  href: api/Falcon.Messaging.DomainEvents.DomainEvent.html#Falcon_Messaging_DomainEvents_DomainEvent_OccurredOn
-  commentId: P:Falcon.Messaging.DomainEvents.DomainEvent.OccurredOn
-  fullName: Falcon.Messaging.DomainEvents.DomainEvent.OccurredOn
-  nameWithType: DomainEvent.OccurredOn
-- uid: Falcon.Messaging.DomainEvents.DomainEvent.OccurredOn*
-  name: OccurredOn
-  href: api/Falcon.Messaging.DomainEvents.DomainEvent.html#Falcon_Messaging_DomainEvents_DomainEvent_OccurredOn_
-  commentId: Overload:Falcon.Messaging.DomainEvents.DomainEvent.OccurredOn
-  isSpec: "True"
-  fullName: Falcon.Messaging.DomainEvents.DomainEvent.OccurredOn
-  nameWithType: DomainEvent.OccurredOn
-- uid: Falcon.Messaging.DomainEvents.DomainEvent.Version
-  name: Version
-  href: api/Falcon.Messaging.DomainEvents.DomainEvent.html#Falcon_Messaging_DomainEvents_DomainEvent_Version
-  commentId: P:Falcon.Messaging.DomainEvents.DomainEvent.Version
-  fullName: Falcon.Messaging.DomainEvents.DomainEvent.Version
-  nameWithType: DomainEvent.Version
-- uid: Falcon.Messaging.DomainEvents.DomainEvent.Version*
-  name: Version
-  href: api/Falcon.Messaging.DomainEvents.DomainEvent.html#Falcon_Messaging_DomainEvents_DomainEvent_Version_
-  commentId: Overload:Falcon.Messaging.DomainEvents.DomainEvent.Version
-  isSpec: "True"
-  fullName: Falcon.Messaging.DomainEvents.DomainEvent.Version
-  nameWithType: DomainEvent.Version
-- uid: Falcon.Messaging.DomainEvents.DomainEventBus
-  name: DomainEventBus
-  href: api/Falcon.Messaging.DomainEvents.DomainEventBus.html
-  commentId: T:Falcon.Messaging.DomainEvents.DomainEventBus
-  fullName: Falcon.Messaging.DomainEvents.DomainEventBus
-  nameWithType: DomainEventBus
-- uid: Falcon.Messaging.DomainEvents.DomainEventBus.#ctor(MassTransit.IBusControl)
-  name: DomainEventBus(IBusControl)
-  href: api/Falcon.Messaging.DomainEvents.DomainEventBus.html#Falcon_Messaging_DomainEvents_DomainEventBus__ctor_MassTransit_IBusControl_
-  commentId: M:Falcon.Messaging.DomainEvents.DomainEventBus.#ctor(MassTransit.IBusControl)
-  name.vb: New(IBusControl)
-  fullName: Falcon.Messaging.DomainEvents.DomainEventBus.DomainEventBus(MassTransit.IBusControl)
-  fullName.vb: Falcon.Messaging.DomainEvents.DomainEventBus.New(MassTransit.IBusControl)
-  nameWithType: DomainEventBus.DomainEventBus(IBusControl)
-  nameWithType.vb: DomainEventBus.New(IBusControl)
-- uid: Falcon.Messaging.DomainEvents.DomainEventBus.#ctor*
-  name: DomainEventBus
-  href: api/Falcon.Messaging.DomainEvents.DomainEventBus.html#Falcon_Messaging_DomainEvents_DomainEventBus__ctor_
-  commentId: Overload:Falcon.Messaging.DomainEvents.DomainEventBus.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Falcon.Messaging.DomainEvents.DomainEventBus.DomainEventBus
-  fullName.vb: Falcon.Messaging.DomainEvents.DomainEventBus.New
-  nameWithType: DomainEventBus.DomainEventBus
-  nameWithType.vb: DomainEventBus.New
-- uid: Falcon.Messaging.DomainEvents.DomainEventPublisher
-  name: DomainEventPublisher
-  href: api/Falcon.Messaging.DomainEvents.DomainEventPublisher.html
-  commentId: T:Falcon.Messaging.DomainEvents.DomainEventPublisher
-  fullName: Falcon.Messaging.DomainEvents.DomainEventPublisher
-  nameWithType: DomainEventPublisher
-- uid: Falcon.Messaging.DomainEvents.DomainEventPublisher.#ctor(Falcon.Messaging.DomainEvents.DomainEventBus)
-  name: DomainEventPublisher(DomainEventBus)
-  href: api/Falcon.Messaging.DomainEvents.DomainEventPublisher.html#Falcon_Messaging_DomainEvents_DomainEventPublisher__ctor_Falcon_Messaging_DomainEvents_DomainEventBus_
-  commentId: M:Falcon.Messaging.DomainEvents.DomainEventPublisher.#ctor(Falcon.Messaging.DomainEvents.DomainEventBus)
-  name.vb: New(DomainEventBus)
-  fullName: Falcon.Messaging.DomainEvents.DomainEventPublisher.DomainEventPublisher(Falcon.Messaging.DomainEvents.DomainEventBus)
-  fullName.vb: Falcon.Messaging.DomainEvents.DomainEventPublisher.New(Falcon.Messaging.DomainEvents.DomainEventBus)
-  nameWithType: DomainEventPublisher.DomainEventPublisher(DomainEventBus)
-  nameWithType.vb: DomainEventPublisher.New(DomainEventBus)
-- uid: Falcon.Messaging.DomainEvents.DomainEventPublisher.#ctor*
-  name: DomainEventPublisher
-  href: api/Falcon.Messaging.DomainEvents.DomainEventPublisher.html#Falcon_Messaging_DomainEvents_DomainEventPublisher__ctor_
-  commentId: Overload:Falcon.Messaging.DomainEvents.DomainEventPublisher.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Falcon.Messaging.DomainEvents.DomainEventPublisher.DomainEventPublisher
-  fullName.vb: Falcon.Messaging.DomainEvents.DomainEventPublisher.New
-  nameWithType: DomainEventPublisher.DomainEventPublisher
-  nameWithType.vb: DomainEventPublisher.New
-- uid: Falcon.Messaging.DomainEvents.DomainEventPublisher.PublishAsync*
-  name: PublishAsync
-  href: api/Falcon.Messaging.DomainEvents.DomainEventPublisher.html#Falcon_Messaging_DomainEvents_DomainEventPublisher_PublishAsync_
-  commentId: Overload:Falcon.Messaging.DomainEvents.DomainEventPublisher.PublishAsync
-  isSpec: "True"
-  fullName: Falcon.Messaging.DomainEvents.DomainEventPublisher.PublishAsync
-  nameWithType: DomainEventPublisher.PublishAsync
-- uid: Falcon.Messaging.DomainEvents.DomainEventPublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
-  name: PublishAsync<TEvent>(TEvent, CancellationToken)
-  href: api/Falcon.Messaging.DomainEvents.DomainEventPublisher.html#Falcon_Messaging_DomainEvents_DomainEventPublisher_PublishAsync__1___0_System_Threading_CancellationToken_
-  commentId: M:Falcon.Messaging.DomainEvents.DomainEventPublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
-  name.vb: PublishAsync(Of TEvent)(TEvent, CancellationToken)
-  fullName: Falcon.Messaging.DomainEvents.DomainEventPublisher.PublishAsync<TEvent>(TEvent, System.Threading.CancellationToken)
-  fullName.vb: Falcon.Messaging.DomainEvents.DomainEventPublisher.PublishAsync(Of TEvent)(TEvent, System.Threading.CancellationToken)
-  nameWithType: DomainEventPublisher.PublishAsync<TEvent>(TEvent, CancellationToken)
-  nameWithType.vb: DomainEventPublisher.PublishAsync(Of TEvent)(TEvent, CancellationToken)
-- uid: Falcon.Messaging.DomainEvents.IDomainEventBus
-  name: IDomainEventBus
-  href: api/Falcon.Messaging.DomainEvents.IDomainEventBus.html
-  commentId: T:Falcon.Messaging.DomainEvents.IDomainEventBus
-  fullName: Falcon.Messaging.DomainEvents.IDomainEventBus
-  nameWithType: IDomainEventBus
-- uid: Falcon.Messaging.DomainEvents.IDomainEventConsumer`1
-  name: IDomainEventConsumer<TDomainEvent>
-  href: api/Falcon.Messaging.DomainEvents.IDomainEventConsumer-1.html
-  commentId: T:Falcon.Messaging.DomainEvents.IDomainEventConsumer`1
-  name.vb: IDomainEventConsumer(Of TDomainEvent)
-  fullName: Falcon.Messaging.DomainEvents.IDomainEventConsumer<TDomainEvent>
-  fullName.vb: Falcon.Messaging.DomainEvents.IDomainEventConsumer(Of TDomainEvent)
-  nameWithType: IDomainEventConsumer<TDomainEvent>
-  nameWithType.vb: IDomainEventConsumer(Of TDomainEvent)
-- uid: Falcon.Messaging.EventPublisherExtensions
-  name: EventPublisherExtensions
-  href: api/Falcon.Messaging.EventPublisherExtensions.html
-  commentId: T:Falcon.Messaging.EventPublisherExtensions
-  fullName: Falcon.Messaging.EventPublisherExtensions
-  nameWithType: EventPublisherExtensions
-- uid: Falcon.Messaging.EventPublisherExtensions.GetAsync*
-  name: GetAsync
-  href: api/Falcon.Messaging.EventPublisherExtensions.html#Falcon_Messaging_EventPublisherExtensions_GetAsync_
-  commentId: Overload:Falcon.Messaging.EventPublisherExtensions.GetAsync
-  isSpec: "True"
-  fullName: Falcon.Messaging.EventPublisherExtensions.GetAsync
-  nameWithType: EventPublisherExtensions.GetAsync
-- uid: Falcon.Messaging.EventPublisherExtensions.GetAsync``2(``0,System.Threading.CancellationToken)
-  name: GetAsync<TRequest, TResponse>(TRequest, CancellationToken)
-  href: api/Falcon.Messaging.EventPublisherExtensions.html#Falcon_Messaging_EventPublisherExtensions_GetAsync__2___0_System_Threading_CancellationToken_
-  commentId: M:Falcon.Messaging.EventPublisherExtensions.GetAsync``2(``0,System.Threading.CancellationToken)
-  name.vb: GetAsync(Of TRequest, TResponse)(TRequest, CancellationToken)
-  fullName: Falcon.Messaging.EventPublisherExtensions.GetAsync<TRequest, TResponse>(TRequest, System.Threading.CancellationToken)
-  fullName.vb: Falcon.Messaging.EventPublisherExtensions.GetAsync(Of TRequest, TResponse)(TRequest, System.Threading.CancellationToken)
-  nameWithType: EventPublisherExtensions.GetAsync<TRequest, TResponse>(TRequest, CancellationToken)
-  nameWithType.vb: EventPublisherExtensions.GetAsync(Of TRequest, TResponse)(TRequest, CancellationToken)
-- uid: Falcon.Messaging.EventPublisherExtensions.PublishAsync*
-  name: PublishAsync
-  href: api/Falcon.Messaging.EventPublisherExtensions.html#Falcon_Messaging_EventPublisherExtensions_PublishAsync_
-  commentId: Overload:Falcon.Messaging.EventPublisherExtensions.PublishAsync
-  isSpec: "True"
-  fullName: Falcon.Messaging.EventPublisherExtensions.PublishAsync
-  nameWithType: EventPublisherExtensions.PublishAsync
-- uid: Falcon.Messaging.EventPublisherExtensions.PublishAsync``1(``0,System.Threading.CancellationToken)
-  name: PublishAsync<TEvent>(TEvent, CancellationToken)
-  href: api/Falcon.Messaging.EventPublisherExtensions.html#Falcon_Messaging_EventPublisherExtensions_PublishAsync__1___0_System_Threading_CancellationToken_
-  commentId: M:Falcon.Messaging.EventPublisherExtensions.PublishAsync``1(``0,System.Threading.CancellationToken)
-  name.vb: PublishAsync(Of TEvent)(TEvent, CancellationToken)
-  fullName: Falcon.Messaging.EventPublisherExtensions.PublishAsync<TEvent>(TEvent, System.Threading.CancellationToken)
-  fullName.vb: Falcon.Messaging.EventPublisherExtensions.PublishAsync(Of TEvent)(TEvent, System.Threading.CancellationToken)
-  nameWithType: EventPublisherExtensions.PublishAsync<TEvent>(TEvent, CancellationToken)
-  nameWithType.vb: EventPublisherExtensions.PublishAsync(Of TEvent)(TEvent, CancellationToken)
-- uid: Falcon.Messaging.EventPublisherExtensions.SendAsync*
-  name: SendAsync
-  href: api/Falcon.Messaging.EventPublisherExtensions.html#Falcon_Messaging_EventPublisherExtensions_SendAsync_
-  commentId: Overload:Falcon.Messaging.EventPublisherExtensions.SendAsync
-  isSpec: "True"
-  fullName: Falcon.Messaging.EventPublisherExtensions.SendAsync
-  nameWithType: EventPublisherExtensions.SendAsync
-- uid: Falcon.Messaging.EventPublisherExtensions.SendAsync``1(``0,System.Threading.CancellationToken)
-  name: SendAsync<TEvent>(TEvent, CancellationToken)
-  href: api/Falcon.Messaging.EventPublisherExtensions.html#Falcon_Messaging_EventPublisherExtensions_SendAsync__1___0_System_Threading_CancellationToken_
-  commentId: M:Falcon.Messaging.EventPublisherExtensions.SendAsync``1(``0,System.Threading.CancellationToken)
-  name.vb: SendAsync(Of TEvent)(TEvent, CancellationToken)
-  fullName: Falcon.Messaging.EventPublisherExtensions.SendAsync<TEvent>(TEvent, System.Threading.CancellationToken)
-  fullName.vb: Falcon.Messaging.EventPublisherExtensions.SendAsync(Of TEvent)(TEvent, System.Threading.CancellationToken)
-  nameWithType: EventPublisherExtensions.SendAsync<TEvent>(TEvent, CancellationToken)
-  nameWithType.vb: EventPublisherExtensions.SendAsync(Of TEvent)(TEvent, CancellationToken)
-- uid: Falcon.Messaging.IntegrationEvents
-  name: Falcon.Messaging.IntegrationEvents
-  href: api/Falcon.Messaging.IntegrationEvents.html
-  commentId: N:Falcon.Messaging.IntegrationEvents
-  fullName: Falcon.Messaging.IntegrationEvents
-  nameWithType: Falcon.Messaging.IntegrationEvents
-- uid: Falcon.Messaging.IntegrationEvents.IIntegrationEventBus
-  name: IIntegrationEventBus
-  href: api/Falcon.Messaging.IntegrationEvents.IIntegrationEventBus.html
-  commentId: T:Falcon.Messaging.IntegrationEvents.IIntegrationEventBus
-  fullName: Falcon.Messaging.IntegrationEvents.IIntegrationEventBus
-  nameWithType: IIntegrationEventBus
-- uid: Falcon.Messaging.IntegrationEvents.IIntegrationEventConsumer`1
-  name: IIntegrationEventConsumer<TIntegrationEvent>
-  href: api/Falcon.Messaging.IntegrationEvents.IIntegrationEventConsumer-1.html
-  commentId: T:Falcon.Messaging.IntegrationEvents.IIntegrationEventConsumer`1
-  name.vb: IIntegrationEventConsumer(Of TIntegrationEvent)
-  fullName: Falcon.Messaging.IntegrationEvents.IIntegrationEventConsumer<TIntegrationEvent>
-  fullName.vb: Falcon.Messaging.IntegrationEvents.IIntegrationEventConsumer(Of TIntegrationEvent)
-  nameWithType: IIntegrationEventConsumer<TIntegrationEvent>
-  nameWithType.vb: IIntegrationEventConsumer(Of TIntegrationEvent)
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEvent
+- uid: Falcon.Messaging.Abstractions.IQuery
+  name: IQuery
+  href: api/Falcon.Messaging.Abstractions.IQuery.html
+  commentId: T:Falcon.Messaging.Abstractions.IQuery
+  fullName: Falcon.Messaging.Abstractions.IQuery
+  nameWithType: IQuery
+- uid: Falcon.Messaging.Abstractions.IntegrationEvent
   name: IntegrationEvent
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEvent.html
-  commentId: T:Falcon.Messaging.IntegrationEvents.IntegrationEvent
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEvent
+  href: api/Falcon.Messaging.Abstractions.IntegrationEvent.html
+  commentId: T:Falcon.Messaging.Abstractions.IntegrationEvent
+  fullName: Falcon.Messaging.Abstractions.IntegrationEvent
   nameWithType: IntegrationEvent
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEvent.#ctor(System.String)
+- uid: Falcon.Messaging.Abstractions.IntegrationEvent.#ctor(System.String)
   name: IntegrationEvent(string)
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEvent.html#Falcon_Messaging_IntegrationEvents_IntegrationEvent__ctor_System_String_
-  commentId: M:Falcon.Messaging.IntegrationEvents.IntegrationEvent.#ctor(System.String)
+  href: api/Falcon.Messaging.Abstractions.IntegrationEvent.html#Falcon_Messaging_Abstractions_IntegrationEvent__ctor_System_String_
+  commentId: M:Falcon.Messaging.Abstractions.IntegrationEvent.#ctor(System.String)
   name.vb: New(String)
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEvent.IntegrationEvent(string)
-  fullName.vb: Falcon.Messaging.IntegrationEvents.IntegrationEvent.New(String)
+  fullName: Falcon.Messaging.Abstractions.IntegrationEvent.IntegrationEvent(string)
+  fullName.vb: Falcon.Messaging.Abstractions.IntegrationEvent.New(String)
   nameWithType: IntegrationEvent.IntegrationEvent(string)
   nameWithType.vb: IntegrationEvent.New(String)
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEvent.#ctor*
+- uid: Falcon.Messaging.Abstractions.IntegrationEvent.#ctor*
   name: IntegrationEvent
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEvent.html#Falcon_Messaging_IntegrationEvents_IntegrationEvent__ctor_
-  commentId: Overload:Falcon.Messaging.IntegrationEvents.IntegrationEvent.#ctor
+  href: api/Falcon.Messaging.Abstractions.IntegrationEvent.html#Falcon_Messaging_Abstractions_IntegrationEvent__ctor_
+  commentId: Overload:Falcon.Messaging.Abstractions.IntegrationEvent.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEvent.IntegrationEvent
-  fullName.vb: Falcon.Messaging.IntegrationEvents.IntegrationEvent.New
+  fullName: Falcon.Messaging.Abstractions.IntegrationEvent.IntegrationEvent
+  fullName.vb: Falcon.Messaging.Abstractions.IntegrationEvent.New
   nameWithType: IntegrationEvent.IntegrationEvent
   nameWithType.vb: IntegrationEvent.New
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEvent.EventSource
+- uid: Falcon.Messaging.Abstractions.IntegrationEvent.EventSource
   name: EventSource
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEvent.html#Falcon_Messaging_IntegrationEvents_IntegrationEvent_EventSource
-  commentId: P:Falcon.Messaging.IntegrationEvents.IntegrationEvent.EventSource
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEvent.EventSource
+  href: api/Falcon.Messaging.Abstractions.IntegrationEvent.html#Falcon_Messaging_Abstractions_IntegrationEvent_EventSource
+  commentId: P:Falcon.Messaging.Abstractions.IntegrationEvent.EventSource
+  fullName: Falcon.Messaging.Abstractions.IntegrationEvent.EventSource
   nameWithType: IntegrationEvent.EventSource
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEvent.EventSource*
+- uid: Falcon.Messaging.Abstractions.IntegrationEvent.EventSource*
   name: EventSource
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEvent.html#Falcon_Messaging_IntegrationEvents_IntegrationEvent_EventSource_
-  commentId: Overload:Falcon.Messaging.IntegrationEvents.IntegrationEvent.EventSource
+  href: api/Falcon.Messaging.Abstractions.IntegrationEvent.html#Falcon_Messaging_Abstractions_IntegrationEvent_EventSource_
+  commentId: Overload:Falcon.Messaging.Abstractions.IntegrationEvent.EventSource
   isSpec: "True"
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEvent.EventSource
+  fullName: Falcon.Messaging.Abstractions.IntegrationEvent.EventSource
   nameWithType: IntegrationEvent.EventSource
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEvent.Id
+- uid: Falcon.Messaging.Abstractions.IntegrationEvent.Id
   name: Id
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEvent.html#Falcon_Messaging_IntegrationEvents_IntegrationEvent_Id
-  commentId: P:Falcon.Messaging.IntegrationEvents.IntegrationEvent.Id
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEvent.Id
+  href: api/Falcon.Messaging.Abstractions.IntegrationEvent.html#Falcon_Messaging_Abstractions_IntegrationEvent_Id
+  commentId: P:Falcon.Messaging.Abstractions.IntegrationEvent.Id
+  fullName: Falcon.Messaging.Abstractions.IntegrationEvent.Id
   nameWithType: IntegrationEvent.Id
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEvent.Id*
+- uid: Falcon.Messaging.Abstractions.IntegrationEvent.Id*
   name: Id
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEvent.html#Falcon_Messaging_IntegrationEvents_IntegrationEvent_Id_
-  commentId: Overload:Falcon.Messaging.IntegrationEvents.IntegrationEvent.Id
+  href: api/Falcon.Messaging.Abstractions.IntegrationEvent.html#Falcon_Messaging_Abstractions_IntegrationEvent_Id_
+  commentId: Overload:Falcon.Messaging.Abstractions.IntegrationEvent.Id
   isSpec: "True"
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEvent.Id
+  fullName: Falcon.Messaging.Abstractions.IntegrationEvent.Id
   nameWithType: IntegrationEvent.Id
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEvent.OccurredOn
+- uid: Falcon.Messaging.Abstractions.IntegrationEvent.OccurredOn
   name: OccurredOn
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEvent.html#Falcon_Messaging_IntegrationEvents_IntegrationEvent_OccurredOn
-  commentId: P:Falcon.Messaging.IntegrationEvents.IntegrationEvent.OccurredOn
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEvent.OccurredOn
+  href: api/Falcon.Messaging.Abstractions.IntegrationEvent.html#Falcon_Messaging_Abstractions_IntegrationEvent_OccurredOn
+  commentId: P:Falcon.Messaging.Abstractions.IntegrationEvent.OccurredOn
+  fullName: Falcon.Messaging.Abstractions.IntegrationEvent.OccurredOn
   nameWithType: IntegrationEvent.OccurredOn
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEvent.OccurredOn*
+- uid: Falcon.Messaging.Abstractions.IntegrationEvent.OccurredOn*
   name: OccurredOn
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEvent.html#Falcon_Messaging_IntegrationEvents_IntegrationEvent_OccurredOn_
-  commentId: Overload:Falcon.Messaging.IntegrationEvents.IntegrationEvent.OccurredOn
+  href: api/Falcon.Messaging.Abstractions.IntegrationEvent.html#Falcon_Messaging_Abstractions_IntegrationEvent_OccurredOn_
+  commentId: Overload:Falcon.Messaging.Abstractions.IntegrationEvent.OccurredOn
   isSpec: "True"
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEvent.OccurredOn
+  fullName: Falcon.Messaging.Abstractions.IntegrationEvent.OccurredOn
   nameWithType: IntegrationEvent.OccurredOn
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEventBus
-  name: IntegrationEventBus
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEventBus.html
-  commentId: T:Falcon.Messaging.IntegrationEvents.IntegrationEventBus
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEventBus
-  nameWithType: IntegrationEventBus
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEventBus.#ctor(MassTransit.IBusControl)
-  name: IntegrationEventBus(IBusControl)
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEventBus.html#Falcon_Messaging_IntegrationEvents_IntegrationEventBus__ctor_MassTransit_IBusControl_
-  commentId: M:Falcon.Messaging.IntegrationEvents.IntegrationEventBus.#ctor(MassTransit.IBusControl)
+- uid: Falcon.Messaging.MassTransit
+  name: Falcon.Messaging.MassTransit
+  href: api/Falcon.Messaging.MassTransit.html
+  commentId: N:Falcon.Messaging.MassTransit
+  fullName: Falcon.Messaging.MassTransit
+  nameWithType: Falcon.Messaging.MassTransit
+- uid: Falcon.Messaging.MassTransit.ApplicationEvents
+  name: Falcon.Messaging.MassTransit.ApplicationEvents
+  href: api/Falcon.Messaging.MassTransit.ApplicationEvents.html
+  commentId: N:Falcon.Messaging.MassTransit.ApplicationEvents
+  fullName: Falcon.Messaging.MassTransit.ApplicationEvents
+  nameWithType: Falcon.Messaging.MassTransit.ApplicationEvents
+- uid: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus
+  name: ApplicationEventBus
+  href: api/Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus.html
+  commentId: T:Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus
+  fullName: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus
+  nameWithType: ApplicationEventBus
+- uid: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus.#ctor(MassTransit.IBusControl)
+  name: ApplicationEventBus(IBusControl)
+  href: api/Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus.html#Falcon_Messaging_MassTransit_ApplicationEvents_ApplicationEventBus__ctor_MassTransit_IBusControl_
+  commentId: M:Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus.#ctor(MassTransit.IBusControl)
   name.vb: New(IBusControl)
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEventBus.IntegrationEventBus(MassTransit.IBusControl)
-  fullName.vb: Falcon.Messaging.IntegrationEvents.IntegrationEventBus.New(MassTransit.IBusControl)
+  fullName: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus.ApplicationEventBus(MassTransit.IBusControl)
+  fullName.vb: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus.New(MassTransit.IBusControl)
+  nameWithType: ApplicationEventBus.ApplicationEventBus(IBusControl)
+  nameWithType.vb: ApplicationEventBus.New(IBusControl)
+- uid: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus.#ctor*
+  name: ApplicationEventBus
+  href: api/Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus.html#Falcon_Messaging_MassTransit_ApplicationEvents_ApplicationEventBus__ctor_
+  commentId: Overload:Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus.ApplicationEventBus
+  fullName.vb: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus.New
+  nameWithType: ApplicationEventBus.ApplicationEventBus
+  nameWithType.vb: ApplicationEventBus.New
+- uid: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher
+  name: ApplicationEventPublisher
+  href: api/Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.html
+  commentId: T:Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher
+  fullName: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher
+  nameWithType: ApplicationEventPublisher
+- uid: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.#ctor(Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus)
+  name: ApplicationEventPublisher(ApplicationEventBus)
+  href: api/Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.html#Falcon_Messaging_MassTransit_ApplicationEvents_ApplicationEventPublisher__ctor_Falcon_Messaging_MassTransit_ApplicationEvents_ApplicationEventBus_
+  commentId: M:Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.#ctor(Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus)
+  name.vb: New(ApplicationEventBus)
+  fullName: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.ApplicationEventPublisher(Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus)
+  fullName.vb: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.New(Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventBus)
+  nameWithType: ApplicationEventPublisher.ApplicationEventPublisher(ApplicationEventBus)
+  nameWithType.vb: ApplicationEventPublisher.New(ApplicationEventBus)
+- uid: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.#ctor*
+  name: ApplicationEventPublisher
+  href: api/Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.html#Falcon_Messaging_MassTransit_ApplicationEvents_ApplicationEventPublisher__ctor_
+  commentId: Overload:Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.ApplicationEventPublisher
+  fullName.vb: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.New
+  nameWithType: ApplicationEventPublisher.ApplicationEventPublisher
+  nameWithType.vb: ApplicationEventPublisher.New
+- uid: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.PublishAsync*
+  name: PublishAsync
+  href: api/Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.html#Falcon_Messaging_MassTransit_ApplicationEvents_ApplicationEventPublisher_PublishAsync_
+  commentId: Overload:Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.PublishAsync
+  isSpec: "True"
+  fullName: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.PublishAsync
+  nameWithType: ApplicationEventPublisher.PublishAsync
+- uid: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+  name: PublishAsync<TEvent>(TEvent, CancellationToken)
+  href: api/Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.html#Falcon_Messaging_MassTransit_ApplicationEvents_ApplicationEventPublisher_PublishAsync__1___0_System_Threading_CancellationToken_
+  commentId: M:Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+  name.vb: PublishAsync(Of TEvent)(TEvent, CancellationToken)
+  fullName: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.PublishAsync<TEvent>(TEvent, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Messaging.MassTransit.ApplicationEvents.ApplicationEventPublisher.PublishAsync(Of TEvent)(TEvent, System.Threading.CancellationToken)
+  nameWithType: ApplicationEventPublisher.PublishAsync<TEvent>(TEvent, CancellationToken)
+  nameWithType.vb: ApplicationEventPublisher.PublishAsync(Of TEvent)(TEvent, CancellationToken)
+- uid: Falcon.Messaging.MassTransit.ApplicationEvents.IApplicationEventBus
+  name: IApplicationEventBus
+  href: api/Falcon.Messaging.MassTransit.ApplicationEvents.IApplicationEventBus.html
+  commentId: T:Falcon.Messaging.MassTransit.ApplicationEvents.IApplicationEventBus
+  fullName: Falcon.Messaging.MassTransit.ApplicationEvents.IApplicationEventBus
+  nameWithType: IApplicationEventBus
+- uid: Falcon.Messaging.MassTransit.ApplicationEvents.IApplicationEventConsumer`1
+  name: IApplicationEventConsumer<TApplicationEvent>
+  href: api/Falcon.Messaging.MassTransit.ApplicationEvents.IApplicationEventConsumer-1.html
+  commentId: T:Falcon.Messaging.MassTransit.ApplicationEvents.IApplicationEventConsumer`1
+  name.vb: IApplicationEventConsumer(Of TApplicationEvent)
+  fullName: Falcon.Messaging.MassTransit.ApplicationEvents.IApplicationEventConsumer<TApplicationEvent>
+  fullName.vb: Falcon.Messaging.MassTransit.ApplicationEvents.IApplicationEventConsumer(Of TApplicationEvent)
+  nameWithType: IApplicationEventConsumer<TApplicationEvent>
+  nameWithType.vb: IApplicationEventConsumer(Of TApplicationEvent)
+- uid: Falcon.Messaging.MassTransit.Command
+  name: Falcon.Messaging.MassTransit.Command
+  href: api/Falcon.Messaging.MassTransit.Command.html
+  commentId: N:Falcon.Messaging.MassTransit.Command
+  fullName: Falcon.Messaging.MassTransit.Command
+  nameWithType: Falcon.Messaging.MassTransit.Command
+- uid: Falcon.Messaging.MassTransit.Command.CommandSender
+  name: CommandSender
+  href: api/Falcon.Messaging.MassTransit.Command.CommandSender.html
+  commentId: T:Falcon.Messaging.MassTransit.Command.CommandSender
+  fullName: Falcon.Messaging.MassTransit.Command.CommandSender
+  nameWithType: CommandSender
+- uid: Falcon.Messaging.MassTransit.Command.CommandSender.#ctor(MassTransit.Mediator.IMediator)
+  name: CommandSender(IMediator)
+  href: api/Falcon.Messaging.MassTransit.Command.CommandSender.html#Falcon_Messaging_MassTransit_Command_CommandSender__ctor_MassTransit_Mediator_IMediator_
+  commentId: M:Falcon.Messaging.MassTransit.Command.CommandSender.#ctor(MassTransit.Mediator.IMediator)
+  name.vb: New(IMediator)
+  fullName: Falcon.Messaging.MassTransit.Command.CommandSender.CommandSender(MassTransit.Mediator.IMediator)
+  fullName.vb: Falcon.Messaging.MassTransit.Command.CommandSender.New(MassTransit.Mediator.IMediator)
+  nameWithType: CommandSender.CommandSender(IMediator)
+  nameWithType.vb: CommandSender.New(IMediator)
+- uid: Falcon.Messaging.MassTransit.Command.CommandSender.#ctor*
+  name: CommandSender
+  href: api/Falcon.Messaging.MassTransit.Command.CommandSender.html#Falcon_Messaging_MassTransit_Command_CommandSender__ctor_
+  commentId: Overload:Falcon.Messaging.MassTransit.Command.CommandSender.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Falcon.Messaging.MassTransit.Command.CommandSender.CommandSender
+  fullName.vb: Falcon.Messaging.MassTransit.Command.CommandSender.New
+  nameWithType: CommandSender.CommandSender
+  nameWithType.vb: CommandSender.New
+- uid: Falcon.Messaging.MassTransit.Command.CommandSender.SendAsync*
+  name: SendAsync
+  href: api/Falcon.Messaging.MassTransit.Command.CommandSender.html#Falcon_Messaging_MassTransit_Command_CommandSender_SendAsync_
+  commentId: Overload:Falcon.Messaging.MassTransit.Command.CommandSender.SendAsync
+  isSpec: "True"
+  fullName: Falcon.Messaging.MassTransit.Command.CommandSender.SendAsync
+  nameWithType: CommandSender.SendAsync
+- uid: Falcon.Messaging.MassTransit.Command.CommandSender.SendAsync``1(``0,System.Threading.CancellationToken)
+  name: SendAsync<TCommand>(TCommand, CancellationToken)
+  href: api/Falcon.Messaging.MassTransit.Command.CommandSender.html#Falcon_Messaging_MassTransit_Command_CommandSender_SendAsync__1___0_System_Threading_CancellationToken_
+  commentId: M:Falcon.Messaging.MassTransit.Command.CommandSender.SendAsync``1(``0,System.Threading.CancellationToken)
+  name.vb: SendAsync(Of TCommand)(TCommand, CancellationToken)
+  fullName: Falcon.Messaging.MassTransit.Command.CommandSender.SendAsync<TCommand>(TCommand, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Messaging.MassTransit.Command.CommandSender.SendAsync(Of TCommand)(TCommand, System.Threading.CancellationToken)
+  nameWithType: CommandSender.SendAsync<TCommand>(TCommand, CancellationToken)
+  nameWithType.vb: CommandSender.SendAsync(Of TCommand)(TCommand, CancellationToken)
+- uid: Falcon.Messaging.MassTransit.Command.ICommandConsumer`1
+  name: ICommandConsumer<TEntity>
+  href: api/Falcon.Messaging.MassTransit.Command.ICommandConsumer-1.html
+  commentId: T:Falcon.Messaging.MassTransit.Command.ICommandConsumer`1
+  name.vb: ICommandConsumer(Of TEntity)
+  fullName: Falcon.Messaging.MassTransit.Command.ICommandConsumer<TEntity>
+  fullName.vb: Falcon.Messaging.MassTransit.Command.ICommandConsumer(Of TEntity)
+  nameWithType: ICommandConsumer<TEntity>
+  nameWithType.vb: ICommandConsumer(Of TEntity)
+- uid: Falcon.Messaging.MassTransit.DomainEvents
+  name: Falcon.Messaging.MassTransit.DomainEvents
+  href: api/Falcon.Messaging.MassTransit.DomainEvents.html
+  commentId: N:Falcon.Messaging.MassTransit.DomainEvents
+  fullName: Falcon.Messaging.MassTransit.DomainEvents
+  nameWithType: Falcon.Messaging.MassTransit.DomainEvents
+- uid: Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus
+  name: DomainEventBus
+  href: api/Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus.html
+  commentId: T:Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus
+  fullName: Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus
+  nameWithType: DomainEventBus
+- uid: Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus.#ctor(MassTransit.IBusControl)
+  name: DomainEventBus(IBusControl)
+  href: api/Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus.html#Falcon_Messaging_MassTransit_DomainEvents_DomainEventBus__ctor_MassTransit_IBusControl_
+  commentId: M:Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus.#ctor(MassTransit.IBusControl)
+  name.vb: New(IBusControl)
+  fullName: Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus.DomainEventBus(MassTransit.IBusControl)
+  fullName.vb: Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus.New(MassTransit.IBusControl)
+  nameWithType: DomainEventBus.DomainEventBus(IBusControl)
+  nameWithType.vb: DomainEventBus.New(IBusControl)
+- uid: Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus.#ctor*
+  name: DomainEventBus
+  href: api/Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus.html#Falcon_Messaging_MassTransit_DomainEvents_DomainEventBus__ctor_
+  commentId: Overload:Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus.DomainEventBus
+  fullName.vb: Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus.New
+  nameWithType: DomainEventBus.DomainEventBus
+  nameWithType.vb: DomainEventBus.New
+- uid: Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher
+  name: DomainEventPublisher
+  href: api/Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.html
+  commentId: T:Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher
+  fullName: Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher
+  nameWithType: DomainEventPublisher
+- uid: Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.#ctor(Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus)
+  name: DomainEventPublisher(DomainEventBus)
+  href: api/Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.html#Falcon_Messaging_MassTransit_DomainEvents_DomainEventPublisher__ctor_Falcon_Messaging_MassTransit_DomainEvents_DomainEventBus_
+  commentId: M:Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.#ctor(Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus)
+  name.vb: New(DomainEventBus)
+  fullName: Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.DomainEventPublisher(Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus)
+  fullName.vb: Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.New(Falcon.Messaging.MassTransit.DomainEvents.DomainEventBus)
+  nameWithType: DomainEventPublisher.DomainEventPublisher(DomainEventBus)
+  nameWithType.vb: DomainEventPublisher.New(DomainEventBus)
+- uid: Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.#ctor*
+  name: DomainEventPublisher
+  href: api/Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.html#Falcon_Messaging_MassTransit_DomainEvents_DomainEventPublisher__ctor_
+  commentId: Overload:Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.DomainEventPublisher
+  fullName.vb: Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.New
+  nameWithType: DomainEventPublisher.DomainEventPublisher
+  nameWithType.vb: DomainEventPublisher.New
+- uid: Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.PublishAsync*
+  name: PublishAsync
+  href: api/Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.html#Falcon_Messaging_MassTransit_DomainEvents_DomainEventPublisher_PublishAsync_
+  commentId: Overload:Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.PublishAsync
+  isSpec: "True"
+  fullName: Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.PublishAsync
+  nameWithType: DomainEventPublisher.PublishAsync
+- uid: Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+  name: PublishAsync<TEvent>(TEvent, CancellationToken)
+  href: api/Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.html#Falcon_Messaging_MassTransit_DomainEvents_DomainEventPublisher_PublishAsync__1___0_System_Threading_CancellationToken_
+  commentId: M:Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+  name.vb: PublishAsync(Of TEvent)(TEvent, CancellationToken)
+  fullName: Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.PublishAsync<TEvent>(TEvent, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Messaging.MassTransit.DomainEvents.DomainEventPublisher.PublishAsync(Of TEvent)(TEvent, System.Threading.CancellationToken)
+  nameWithType: DomainEventPublisher.PublishAsync<TEvent>(TEvent, CancellationToken)
+  nameWithType.vb: DomainEventPublisher.PublishAsync(Of TEvent)(TEvent, CancellationToken)
+- uid: Falcon.Messaging.MassTransit.DomainEvents.IDomainEventBus
+  name: IDomainEventBus
+  href: api/Falcon.Messaging.MassTransit.DomainEvents.IDomainEventBus.html
+  commentId: T:Falcon.Messaging.MassTransit.DomainEvents.IDomainEventBus
+  fullName: Falcon.Messaging.MassTransit.DomainEvents.IDomainEventBus
+  nameWithType: IDomainEventBus
+- uid: Falcon.Messaging.MassTransit.DomainEvents.IDomainEventConsumer`1
+  name: IDomainEventConsumer<TDomainEvent>
+  href: api/Falcon.Messaging.MassTransit.DomainEvents.IDomainEventConsumer-1.html
+  commentId: T:Falcon.Messaging.MassTransit.DomainEvents.IDomainEventConsumer`1
+  name.vb: IDomainEventConsumer(Of TDomainEvent)
+  fullName: Falcon.Messaging.MassTransit.DomainEvents.IDomainEventConsumer<TDomainEvent>
+  fullName.vb: Falcon.Messaging.MassTransit.DomainEvents.IDomainEventConsumer(Of TDomainEvent)
+  nameWithType: IDomainEventConsumer<TDomainEvent>
+  nameWithType.vb: IDomainEventConsumer(Of TDomainEvent)
+- uid: Falcon.Messaging.MassTransit.EventPublisherExtensions
+  name: EventPublisherExtensions
+  href: api/Falcon.Messaging.MassTransit.EventPublisherExtensions.html
+  commentId: T:Falcon.Messaging.MassTransit.EventPublisherExtensions
+  fullName: Falcon.Messaging.MassTransit.EventPublisherExtensions
+  nameWithType: EventPublisherExtensions
+- uid: Falcon.Messaging.MassTransit.EventPublisherExtensions.GetAsync*
+  name: GetAsync
+  href: api/Falcon.Messaging.MassTransit.EventPublisherExtensions.html#Falcon_Messaging_MassTransit_EventPublisherExtensions_GetAsync_
+  commentId: Overload:Falcon.Messaging.MassTransit.EventPublisherExtensions.GetAsync
+  isSpec: "True"
+  fullName: Falcon.Messaging.MassTransit.EventPublisherExtensions.GetAsync
+  nameWithType: EventPublisherExtensions.GetAsync
+- uid: Falcon.Messaging.MassTransit.EventPublisherExtensions.GetAsync``2(``0,System.Threading.CancellationToken)
+  name: GetAsync<TRequest, TResponse>(TRequest, CancellationToken)
+  href: api/Falcon.Messaging.MassTransit.EventPublisherExtensions.html#Falcon_Messaging_MassTransit_EventPublisherExtensions_GetAsync__2___0_System_Threading_CancellationToken_
+  commentId: M:Falcon.Messaging.MassTransit.EventPublisherExtensions.GetAsync``2(``0,System.Threading.CancellationToken)
+  name.vb: GetAsync(Of TRequest, TResponse)(TRequest, CancellationToken)
+  fullName: Falcon.Messaging.MassTransit.EventPublisherExtensions.GetAsync<TRequest, TResponse>(TRequest, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Messaging.MassTransit.EventPublisherExtensions.GetAsync(Of TRequest, TResponse)(TRequest, System.Threading.CancellationToken)
+  nameWithType: EventPublisherExtensions.GetAsync<TRequest, TResponse>(TRequest, CancellationToken)
+  nameWithType.vb: EventPublisherExtensions.GetAsync(Of TRequest, TResponse)(TRequest, CancellationToken)
+- uid: Falcon.Messaging.MassTransit.EventPublisherExtensions.PublishAsync*
+  name: PublishAsync
+  href: api/Falcon.Messaging.MassTransit.EventPublisherExtensions.html#Falcon_Messaging_MassTransit_EventPublisherExtensions_PublishAsync_
+  commentId: Overload:Falcon.Messaging.MassTransit.EventPublisherExtensions.PublishAsync
+  isSpec: "True"
+  fullName: Falcon.Messaging.MassTransit.EventPublisherExtensions.PublishAsync
+  nameWithType: EventPublisherExtensions.PublishAsync
+- uid: Falcon.Messaging.MassTransit.EventPublisherExtensions.PublishAsync``1(``0,System.Threading.CancellationToken)
+  name: PublishAsync<TEvent>(TEvent, CancellationToken)
+  href: api/Falcon.Messaging.MassTransit.EventPublisherExtensions.html#Falcon_Messaging_MassTransit_EventPublisherExtensions_PublishAsync__1___0_System_Threading_CancellationToken_
+  commentId: M:Falcon.Messaging.MassTransit.EventPublisherExtensions.PublishAsync``1(``0,System.Threading.CancellationToken)
+  name.vb: PublishAsync(Of TEvent)(TEvent, CancellationToken)
+  fullName: Falcon.Messaging.MassTransit.EventPublisherExtensions.PublishAsync<TEvent>(TEvent, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Messaging.MassTransit.EventPublisherExtensions.PublishAsync(Of TEvent)(TEvent, System.Threading.CancellationToken)
+  nameWithType: EventPublisherExtensions.PublishAsync<TEvent>(TEvent, CancellationToken)
+  nameWithType.vb: EventPublisherExtensions.PublishAsync(Of TEvent)(TEvent, CancellationToken)
+- uid: Falcon.Messaging.MassTransit.EventPublisherExtensions.SendAsync*
+  name: SendAsync
+  href: api/Falcon.Messaging.MassTransit.EventPublisherExtensions.html#Falcon_Messaging_MassTransit_EventPublisherExtensions_SendAsync_
+  commentId: Overload:Falcon.Messaging.MassTransit.EventPublisherExtensions.SendAsync
+  isSpec: "True"
+  fullName: Falcon.Messaging.MassTransit.EventPublisherExtensions.SendAsync
+  nameWithType: EventPublisherExtensions.SendAsync
+- uid: Falcon.Messaging.MassTransit.EventPublisherExtensions.SendAsync``1(``0,System.Threading.CancellationToken)
+  name: SendAsync<TEvent>(TEvent, CancellationToken)
+  href: api/Falcon.Messaging.MassTransit.EventPublisherExtensions.html#Falcon_Messaging_MassTransit_EventPublisherExtensions_SendAsync__1___0_System_Threading_CancellationToken_
+  commentId: M:Falcon.Messaging.MassTransit.EventPublisherExtensions.SendAsync``1(``0,System.Threading.CancellationToken)
+  name.vb: SendAsync(Of TEvent)(TEvent, CancellationToken)
+  fullName: Falcon.Messaging.MassTransit.EventPublisherExtensions.SendAsync<TEvent>(TEvent, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Messaging.MassTransit.EventPublisherExtensions.SendAsync(Of TEvent)(TEvent, System.Threading.CancellationToken)
+  nameWithType: EventPublisherExtensions.SendAsync<TEvent>(TEvent, CancellationToken)
+  nameWithType.vb: EventPublisherExtensions.SendAsync(Of TEvent)(TEvent, CancellationToken)
+- uid: Falcon.Messaging.MassTransit.IntegrationEvents
+  name: Falcon.Messaging.MassTransit.IntegrationEvents
+  href: api/Falcon.Messaging.MassTransit.IntegrationEvents.html
+  commentId: N:Falcon.Messaging.MassTransit.IntegrationEvents
+  fullName: Falcon.Messaging.MassTransit.IntegrationEvents
+  nameWithType: Falcon.Messaging.MassTransit.IntegrationEvents
+- uid: Falcon.Messaging.MassTransit.IntegrationEvents.IIntegrationEventBus
+  name: IIntegrationEventBus
+  href: api/Falcon.Messaging.MassTransit.IntegrationEvents.IIntegrationEventBus.html
+  commentId: T:Falcon.Messaging.MassTransit.IntegrationEvents.IIntegrationEventBus
+  fullName: Falcon.Messaging.MassTransit.IntegrationEvents.IIntegrationEventBus
+  nameWithType: IIntegrationEventBus
+- uid: Falcon.Messaging.MassTransit.IntegrationEvents.IIntegrationEventConsumer`1
+  name: IIntegrationEventConsumer<TIntegrationEvent>
+  href: api/Falcon.Messaging.MassTransit.IntegrationEvents.IIntegrationEventConsumer-1.html
+  commentId: T:Falcon.Messaging.MassTransit.IntegrationEvents.IIntegrationEventConsumer`1
+  name.vb: IIntegrationEventConsumer(Of TIntegrationEvent)
+  fullName: Falcon.Messaging.MassTransit.IntegrationEvents.IIntegrationEventConsumer<TIntegrationEvent>
+  fullName.vb: Falcon.Messaging.MassTransit.IntegrationEvents.IIntegrationEventConsumer(Of TIntegrationEvent)
+  nameWithType: IIntegrationEventConsumer<TIntegrationEvent>
+  nameWithType.vb: IIntegrationEventConsumer(Of TIntegrationEvent)
+- uid: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus
+  name: IntegrationEventBus
+  href: api/Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus.html
+  commentId: T:Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus
+  fullName: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus
+  nameWithType: IntegrationEventBus
+- uid: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus.#ctor(MassTransit.IBusControl)
+  name: IntegrationEventBus(IBusControl)
+  href: api/Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus.html#Falcon_Messaging_MassTransit_IntegrationEvents_IntegrationEventBus__ctor_MassTransit_IBusControl_
+  commentId: M:Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus.#ctor(MassTransit.IBusControl)
+  name.vb: New(IBusControl)
+  fullName: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus.IntegrationEventBus(MassTransit.IBusControl)
+  fullName.vb: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus.New(MassTransit.IBusControl)
   nameWithType: IntegrationEventBus.IntegrationEventBus(IBusControl)
   nameWithType.vb: IntegrationEventBus.New(IBusControl)
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEventBus.#ctor*
+- uid: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus.#ctor*
   name: IntegrationEventBus
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEventBus.html#Falcon_Messaging_IntegrationEvents_IntegrationEventBus__ctor_
-  commentId: Overload:Falcon.Messaging.IntegrationEvents.IntegrationEventBus.#ctor
+  href: api/Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus.html#Falcon_Messaging_MassTransit_IntegrationEvents_IntegrationEventBus__ctor_
+  commentId: Overload:Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEventBus.IntegrationEventBus
-  fullName.vb: Falcon.Messaging.IntegrationEvents.IntegrationEventBus.New
+  fullName: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus.IntegrationEventBus
+  fullName.vb: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus.New
   nameWithType: IntegrationEventBus.IntegrationEventBus
   nameWithType.vb: IntegrationEventBus.New
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher
+- uid: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher
   name: IntegrationEventPublisher
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.html
-  commentId: T:Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher
+  href: api/Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.html
+  commentId: T:Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher
+  fullName: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher
   nameWithType: IntegrationEventPublisher
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.#ctor(Falcon.Messaging.IntegrationEvents.IntegrationEventBus)
+- uid: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.#ctor(Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus)
   name: IntegrationEventPublisher(IntegrationEventBus)
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.html#Falcon_Messaging_IntegrationEvents_IntegrationEventPublisher__ctor_Falcon_Messaging_IntegrationEvents_IntegrationEventBus_
-  commentId: M:Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.#ctor(Falcon.Messaging.IntegrationEvents.IntegrationEventBus)
+  href: api/Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.html#Falcon_Messaging_MassTransit_IntegrationEvents_IntegrationEventPublisher__ctor_Falcon_Messaging_MassTransit_IntegrationEvents_IntegrationEventBus_
+  commentId: M:Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.#ctor(Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus)
   name.vb: New(IntegrationEventBus)
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.IntegrationEventPublisher(Falcon.Messaging.IntegrationEvents.IntegrationEventBus)
-  fullName.vb: Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.New(Falcon.Messaging.IntegrationEvents.IntegrationEventBus)
+  fullName: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.IntegrationEventPublisher(Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus)
+  fullName.vb: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.New(Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventBus)
   nameWithType: IntegrationEventPublisher.IntegrationEventPublisher(IntegrationEventBus)
   nameWithType.vb: IntegrationEventPublisher.New(IntegrationEventBus)
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.#ctor*
+- uid: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.#ctor*
   name: IntegrationEventPublisher
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.html#Falcon_Messaging_IntegrationEvents_IntegrationEventPublisher__ctor_
-  commentId: Overload:Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.#ctor
+  href: api/Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.html#Falcon_Messaging_MassTransit_IntegrationEvents_IntegrationEventPublisher__ctor_
+  commentId: Overload:Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.IntegrationEventPublisher
-  fullName.vb: Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.New
+  fullName: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.IntegrationEventPublisher
+  fullName.vb: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.New
   nameWithType: IntegrationEventPublisher.IntegrationEventPublisher
   nameWithType.vb: IntegrationEventPublisher.New
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.PublishAsync*
+- uid: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.PublishAsync*
   name: PublishAsync
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.html#Falcon_Messaging_IntegrationEvents_IntegrationEventPublisher_PublishAsync_
-  commentId: Overload:Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.PublishAsync
+  href: api/Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.html#Falcon_Messaging_MassTransit_IntegrationEvents_IntegrationEventPublisher_PublishAsync_
+  commentId: Overload:Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.PublishAsync
   isSpec: "True"
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.PublishAsync
+  fullName: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.PublishAsync
   nameWithType: IntegrationEventPublisher.PublishAsync
-- uid: Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+- uid: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
   name: PublishAsync<TEvent>(TEvent, CancellationToken)
-  href: api/Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.html#Falcon_Messaging_IntegrationEvents_IntegrationEventPublisher_PublishAsync__1___0_System_Threading_CancellationToken_
-  commentId: M:Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
+  href: api/Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.html#Falcon_Messaging_MassTransit_IntegrationEvents_IntegrationEventPublisher_PublishAsync__1___0_System_Threading_CancellationToken_
+  commentId: M:Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.PublishAsync``1(``0,System.Threading.CancellationToken)
   name.vb: PublishAsync(Of TEvent)(TEvent, CancellationToken)
-  fullName: Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.PublishAsync<TEvent>(TEvent, System.Threading.CancellationToken)
-  fullName.vb: Falcon.Messaging.IntegrationEvents.IntegrationEventPublisher.PublishAsync(Of TEvent)(TEvent, System.Threading.CancellationToken)
+  fullName: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.PublishAsync<TEvent>(TEvent, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Messaging.MassTransit.IntegrationEvents.IntegrationEventPublisher.PublishAsync(Of TEvent)(TEvent, System.Threading.CancellationToken)
   nameWithType: IntegrationEventPublisher.PublishAsync<TEvent>(TEvent, CancellationToken)
   nameWithType.vb: IntegrationEventPublisher.PublishAsync(Of TEvent)(TEvent, CancellationToken)
-- uid: Falcon.Messaging.MessagingOptions
+- uid: Falcon.Messaging.MassTransit.MessagingOptions
   name: MessagingOptions
-  href: api/Falcon.Messaging.MessagingOptions.html
-  commentId: T:Falcon.Messaging.MessagingOptions
-  fullName: Falcon.Messaging.MessagingOptions
+  href: api/Falcon.Messaging.MassTransit.MessagingOptions.html
+  commentId: T:Falcon.Messaging.MassTransit.MessagingOptions
+  fullName: Falcon.Messaging.MassTransit.MessagingOptions
   nameWithType: MessagingOptions
-- uid: Falcon.Messaging.MessagingOptions.ApplicationBusConfigurator
+- uid: Falcon.Messaging.MassTransit.MessagingOptions.ApplicationBusConfigurator
   name: ApplicationBusConfigurator
-  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_ApplicationBusConfigurator
-  commentId: P:Falcon.Messaging.MessagingOptions.ApplicationBusConfigurator
-  fullName: Falcon.Messaging.MessagingOptions.ApplicationBusConfigurator
+  href: api/Falcon.Messaging.MassTransit.MessagingOptions.html#Falcon_Messaging_MassTransit_MessagingOptions_ApplicationBusConfigurator
+  commentId: P:Falcon.Messaging.MassTransit.MessagingOptions.ApplicationBusConfigurator
+  fullName: Falcon.Messaging.MassTransit.MessagingOptions.ApplicationBusConfigurator
   nameWithType: MessagingOptions.ApplicationBusConfigurator
-- uid: Falcon.Messaging.MessagingOptions.ApplicationBusConfigurator*
+- uid: Falcon.Messaging.MassTransit.MessagingOptions.ApplicationBusConfigurator*
   name: ApplicationBusConfigurator
-  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_ApplicationBusConfigurator_
-  commentId: Overload:Falcon.Messaging.MessagingOptions.ApplicationBusConfigurator
+  href: api/Falcon.Messaging.MassTransit.MessagingOptions.html#Falcon_Messaging_MassTransit_MessagingOptions_ApplicationBusConfigurator_
+  commentId: Overload:Falcon.Messaging.MassTransit.MessagingOptions.ApplicationBusConfigurator
   isSpec: "True"
-  fullName: Falcon.Messaging.MessagingOptions.ApplicationBusConfigurator
+  fullName: Falcon.Messaging.MassTransit.MessagingOptions.ApplicationBusConfigurator
   nameWithType: MessagingOptions.ApplicationBusConfigurator
-- uid: Falcon.Messaging.MessagingOptions.CommandBusConfigurator
+- uid: Falcon.Messaging.MassTransit.MessagingOptions.CommandBusConfigurator
   name: CommandBusConfigurator
-  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_CommandBusConfigurator
-  commentId: P:Falcon.Messaging.MessagingOptions.CommandBusConfigurator
-  fullName: Falcon.Messaging.MessagingOptions.CommandBusConfigurator
+  href: api/Falcon.Messaging.MassTransit.MessagingOptions.html#Falcon_Messaging_MassTransit_MessagingOptions_CommandBusConfigurator
+  commentId: P:Falcon.Messaging.MassTransit.MessagingOptions.CommandBusConfigurator
+  fullName: Falcon.Messaging.MassTransit.MessagingOptions.CommandBusConfigurator
   nameWithType: MessagingOptions.CommandBusConfigurator
-- uid: Falcon.Messaging.MessagingOptions.CommandBusConfigurator*
+- uid: Falcon.Messaging.MassTransit.MessagingOptions.CommandBusConfigurator*
   name: CommandBusConfigurator
-  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_CommandBusConfigurator_
-  commentId: Overload:Falcon.Messaging.MessagingOptions.CommandBusConfigurator
+  href: api/Falcon.Messaging.MassTransit.MessagingOptions.html#Falcon_Messaging_MassTransit_MessagingOptions_CommandBusConfigurator_
+  commentId: Overload:Falcon.Messaging.MassTransit.MessagingOptions.CommandBusConfigurator
   isSpec: "True"
-  fullName: Falcon.Messaging.MessagingOptions.CommandBusConfigurator
+  fullName: Falcon.Messaging.MassTransit.MessagingOptions.CommandBusConfigurator
   nameWithType: MessagingOptions.CommandBusConfigurator
-- uid: Falcon.Messaging.MessagingOptions.DomainBusConfigurator
+- uid: Falcon.Messaging.MassTransit.MessagingOptions.DomainBusConfigurator
   name: DomainBusConfigurator
-  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_DomainBusConfigurator
-  commentId: P:Falcon.Messaging.MessagingOptions.DomainBusConfigurator
-  fullName: Falcon.Messaging.MessagingOptions.DomainBusConfigurator
+  href: api/Falcon.Messaging.MassTransit.MessagingOptions.html#Falcon_Messaging_MassTransit_MessagingOptions_DomainBusConfigurator
+  commentId: P:Falcon.Messaging.MassTransit.MessagingOptions.DomainBusConfigurator
+  fullName: Falcon.Messaging.MassTransit.MessagingOptions.DomainBusConfigurator
   nameWithType: MessagingOptions.DomainBusConfigurator
-- uid: Falcon.Messaging.MessagingOptions.DomainBusConfigurator*
+- uid: Falcon.Messaging.MassTransit.MessagingOptions.DomainBusConfigurator*
   name: DomainBusConfigurator
-  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_DomainBusConfigurator_
-  commentId: Overload:Falcon.Messaging.MessagingOptions.DomainBusConfigurator
+  href: api/Falcon.Messaging.MassTransit.MessagingOptions.html#Falcon_Messaging_MassTransit_MessagingOptions_DomainBusConfigurator_
+  commentId: Overload:Falcon.Messaging.MassTransit.MessagingOptions.DomainBusConfigurator
   isSpec: "True"
-  fullName: Falcon.Messaging.MessagingOptions.DomainBusConfigurator
+  fullName: Falcon.Messaging.MassTransit.MessagingOptions.DomainBusConfigurator
   nameWithType: MessagingOptions.DomainBusConfigurator
-- uid: Falcon.Messaging.MessagingOptions.InfrastructureBusConfigurator
+- uid: Falcon.Messaging.MassTransit.MessagingOptions.InfrastructureBusConfigurator
   name: InfrastructureBusConfigurator
-  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_InfrastructureBusConfigurator
-  commentId: P:Falcon.Messaging.MessagingOptions.InfrastructureBusConfigurator
-  fullName: Falcon.Messaging.MessagingOptions.InfrastructureBusConfigurator
+  href: api/Falcon.Messaging.MassTransit.MessagingOptions.html#Falcon_Messaging_MassTransit_MessagingOptions_InfrastructureBusConfigurator
+  commentId: P:Falcon.Messaging.MassTransit.MessagingOptions.InfrastructureBusConfigurator
+  fullName: Falcon.Messaging.MassTransit.MessagingOptions.InfrastructureBusConfigurator
   nameWithType: MessagingOptions.InfrastructureBusConfigurator
-- uid: Falcon.Messaging.MessagingOptions.InfrastructureBusConfigurator*
+- uid: Falcon.Messaging.MassTransit.MessagingOptions.InfrastructureBusConfigurator*
   name: InfrastructureBusConfigurator
-  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_InfrastructureBusConfigurator_
-  commentId: Overload:Falcon.Messaging.MessagingOptions.InfrastructureBusConfigurator
+  href: api/Falcon.Messaging.MassTransit.MessagingOptions.html#Falcon_Messaging_MassTransit_MessagingOptions_InfrastructureBusConfigurator_
+  commentId: Overload:Falcon.Messaging.MassTransit.MessagingOptions.InfrastructureBusConfigurator
   isSpec: "True"
-  fullName: Falcon.Messaging.MessagingOptions.InfrastructureBusConfigurator
+  fullName: Falcon.Messaging.MassTransit.MessagingOptions.InfrastructureBusConfigurator
   nameWithType: MessagingOptions.InfrastructureBusConfigurator
-- uid: Falcon.Messaging.MessagingOptions.QueryBusConfigurator
+- uid: Falcon.Messaging.MassTransit.MessagingOptions.QueryBusConfigurator
   name: QueryBusConfigurator
-  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_QueryBusConfigurator
-  commentId: P:Falcon.Messaging.MessagingOptions.QueryBusConfigurator
-  fullName: Falcon.Messaging.MessagingOptions.QueryBusConfigurator
+  href: api/Falcon.Messaging.MassTransit.MessagingOptions.html#Falcon_Messaging_MassTransit_MessagingOptions_QueryBusConfigurator
+  commentId: P:Falcon.Messaging.MassTransit.MessagingOptions.QueryBusConfigurator
+  fullName: Falcon.Messaging.MassTransit.MessagingOptions.QueryBusConfigurator
   nameWithType: MessagingOptions.QueryBusConfigurator
-- uid: Falcon.Messaging.MessagingOptions.QueryBusConfigurator*
+- uid: Falcon.Messaging.MassTransit.MessagingOptions.QueryBusConfigurator*
   name: QueryBusConfigurator
-  href: api/Falcon.Messaging.MessagingOptions.html#Falcon_Messaging_MessagingOptions_QueryBusConfigurator_
-  commentId: Overload:Falcon.Messaging.MessagingOptions.QueryBusConfigurator
+  href: api/Falcon.Messaging.MassTransit.MessagingOptions.html#Falcon_Messaging_MassTransit_MessagingOptions_QueryBusConfigurator_
+  commentId: Overload:Falcon.Messaging.MassTransit.MessagingOptions.QueryBusConfigurator
   isSpec: "True"
-  fullName: Falcon.Messaging.MessagingOptions.QueryBusConfigurator
+  fullName: Falcon.Messaging.MassTransit.MessagingOptions.QueryBusConfigurator
   nameWithType: MessagingOptions.QueryBusConfigurator
-- uid: Falcon.Messaging.MessagingOptionsBuilder
+- uid: Falcon.Messaging.MassTransit.MessagingOptionsBuilder
   name: MessagingOptionsBuilder
-  href: api/Falcon.Messaging.MessagingOptionsBuilder.html
-  commentId: T:Falcon.Messaging.MessagingOptionsBuilder
-  fullName: Falcon.Messaging.MessagingOptionsBuilder
+  href: api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html
+  commentId: T:Falcon.Messaging.MassTransit.MessagingOptionsBuilder
+  fullName: Falcon.Messaging.MassTransit.MessagingOptionsBuilder
   nameWithType: MessagingOptionsBuilder
-- uid: Falcon.Messaging.MessagingOptionsBuilder.AddApplicationEvent(System.Action{MassTransit.IBusRegistrationConfigurator})
+- uid: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddApplicationEvent(System.Action{MassTransit.IBusRegistrationConfigurator})
   name: AddApplicationEvent(Action<IBusRegistrationConfigurator>)
-  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_AddApplicationEvent_System_Action_MassTransit_IBusRegistrationConfigurator__
-  commentId: M:Falcon.Messaging.MessagingOptionsBuilder.AddApplicationEvent(System.Action{MassTransit.IBusRegistrationConfigurator})
+  href: api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html#Falcon_Messaging_MassTransit_MessagingOptionsBuilder_AddApplicationEvent_System_Action_MassTransit_IBusRegistrationConfigurator__
+  commentId: M:Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddApplicationEvent(System.Action{MassTransit.IBusRegistrationConfigurator})
   name.vb: AddApplicationEvent(Action(Of IBusRegistrationConfigurator))
-  fullName: Falcon.Messaging.MessagingOptionsBuilder.AddApplicationEvent(System.Action<MassTransit.IBusRegistrationConfigurator>)
-  fullName.vb: Falcon.Messaging.MessagingOptionsBuilder.AddApplicationEvent(System.Action(Of MassTransit.IBusRegistrationConfigurator))
+  fullName: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddApplicationEvent(System.Action<MassTransit.IBusRegistrationConfigurator>)
+  fullName.vb: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddApplicationEvent(System.Action(Of MassTransit.IBusRegistrationConfigurator))
   nameWithType: MessagingOptionsBuilder.AddApplicationEvent(Action<IBusRegistrationConfigurator>)
   nameWithType.vb: MessagingOptionsBuilder.AddApplicationEvent(Action(Of IBusRegistrationConfigurator))
-- uid: Falcon.Messaging.MessagingOptionsBuilder.AddApplicationEvent*
+- uid: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddApplicationEvent*
   name: AddApplicationEvent
-  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_AddApplicationEvent_
-  commentId: Overload:Falcon.Messaging.MessagingOptionsBuilder.AddApplicationEvent
+  href: api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html#Falcon_Messaging_MassTransit_MessagingOptionsBuilder_AddApplicationEvent_
+  commentId: Overload:Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddApplicationEvent
   isSpec: "True"
-  fullName: Falcon.Messaging.MessagingOptionsBuilder.AddApplicationEvent
+  fullName: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddApplicationEvent
   nameWithType: MessagingOptionsBuilder.AddApplicationEvent
-- uid: Falcon.Messaging.MessagingOptionsBuilder.AddCommand(System.Action{MassTransit.IMediatorRegistrationConfigurator})
+- uid: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddCommand(System.Action{MassTransit.IMediatorRegistrationConfigurator})
   name: AddCommand(Action<IMediatorRegistrationConfigurator>)
-  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_AddCommand_System_Action_MassTransit_IMediatorRegistrationConfigurator__
-  commentId: M:Falcon.Messaging.MessagingOptionsBuilder.AddCommand(System.Action{MassTransit.IMediatorRegistrationConfigurator})
+  href: api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html#Falcon_Messaging_MassTransit_MessagingOptionsBuilder_AddCommand_System_Action_MassTransit_IMediatorRegistrationConfigurator__
+  commentId: M:Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddCommand(System.Action{MassTransit.IMediatorRegistrationConfigurator})
   name.vb: AddCommand(Action(Of IMediatorRegistrationConfigurator))
-  fullName: Falcon.Messaging.MessagingOptionsBuilder.AddCommand(System.Action<MassTransit.IMediatorRegistrationConfigurator>)
-  fullName.vb: Falcon.Messaging.MessagingOptionsBuilder.AddCommand(System.Action(Of MassTransit.IMediatorRegistrationConfigurator))
+  fullName: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddCommand(System.Action<MassTransit.IMediatorRegistrationConfigurator>)
+  fullName.vb: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddCommand(System.Action(Of MassTransit.IMediatorRegistrationConfigurator))
   nameWithType: MessagingOptionsBuilder.AddCommand(Action<IMediatorRegistrationConfigurator>)
   nameWithType.vb: MessagingOptionsBuilder.AddCommand(Action(Of IMediatorRegistrationConfigurator))
-- uid: Falcon.Messaging.MessagingOptionsBuilder.AddCommand*
+- uid: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddCommand*
   name: AddCommand
-  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_AddCommand_
-  commentId: Overload:Falcon.Messaging.MessagingOptionsBuilder.AddCommand
+  href: api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html#Falcon_Messaging_MassTransit_MessagingOptionsBuilder_AddCommand_
+  commentId: Overload:Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddCommand
   isSpec: "True"
-  fullName: Falcon.Messaging.MessagingOptionsBuilder.AddCommand
+  fullName: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddCommand
   nameWithType: MessagingOptionsBuilder.AddCommand
-- uid: Falcon.Messaging.MessagingOptionsBuilder.AddDomainEvent(System.Action{MassTransit.IBusRegistrationConfigurator})
+- uid: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddDomainEvent(System.Action{MassTransit.IBusRegistrationConfigurator})
   name: AddDomainEvent(Action<IBusRegistrationConfigurator>)
-  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_AddDomainEvent_System_Action_MassTransit_IBusRegistrationConfigurator__
-  commentId: M:Falcon.Messaging.MessagingOptionsBuilder.AddDomainEvent(System.Action{MassTransit.IBusRegistrationConfigurator})
+  href: api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html#Falcon_Messaging_MassTransit_MessagingOptionsBuilder_AddDomainEvent_System_Action_MassTransit_IBusRegistrationConfigurator__
+  commentId: M:Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddDomainEvent(System.Action{MassTransit.IBusRegistrationConfigurator})
   name.vb: AddDomainEvent(Action(Of IBusRegistrationConfigurator))
-  fullName: Falcon.Messaging.MessagingOptionsBuilder.AddDomainEvent(System.Action<MassTransit.IBusRegistrationConfigurator>)
-  fullName.vb: Falcon.Messaging.MessagingOptionsBuilder.AddDomainEvent(System.Action(Of MassTransit.IBusRegistrationConfigurator))
+  fullName: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddDomainEvent(System.Action<MassTransit.IBusRegistrationConfigurator>)
+  fullName.vb: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddDomainEvent(System.Action(Of MassTransit.IBusRegistrationConfigurator))
   nameWithType: MessagingOptionsBuilder.AddDomainEvent(Action<IBusRegistrationConfigurator>)
   nameWithType.vb: MessagingOptionsBuilder.AddDomainEvent(Action(Of IBusRegistrationConfigurator))
-- uid: Falcon.Messaging.MessagingOptionsBuilder.AddDomainEvent*
+- uid: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddDomainEvent*
   name: AddDomainEvent
-  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_AddDomainEvent_
-  commentId: Overload:Falcon.Messaging.MessagingOptionsBuilder.AddDomainEvent
+  href: api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html#Falcon_Messaging_MassTransit_MessagingOptionsBuilder_AddDomainEvent_
+  commentId: Overload:Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddDomainEvent
   isSpec: "True"
-  fullName: Falcon.Messaging.MessagingOptionsBuilder.AddDomainEvent
+  fullName: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddDomainEvent
   nameWithType: MessagingOptionsBuilder.AddDomainEvent
-- uid: Falcon.Messaging.MessagingOptionsBuilder.AddIntegrationEvent(System.Action{MassTransit.IBusRegistrationConfigurator})
+- uid: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddIntegrationEvent(System.Action{MassTransit.IBusRegistrationConfigurator})
   name: AddIntegrationEvent(Action<IBusRegistrationConfigurator>)
-  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_AddIntegrationEvent_System_Action_MassTransit_IBusRegistrationConfigurator__
-  commentId: M:Falcon.Messaging.MessagingOptionsBuilder.AddIntegrationEvent(System.Action{MassTransit.IBusRegistrationConfigurator})
+  href: api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html#Falcon_Messaging_MassTransit_MessagingOptionsBuilder_AddIntegrationEvent_System_Action_MassTransit_IBusRegistrationConfigurator__
+  commentId: M:Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddIntegrationEvent(System.Action{MassTransit.IBusRegistrationConfigurator})
   name.vb: AddIntegrationEvent(Action(Of IBusRegistrationConfigurator))
-  fullName: Falcon.Messaging.MessagingOptionsBuilder.AddIntegrationEvent(System.Action<MassTransit.IBusRegistrationConfigurator>)
-  fullName.vb: Falcon.Messaging.MessagingOptionsBuilder.AddIntegrationEvent(System.Action(Of MassTransit.IBusRegistrationConfigurator))
+  fullName: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddIntegrationEvent(System.Action<MassTransit.IBusRegistrationConfigurator>)
+  fullName.vb: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddIntegrationEvent(System.Action(Of MassTransit.IBusRegistrationConfigurator))
   nameWithType: MessagingOptionsBuilder.AddIntegrationEvent(Action<IBusRegistrationConfigurator>)
   nameWithType.vb: MessagingOptionsBuilder.AddIntegrationEvent(Action(Of IBusRegistrationConfigurator))
-- uid: Falcon.Messaging.MessagingOptionsBuilder.AddIntegrationEvent*
+- uid: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddIntegrationEvent*
   name: AddIntegrationEvent
-  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_AddIntegrationEvent_
-  commentId: Overload:Falcon.Messaging.MessagingOptionsBuilder.AddIntegrationEvent
+  href: api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html#Falcon_Messaging_MassTransit_MessagingOptionsBuilder_AddIntegrationEvent_
+  commentId: Overload:Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddIntegrationEvent
   isSpec: "True"
-  fullName: Falcon.Messaging.MessagingOptionsBuilder.AddIntegrationEvent
+  fullName: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddIntegrationEvent
   nameWithType: MessagingOptionsBuilder.AddIntegrationEvent
-- uid: Falcon.Messaging.MessagingOptionsBuilder.AddQuery(System.Action{MassTransit.IBusRegistrationConfigurator})
+- uid: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddQuery(System.Action{MassTransit.IBusRegistrationConfigurator})
   name: AddQuery(Action<IBusRegistrationConfigurator>)
-  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_AddQuery_System_Action_MassTransit_IBusRegistrationConfigurator__
-  commentId: M:Falcon.Messaging.MessagingOptionsBuilder.AddQuery(System.Action{MassTransit.IBusRegistrationConfigurator})
+  href: api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html#Falcon_Messaging_MassTransit_MessagingOptionsBuilder_AddQuery_System_Action_MassTransit_IBusRegistrationConfigurator__
+  commentId: M:Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddQuery(System.Action{MassTransit.IBusRegistrationConfigurator})
   name.vb: AddQuery(Action(Of IBusRegistrationConfigurator))
-  fullName: Falcon.Messaging.MessagingOptionsBuilder.AddQuery(System.Action<MassTransit.IBusRegistrationConfigurator>)
-  fullName.vb: Falcon.Messaging.MessagingOptionsBuilder.AddQuery(System.Action(Of MassTransit.IBusRegistrationConfigurator))
+  fullName: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddQuery(System.Action<MassTransit.IBusRegistrationConfigurator>)
+  fullName.vb: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddQuery(System.Action(Of MassTransit.IBusRegistrationConfigurator))
   nameWithType: MessagingOptionsBuilder.AddQuery(Action<IBusRegistrationConfigurator>)
   nameWithType.vb: MessagingOptionsBuilder.AddQuery(Action(Of IBusRegistrationConfigurator))
-- uid: Falcon.Messaging.MessagingOptionsBuilder.AddQuery*
+- uid: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddQuery*
   name: AddQuery
-  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_AddQuery_
-  commentId: Overload:Falcon.Messaging.MessagingOptionsBuilder.AddQuery
+  href: api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html#Falcon_Messaging_MassTransit_MessagingOptionsBuilder_AddQuery_
+  commentId: Overload:Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddQuery
   isSpec: "True"
-  fullName: Falcon.Messaging.MessagingOptionsBuilder.AddQuery
+  fullName: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.AddQuery
   nameWithType: MessagingOptionsBuilder.AddQuery
-- uid: Falcon.Messaging.MessagingOptionsBuilder.Build
+- uid: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.Build
   name: Build()
-  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_Build
-  commentId: M:Falcon.Messaging.MessagingOptionsBuilder.Build
-  fullName: Falcon.Messaging.MessagingOptionsBuilder.Build()
+  href: api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html#Falcon_Messaging_MassTransit_MessagingOptionsBuilder_Build
+  commentId: M:Falcon.Messaging.MassTransit.MessagingOptionsBuilder.Build
+  fullName: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.Build()
   nameWithType: MessagingOptionsBuilder.Build()
-- uid: Falcon.Messaging.MessagingOptionsBuilder.Build*
+- uid: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.Build*
   name: Build
-  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_Build_
-  commentId: Overload:Falcon.Messaging.MessagingOptionsBuilder.Build
+  href: api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html#Falcon_Messaging_MassTransit_MessagingOptionsBuilder_Build_
+  commentId: Overload:Falcon.Messaging.MassTransit.MessagingOptionsBuilder.Build
   isSpec: "True"
-  fullName: Falcon.Messaging.MessagingOptionsBuilder.Build
+  fullName: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.Build
   nameWithType: MessagingOptionsBuilder.Build
-- uid: Falcon.Messaging.MessagingOptionsBuilder.New
+- uid: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.New
   name: New()
-  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_New
-  commentId: M:Falcon.Messaging.MessagingOptionsBuilder.New
-  fullName: Falcon.Messaging.MessagingOptionsBuilder.New()
+  href: api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html#Falcon_Messaging_MassTransit_MessagingOptionsBuilder_New
+  commentId: M:Falcon.Messaging.MassTransit.MessagingOptionsBuilder.New
+  fullName: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.New()
   nameWithType: MessagingOptionsBuilder.New()
-- uid: Falcon.Messaging.MessagingOptionsBuilder.New*
+- uid: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.New*
   name: New
-  href: api/Falcon.Messaging.MessagingOptionsBuilder.html#Falcon_Messaging_MessagingOptionsBuilder_New_
-  commentId: Overload:Falcon.Messaging.MessagingOptionsBuilder.New
+  href: api/Falcon.Messaging.MassTransit.MessagingOptionsBuilder.html#Falcon_Messaging_MassTransit_MessagingOptionsBuilder_New_
+  commentId: Overload:Falcon.Messaging.MassTransit.MessagingOptionsBuilder.New
   isSpec: "True"
-  fullName: Falcon.Messaging.MessagingOptionsBuilder.New
+  fullName: Falcon.Messaging.MassTransit.MessagingOptionsBuilder.New
   nameWithType: MessagingOptionsBuilder.New
-- uid: Falcon.Messaging.Query
-  name: Falcon.Messaging.Query
-  href: api/Falcon.Messaging.Query.html
-  commentId: N:Falcon.Messaging.Query
-  fullName: Falcon.Messaging.Query
-  nameWithType: Falcon.Messaging.Query
-- uid: Falcon.Messaging.Query.IQuery
-  name: IQuery
-  href: api/Falcon.Messaging.Query.IQuery.html
-  commentId: T:Falcon.Messaging.Query.IQuery
-  fullName: Falcon.Messaging.Query.IQuery
-  nameWithType: IQuery
-- uid: Falcon.Messaging.Query.IQueryConsumer`1
+- uid: Falcon.Messaging.MassTransit.Query
+  name: Falcon.Messaging.MassTransit.Query
+  href: api/Falcon.Messaging.MassTransit.Query.html
+  commentId: N:Falcon.Messaging.MassTransit.Query
+  fullName: Falcon.Messaging.MassTransit.Query
+  nameWithType: Falcon.Messaging.MassTransit.Query
+- uid: Falcon.Messaging.MassTransit.Query.IQueryConsumer`1
   name: IQueryConsumer<TEntity>
-  href: api/Falcon.Messaging.Query.IQueryConsumer-1.html
-  commentId: T:Falcon.Messaging.Query.IQueryConsumer`1
+  href: api/Falcon.Messaging.MassTransit.Query.IQueryConsumer-1.html
+  commentId: T:Falcon.Messaging.MassTransit.Query.IQueryConsumer`1
   name.vb: IQueryConsumer(Of TEntity)
-  fullName: Falcon.Messaging.Query.IQueryConsumer<TEntity>
-  fullName.vb: Falcon.Messaging.Query.IQueryConsumer(Of TEntity)
+  fullName: Falcon.Messaging.MassTransit.Query.IQueryConsumer<TEntity>
+  fullName.vb: Falcon.Messaging.MassTransit.Query.IQueryConsumer(Of TEntity)
   nameWithType: IQueryConsumer<TEntity>
   nameWithType.vb: IQueryConsumer(Of TEntity)
-- uid: Falcon.Messaging.Query.QueryClient
+- uid: Falcon.Messaging.MassTransit.Query.QueryClient
   name: QueryClient
-  href: api/Falcon.Messaging.Query.QueryClient.html
-  commentId: T:Falcon.Messaging.Query.QueryClient
-  fullName: Falcon.Messaging.Query.QueryClient
+  href: api/Falcon.Messaging.MassTransit.Query.QueryClient.html
+  commentId: T:Falcon.Messaging.MassTransit.Query.QueryClient
+  fullName: Falcon.Messaging.MassTransit.Query.QueryClient
   nameWithType: QueryClient
-- uid: Falcon.Messaging.Query.QueryClient.#ctor(System.IServiceProvider)
+- uid: Falcon.Messaging.MassTransit.Query.QueryClient.#ctor(System.IServiceProvider)
   name: QueryClient(IServiceProvider)
-  href: api/Falcon.Messaging.Query.QueryClient.html#Falcon_Messaging_Query_QueryClient__ctor_System_IServiceProvider_
-  commentId: M:Falcon.Messaging.Query.QueryClient.#ctor(System.IServiceProvider)
+  href: api/Falcon.Messaging.MassTransit.Query.QueryClient.html#Falcon_Messaging_MassTransit_Query_QueryClient__ctor_System_IServiceProvider_
+  commentId: M:Falcon.Messaging.MassTransit.Query.QueryClient.#ctor(System.IServiceProvider)
   name.vb: New(IServiceProvider)
-  fullName: Falcon.Messaging.Query.QueryClient.QueryClient(System.IServiceProvider)
-  fullName.vb: Falcon.Messaging.Query.QueryClient.New(System.IServiceProvider)
+  fullName: Falcon.Messaging.MassTransit.Query.QueryClient.QueryClient(System.IServiceProvider)
+  fullName.vb: Falcon.Messaging.MassTransit.Query.QueryClient.New(System.IServiceProvider)
   nameWithType: QueryClient.QueryClient(IServiceProvider)
   nameWithType.vb: QueryClient.New(IServiceProvider)
-- uid: Falcon.Messaging.Query.QueryClient.#ctor*
+- uid: Falcon.Messaging.MassTransit.Query.QueryClient.#ctor*
   name: QueryClient
-  href: api/Falcon.Messaging.Query.QueryClient.html#Falcon_Messaging_Query_QueryClient__ctor_
-  commentId: Overload:Falcon.Messaging.Query.QueryClient.#ctor
+  href: api/Falcon.Messaging.MassTransit.Query.QueryClient.html#Falcon_Messaging_MassTransit_Query_QueryClient__ctor_
+  commentId: Overload:Falcon.Messaging.MassTransit.Query.QueryClient.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Falcon.Messaging.Query.QueryClient.QueryClient
-  fullName.vb: Falcon.Messaging.Query.QueryClient.New
+  fullName: Falcon.Messaging.MassTransit.Query.QueryClient.QueryClient
+  fullName.vb: Falcon.Messaging.MassTransit.Query.QueryClient.New
   nameWithType: QueryClient.QueryClient
   nameWithType.vb: QueryClient.New
-- uid: Falcon.Messaging.Query.QueryClient.GetAsync*
+- uid: Falcon.Messaging.MassTransit.Query.QueryClient.GetAsync*
   name: GetAsync
-  href: api/Falcon.Messaging.Query.QueryClient.html#Falcon_Messaging_Query_QueryClient_GetAsync_
-  commentId: Overload:Falcon.Messaging.Query.QueryClient.GetAsync
+  href: api/Falcon.Messaging.MassTransit.Query.QueryClient.html#Falcon_Messaging_MassTransit_Query_QueryClient_GetAsync_
+  commentId: Overload:Falcon.Messaging.MassTransit.Query.QueryClient.GetAsync
   isSpec: "True"
-  fullName: Falcon.Messaging.Query.QueryClient.GetAsync
+  fullName: Falcon.Messaging.MassTransit.Query.QueryClient.GetAsync
   nameWithType: QueryClient.GetAsync
-- uid: Falcon.Messaging.Query.QueryClient.GetAsync``2(``0,System.Threading.CancellationToken)
+- uid: Falcon.Messaging.MassTransit.Query.QueryClient.GetAsync``2(``0,System.Threading.CancellationToken)
   name: GetAsync<TRequest, TResponse>(TRequest, CancellationToken)
-  href: api/Falcon.Messaging.Query.QueryClient.html#Falcon_Messaging_Query_QueryClient_GetAsync__2___0_System_Threading_CancellationToken_
-  commentId: M:Falcon.Messaging.Query.QueryClient.GetAsync``2(``0,System.Threading.CancellationToken)
+  href: api/Falcon.Messaging.MassTransit.Query.QueryClient.html#Falcon_Messaging_MassTransit_Query_QueryClient_GetAsync__2___0_System_Threading_CancellationToken_
+  commentId: M:Falcon.Messaging.MassTransit.Query.QueryClient.GetAsync``2(``0,System.Threading.CancellationToken)
   name.vb: GetAsync(Of TRequest, TResponse)(TRequest, CancellationToken)
-  fullName: Falcon.Messaging.Query.QueryClient.GetAsync<TRequest, TResponse>(TRequest, System.Threading.CancellationToken)
-  fullName.vb: Falcon.Messaging.Query.QueryClient.GetAsync(Of TRequest, TResponse)(TRequest, System.Threading.CancellationToken)
+  fullName: Falcon.Messaging.MassTransit.Query.QueryClient.GetAsync<TRequest, TResponse>(TRequest, System.Threading.CancellationToken)
+  fullName.vb: Falcon.Messaging.MassTransit.Query.QueryClient.GetAsync(Of TRequest, TResponse)(TRequest, System.Threading.CancellationToken)
   nameWithType: QueryClient.GetAsync<TRequest, TResponse>(TRequest, CancellationToken)
   nameWithType.vb: QueryClient.GetAsync(Of TRequest, TResponse)(TRequest, CancellationToken)
-- uid: Falcon.Messaging.ServiceCollectionExtensions
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions
   name: ServiceCollectionExtensions
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html
-  commentId: T:Falcon.Messaging.ServiceCollectionExtensions
-  fullName: Falcon.Messaging.ServiceCollectionExtensions
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html
+  commentId: T:Falcon.Messaging.MassTransit.ServiceCollectionExtensions
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions
   nameWithType: ServiceCollectionExtensions
-- uid: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultApplicationEventConsumers(MassTransit.IBusRegistrationConfigurator)
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultApplicationEventConsumers(MassTransit.IBusRegistrationConfigurator)
   name: AddDefaultApplicationEventConsumers(IBusRegistrationConfigurator)
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddDefaultApplicationEventConsumers_MassTransit_IBusRegistrationConfigurator_
-  commentId: M:Falcon.Messaging.ServiceCollectionExtensions.AddDefaultApplicationEventConsumers(MassTransit.IBusRegistrationConfigurator)
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultApplicationEventConsumers(MassTransit.IBusRegistrationConfigurator)
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_AddDefaultApplicationEventConsumers_MassTransit_IBusRegistrationConfigurator_
+  commentId: M:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultApplicationEventConsumers(MassTransit.IBusRegistrationConfigurator)
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultApplicationEventConsumers(MassTransit.IBusRegistrationConfigurator)
   nameWithType: ServiceCollectionExtensions.AddDefaultApplicationEventConsumers(IBusRegistrationConfigurator)
-- uid: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultApplicationEventConsumers*
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultApplicationEventConsumers*
   name: AddDefaultApplicationEventConsumers
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddDefaultApplicationEventConsumers_
-  commentId: Overload:Falcon.Messaging.ServiceCollectionExtensions.AddDefaultApplicationEventConsumers
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_AddDefaultApplicationEventConsumers_
+  commentId: Overload:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultApplicationEventConsumers
   isSpec: "True"
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultApplicationEventConsumers
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultApplicationEventConsumers
   nameWithType: ServiceCollectionExtensions.AddDefaultApplicationEventConsumers
-- uid: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultCommandConsumers(MassTransit.IMediatorRegistrationConfigurator)
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultCommandConsumers(MassTransit.IMediatorRegistrationConfigurator)
   name: AddDefaultCommandConsumers(IMediatorRegistrationConfigurator)
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddDefaultCommandConsumers_MassTransit_IMediatorRegistrationConfigurator_
-  commentId: M:Falcon.Messaging.ServiceCollectionExtensions.AddDefaultCommandConsumers(MassTransit.IMediatorRegistrationConfigurator)
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultCommandConsumers(MassTransit.IMediatorRegistrationConfigurator)
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_AddDefaultCommandConsumers_MassTransit_IMediatorRegistrationConfigurator_
+  commentId: M:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultCommandConsumers(MassTransit.IMediatorRegistrationConfigurator)
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultCommandConsumers(MassTransit.IMediatorRegistrationConfigurator)
   nameWithType: ServiceCollectionExtensions.AddDefaultCommandConsumers(IMediatorRegistrationConfigurator)
-- uid: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultCommandConsumers*
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultCommandConsumers*
   name: AddDefaultCommandConsumers
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddDefaultCommandConsumers_
-  commentId: Overload:Falcon.Messaging.ServiceCollectionExtensions.AddDefaultCommandConsumers
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_AddDefaultCommandConsumers_
+  commentId: Overload:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultCommandConsumers
   isSpec: "True"
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultCommandConsumers
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultCommandConsumers
   nameWithType: ServiceCollectionExtensions.AddDefaultCommandConsumers
-- uid: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultDomainEventConsumers(MassTransit.IBusRegistrationConfigurator)
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultDomainEventConsumers(MassTransit.IBusRegistrationConfigurator)
   name: AddDefaultDomainEventConsumers(IBusRegistrationConfigurator)
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddDefaultDomainEventConsumers_MassTransit_IBusRegistrationConfigurator_
-  commentId: M:Falcon.Messaging.ServiceCollectionExtensions.AddDefaultDomainEventConsumers(MassTransit.IBusRegistrationConfigurator)
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultDomainEventConsumers(MassTransit.IBusRegistrationConfigurator)
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_AddDefaultDomainEventConsumers_MassTransit_IBusRegistrationConfigurator_
+  commentId: M:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultDomainEventConsumers(MassTransit.IBusRegistrationConfigurator)
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultDomainEventConsumers(MassTransit.IBusRegistrationConfigurator)
   nameWithType: ServiceCollectionExtensions.AddDefaultDomainEventConsumers(IBusRegistrationConfigurator)
-- uid: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultDomainEventConsumers*
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultDomainEventConsumers*
   name: AddDefaultDomainEventConsumers
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddDefaultDomainEventConsumers_
-  commentId: Overload:Falcon.Messaging.ServiceCollectionExtensions.AddDefaultDomainEventConsumers
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_AddDefaultDomainEventConsumers_
+  commentId: Overload:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultDomainEventConsumers
   isSpec: "True"
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultDomainEventConsumers
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultDomainEventConsumers
   nameWithType: ServiceCollectionExtensions.AddDefaultDomainEventConsumers
-- uid: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers(MassTransit.IBusRegistrationConfigurator)
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers(MassTransit.IBusRegistrationConfigurator)
   name: AddDefaultIntegrationEventConsumers(IBusRegistrationConfigurator)
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddDefaultIntegrationEventConsumers_MassTransit_IBusRegistrationConfigurator_
-  commentId: M:Falcon.Messaging.ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers(MassTransit.IBusRegistrationConfigurator)
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers(MassTransit.IBusRegistrationConfigurator)
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_AddDefaultIntegrationEventConsumers_MassTransit_IBusRegistrationConfigurator_
+  commentId: M:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers(MassTransit.IBusRegistrationConfigurator)
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers(MassTransit.IBusRegistrationConfigurator)
   nameWithType: ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers(IBusRegistrationConfigurator)
-- uid: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers*
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers*
   name: AddDefaultIntegrationEventConsumers
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddDefaultIntegrationEventConsumers_
-  commentId: Overload:Falcon.Messaging.ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_AddDefaultIntegrationEventConsumers_
+  commentId: Overload:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers
   isSpec: "True"
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers
   nameWithType: ServiceCollectionExtensions.AddDefaultIntegrationEventConsumers
-- uid: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryConsumers(MassTransit.IBusRegistrationConfigurator)
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultQueryConsumers(MassTransit.IBusRegistrationConfigurator)
   name: AddDefaultQueryConsumers(IBusRegistrationConfigurator)
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddDefaultQueryConsumers_MassTransit_IBusRegistrationConfigurator_
-  commentId: M:Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryConsumers(MassTransit.IBusRegistrationConfigurator)
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryConsumers(MassTransit.IBusRegistrationConfigurator)
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_AddDefaultQueryConsumers_MassTransit_IBusRegistrationConfigurator_
+  commentId: M:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultQueryConsumers(MassTransit.IBusRegistrationConfigurator)
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultQueryConsumers(MassTransit.IBusRegistrationConfigurator)
   nameWithType: ServiceCollectionExtensions.AddDefaultQueryConsumers(IBusRegistrationConfigurator)
-- uid: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryConsumers*
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultQueryConsumers*
   name: AddDefaultQueryConsumers
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddDefaultQueryConsumers_
-  commentId: Overload:Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryConsumers
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_AddDefaultQueryConsumers_
+  commentId: Overload:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultQueryConsumers
   isSpec: "True"
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryConsumers
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultQueryConsumers
   nameWithType: ServiceCollectionExtensions.AddDefaultQueryConsumers
-- uid: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryRequestClient(MassTransit.IBusRegistrationConfigurator)
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultQueryRequestClient(MassTransit.IBusRegistrationConfigurator)
   name: AddDefaultQueryRequestClient(IBusRegistrationConfigurator)
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddDefaultQueryRequestClient_MassTransit_IBusRegistrationConfigurator_
-  commentId: M:Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryRequestClient(MassTransit.IBusRegistrationConfigurator)
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryRequestClient(MassTransit.IBusRegistrationConfigurator)
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_AddDefaultQueryRequestClient_MassTransit_IBusRegistrationConfigurator_
+  commentId: M:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultQueryRequestClient(MassTransit.IBusRegistrationConfigurator)
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultQueryRequestClient(MassTransit.IBusRegistrationConfigurator)
   nameWithType: ServiceCollectionExtensions.AddDefaultQueryRequestClient(IBusRegistrationConfigurator)
-- uid: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryRequestClient*
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultQueryRequestClient*
   name: AddDefaultQueryRequestClient
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddDefaultQueryRequestClient_
-  commentId: Overload:Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryRequestClient
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_AddDefaultQueryRequestClient_
+  commentId: Overload:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultQueryRequestClient
   isSpec: "True"
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddDefaultQueryRequestClient
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddDefaultQueryRequestClient
   nameWithType: ServiceCollectionExtensions.AddDefaultQueryRequestClient
-- uid: Falcon.Messaging.ServiceCollectionExtensions.AddMessaging(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Falcon.Messaging.MessagingOptionsBuilder})
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddMessaging(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Falcon.Messaging.MassTransit.MessagingOptionsBuilder})
   name: AddMessaging(IServiceCollection, Action<MessagingOptionsBuilder>?)
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddMessaging_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Falcon_Messaging_MessagingOptionsBuilder__
-  commentId: M:Falcon.Messaging.ServiceCollectionExtensions.AddMessaging(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Falcon.Messaging.MessagingOptionsBuilder})
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_AddMessaging_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Falcon_Messaging_MassTransit_MessagingOptionsBuilder__
+  commentId: M:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddMessaging(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Falcon.Messaging.MassTransit.MessagingOptionsBuilder})
   name.vb: AddMessaging(IServiceCollection, Action(Of MessagingOptionsBuilder))
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddMessaging(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Falcon.Messaging.MessagingOptionsBuilder>?)
-  fullName.vb: Falcon.Messaging.ServiceCollectionExtensions.AddMessaging(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Falcon.Messaging.MessagingOptionsBuilder))
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddMessaging(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Falcon.Messaging.MassTransit.MessagingOptionsBuilder>?)
+  fullName.vb: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddMessaging(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Falcon.Messaging.MassTransit.MessagingOptionsBuilder))
   nameWithType: ServiceCollectionExtensions.AddMessaging(IServiceCollection, Action<MessagingOptionsBuilder>?)
   nameWithType.vb: ServiceCollectionExtensions.AddMessaging(IServiceCollection, Action(Of MessagingOptionsBuilder))
-- uid: Falcon.Messaging.ServiceCollectionExtensions.AddMessaging*
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddMessaging*
   name: AddMessaging
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_AddMessaging_
-  commentId: Overload:Falcon.Messaging.ServiceCollectionExtensions.AddMessaging
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_AddMessaging_
+  commentId: Overload:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddMessaging
   isSpec: "True"
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.AddMessaging
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.AddMessaging
   nameWithType: ServiceCollectionExtensions.AddMessaging
-- uid: Falcon.Messaging.ServiceCollectionExtensions.LogQueryConsumers(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.LogQueryConsumers(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   name: LogQueryConsumers(IServiceCollection)
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_LogQueryConsumers_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  commentId: M:Falcon.Messaging.ServiceCollectionExtensions.LogQueryConsumers(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.LogQueryConsumers(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_LogQueryConsumers_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.LogQueryConsumers(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.LogQueryConsumers(Microsoft.Extensions.DependencyInjection.IServiceCollection)
   nameWithType: ServiceCollectionExtensions.LogQueryConsumers(IServiceCollection)
-- uid: Falcon.Messaging.ServiceCollectionExtensions.LogQueryConsumers*
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.LogQueryConsumers*
   name: LogQueryConsumers
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_LogQueryConsumers_
-  commentId: Overload:Falcon.Messaging.ServiceCollectionExtensions.LogQueryConsumers
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_LogQueryConsumers_
+  commentId: Overload:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.LogQueryConsumers
   isSpec: "True"
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.LogQueryConsumers
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.LogQueryConsumers
   nameWithType: ServiceCollectionExtensions.LogQueryConsumers
-- uid: Falcon.Messaging.ServiceCollectionExtensions.UseMessaging(System.IServiceProvider)
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.UseMessaging(System.IServiceProvider)
   name: UseMessaging(IServiceProvider)
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_UseMessaging_System_IServiceProvider_
-  commentId: M:Falcon.Messaging.ServiceCollectionExtensions.UseMessaging(System.IServiceProvider)
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.UseMessaging(System.IServiceProvider)
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_UseMessaging_System_IServiceProvider_
+  commentId: M:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.UseMessaging(System.IServiceProvider)
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.UseMessaging(System.IServiceProvider)
   nameWithType: ServiceCollectionExtensions.UseMessaging(IServiceProvider)
-- uid: Falcon.Messaging.ServiceCollectionExtensions.UseMessaging*
+- uid: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.UseMessaging*
   name: UseMessaging
-  href: api/Falcon.Messaging.ServiceCollectionExtensions.html#Falcon_Messaging_ServiceCollectionExtensions_UseMessaging_
-  commentId: Overload:Falcon.Messaging.ServiceCollectionExtensions.UseMessaging
+  href: api/Falcon.Messaging.MassTransit.ServiceCollectionExtensions.html#Falcon_Messaging_MassTransit_ServiceCollectionExtensions_UseMessaging_
+  commentId: Overload:Falcon.Messaging.MassTransit.ServiceCollectionExtensions.UseMessaging
   isSpec: "True"
-  fullName: Falcon.Messaging.ServiceCollectionExtensions.UseMessaging
+  fullName: Falcon.Messaging.MassTransit.ServiceCollectionExtensions.UseMessaging
   nameWithType: ServiceCollectionExtensions.UseMessaging
