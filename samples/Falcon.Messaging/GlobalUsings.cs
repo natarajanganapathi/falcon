@@ -6,13 +6,13 @@ global using Microsoft.AspNetCore.Http;
 global using Microsoft.AspNetCore.Http.HttpResults;
 global using System.Reflection;
 global using Falcon.Messaging;
-global using Falcon.Messaging.DomainEvents;
-global using Falcon.Messaging.ApplicationEvents;
-global using Falcon.Messaging.IntegrationEvents;
-global using Falcon.Messaging.Query;
-global using Falcon.Messaging.Command;
 global using Falcon.Messaging.Abstractions;
-
+global using Falcon.Messaging.MassTransit.Query;
+global using Falcon.Messaging.MassTransit.IntegrationEvents;
+global using Falcon.Messaging.MassTransit.DomainEvents;
+global using Falcon.Messaging.MassTransit.Command;
+global using Falcon.Messaging.MassTransit.ApplicationEvents;
+global using Falcon.Messaging.MassTransit;
 global using MassTransit;
 
 global using Samples.Falcon.Messaging;
