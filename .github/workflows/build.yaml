@@ -104,11 +104,7 @@ jobs:
       - name: logs
         shell: bash
         run: |
-          ls -ls
-          pwd
-          ls -ls gh-actions/
-          ls -ls gh-actions/dotnet/
-          ls -ls gh-actions/dotnet/sonarqube/
+          ls -R
 
       - name: SonarQube Analysis Task
         uses: ./gh-actions/dotnet/sonarqube
