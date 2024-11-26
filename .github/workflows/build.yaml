@@ -9,23 +9,21 @@ on:
     branches:
       - "master"
     paths-ignore: ["docfx", "samples", ".github"]
+  release:
+    types: [created, published, 'released', prereleased, deleted]
   workflow_dispatch:
     inputs:
       codeql:
         description: "Run CodeQL Analysis"
-        default: false
+        default: true
         type: boolean
       sonarqube:
         description: "Run SonarQube Analysis"
-        default: false
+        default: true
         type: boolean
       docfx:
         description: "Run DocFx Documentation"
-        default: false
-        type: boolean
-      publish:
-        description: "Publish to NuGet"
-        default: false
+        default: true
         type: boolean
       debug:
         description: "Debug Mode"
@@ -149,14 +147,13 @@ jobs:
           docfx-json-path: ./docfx/docfx.json
           publish-dir: docs
 
-  publish:
+  github-publish:
     needs: build
-    if: ${{ github.event.inputs.publish == 'true' }}
-    name: Publish Artifacts
+    if: ${{ github.event_name == 'release' }}
+    name: Publish Artifacts to GitHub
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        languages: ["csharp"]
         dotnet-version: [9.0.x]
     steps:
       - uses: actions/checkout@v4
@@ -167,12 +164,38 @@ jobs:
           path: gh-actions
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish NuGet Package Task
-        uses: ./gh-actions/dotnet/publish
+      - name: Publish to GitHub Packages Task
+        uses: ./gh-actions/dotnet/github/publish
         with:
           solution-path: ./Falcon.sln
           dotnet-version: ${{ matrix.dotnet-version }}
+          # nuget-api-key: ${{ secrets.FALCON_NUGET_API_KEY }}
+          github-user: natarajanganapathi
+          github-email: natarajanmca11@outlook.com
           github-api-key: ${{ secrets.GITHUB_API_KEY }}
+          version: ${{github.event.release.tag_name}}
+
+  nuget-publish:
+    needs: build
+    if: ${{ github.event_name == 'release' }}
+    name: Publish Artifacts to NuGet
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: [9.0.x]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: falcon-architecture/gh-actions
+          ref: main
+          path: gh-actions
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to Nuget Packages Task
+        uses: ./gh-actions/dotnet/nuget/publish
+        with:
+          solution-path: ./Falcon.sln
+          dotnet-version: ${{ matrix.dotnet-version }}
           nuget-api-key: ${{ secrets.FALCON_NUGET_API_KEY }}
-          publish-nuget: false
-          publish-github: false
+          version: ${{github.event.release.tag_name}}
