@@ -106,9 +106,9 @@ jobs:
         with:
           sources: src
           solution-path: ./Falcon.sln
-          inclusions: "src/**,tests/**"
-          exclusions: "samples/**,resources/**,docfx/**,coverage.xml"
-          tests: "tests/"
+          inclusions: "src/**"
+          exclusions: "samples/**,resources/**,docfx/**"
+          tests: tests
           test-solution-path: ./tests/Falcon.Tests.sln
           test-exclusions: "tests/**,samples/**,resources/**,docfx/**"
           dotnet-version: ${{ matrix.dotnet-version }}
