@@ -10,7 +10,7 @@ on:
       - "master"
     paths-ignore: ["docfx", "samples", ".github"]
   release:
-    types: [created, published, 'released', prereleased, deleted]
+    types: [created, published, released, prereleased, deleted]
   workflow_dispatch:
     inputs:
       codeql:
@@ -107,7 +107,7 @@ jobs:
           sources: src
           solution-path: ./Falcon.sln
           exclusions: "samples/**,resources/**,docfx/**,coverage.xml"
-          tests: tests\
+          tests: "tests/"
           test-solution-path: ./tests/Falcon.Tests.sln
           test-exclusions: "tests/**,samples/**,resources/**,docfx/**,coverage.xml"
           dotnet-version: ${{ matrix.dotnet-version }}
