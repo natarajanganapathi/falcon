@@ -106,10 +106,11 @@ jobs:
         with:
           sources: src
           solution-path: ./Falcon.sln
+          inclusions: "src/**,tests/**"
           exclusions: "samples/**,resources/**,docfx/**,coverage.xml"
           tests: "tests/"
           test-solution-path: ./tests/Falcon.Tests.sln
-          test-exclusions: "tests/**,samples/**,resources/**,docfx/**,coverage.xml"
+          test-exclusions: "tests/**,samples/**,resources/**,docfx/**"
           dotnet-version: ${{ matrix.dotnet-version }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           sonar-project-key: "falcon-architecture_falcon-net"
