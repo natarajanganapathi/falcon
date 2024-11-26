@@ -1,0 +1,178 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - "feature/*"
+    paths-ignore: ["docfx", "samples", ".github"]
+  pull_request:
+    branches:
+      - "master"
+    paths-ignore: ["docfx", "samples", ".github"]
+  workflow_dispatch:
+    inputs:
+      codeql:
+        description: "Run CodeQL Analysis"
+        default: false
+        type: boolean
+      sonarqube:
+        description: "Run SonarQube Analysis"
+        default: false
+        type: boolean
+      docfx:
+        description: "Run DocFx Documentation"
+        default: false
+        type: boolean
+      publish:
+        description: "Publish to NuGet"
+        default: false
+        type: boolean
+      debug:
+        description: "Debug Mode"
+        default: false
+        type: boolean
+
+jobs:
+  build:
+    name: Build Application
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: [9.0.x]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: falcon-architecture/gh-actions
+          ref: main
+          path: gh-actions
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build Dotnet Application Task
+        uses: ./gh-actions/dotnet/build
+        with:
+          solution-path: ./Falcon.sln
+          test-solution-path: ./tests/Falcon.Tests.sln
+          dotnet-version: ${{ matrix.dotnet-version }}
+
+  codeql:
+    if: ${{ github.event.inputs.codeql == 'true' }}
+    name: CodeQL Analysis
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    strategy:
+      matrix:
+        dotnet-version: [9.0.x]
+        languages: ["csharp"]
+    env:
+      ACTIONS_STEP_DEBUG: ${{ github.event.inputs.debug }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: falcon-architecture/gh-actions
+          ref: main
+          path: gh-actions
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: CodeQL Analysis Task
+        uses: ./gh-actions/dotnet/codeql
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+          solution-path: ./Falcon.sln
+          test-solution-path: ./tests/Falcon.Tests.sln
+          languages: ${{ matrix.languages }}
+
+  sonarqube:
+    if: ${{ github.event.inputs.sonarqube == 'true' }}
+    name: SonarQube Analysis
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        languages: ["csharp"]
+        dotnet-version: ["9.0.x"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: falcon-architecture/gh-actions
+          ref: main
+          path: gh-actions
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: SonarQube Analysis Task
+        uses: ./gh-actions/dotnet/sonarqube
+        with:
+          sources: src
+          solution-path: ./Falcon.sln
+          exclusions: "samples/**,resources/**,docfx/**,coverage.xml"
+          tests: tests\
+          test-solution-path: ./tests/Falcon.Tests.sln
+          test-exclusions: "tests/**,samples/**,resources/**,docfx/**,coverage.xml"
+          dotnet-version: ${{ matrix.dotnet-version }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          sonar-project-key: "falcon-architecture_falcon-net"
+          sonar-organization: "falcon-architecture"
+          sonar-token: ${{ secrets.FALCON_SONAR_TOKEN }}
+          verbose: ${{ github.event.inputs.debug }}
+
+  docfx:
+    if: ${{ github.event.inputs.docfx == 'true' }}
+    name: DocFx Documentation
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    strategy:
+      matrix:
+        languages: ["csharp"]
+        dotnet-version: ["9.0.x"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: falcon-architecture/gh-actions
+          ref: main
+          path: gh-actions
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: DocFx Documentation Task
+        uses: ./gh-actions/dotnet/docfx
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          solution-path: ./Falcon.sln
+          dotnet-version: ${{ matrix.dotnet-version }}
+          docfx-json-path: ./docfx/docfx.json
+          publish-dir: docs
+
+  publish:
+    needs: build
+    if: ${{ github.event.inputs.publish == 'true' }}
+    name: Publish Artifacts
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        languages: ["csharp"]
+        dotnet-version: [9.0.x]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: falcon-architecture/gh-actions
+          ref: main
+          path: gh-actions
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish NuGet Package Task
+        uses: ./gh-actions/dotnet/publish
+        with:
+          solution-path: ./Falcon.sln
+          dotnet-version: ${{ matrix.dotnet-version }}
+          github-api-key: ${{ secrets.GITHUB_API_KEY }}
+          nuget-api-key: ${{ secrets.FALCON_NUGET_API_KEY }}
+          publish-nuget: false
+          publish-github: false

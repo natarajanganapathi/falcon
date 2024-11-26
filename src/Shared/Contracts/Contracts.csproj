@@ -11,17 +11,32 @@
     <PackageDescription></PackageDescription>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <RepositoryUrl>https://github.com/natarajanganapathi/falcon</RepositoryUrl>
+    <RepositoryUrl>https://github.com/falcon-architecture/falcon-net</RepositoryUrl>
+    <PackageTags>falcon,contracts</PackageTags>
+    <PackageIcon>falcon.jpg</PackageIcon>
+    <!-- Enable Source Link -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <EnableSourceLink>true</EnableSourceLink>
+
+    <!-- Deterministic build -->
+    <Deterministic>true</Deterministic>
+
+    <!-- Additional compiler flags -->
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <DebugType>embedded</DebugType>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
   <PropertyGroup>
     <RootNamespace>Falcon.Contracts.Abstractions</RootNamespace>
     <AssemblyName>Falcon.Contracts.Abstractions</AssemblyName>
   </PropertyGroup>
-    <ItemGroup>
-      <None Include="README.md" Pack="true" PackagePath="\" />
-      <None Include="LICENSE.txt" Pack="true" PackagePath="\" />
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="../../../resources/LICENSE.txt" Pack="true" PackagePath="\" />
+    <None Include="../../../resources/falcon.jpg" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
-      <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.0-rc.2.24474.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.0" />
   </ItemGroup>
 </Project>

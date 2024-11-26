@@ -11,17 +11,32 @@
     <PackageDescription></PackageDescription>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <RepositoryUrl>https://github.com/natarajanganapathi/falcon</RepositoryUrl>
+    <RepositoryUrl>https://github.com/falcon-architecture/falcon-net</RepositoryUrl>
+    <PackageTags>falcon,domain</PackageTags>
+    <PackageIcon>falcon.jpg</PackageIcon>
+    <!-- Enable Source Link -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <EnableSourceLink>true</EnableSourceLink>
+
+    <!-- Deterministic build -->
+    <Deterministic>true</Deterministic>
+
+    <!-- Additional compiler flags -->
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <DebugType>embedded</DebugType>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
   <PropertyGroup>
     <RootNamespace>Falcon.Domain.Abstractions</RootNamespace>
     <AssemblyName>Falcon.Domain.Abstractions</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
-      <None Include="README.md" Pack="true" PackagePath="\" />
-      <None Include="LICENSE.txt" Pack="true" PackagePath="\" />
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="../../../resources/LICENSE.txt" Pack="true" PackagePath="\" />
+    <None Include="../../../resources/falcon.jpg" Pack="true" PackagePath="\" />
   </ItemGroup>
- <ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\Shared\Contracts\Contracts.csproj" />
     <ProjectReference Include="..\..\Shared\Messaging\Abstractions\Abstractions.csproj" />
   </ItemGroup>

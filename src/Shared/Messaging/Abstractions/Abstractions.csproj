@@ -8,17 +8,35 @@
     <FileVersion>0.0.0.1</FileVersion>
     <Version>0.0.1-alpha.1</Version>
     <Authors>Natarajan Ganapathi</Authors>
-    <PackageDescription>Falcon.Messaging is a .NET library that integrates MassTransit's Mediator for in-process messaging and MassTransit for distributed messaging, providing a unified messaging solution for applications. It supports scalable and reliable communication patterns, ideal for microservices and complex software architectures.</PackageDescription>
+    <PackageDescription>Falcon.Messaging is a .NET library that integrates MassTransit's Mediator
+      for in-process messaging and MassTransit for distributed messaging, providing a unified
+      messaging solution for applications. It supports scalable and reliable communication patterns,
+      ideal for microservices and complex software architectures.</PackageDescription>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <RepositoryUrl>https://github.com/natarajanganapathi/falcon</RepositoryUrl>
+    <RepositoryUrl>https://github.com/falcon-architecture/falcon-net</RepositoryUrl>
+    <PackageTags>falcon,messaging</PackageTags>
+    <PackageIcon>falcon.jpg</PackageIcon>
+    <!-- Enable Source Link -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <EnableSourceLink>true</EnableSourceLink>
+
+    <!-- Deterministic build -->
+    <Deterministic>true</Deterministic>
+
+    <!-- Additional compiler flags -->
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <DebugType>embedded</DebugType>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
   <PropertyGroup>
     <RootNamespace>Falcon.Messaging.Abstrations</RootNamespace>
     <AssemblyName>Falcon.Messaging.Abstrations</AssemblyName>
   </PropertyGroup>
-    <ItemGroup>
-      <None Include="README.md" Pack="true" PackagePath="\" />
-      <None Include="LICENSE.txt" Pack="true" PackagePath="\" />
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="../../../../resources/LICENSE.txt" Pack="true" PackagePath="\" />
+    <None Include="../../../../resources/falcon.jpg" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>
