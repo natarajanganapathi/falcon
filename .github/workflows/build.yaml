@@ -105,6 +105,9 @@ jobs:
         shell: bash
         run: |
           ls -R
+      
+      - name: List gh-actions Directory
+        run: ls -R gh-actions/dotnet/sonarqube
 
       - name: SonarQube Analysis Task
         uses: ./gh-actions/dotnet/sonarqube
