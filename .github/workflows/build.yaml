@@ -25,6 +25,14 @@ on:
         description: "Run DocFx Documentation"
         default: true
         type: boolean
+      github-publish:
+        description: "Run GitHub Publish"
+        default: true
+        type: boolean
+      nuget-publish:
+        description: "Run NuGet Publish"
+        default: true
+        type: boolean
       debug:
         description: "Debug Mode"
         default: false
