@@ -101,14 +101,6 @@ jobs:
           path: gh-actions
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: logs
-        shell: bash
-        run: |
-          ls -R
-      
-      - name: List gh-actions Directory
-        run: ls -R gh-actions/dotnet/sonarqube
-
       - name: SonarQube Analysis Task
         uses: ./gh-actions/dotnet/sonarqube
         with:
