@@ -112,7 +112,7 @@ jobs:
           sonar-organization: "falcon-architecture"
           host-url: "https://sonarcloud.io"
           sonar-token: ${{ secrets.FALCON_SONAR_TOKEN }}
-          inclusion: "src/**"
+          inclusions: "src/**"
           verbose: ${{ github.event.inputs.debug }}
 
   docfx:
