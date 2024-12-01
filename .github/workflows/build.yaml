@@ -167,11 +167,12 @@ jobs:
         with:
           solution-path: ./Falcon.sln
           dotnet-version: ${{ matrix.dotnet-version }}
-          # nuget-api-key: ${{ secrets.FALCON_NUGET_API_KEY }}
-          github-user: natarajanganapathi
-          github-email: natarajanmca11@outlook.com
           github-api-key: ${{ secrets.GITHUB_API_KEY }}
+          git-user: natarajanganapathi
+          git-email: natarajanmca11@outlook.com
           version: ${{github.event.release.tag_name}}
+          bumped-version-push: true
+          branch: main
 
   nuget-publish:
     needs: build
@@ -196,4 +197,8 @@ jobs:
           solution-path: ./Falcon.sln
           dotnet-version: ${{ matrix.dotnet-version }}
           nuget-api-key: ${{ secrets.FALCON_NUGET_API_KEY }}
+          git-user: natarajanganapathi
+          git-email: natarajanmca11@outlook.com
           version: ${{github.event.release.tag_name}}
+          bumped-version-push: false
+          branch: main
