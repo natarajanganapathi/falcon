@@ -5,8 +5,8 @@
 
 ## Project
 
-1. [Sonar Cloud - Static Code Analysis](https://sonarcloud.io/project/overview?id=natarajanganapathi_falcon)
-2. [Docfx - Documentation](https://natarajanganapathi.github.io/falcon-net/)
+1. [Sonar Cloud - Static Code Analysis](https://sonarcloud.io/project/overview?id=falcon-architecture_falcon-net)
+2. [Docfx - Documentation](https://falcon-architecture.github.io/falcon-net)
 
 ## Dotnet Tools
 
