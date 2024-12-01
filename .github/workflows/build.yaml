@@ -169,8 +169,7 @@ jobs:
         with:
           solution-path: ./Falcon.sln
           dotnet-version: ${{ matrix.dotnet-version }}
-          github-api-key: ${{ secrets.GITHUB_API_KEY }}
-          github-publish-token: ${{ secrets.GH_PUBLISH_TOKEN }}
+          github-api-key: ${{ secrets.GH_PUBLISH_TOKEN }}
           github-publish-action: ${{github.event.action}}
           git-user: natarajanganapathi
           git-email: natarajanmca11@outlook.com
