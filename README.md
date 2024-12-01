@@ -1,11 +1,4 @@
-
-[![Falcon Build](https://github.com/falcon-architecture/falcon-net/actions/workflows/ci.falcon.build.yml/badge.svg)](https://github.com/falcon-architecture/falcon-net/actions/workflows/ci.falcon.build.yml) 
-
-[![Publish to Nuget](https://github.com/falcon-architecture/falcon-net/actions/workflows/cd.falcon.yml/badge.svg)](https://github.com/falcon-architecture/falcon-net/actions/workflows/cd.falcon.yml) 
-
-[![Sonar Cloud Analysis (SAST)](https://github.com/falcon-architecture/falcon-net/actions/workflows/sast.falcon.yml/badge.svg)](https://github.com/falcon-architecture/falcon-net/actions/workflows/sast.falcon.yml)
-
-[![CodeQL](https://github.com/falcon-architecture/falcon-net/actions/workflows/codeql.yml/badge.svg)](https://github.com/falcon-architecture/falcon-net/actions/workflows/codeql.yml) 
+[![CI Pipeline](https://github.com/falcon-architecture/falcon-net/actions/workflows/build.yaml/badge.svg)](https://github.com/falcon-architecture/falcon-net/actions/workflows/build.yaml) 
 
 [![Dependabot Updates](https://github.com/falcon-architecture/falcon-net/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/falcon-architecture/falcon-net/actions/workflows/dependabot/dependabot-updates)
 
