@@ -7,7 +7,7 @@ on:
     paths-ignore: ["docfx", "samples", ".github"]
   pull_request:
     branches:
-      - "master"
+      - "main"
     paths-ignore: ["docfx", "samples", ".github"]
   release:
     types: [released, prereleased, deleted]
