@@ -25,14 +25,6 @@ on:
         description: "Run DocFx Documentation"
         default: true
         type: boolean
-      github-publish:
-        description: "Publish to GitHub Packages"
-        default: false
-        type: boolean
-      nuget-publish:
-        description: "Publish to NuGet Packages"
-        default: false
-        type: boolean
       debug:
         description: "Debug Mode"
         default: false
@@ -155,7 +147,7 @@ jobs:
 
   github-publish:
     needs: build
-    if: ${{ github.event_name == 'release' }} || ${{ github.event.inputs.github-publish == 'true' }}
+    if: ${{ github.event_name == 'release' }}
     name: Publish Artifacts to GitHub
     runs-on: ubuntu-latest
     strategy:
@@ -185,7 +177,7 @@ jobs:
 
   nuget-publish:
     needs: build
-    if: ${{ github.event_name == 'release' }} || ${{ github.event.inputs.nuget-publish == 'true' }}
+    if: ${{ github.event_name == 'release' }} && false
     name: Publish Artifacts to NuGet
     runs-on: ubuntu-latest
     strategy:
