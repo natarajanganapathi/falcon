@@ -10,7 +10,7 @@ on:
       - "master"
     paths-ignore: ["docfx", "samples", ".github"]
   release:
-    types: [published, deleted]
+    types: [released, prereleased, deleted]
   workflow_dispatch:
     inputs:
       codeql:
@@ -147,7 +147,7 @@ jobs:
 
   github-publish:
     needs: build
-    if: ${{ github.event_name == 'release' }}
+    if: ${{ github.event_name == 'release' && github.event.action == 'prereleased' }}
     name: Publish Artifacts to GitHub
     runs-on: ubuntu-latest
     strategy:
@@ -177,7 +177,7 @@ jobs:
 
   nuget-publish:
     needs: build
-    if: ${{ github.event_name == 'release' }} && false
+    if: ${{ github.event_name == 'release' && github.event.action == 'released'}}
     name: Publish Artifacts to NuGet
     runs-on: ubuntu-latest
     strategy:
